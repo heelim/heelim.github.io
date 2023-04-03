@@ -1,18 +1,18 @@
 ---
-- name: Machine Learning
-  sub: ML
+- name: Compiler
+  sub: CO
   color: "#ffd300"
-- name: Computer Vision
-  sub: CV
+- name: Architecture
+  sub: AR
   color: "#deff0a"
-- name: Computer Graphics
-  sub: CG
+- name: Programming Language
+  sub: PL
   color: "#0aefff"
-- name: Natural Language Proc
-  sub: NLP
+- name: Embedded Systems
+  sub: ES
   color: "#147df5"
-- name: Robotics
-  sub: RO
+- name: Cryptography
+  sub: CR
   color: "#0aff99"
 - name: Speech/SigProc
   sub: SP
