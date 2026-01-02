@@ -239,33 +239,110 @@ p.subtitle {
 }
 
 /* Sorting Controls and Dynamic Content */
-.sort-controls {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
 }
 
-.sort-btn {
+.filter-chip:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: var(--fg);
+}
+
+.filter-chip.active {
+  background: rgba(59, 130, 246, 0.1);
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Domain specific active state */
+.filter-chip.domain-active {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: #10b981;
+  color: #10b981;
+  font-weight: 600;
+}
+
+.collapsible-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, margin 0.3s ease;
+  opacity: 0;
+  margin-bottom: 0;
+}
+
+.collapsible-wrapper.expanded {
+  max-height: 1000px;
+  /* Large enough to fit content */
+  opacity: 1;
+  margin-bottom: 2rem;
+}
+
+#filter-toggle {
+  transition: all 0.2s ease;
+}
+
+#filter-toggle:hover {
+  background: rgba(59, 130, 246, 0.2) !important;
+  transform: translateY(-1px);
+}
+
+#filter-toggle:active {
+  transform: translateY(0);
+}
+
+.filter-chip input {
+  display: none;
+}
+
+.filter-group {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.sort-select {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--fg);
   padding: 0.5rem 1rem;
-  font-size: 0.875rem;
   border-radius: 8px;
+  font-size: 0.875rem;
+  font-family: inherit;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.2s;
+  outline: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='rgba(148, 163, 184, 0.5)'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+  padding-right: 2.5rem;
 }
 
-.sort-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
+.sort-select:hover {
+  background-color: rgba(255, 255, 255, 0.08);
   border-color: var(--accent);
 }
 
-.sort-btn.active {
-  background: var(--accent);
-  color: white;
+.sort-select:focus {
   border-color: var(--accent);
+  background-color: rgba(59, 130, 246, 0.05);
+}
+
+.sort-select option {
+  background: #0f172a;
+  color: var(--fg);
 }
 
 #cfp-list {

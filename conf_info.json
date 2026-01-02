@@ -1,0 +1,650 @@
+{
+    "SIGMETRICS": {
+        "domains": [
+            "Performance",
+            "Operating Systems"
+        ],
+        "keywords": [
+            "Performance Evaluation",
+            "Workload Characterization",
+            "Analytical Modeling"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "3"
+    },
+    "ATC": {
+        "domains": [
+            "Operating Systems",
+            "Storage Systems",
+            "Cloud Computing"
+        ],
+        "keywords": [
+            "Operating Systems",
+            "Cloud Computing",
+            "Storage Systems",
+            "File Systems",
+            "Virtualization"
+        ],
+        "kiise": "",
+        "bk21plus": ""
+    },
+    "CCS": {
+        "domains": [
+            "Computer Security",
+            "Network Security"
+        ],
+        "keywords": [
+            "Computer Security",
+            "Network Security",
+            "Privacy",
+            "Cryptography"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
+    },
+    "HotOS": {
+        "domains": [
+            "Operating Systems"
+        ],
+        "keywords": [
+            "Operating Systems",
+            "Experimental Systems"
+        ],
+        "kiise": "",
+        "bk21plus": ""
+    },
+    "CF": {
+        "domains": [
+            "Computer Architecture",
+            "Embedded Systems"
+        ],
+        "keywords": [
+            "Hardware Accelerators",
+            "Embedded Systems",
+            "Hardware/Software Co-design",
+            "Computer Architecture"
+        ],
+        "kiise": "",
+        "bk21plus": ""
+    },
+    "Usenix Security": {
+        "domains": [
+            "Computer Security",
+            "Operating Systems"
+        ],
+        "keywords": [
+            "System Security",
+            "Network Security",
+            "Privacy",
+            "Software Security"
+        ],
+        "kiise": "",
+        "bk21plus": ""
+    },
+    "SIGCOMM": {
+        "domains": [
+            "Networking"
+        ],
+        "keywords": [
+            "Network Architecture",
+            "Network Protocols",
+            "Internet Measurement"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
+    },
+    "HPDC": {
+        "domains": [
+            "Distributed Systems",
+            "High-Performance Computing"
+        ],
+        "keywords": [
+            "Distributed Systems",
+            "High-Performance Computing",
+            "Cloud Computing",
+            "Resource Management"
+        ],
+        "kiise": "우수",
+        "bk21plus": "2"
+    },
+    "ICS": {
+        "domains": [
+            "High-Performance Computing",
+            "Computer Architecture"
+        ],
+        "keywords": [
+            "High-Performance Computing",
+            "Computer Architecture",
+            "Parallel Computing",
+            "Supercomputing"
+        ],
+        "kiise": "우수",
+        "bk21plus": "2"
+    },
+    "ECRTS": {
+        "domains": [
+            "Real-Time Systems",
+            "Embedded Systems"
+        ],
+        "keywords": [
+            "Real-Time Systems",
+            "Embedded Systems",
+            "Scheduling Analysis"
+        ],
+        "kiise": "우수",
+        "bk21plus": "1"
+    },
+    "SPAA": {
+        "domains": [
+            "Parallel Computing",
+            "Algorithms"
+        ],
+        "keywords": [
+            "Parallel Algorithms",
+            "Distributed Algorithms",
+            "Complexity Theory"
+        ],
+        "kiise": "우수",
+        "bk21plus": "3"
+    },
+    "Euro-Par": {
+        "domains": [
+            "Parallel Computing",
+            "High-Performance Computing"
+        ],
+        "keywords": [
+            "Parallel Computing",
+            "Distributed Systems",
+            "High-Performance Computing",
+            "Multi-core"
+        ],
+        "kiise": "우수",
+        "bk21plus": "1"
+    },
+    "ISMM": {
+        "domains": [
+            "Programming Languages",
+            "Memory Management"
+        ],
+        "keywords": [
+            "Memory Management",
+            "Runtime Systems",
+            "Compilers"
+        ],
+        "kiise": "",
+        "bk21plus": ""
+    },
+    "ASPLOS": {
+        "domains": [
+            "Computer Architecture",
+            "Operating Systems",
+            "Programming Languages"
+        ],
+        "keywords": [
+            "Computer Architecture",
+            "Operating Systems",
+            "Compilers",
+            "Hardware/Software Co-design"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
+    },
+    "OOPSLA": {
+        "domains": [
+            "Programming Languages",
+            "Software Engineering"
+        ],
+        "keywords": [
+            "Programming Models",
+            "Software Engineering",
+            "Language Design"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
+    },
+    "FAST": {
+        "domains": [
+            "Storage Systems",
+            "Operating Systems"
+        ],
+        "keywords": [
+            "Storage Systems",
+            "File Systems",
+            "Non-volatile Memory"
+        ],
+        "kiise": "",
+        "bk21plus": ""
+    },
+    "MobiCom": {
+        "domains": [
+            "Networking",
+            "Mobile Systems"
+        ],
+        "keywords": [
+            "Mobile Systems",
+            "Wireless Networking"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
+    },
+    "EMSOFT": {
+        "domains": [
+            "Embedded Systems",
+            "Real-Time Systems"
+        ],
+        "keywords": [
+            "Embedded Systems",
+            "Cyber-Physical Systems",
+            "Formal Verification"
+        ],
+        "kiise": "우수",
+        "bk21plus": "2"
+    },
+    "SOSP": {
+        "domains": [
+            "Operating Systems",
+            "Distributed Systems",
+            "Storage Systems"
+        ],
+        "keywords": [
+            "Operating Systems",
+            "Distributed Systems",
+            "Storage Systems",
+            "Cloud Computing"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
+    },
+    "HotStorage": {
+        "domains": [
+            "Storage Systems"
+        ],
+        "keywords": [
+            "Storage Systems",
+            "Non-volatile Memory",
+            "File Systems"
+        ],
+        "kiise": "",
+        "bk21plus": ""
+    },
+    "SC": {
+        "domains": [
+            "High-Performance Computing",
+            "Networking",
+            "Storage Systems"
+        ],
+        "keywords": [
+            "High-Performance Computing",
+            "Supercomputing",
+            "Data Analysis"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "3"
+    },
+    "MICRO": {
+        "domains": [
+            "Computer Architecture"
+        ],
+        "keywords": [
+            "Microarchitecture",
+            "Hardware Accelerators",
+            "Computer Architecture",
+            "Instruction-level Parallelism"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
+    },
+    "RAID": {
+        "domains": [
+            "Computer Security"
+        ],
+        "keywords": [
+            "System Security",
+            "Intrusion Detection",
+            "Attack Analysis"
+        ],
+        "kiise": "우수",
+        "bk21plus": "2"
+    },
+    "ICPP": {
+        "domains": [
+            "Parallel Computing",
+            "High-Performance Computing"
+        ],
+        "keywords": [
+            "Parallel Computing",
+            "Parallel Algorithms",
+            "Software Systems"
+        ],
+        "kiise": "우수",
+        "bk21plus": "2"
+    },
+    "EuroSys": {
+        "domains": [
+            "Operating Systems",
+            "Distributed Systems"
+        ],
+        "keywords": [
+            "Distributed Systems",
+            "Operating Systems",
+            "Cloud Computing",
+            "Virtualization"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "2"
+    },
+    "RTSS": {
+        "domains": [
+            "Real-Time Systems",
+            "Embedded Systems"
+        ],
+        "keywords": [
+            "Real-Time Systems",
+            "Cyber-Physical Systems",
+            "Embedded Systems",
+            "IoT"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
+    },
+    "CoNEXT": {
+        "domains": [
+            "Networking"
+        ],
+        "keywords": [
+            "Network Protocols",
+            "Traffic Analysis",
+            "Internet Architecture"
+        ],
+        "kiise": "",
+        "bk21plus": ""
+    },
+    "Middleware": {
+        "domains": [
+            "Distributed Systems"
+        ],
+        "keywords": [
+            "Distributed Systems",
+            "Middleware",
+            "Edge Computing"
+        ],
+        "kiise": "",
+        "bk21plus": ""
+    },
+    "HotNets": {
+        "domains": [
+            "Networking"
+        ],
+        "keywords": [
+            "Network Architecture",
+            "Experimental Networking"
+        ],
+        "kiise": "",
+        "bk21plus": ""
+    },
+    "POPL": {
+        "domains": [
+            "Programming Languages",
+            "Algorithms"
+        ],
+        "keywords": [
+            "Program Semantics",
+            "Formal Methods",
+            "Program Analysis",
+            "Language Theory"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
+    },
+    "SoCC": {
+        "domains": [
+            "Cloud Computing",
+            "Distributed Systems"
+        ],
+        "keywords": [
+            "Cloud Computing",
+            "Distributed Databases",
+            "Resource Management"
+        ],
+        "kiise": "",
+        "bk21plus": ""
+    },
+    "INFOCOM": {
+        "domains": [
+            "Networking",
+            "Wireless Networking"
+        ],
+        "keywords": [
+            "Computer Networks",
+            "Wireless Networking",
+            "Network Theory",
+            "Network Protocols"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
+    },
+    "HPCA": {
+        "domains": [
+            "Computer Architecture"
+        ],
+        "keywords": [
+            "Computer Architecture",
+            "Memory Hierarchy",
+            "Multi-core",
+            "Hardware Accelerators"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
+    },
+    "NDSS": {
+        "domains": [
+            "Computer Security",
+            "Network Security"
+        ],
+        "keywords": [
+            "Network Security",
+            "System Security",
+            "Web Security"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "2"
+    },
+    "AsiaCCS": {
+        "domains": [
+            "Computer Security",
+            "Network Security"
+        ],
+        "keywords": [
+            "Information Security",
+            "Network Security",
+            "Privacy"
+        ],
+        "kiise": "",
+        "bk21plus": ""
+    },
+    "PPoPP": {
+        "domains": [
+            "Parallel Computing",
+            "Programming Languages"
+        ],
+        "keywords": [
+            "Parallel Programming",
+            "Concurrency",
+            "Runtime Systems"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "3"
+    },
+    "CGO": {
+        "domains": [
+            "Compilers",
+            "Programming Languages"
+        ],
+        "keywords": [
+            "Compiler Optimization",
+            "Code Generation",
+            "Binary Analysis"
+        ],
+        "kiise": "우수",
+        "bk21plus": "2"
+    },
+    "NSDI": {
+        "domains": [
+            "Networked Systems",
+            "Distributed Systems"
+        ],
+        "keywords": [
+            "Networked Systems",
+            "Cloud Networking",
+            "Datacenters",
+            "Distributed Systems"
+        ],
+        "kiise": "",
+        "bk21plus": ""
+    },
+    "IPDPS": {
+        "domains": [
+            "Parallel Computing",
+            "High-Performance Computing"
+        ],
+        "keywords": [
+            "Parallel Computing",
+            "Parallel Algorithms",
+            "High-Performance Computing"
+        ],
+        "kiise": "우수",
+        "bk21plus": "2"
+    },
+    "HotMobile": {
+        "domains": [
+            "Mobile Systems"
+        ],
+        "keywords": [
+            "Mobile Systems",
+            "Ubiquitous Computing"
+        ],
+        "kiise": "",
+        "bk21plus": ""
+    },
+    "CC": {
+        "domains": [
+            "Compilers",
+            "Programming Languages"
+        ],
+        "keywords": [
+            "Compiler Construction",
+            "Language Translation",
+            "Compiler Optimization"
+        ],
+        "kiise": "우수",
+        "bk21plus": "2"
+    },
+    "PLDI": {
+        "domains": [
+            "Programming Languages",
+            "Compilers"
+        ],
+        "keywords": [
+            "Compiler Optimization",
+            "Program Analysis",
+            "Compilers",
+            "Language Design"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
+    },
+    "IEEE S&P": {
+        "domains": [
+            "Computer Security"
+        ],
+        "keywords": [
+            "System Security",
+            "Privacy",
+            "Cryptography",
+            "Computer Security"
+        ],
+        "kiise": "",
+        "bk21plus": ""
+    },
+    "RTAS": {
+        "domains": [
+            "Real-Time Systems",
+            "Embedded Systems"
+        ],
+        "keywords": [
+            "Real-Time Systems",
+            "Embedded Systems",
+            "Cyber-Physical Systems"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "2"
+    },
+    "ISCA": {
+        "domains": [
+            "Computer Architecture"
+        ],
+        "keywords": [
+            "Computer Architecture",
+            "Memory Systems",
+            "Hardware/Software Co-design"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
+    },
+    "DSN": {
+        "domains": [
+            "Distributed Systems",
+            "Computer Security"
+        ],
+        "keywords": [
+            "Fault Tolerance",
+            "Dependable Systems",
+            "System Security"
+        ],
+        "kiise": "우수",
+        "bk21plus": "2"
+    },
+    "OSDI": {
+        "domains": [
+            "Operating Systems",
+            "Distributed Systems",
+            "Storage Systems"
+        ],
+        "keywords": [
+            "Operating Systems",
+            "Distributed Systems",
+            "Storage Systems",
+            "Cloud Computing",
+            "Reliability"
+        ],
+        "kiise": "",
+        "bk21plus": ""
+    },
+    "ISPASS": {
+        "domains": [
+            "Computer Architecture",
+            "Performance"
+        ],
+        "keywords": [
+            "Performance Evaluation",
+            "Computer Architecture",
+            "Workload Characterization",
+            "Simulation"
+        ],
+        "kiise": "우수",
+        "bk21plus": "1"
+    },
+    "ICDCS": {
+        "domains": [
+            "Distributed Systems",
+            "Networking"
+        ],
+        "keywords": [
+            "Distributed Systems",
+            "Cloud Computing",
+            "Distributed Algorithms"
+        ],
+        "kiise": "우수",
+        "bk21plus": "3"
+    }
+}
