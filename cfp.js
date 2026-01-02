@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let confInfo = {};
     let selectedKeywords = new Set();
     let selectedDomains = new Set();
+    let showPast = false;
     const today = new Date();
 
     async function loadData() {
@@ -75,17 +76,25 @@ document.addEventListener('DOMContentLoaded', () => {
     function setupToggle() {
         const toggles = [
             { btnId: 'domain-toggle', wrapperId: 'domain-collapsible', iconId: 'domain-icon', activeBg: 'rgba(16, 185, 129, 0.2)', inactiveBg: 'rgba(16, 185, 129, 0.1)' },
-            { btnId: 'keyword-toggle', wrapperId: 'keyword-collapsible', iconId: 'keyword-icon', activeBg: 'rgba(59, 130, 246, 0.2)', inactiveBg: 'rgba(59, 130, 246, 0.1)' }
+            { btnId: 'keyword-toggle', wrapperId: 'keyword-collapsible', iconId: 'keyword-icon', activeBg: 'rgba(59, 130, 246, 0.2)', inactiveBg: 'rgba(59, 130, 246, 0.1)' },
+            { btnId: 'past-toggle', iconId: 'past-icon', activeBg: 'rgba(148, 163, 184, 0.2)', inactiveBg: 'rgba(148, 163, 184, 0.1)' }
         ];
 
         toggles.forEach(t => {
             const toggleBtn = document.getElementById(t.btnId);
-            const wrapper = document.getElementById(t.wrapperId);
+            const wrapper = t.wrapperId ? document.getElementById(t.wrapperId) : null;
             const icon = document.getElementById(t.iconId);
 
-            if (toggleBtn && wrapper && icon) {
+            if (toggleBtn && icon) {
                 toggleBtn.addEventListener('click', () => {
-                    const isExpanded = wrapper.classList.toggle('expanded');
+                    let isExpanded;
+                    if (wrapper) {
+                        isExpanded = wrapper.classList.toggle('expanded');
+                    } else if (t.btnId === 'past-toggle') {
+                        showPast = !showPast;
+                        isExpanded = showPast;
+                        renderCfps();
+                    }
                     icon.style.transform = isExpanded ? 'rotate(45deg)' : 'rotate(0deg)';
                     toggleBtn.style.background = isExpanded ? t.activeBg : t.inactiveBg;
                 });
@@ -175,9 +184,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const field = sortFieldSelect.value;
         const order = sortOrderSelect.value;
 
-        // 1. Initial Filtering (Past Deadlines)
+        // 1. Initial Filtering (Upcoming vs. Past)
         let filteredCfps = allCfps.filter(cfp => {
-            const deadlineDate = new Date(cfp.deadline);
+            const deadlineDate = parseDate(cfp.deadline);
+            if (showPast) return true;
             return deadlineDate >= today;
         });
 
@@ -256,12 +266,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             ` : '';
 
+            const isPast = deadlineDate < today;
+            const opacity = isPast ? '0.5' : '1';
+            const grayscale = isPast ? 'grayscale(100%)' : 'none';
+
             return `
-        <div class="pub-item" style="margin-bottom: 0.5rem; padding: 1.2rem; background: rgba(255, 255, 255, 0.02); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05);">
+        <div class="pub-item" style="margin-bottom: 0.5rem; padding: 1.2rem; background: rgba(255, 255, 255, 0.02); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05); opacity: ${opacity}; filter: ${grayscale};">
           <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
             <span class="item-title" style="font-weight: 600;">
-              ${cfp.url ? `<a href="${cfp.url}" target="_blank" style="color: var(--accent); text-decoration: none;">${cfp.venue}</a>` : `<span style="color: var(--accent);">${cfp.venue}</span>`} 
-              <span style="color: var(--accent);">${cfp.year}</span>
+              ${cfp.url ? `<a href="${cfp.url}" target="_blank" style="color: var(--accent); text-decoration: none;">${cfp.venue} ${cfp.year}</a>` : `<span style="color: var(--accent);">${cfp.venue} ${cfp.year}</span>`} 
               ${cfp.subtitle ? `<span style="color: #94a3b8; font-weight: 400; font-size: 0.9em;">(${cfp.subtitle})</span>` : ''}
               <div style="margin-top: 4px; display: flex; flex-wrap: wrap;">${domainTags}</div>
               ${rankingBadges}
