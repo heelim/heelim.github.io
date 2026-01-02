@@ -1,4 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Tab switching logic
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            const tabId = link.getAttribute('data-tab');
+
+            // Update nav links
+            document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+
+            // Update tab content
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                if (tab.id === tabId) {
+                    tab.classList.remove('hidden');
+                } else {
+                    tab.classList.add('hidden');
+                }
+            });
+        });
+    });
+
     const cfpList = document.getElementById('cfp-list');
     const sortDeadlineBtn = document.getElementById('sort-deadline');
     const sortDateBtn = document.getElementById('sort-date');
