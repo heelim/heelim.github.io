@@ -18,162 +18,204 @@
       <img src="profile.png" alt="Heelim Choi" class="avatar">
       <div class="profile-info">
         <h1>Heelim Choi</h1>
-        <h2>Profile</h2>
+        <h2>PROFILE</h2>
         <div class="links">
           <a href="https://corelab.yonsei.ac.kr" target="_blank">Compiler Research Laboratory (CoreLab)</a>
-          <a href="https://ee.yonsei.ac.kr" target="_blank">Electrical and Electronic Engineering (EEE)</a>
+          <a href="https://ee.yonsei.ac.kr" target="_blank">Electrical and Electronic Engineering (EE)</a>
           <a href="https://www.yonsei.ac.kr" target="_blank">Yonsei University</a>
-          <span style="color: #94a3b8; font-size: 0.95rem;">Email: [first_name]@yonsei.ac.kr</span>
+          <span style="color: #94a3b8; font-size: 0.95rem;">E-mail: [first_name] [at] yonsei.ac.kr</span>
         </div>
       </div>
     </header>
 
     <main>
-      <section id="research-interests">
-        <h3 class="section-title">Research Interests</h3>
-        <ul class="content-list">
-          <li>Compiler Optimization</li>
-          <li>Processing-in-Memory (PIM)</li>
-          <li>Deep Learning</li>
-          <li>Internet of Things (IoT)</li>
-          <li>Graph Processing</li>
-        </ul>
-      </section>
+      <nav class="tabs-nav">
+        <button class="tab-btn active" onclick="openTab(event, 'tab-profile')">Profile</button>
+        <button class="tab-btn" onclick="openTab(event, 'tab-cfp')">CFP</button>
+      </nav>
 
-      <section id="education">
-        <h3 class="section-title">Education</h3>
-        <ul class="content-list">
-          <li>
-            <span class="item-title">Integrated MS/Ph.D. Student in School of Electrical and Electronic Engineering,
-              Yonsei
-              University</span>
-            <span class="item-meta">Advisor: Prof. Hanjun Kim</span>
-            <span class="item-meta">2020.09 – Present</span>
-          </li>
-          <li>
-            <span class="item-title">Bachelor of Engineering in Electrical and Electronic Engineering & Bachelor of
-              Science
-              in Mathematics (Double Major), Yonsei University</span>
-            <span class="item-meta">2014.03 – 2020.08</span>
-          </li>
-        </ul>
-      </section>
+      <div id="tab-profile" class="tab-content active">
+        <section id="research-interests">
+          <h3 class="section-title">RESEARCH INTERESTS</h3>
+          <ul class="content-list">
+            <li>Compiler Optimization</li>
+            <li>Processing in Memory</li>
+            <li>Deep Learning</li>
+            <li>Internet of Things</li>
+            <li>Graph Processing</li>
+          </ul>
+        </section>
 
-      <section id="experience">
-        <h3 class="section-title">Experience</h3>
-        <ul class="content-list">
-          <li>
-            <span class="item-title">Graduate Research Assistant, Compiler Research Lab (CoreLab), Yonsei
-              University</span>
-            <span class="item-meta">2021.09 – Present</span>
-          </li>
-          <li>
-            <span class="item-title">Undergraduate Research Assistant, Compiler Research Lab (CoreLab), Yonsei
-              University</span>
-            <span class="item-meta">2019.01 – 2020.08</span>
-          </li>
-          <li>
-            <span class="item-title">Undergraduate Research Assistant, Circuit and System Design Lab (CASDL), Yonsei
-              University</span>
-            <span class="item-meta">2018.07 – 2018.12</span>
-          </li>
-        </ul>
-      </section>
+        <section id="education">
+          <h3 class="section-title">EDUCATION</h3>
+          <ul class="content-list">
+            <li>
+              <span class="item-title">Integrated MS/Ph.D. Student in School of Electrical and Electronical Engineering,
+                Yonsei University</span>
+              <span class="item-meta">Advisor : Prof. Hanjun kim</span>
+              <span class="item-meta">2020.09 ~ Present</span>
+            </li>
+            <li>
+              <span class="item-title">Bachelor of Engineering in Electrical and Electronic Engineering & Bachelor of
+                Science in Mathematics (Double Major), Yonsei University</span>
+              <span class="item-meta">2016.03 ~ 2020.08</span>
+            </li>
+          </ul>
+        </section>
 
-      <section id="teaching">
-        <h3 class="section-title">Teaching</h3>
-        <ul class="content-list">
-          <li>
-            <span class="item-title">Teaching Assistant, EEE2313: INTRODUCTORY DIGITAL LABS, Yonsei University</span>
-            <span class="item-meta">Fall 2020, Fall 2021, Spring 2022, Fall 2022, Spring 2023</span>
-          </li>
-        </ul>
-      </section>
+        <section id="experience">
+          <h3 class="section-title">EXPERIENCE</h3>
+          <ul class="content-list">
+            <li>
+              <span class="item-title">Graduate Research Assistant, Compiler Research Lab (CoreLab), Yonsei
+                University</span>
+              <span class="item-meta">2020.09 ~ Present</span>
+            </li>
+            <li>
+              <span class="item-title">Undergraduate Research Assistant, Compiler Research Lab (CoreLab), Yonsei
+                University</span>
+              <span class="item-meta">2019.01 ~ 2020.08</span>
+            </li>
+            <li>
+              <span class="item-title">Undergraduate Research Assistant, Circuit and System Design Lab (CASDL), Yonsei
+                University</span>
+              <span class="item-meta">2018.07 ~ 2018.12</span>
+            </li>
+          </ul>
+        </section>
 
-      <section id="publications">
-        <h3 class="section-title">Publications</h3>
+        <section id="teaching">
+          <h3 class="section-title">TEACHING</h3>
+          <ul class="content-list">
+            <li>
+              <span class="item-title">Teaching Assistant, EEE3313: INTRODUCTORY DIGITAL LABS, Yonsei University</span>
+              <span class="item-meta">Fall 2020, Fall 2021, Spring 2022, Fall 2022, Spring 2023</span>
+            </li>
+          </ul>
+        </section>
 
-        <h4 style="margin: 1.5rem 0 1rem; color: var(--fg);">[Conference]</h4>
-        <div class="pub-item">
-          <span class="item-title">SPIM-Join: A Skew-resistant Processing-in-DIMM Join Algorithm Exploiting the Bank-
-            and
-            Rank-level Parallelism of DIMMs</span>
-          <span class="pub-authors">Suhyun Lee, Chanmin Lim, Jinwoo Choi, <span class="pub-highlight">Heelim
-              Choi</span>,
-            Kwanghyun Park, Hanjun Kim, and Youngsok Kim</span>
-          <span class="pub-venue">Proceedings of the 2023 ACM SIGMOD International Conference on Management of Data
-            (SIGMOD),
-            June 2023.</span>
-        </div>
+        <section id="publications">
+          <h3 class="section-title">Publications</h3>
+          <h4 style="margin: 1.5rem 0 1rem; color: var(--fg);">[Conference]</h4>
 
-        <div class="pub-item">
-          <span class="item-title">SparseWeaver: Converting Sparse Operations as Dense Operations on GPUs for Graph
-            Workloads</span>
-          <span class="pub-authors">Shinnung Jeong, Liam Paul Cooper, Ju Min Lee, <span class="pub-highlight">Heelim
-              Choi</span>, Nicholas Farnese, Chidye Ahn, Yongwoo Lee, Hanjun Kim, and Hyojoon Kim</span>
-          <span class="pub-venue">2023 IEEE International Symposium on High Performance Computer Architecture (HPCA),
-            March
-            2023.</span>
-        </div>
+          <div class="pub-item">
+            <span class="item-title">Selene: Cross-Level Barrier-Free Pipelining for Irregular Nested Loops in
+              High-Level Synthesis</span>
+            <span class="pub-authors"> Sungwoo Yun, Seonyoung Cheon, Dongkwan Kim,
+              <span class="pub-highlight">Heelim Choi</span>
+              , Kunmo Jeong, Chan Lee, Yongwoo Lee, and Hanjun Kim</span>
+            <span class="pub-venue">Proceedings of the 2026 International Symposium on Code Generation and Optimization
+              (CGO), January 2026.</span>
+          </div>
 
-        <div class="pub-item">
-          <span class="item-title">Ocoee: Memory-efficient GPU Compiler for DNN Inference</span>
-          <span class="pub-authors">Jachon Lee, Shinnung Jeong, Seunghyun Song, Kunwoo Kim, <span
-              class="pub-highlight">Heelim Choi</span>, Youngsok Kim, and Hanjun Kim</span>
-          <span class="pub-venue">Proceedings of the 60th Annual Design Automation Conference 2023 (DAC), July
-            2023.</span>
-        </div>
+          <div class="pub-item">
+            <span class="item-title">SPID-Join: A Skew-resistant Processing-in-DIMM Join Algorithm Exploiting the Bank-
+              and Rank-level Parallelisms of DIMMs</span>
+            <span class="pub-authors">Suhyun Lee, Chaemin Lim, Jinwoo Choi,
+              <span class="pub-highlight">Heelim Choi</span>
+              , Chan Lee, Kwanghyun Park, Hanjun Kim, and Youngsok Kim</span>
+            <span class="pub-venue">Proceedings of the 2025 ACM SIGMOD International Conference on Management of Data
+              (SIGMOD), June 2025.</span>
+          </div>
 
-        <div class="pub-item">
-          <span class="item-title">Decoupling Schedule, Topoly Layout, and Algorithm to Easily Enlarge the Tuning Space
-            of
-            GPU Graph Processing</span>
-          <span class="pub-authors">Shinnung Jeong, Yongwoo Lee, Jaeho Lee, <span class="pub-highlight">Heelim
-              Choi</span>,
-            Seunghyun Song, Jinwoo Choi, Youngsok Kim, and Hanjun Kim</span>
-          <span class="pub-venue">31st International Conference on Parallel Architectures and Compilation Techniques
-            (PACT),
-            October 2022.</span>
-        </div>
+          <div class="pub-item">
+            <span class="item-title">SparseWeaver: Converting Sparse Operations as Dense Operations on GPUs for Graph
+              Workloads</span>
+            <span class="pub-authors">Shinnung Jeong, Liam Paul Cooper, Ju Min Lee,
+              <span class="pub-highlight">Heelim Choi</span>
+              , Nicholas Parnenzini, Chihyo Ahn, Yongwoo Lee, Hanjun Kim, and Hyesoon Kim</span>
+            <span class="pub-venue">2025 IEEE International Symposium on High-Performance Computer Architecture (HPCA),
+              March 2025.</span>
+          </div>
 
-        <div class="pub-item">
-          <span class="item-title">Fine-grained Pipeline Parallelization for Network Function Programs</span>
-          <span class="pub-authors">Seunghun Song, <span class="pub-highlight">Heelim Choi</span>, and Hanjun Kim</span>
-          <span class="pub-venue">Proceedings of the 2021 International Symposium on Code Generation and Optimization
-            (CGO),
-            March 2021.</span>
-        </div>
+          <div class="pub-item">
+            <span class="item-title">Occamy: Memory-efficient GPU Compiler for DNN Inference</span>
+            <span class="pub-authors">Jaeho Lee, Shinnung Jeong, Seungbin Song, Kunwoo Kim,
+              <span class="pub-highlight">Heelim Choi</span>
+              , Youngsok Kim, and Hanjun Kim</span>
+            <span class="pub-venue">Proceedings of the 60th Annual Design Automation Conference 2023 (DAC), July
+              2023.</span>
+          </div>
 
-        <h4 style="margin: 2rem 0 1rem; color: var(--fg);">[Journal]</h4>
-        <div class="pub-item">
-          <span class="item-title">Privacy Set: Privacy Authority-Aware Compiler for Homomorphic Encryption on
-            Edge-Cloud
-            System</span>
-          <span class="pub-authors">Donghwan Kim, Yongwoo Lee, Seunyoung Cheon, <span class="pub-highlight">Heelim
-              Choi</span>, Jaeho Lee, Hayun Yeom, Dongyeon Lee, and Hanjun Kim</span>
-          <span class="pub-venue">IEEE Internet of Things Journal, August 2024.</span>
-          <span class="item-meta" style="color: #ef4444; font-weight: 600;">IF=8.2, Q1 (JCR 2023)</span>
-        </div>
+          <div class="pub-item">
+            <span class="item-title">Decoupling Schedule, Topology Layout, and Algorithm to Easily Enlarge the Tuning
+              Space of GPU Graph Processing</span>
+            <span class="pub-authors">Shinnung Jeong, Yongwoo Lee, Jaeho Lee,
+              <span class="pub-highlight">Heelim Choi</span>
+              , Seungbin Song, Jinho Lee, Youngsok Kim, and Hanjun Kim</span>
+            <span class="pub-venue">31st International Conference on Parallel Architectures and Compilation Techniques
+              (PACT), October 2022.</span>
+          </div>
 
-        <h4 style="margin: 2rem 0 1rem; color: var(--fg);">[Poster]</h4>
-        <div class="pub-item">
-          <span class="item-title">Approximation-based Inter-PIM Communication Free Image Filtering for Commodity
-            PIM</span>
-          <span class="pub-authors">Chan Lee, Shinnung Jeong, <span class="pub-highlight">Heelim Choi</span>, Jaeho Lee,
-            Hasung Jeong, Hayun Yeom, Jaeho Lee, Ju Min Lee, and Hanjun Kim</span>
-          <span class="pub-venue">Proceedings of the 60th Annual Design Automation Conference 2023 (DAC) - Poster (DAC),
-            June
-            2023.</span>
-        </div>
+          <div class="pub-item">
+            <span class="item-title">Fine-grained Pipeline Parallelization for Network Function Programs</span>
+            <span class="pub-authors">Seungbin Song,
+              <span class="pub-highlight">Heelim Choi</span>
+              , and Hanjun Kim</span>
+            <span class="pub-venue">Proceedings of the 2021 International Symposium on Code Generation and Optimization
+              (CGO), March 2021.</span>
+          </div>
 
-        <div class="pub-item">
-          <span class="item-title">Privacy Authority-Aware Compiler for Homomorphic Encryption on Edge-Cloud</span>
-          <span class="pub-authors">Donghwan Kim, Yongwoo Lee, Seunyoung Cheon, <span class="pub-highlight">Heelim
-              Choi</span>, Jaeho Lee, Hayun Yeom, Dongyeon Lee, and Hanjun Kim</span>
-          <span class="pub-venue">32nd USENIX Security Symposium - Poster (USENIX Security), August 2023.</span>
-        </div>
-      </section>
+          <h4 style="margin: 2rem 0 1rem; color: var(--fg);">[Journal]</h4>
+          <div class="pub-item">
+            <span class="item-title">Privacy Set: Privacy Authority-Aware Compiler for Homomorphic Encryption on
+              Edge-Cloud System</span>
+            <span class="pub-authors">Dongkwan Kim, Yongwoo Lee, Seonyoung Cheon,
+              <span class="pub-highlight">Heelim Choi</span>
+              , Jaeho Lee, Hoyun Youm, Dongyoon Lee, and Hanjun Kim</span>
+            <span class="pub-venue">IEEE Internet of Things Journal, August 2024.</span>
+            <span class="item-meta" style="color: #ef4444; font-weight: 600;">IF=8.2, Q1 (JCR 2023)</span>
+          </div>
+
+          <h4 style="margin: 2rem 0 1rem; color: var(--fg);">[Poster]</h4>
+          <div class="pub-item">
+            <span class="item-title">Approximation-based Inter-PE Communication-free Image Filtering for Commodity
+              PIM</span>
+            <span class="pub-authors">Chan Lee, Shinnung Jeong,
+              <span class="pub-highlight">Heelim Choi</span>
+              , Jaeho Lee, Haeeun Jeong, Hoyun Youm, Ju Min Lee, and Hanjun Kim</span>
+            <span class="pub-venue">Proceedings of the 62th Annual Design Automation Conference 2025 - (Poster) (DAC),
+              June 2025.</span>
+          </div>
+
+          <div class="pub-item">
+            <span class="item-title">Privacy Authority-Aware Compiler for Homomorphic Encryption on Edge-Cloud</span>
+            <span class="pub-authors">Dongkwan Kim, Yongwoo Lee, Seonyoung Cheon,
+              <span class="pub-highlight">Heelim Choi</span>
+              , Jaeho Lee, Dongyoon Lee, and Hanjun Kim</span>
+            <span class="pub-venue">32nd USENIX Security Symposium - (Poster) (USENIX Security), August 2023.</span>
+          </div>
+        </section>
+      </div>
+
+      <div id="tab-cfp" class="tab-content">
+        <section>
+          <h3 class="section-title">Call for Papers</h3>
+          <ul class="content-list">
+            <li>
+              <span class="item-title">Conference Name / Submission Deadline</span>
+              <span class="item-meta">Add upcoming CFP details here...</span>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
+
+    <script>
+      function openTab(evt, tabName) {
+        var i, tabContent, tabBtns;
+        tabContent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabContent.length; i++) {
+          tabContent[i].classList.remove("active");
+        }
+        tabBtns = document.getElementsByClassName("tab-btn");
+        for (i = 0; i < tabBtns.length; i++) {
+          tabBtns[i].classList.remove("active");
+        }
+        document.getElementById(tabName).classList.add("active");
+        evt.currentTarget.classList.add("active");
+      }
+    </script>
 
     <footer style="margin-top: 4rem; color: #64748b; font-size: 0.875rem;">
       <p>&copy; 2026 Heelim Choi. Built with pure HTML.</p>
