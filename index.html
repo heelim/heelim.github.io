@@ -29,12 +29,12 @@
     </header>
 
     <main>
-      <nav class="tabs-nav">
-        <button class="tab-btn active" onclick="openTab(event, 'tab-profile')">Profile</button>
-        <button class="tab-btn" onclick="openTab(event, 'tab-cfp')">CFP</button>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link active">Profile</a>
+        <a href="cfp.html" class="nav-link">CFP</a>
       </nav>
 
-      <div id="tab-profile" class="tab-content active">
+      <div id="profile-content">
         <section id="research-interests">
           <h3 class="section-title">RESEARCH INTERESTS</h3>
           <ul class="content-list">
@@ -186,36 +186,7 @@
             <span class="pub-venue">32nd USENIX Security Symposium - (Poster) (USENIX Security), August 2023.</span>
           </div>
         </section>
-      </div>
-
-      <div id="tab-cfp" class="tab-content">
-        <section>
-          <h3 class="section-title">Call for Papers</h3>
-          <ul class="content-list">
-            <li>
-              <span class="item-title">Conference Name / Submission Deadline</span>
-              <span class="item-meta">Add upcoming CFP details here...</span>
-            </li>
-          </ul>
-        </section>
-      </div>
     </main>
-
-    <script>
-      function openTab(evt, tabName) {
-        var i, tabContent, tabBtns;
-        tabContent = document.getElementsByClassName("tab-content");
-        for (i = 0; i < tabContent.length; i++) {
-          tabContent[i].classList.remove("active");
-        }
-        tabBtns = document.getElementsByClassName("tab-btn");
-        for (i = 0; i < tabBtns.length; i++) {
-          tabBtns[i].classList.remove("active");
-        }
-        document.getElementById(tabName).classList.add("active");
-        evt.currentTarget.classList.add("active");
-      }
-    </script>
 
     <footer style="margin-top: 4rem; color: #64748b; font-size: 0.875rem;">
       <p>&copy; 2026 Heelim Choi. Built with pure HTML.</p>
