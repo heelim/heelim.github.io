@@ -646,5 +646,33 @@
         ],
         "kiise": "우수",
         "bk21plus": "3"
+    },
+    "ICML": {
+        "domains": [
+            "Machine Learning",
+            "Deep Learning"
+        ],
+        "keywords": [
+            "Deep Learning",
+            "Reinforcement Learning",
+            "AI",
+            "Neural Networks"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
+    },
+    "KDD": {
+        "domains": [
+            "Machine Learning",
+            "Data Mining"
+        ],
+        "keywords": [
+            "Data Mining",
+            "Machine Learning",
+            "Knowledge Discovery",
+            "Big Data"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
     }
 }

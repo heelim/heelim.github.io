@@ -658,5 +658,71 @@
         "start_date": "2026-07-06",
         "url": "https://dipsa-qub.github.io/ICS2026-webpage",
         "location": "Belfast, UK"
+    },
+    {
+        "venue": "ICML",
+        "year": 2026,
+        "subtitle": "",
+        "deadline": "2026-01-28",
+        "notification": "May 2026",
+        "date": "July 6-11, 2026",
+        "start_date": "2026-07-06",
+        "url": "https://icml.cc/Conferences/2026",
+        "location": "Seoul, South Korea"
+    },
+    {
+        "venue": "ASPLOS",
+        "year": 2027,
+        "subtitle": "Spring",
+        "deadline": "2026-03-12",
+        "notification": "2026-06-24",
+        "date": "March 30 - April 3, 2027",
+        "start_date": "2027-03-30",
+        "url": "https://www.asplos-conference.org/asplos2027",
+        "location": "TBD"
+    },
+    {
+        "venue": "MICRO",
+        "year": 2026,
+        "subtitle": "",
+        "deadline": "2026-04-11",
+        "notification": "2026-07-14",
+        "date": "October 31 - November 4, 2026",
+        "start_date": "2026-10-31",
+        "url": "http://www.microarch.org/micro59",
+        "location": "Athens, Greece"
+    },
+    {
+        "venue": "ASPLOS",
+        "year": 2027,
+        "subtitle": "Summer",
+        "deadline": "2026-08-20",
+        "notification": "2026-11-24",
+        "date": "March 30 - April 3, 2027",
+        "start_date": "2027-03-30",
+        "url": "https://www.asplos-conference.org/asplos2027",
+        "location": "TBD"
+    },
+    {
+        "venue": "OSDI",
+        "year": 2027,
+        "subtitle": "",
+        "deadline": "2026-12-11",
+        "notification": "March 2027",
+        "date": "July 2027",
+        "start_date": "2027-07-01",
+        "url": "https://www.usenix.org/conference/osdi27",
+        "location": "TBD"
+    },
+    {
+        "venue": "KDD",
+        "year": 2026,
+        "subtitle": "Cycle-2",
+        "deadline": "2026-02-08",
+        "notification": "2026-05-16",
+        "date": "August 9-13, 2026",
+        "start_date": "2026-08-09",
+        "url": "https://kdd.org/kdd2026",
+        "location": "Jeju, South Korea"
     }
 ]
