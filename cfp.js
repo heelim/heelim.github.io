@@ -243,10 +243,25 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         cfpList.innerHTML = filteredCfps.map(cfp => {
-            const deadlineDate = new Date(cfp.deadline);
-            const diffTime = deadlineDate - today;
+            const abstDeadline = cfp.abstract_deadline ? parseDate(cfp.abstract_deadline) : null;
+            const fullDeadline = parseDate(cfp.deadline);
+
+            let targetDeadline = fullDeadline;
+            let targetLabel = "";
+
+            if (abstDeadline && abstDeadline >= today) {
+                targetDeadline = abstDeadline;
+                targetLabel = " (Abstract)";
+            }
+
+            const diffTime = targetDeadline - today;
             const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-            const dDayText = diffDays === 0 ? 'D-Day' : (diffDays < 0 ? `D+${Math.abs(diffDays)}` : `D-${diffDays}`);
+            const dDayValue = diffDays === 0 ? 'D-Day' : (diffDays < 0 ? `D+${Math.abs(diffDays)}` : `D-${diffDays}`);
+            const dDayText = dDayValue + targetLabel;
+
+            const isPast = fullDeadline < today;
+            const opacity = isPast ? '0.5' : '1';
+            const grayscale = isPast ? 'grayscale(100%)' : 'none';
 
             const info = confInfo[cfp.venue];
             const domainTags = info && info.domains ? info.domains.map(dom => `
@@ -266,10 +281,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             ` : '';
 
-            const isPast = deadlineDate < today;
-            const opacity = isPast ? '0.5' : '1';
-            const grayscale = isPast ? 'grayscale(100%)' : 'none';
-
             return `
         <div class="pub-item" style="margin-bottom: 0.5rem; padding: 1.2rem; background: rgba(255, 255, 255, 0.02); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05); opacity: ${opacity}; filter: ${grayscale};">
           <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
@@ -279,13 +290,17 @@ document.addEventListener('DOMContentLoaded', () => {
               <div style="margin-top: 4px; display: flex; flex-wrap: wrap;">${domainTags}</div>
               ${rankingBadges}
             </span>
-            <span style="font-size: 0.875rem; padding: 0.25rem 0.75rem; background: rgba(59, 130, 246, 0.1); color: var(--accent); border-radius: 20px; font-weight: 700; min-width: 60px; text-align: center;">
+            <span style="font-size: 0.8125rem; padding: 0.25rem 0.75rem; background: rgba(59, 130, 246, 0.1); color: var(--accent); border-radius: 20px; font-weight: 700; white-space: nowrap; text-align: center;">
               ${dDayText}
             </span>
           </div>
           <div style="font-size: 0.95rem; color: #94a3b8; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center;">
-            <span style="color: var(--fg); font-weight: 500;">Deadline: <span style="color: #f87171;">${cfp.deadline}</span></span>
-            ${cfp.notification ? `<span style="opacity: 0.3;">|</span><span>Notification: <span style="color: #fbbf24;">${cfp.notification}</span></span>` : ''}
+            <span style="color: var(--fg); font-weight: 500;">
+              ${cfp.abstract_deadline ? `Abstract: <span style="color: #f87171; margin-right: 0.5rem;">${cfp.abstract_deadline}</span> <span style="opacity: 0.3; margin-right: 0.5rem;">|</span>` : ''}
+              Deadline: <span style="color: #f87171;">${cfp.deadline}</span>
+            </span>
+            ${cfp.early_notification ? `<span style="opacity: 0.3;">|</span><span>Early (Reject): <span style="color: #fbbf24;">${cfp.early_notification}</span></span>` : ''}
+            ${cfp.notification ? `<span style="opacity: 0.3;">|</span><span>${cfp.early_notification ? 'Final' : 'Notification'}: <span style="color: #fbbf24;">${cfp.notification}</span></span>` : ''}
             <span style="opacity: 0.3;">|</span>
             <span>Dates: ${cfp.date}</span>
             <span style="opacity: 0.3;">|</span>
