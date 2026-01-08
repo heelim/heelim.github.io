@@ -715,7 +715,7 @@
             "Real-Time Systems"
         ],
         "kiise": "우수",
-        "bk21plus": "1"
+        "bk21plus": "2"
     },
     "PACT": {
         "domains": [
@@ -738,6 +738,18 @@
             "Software Engineering",
             "Automated Software Engineering",
             "Software Maintenance"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "3"
+    },
+    "ICSE": {
+        "domains": [
+            "Software Engineering"
+        ],
+        "keywords": [
+            "Software Engineering",
+            "Software Systems",
+            "Software Quality"
         ],
         "kiise": "최우수",
         "bk21plus": "4"
