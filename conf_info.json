@@ -674,5 +674,72 @@
         ],
         "kiise": "최우수",
         "bk21plus": "4"
+    },
+    "SIGMOD": {
+        "domains": [
+            "Data Management",
+            "Distributed Systems"
+        ],
+        "keywords": [
+            "Databases",
+            "Data Management",
+            "Data Systems",
+            "Scalable Data Processing"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
+    },
+    "DAC": {
+        "domains": [
+            "Hardware",
+            "Design Automation"
+        ],
+        "keywords": [
+            "Electronic Design Automation",
+            "Hardware Security",
+            "System Design",
+            "VLSI"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "3"
+    },
+    "LCTES": {
+        "domains": [
+            "Embedded Systems",
+            "Compilers"
+        ],
+        "keywords": [
+            "Embedded Systems",
+            "Compiler Optimization",
+            "Resource Management",
+            "Real-Time Systems"
+        ],
+        "kiise": "우수",
+        "bk21plus": "1"
+    },
+    "PACT": {
+        "domains": [
+            "Parallel Computing",
+            "Computer Architecture"
+        ],
+        "keywords": [
+            "Parallel Computing",
+            "Compilers",
+            "Parallel Architectures"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "3"
+    },
+    "ASE": {
+        "domains": [
+            "Software Engineering"
+        ],
+        "keywords": [
+            "Software Engineering",
+            "Automated Software Engineering",
+            "Software Maintenance"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
     }
 }
