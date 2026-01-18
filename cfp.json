@@ -717,6 +717,29 @@
         "location": "TBD"
     },
     {
+        "venue": "PPoPP",
+        "year": 2027,
+        "subtitle": "(Estimate)",
+        "deadline": "2026-08-31",
+        "notification": "2026-11-09",
+        "date": "January 30 - February 3, 2027",
+        "start_date": "2027-01-30",
+        "url": "https://ppopp27.sigplan.org",
+        "location": "TBD"
+    },
+    {
+        "venue": "SOSP",
+        "year": 2027,
+        "subtitle": "(Estimate)",
+        "abstract_deadline": "2027-03-25",
+        "deadline": "2027-03-31",
+        "notification": "2027-07-02",
+        "date": "September 28 - October 1, 2027",
+        "start_date": "2027-09-28",
+        "url": "https://sigops.org/s/conferences/sosp/2027",
+        "location": "TBD"
+    },
+    {
         "venue": "OSDI",
         "year": 2027,
         "subtitle": "",
@@ -787,13 +810,13 @@
     {
         "venue": "NSDI",
         "year": 2027,
-        "subtitle": "Spring (Estimate)",
-        "deadline": "2026-03-10",
-        "notification": "2026-06-10",
-        "date": "May 2027",
-        "start_date": "2027-05-01",
+        "subtitle": "Spring",
+        "deadline": "2026-05-07",
+        "notification": "2026-08-15",
+        "date": "May 11-13, 2027",
+        "start_date": "2027-05-11",
         "url": "https://www.usenix.org/conference/nsdi27",
-        "location": "TBD"
+        "location": "Providence, RI"
     },
     {
         "venue": "EuroSys",
@@ -878,6 +901,17 @@
         "location": "Huntington Beach, CA"
     },
     {
+        "venue": "VLSI Symposium",
+        "year": 2026,
+        "subtitle": "",
+        "deadline": "2026-01-26",
+        "notification": "2026-04-15",
+        "date": "June 14-18, 2026",
+        "start_date": "2026-06-14",
+        "url": "https://vlsisymposium.org/",
+        "location": "Honolulu, HI"
+    },
+    {
         "venue": "DAC",
         "year": 2026,
         "subtitle": "",
@@ -934,5 +968,16 @@
         "start_date": "2027-04-25",
         "url": "https://conf.researchr.org/home/icse-2027",
         "location": "Dublin, Ireland"
+    },
+    {
+        "venue": "VLSI Symposium",
+        "year": 2027,
+        "subtitle": "(Estimate)",
+        "deadline": "2027-01-25",
+        "notification": "2027-04-15",
+        "date": "June 2027",
+        "start_date": "2027-06-14",
+        "url": "https://vlsisymposium.org/",
+        "location": "Kyoto, Japan"
     }
 ]

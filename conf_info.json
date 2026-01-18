@@ -753,5 +753,21 @@
         ],
         "kiise": "최우수",
         "bk21plus": "4"
+    },
+    "VLSI Symposium": {
+        "domains": [
+            "Hardware",
+            "Computer Architecture",
+            "VLSI"
+        ],
+        "keywords": [
+            "VLSI Technology",
+            "Circuit Design",
+            "Semiconductor Devices",
+            "Integrated Circuits",
+            "Hardware Design"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "3"
     }
 }
