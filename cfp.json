@@ -819,28 +819,6 @@
         "location": "Providence, RI"
     },
     {
-        "venue": "EuroSys",
-        "year": 2027,
-        "subtitle": "Fall (Estimate)",
-        "deadline": "2026-09-24",
-        "notification": "2027-01-29",
-        "date": "April 2027",
-        "start_date": "2027-04-19",
-        "url": "https://2027.eurosys.org/",
-        "location": "Morocco"
-    },
-    {
-        "venue": "ASPLOS",
-        "year": 2027,
-        "subtitle": "Fall (Estimate)",
-        "deadline": "2026-10-20",
-        "notification": "2027-01-24",
-        "date": "TBD",
-        "start_date": "2027-10-01",
-        "url": "https://www.asplos-conference.org/",
-        "location": "TBD"
-    },
-    {
         "venue": "NeurIPS",
         "year": 2026,
         "subtitle": "(Estimate)",
