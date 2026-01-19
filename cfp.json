@@ -582,6 +582,17 @@
         "location": "Raleigh, NC"
     },
     {
+        "venue": "ISCA",
+        "year": 2027,
+        "subtitle": "(Estimate)",
+        "deadline": "2026-11-17",
+        "notification": "2027-03-27",
+        "date": "June 2027",
+        "start_date": "2027-06-14",
+        "url": "http://iscaconf.org/isca2027",
+        "location": "Atlanta, GA"
+    },
+    {
         "venue": "DSN",
         "year": 2026,
         "subtitle": "",

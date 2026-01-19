@@ -661,6 +661,23 @@
         "kiise": "최우수",
         "bk21plus": "4"
     },
+    "NeurIPS": {
+        "domains": [
+            "Machine Learning",
+            "Deep Learning",
+            "AI"
+        ],
+        "keywords": [
+            "Deep Learning",
+            "Neural Networks",
+            "Machine Learning",
+            "AI",
+            "Reinforcement Learning",
+            "Computer Vision"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
+    },
     "KDD": {
         "domains": [
             "Machine Learning",
