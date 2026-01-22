@@ -173,7 +173,7 @@
     },
     {
         "venue": "FAST",
-        "year": 2026,
+        "year": 2027,
         "subtitle": "Spring",
         "deadline": "2026-03-17",
         "notification": "2026-06-04",
@@ -286,7 +286,7 @@
     },
     {
         "venue": "EuroSys",
-        "year": 2026,
+        "year": 2027,
         "subtitle": "Spring",
         "deadline": "2026-05-14",
         "notification": "2026-08-21",
@@ -707,7 +707,7 @@
     {
         "venue": "MICRO",
         "year": 2026,
-        "subtitle": "",
+        "subtitle": "(Estimate)",
         "deadline": "2026-04-11",
         "notification": "2026-07-14",
         "date": "October 31 - November 4, 2026",
@@ -779,7 +779,7 @@
         "subtitle": "Cycle-2",
         "deadline": "2026-03-13",
         "notification": "2026-06-24",
-        "date": "TBD",
+        "date": "November 2026",
         "start_date": "2026-11-01",
         "url": "https://www.sigmobile.org/mobicom/2026/",
         "location": "TBD"
@@ -942,7 +942,7 @@
         "subtitle": "(Estimate)",
         "deadline": "2026-04-18",
         "notification": "2026-06-15",
-        "date": "TBD",
+        "date": "October 2026",
         "start_date": "2026-10-01",
         "url": "https://pactconf.org/",
         "location": "TBD"
