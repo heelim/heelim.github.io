@@ -695,10 +695,9 @@
     {
         "venue": "ASPLOS",
         "year": 2027,
-        "subtitle": "Spring",
-        "abstract_deadline": "2026-03-05",
-        "deadline": "2026-03-12",
-        "notification": "2026-06-24",
+        "subtitle": "April",
+        "deadline": "2026-04-15",
+        "notification": "2026-07-27",
         "date": "March 30 - April 3, 2027",
         "start_date": "2027-03-30",
         "url": "https://www.asplos-conference.org/asplos2027",
@@ -718,10 +717,9 @@
     {
         "venue": "ASPLOS",
         "year": 2027,
-        "subtitle": "Summer",
-        "abstract_deadline": "2026-08-13",
-        "deadline": "2026-08-20",
-        "notification": "2026-11-24",
+        "subtitle": "September",
+        "deadline": "2026-09-09",
+        "notification": "2026-12-15",
         "date": "March 30 - April 3, 2027",
         "start_date": "2027-03-30",
         "url": "https://www.asplos-conference.org/asplos2027",
@@ -968,5 +966,51 @@
         "start_date": "2027-06-14",
         "url": "https://vlsisymposium.org/",
         "location": "Kyoto, Japan"
+    },
+    {
+        "venue": "HPCA",
+        "year": 2027,
+        "subtitle": "",
+        "deadline": "2026-08-01",
+        "notification": "2026-11-07",
+        "date": "January 30 - February 3, 2027",
+        "start_date": "2027-01-30",
+        "url": "https://www.hpca-conf.org/2027",
+        "location": "TBD"
+    },
+    {
+        "venue": "NSDI",
+        "year": 2027,
+        "subtitle": "Spring",
+        "abstract_deadline": "2026-04-16",
+        "deadline": "2026-04-23",
+        "notification": "2026-07-01",
+        "date": "April 2027",
+        "start_date": "2027-04-01",
+        "url": "https://www.usenix.org/conference/nsdi27",
+        "location": "TBD"
+    },
+    {
+        "venue": "NSDI",
+        "year": 2027,
+        "subtitle": "Fall",
+        "abstract_deadline": "2026-09-10",
+        "deadline": "2026-09-17",
+        "notification": "2026-12-01",
+        "date": "April 2027",
+        "start_date": "2027-04-01",
+        "url": "https://www.usenix.org/conference/nsdi27",
+        "location": "TBD"
+    },
+    {
+        "venue": "CGO",
+        "year": 2027,
+        "subtitle": "(Estimate)",
+        "deadline": "2026-09-10",
+        "notification": "2026-11-03",
+        "date": "January 2027",
+        "start_date": "2027-01-30",
+        "url": "https://cgo.org/cgo2027/",
+        "location": "TBD"
     }
 ]
