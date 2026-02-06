@@ -285,7 +285,8 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="pub-item" style="margin-bottom: 0.5rem; padding: 1.2rem; background: rgba(255, 255, 255, 0.02); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05); opacity: ${opacity}; filter: ${grayscale};">
           <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
             <span class="item-title" style="font-weight: 600;">
-              ${cfp.url ? `<a href="${cfp.url}" target="_blank" style="color: var(--accent); text-decoration: none;">${cfp.venue} ${cfp.year}</a>` : `<span style="color: var(--accent);">${cfp.venue} ${cfp.year}</span>`} 
+              ${cfp.url ? `<a href="${cfp.url}" target="_blank" style="color: var(--accent); text-decoration: none;">${cfp.venue} ${cfp.year}</a>` : `<span style="color: var(--accent);">${cfp.venue} ${cfp.year}</span>`}
+              ${cfp.is_verified ? `<span style="color: #10b981; font-size: 0.9em; margin-left: 0.3rem;" title="Verified">✓</span>` : `<span style="color: #f59e0b; font-size: 0.75em; margin-left: 0.3rem;" title="Estimated">(Estimated)</span>`}
               ${cfp.subtitle ? `<span style="color: #94a3b8; font-weight: 400; font-size: 0.9em;">(${cfp.subtitle})</span>` : ''}
               <div style="margin-top: 4px; display: flex; flex-wrap: wrap;">${domainTags}</div>
               ${rankingBadges}
