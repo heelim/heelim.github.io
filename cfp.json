@@ -295,7 +295,7 @@
         "start_date": "2026-08-12",
         "url": "https://www.usenix.org/conference/usenixsecurity26",
         "location": "Baltimore, MD, USA",
-        "is_verified": false
+        "is_verified": true
     },
     {
         "venue": "Usenix Security",
@@ -307,7 +307,7 @@
         "start_date": "2026-08-12",
         "url": "https://www.usenix.org/conference/usenixsecurity26",
         "location": "Baltimore, MD, USA",
-        "is_verified": false
+        "is_verified": true
     },
     {
         "venue": "SPAA",
@@ -354,11 +354,11 @@
         "abstract_deadline": "2026-01-30",
         "deadline": "2026-02-06",
         "notification": "April 2026",
-        "date": "August 2026",
-        "start_date": "2026-08-01",
+        "date": "August 5-7, 2026",
+        "start_date": "2026-08-05",
         "url": "http://conferences.sigcomm.org/sigcomm/2026",
         "location": "Denver, CO, USA",
-        "is_verified": false
+        "is_verified": true
     },
     {
         "venue": "SC",
@@ -419,7 +419,7 @@
         "start_date": "2026-01-11",
         "url": "https://popl26.sigplan.org/",
         "location": "Chicago, IL",
-        "is_verified": false
+        "is_verified": true
     },
     {
         "venue": "PLDI",
@@ -431,7 +431,7 @@
         "start_date": "2026-06-15",
         "url": "https://pldi26.sigplan.org",
         "location": "Boulder, CO",
-        "is_verified": false
+        "is_verified": true
     },
     {
         "venue": "PACT",
@@ -498,8 +498,8 @@
         "venue": "NeurIPS",
         "year": 2026,
         "subtitle": "",
-        "abstract_deadline": "2026-05-15",
-        "deadline": "2026-05-22",
+        "abstract_deadline": "2026-05-05",
+        "deadline": "2026-05-07",
         "notification": "2026-09-24",
         "date": "December 6-12, 2026",
         "start_date": "2026-12-06",
@@ -619,7 +619,7 @@
         "start_date": "2026-06-27",
         "url": "http://iscaconf.org/isca2026",
         "location": "Raleigh, NC",
-        "is_verified": false
+        "is_verified": true
     },
     {
         "venue": "IPDPS",
@@ -743,7 +743,7 @@
         "start_date": "2026-01-31",
         "url": "https://www.hpca-conf.org/2026",
         "location": "Sydney, Australia",
-        "is_verified": false
+        "is_verified": true
     },
     {
         "venue": "HotMobile",
