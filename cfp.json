@@ -1080,6 +1080,19 @@
         "is_verified": false
     },
     {
+        "venue": "ATC",
+        "year": 2026,
+        "subtitle": "",
+        "deadline": "2026-06-10",
+        "early_notification": "2026-08-01",
+        "notification": "2026-09-18",
+        "date": "November 16-18, 2026",
+        "start_date": "2026-11-16",
+        "url": "https://sigops.org/s/conferences/atc/2026/",
+        "location": "Hong Kong",
+        "is_verified": true
+    },
+    {
         "venue": "ASPLOS",
         "year": 2025,
         "subtitle": "Spring",
