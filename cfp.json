@@ -216,25 +216,27 @@
         "venue": "EuroSys",
         "year": 2027,
         "subtitle": "Spring",
+        "abstract_deadline": "2026-05-07",
         "deadline": "2026-05-14",
         "notification": "2026-08-21",
-        "date": "TBD, 2027",
-        "start_date": "TBD",
+        "date": "April 19-24, 2027",
+        "start_date": "2027-04-19",
         "url": "https://2027.eurosys.org",
-        "location": "TBD",
-        "is_verified": false
+        "location": "Rabat, Morocco",
+        "is_verified": true
     },
     {
         "venue": "EuroSys",
         "year": 2027,
         "subtitle": "Fall",
+        "abstract_deadline": "2026-09-17",
         "deadline": "2026-09-24",
         "notification": "2027-01-29",
-        "date": "TBD, 2027",
-        "start_date": "TBD",
+        "date": "April 19-24, 2027",
+        "start_date": "2027-04-19",
         "url": "https://2027.eurosys.org",
-        "location": "TBD",
-        "is_verified": false
+        "location": "Rabat, Morocco",
+        "is_verified": true
     },
     {
         "venue": "CGO",
@@ -575,10 +577,10 @@
         "venue": "LCTES",
         "year": 2026,
         "subtitle": "",
-        "abstract_deadline": "2026-03-13",
-        "deadline": "2026-03-20",
+        "abstract_deadline": "2026-03-06",
+        "deadline": "2026-03-13",
         "notification": "2026-05-01",
-        "date": "June 15-19, 2026",
+        "date": "June 15-16, 2026",
         "start_date": "2026-06-15",
         "url": "https://pldi26.sigplan.org/home/LCTES-2026",
         "location": "Boulder, CO, USA",
@@ -911,6 +913,19 @@
         "is_verified": false
     },
     {
+        "venue": "ACM ATC",
+        "year": 2026,
+        "subtitle": "",
+        "deadline": "2026-06-10",
+        "early_notification": "2026-08-01",
+        "notification": "2026-09-18",
+        "date": "November 16-18, 2026",
+        "start_date": "2026-11-16",
+        "url": "https://sigops.org/s/conferences/atc/2026/",
+        "location": "Hong Kong",
+        "is_verified": true
+    },
+    {
         "venue": "ASPLOS",
         "year": 2026,
         "subtitle": "Summer",
@@ -1078,19 +1093,6 @@
         "url": "https://www.usenix.org/conference/atc25",
         "location": "Boston, MA",
         "is_verified": false
-    },
-    {
-        "venue": "ATC",
-        "year": 2026,
-        "subtitle": "",
-        "deadline": "2026-06-10",
-        "early_notification": "2026-08-01",
-        "notification": "2026-09-18",
-        "date": "November 16-18, 2026",
-        "start_date": "2026-11-16",
-        "url": "https://sigops.org/s/conferences/atc/2026/",
-        "location": "Hong Kong",
-        "is_verified": true
     },
     {
         "venue": "ASPLOS",
