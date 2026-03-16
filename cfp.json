@@ -34,7 +34,7 @@
         "date": "June 13-19, 2027",
         "start_date": "2027-06-13",
         "url": "https://2027.sigmod.org/",
-        "location": "Huntington Beach, CA",
+        "location": "Huntington Beach, CA, USA",
         "is_verified": true
     },
     {
@@ -47,7 +47,7 @@
         "date": "June 13-19, 2027",
         "start_date": "2027-06-13",
         "url": "https://2027.sigmod.org/",
-        "location": "Huntington Beach, CA",
+        "location": "Huntington Beach, CA, USA",
         "is_verified": true
     },
     {
@@ -60,7 +60,7 @@
         "date": "June 13-19, 2027",
         "start_date": "2027-06-13",
         "url": "https://2027.sigmod.org/",
-        "location": "Huntington Beach, CA",
+        "location": "Huntington Beach, CA, USA",
         "is_verified": true
     },
     {
@@ -73,7 +73,7 @@
         "date": "June 13-19, 2027",
         "start_date": "2027-06-13",
         "url": "https://2027.sigmod.org/",
-        "location": "Huntington Beach, CA",
+        "location": "Huntington Beach, CA, USA",
         "is_verified": true
     },
     {
@@ -283,7 +283,7 @@
         "date": "June 14-18, 2026",
         "start_date": "2026-06-14",
         "url": "https://vlsisymposium.org/",
-        "location": "Honolulu, HI",
+        "location": "Honolulu, HI, USA",
         "is_verified": true
     },
     {
@@ -420,7 +420,7 @@
         "date": "January 11-17, 2026",
         "start_date": "2026-01-11",
         "url": "https://popl26.sigplan.org/",
-        "location": "Chicago, IL",
+        "location": "Chicago, IL, USA",
         "is_verified": true
     },
     {
@@ -432,7 +432,7 @@
         "date": "June 15-19, 2026",
         "start_date": "2026-06-15",
         "url": "https://pldi26.sigplan.org",
-        "location": "Boulder, CO",
+        "location": "Boulder, CO, USA",
         "is_verified": true
     },
     {
@@ -445,7 +445,7 @@
         "date": "October 19-22, 2026",
         "start_date": "2026-10-19",
         "url": "https://pactconf.org/",
-        "location": "Chicago, IL",
+        "location": "Chicago, IL, USA",
         "is_verified": true
     },
     {
@@ -493,7 +493,7 @@
         "date": "May 4-6, 2026",
         "start_date": "2026-05-04",
         "url": "https://www.usenix.org/conference/nsdi26",
-        "location": "Renton, WA",
+        "location": "Renton, WA, USA",
         "is_verified": false
     },
     {
@@ -518,7 +518,7 @@
         "date": "February 23-27, 2026",
         "start_date": "2026-02-23",
         "url": "https://www.ndss-symposium.org/ndss2026",
-        "location": "San Diego, CA",
+        "location": "San Diego, CA, USA",
         "is_verified": false
     },
     {
@@ -620,7 +620,7 @@
         "date": "June 27 - July 1, 2026",
         "start_date": "2026-06-27",
         "url": "http://iscaconf.org/isca2026",
-        "location": "Raleigh, NC",
+        "location": "Raleigh, NC, USA",
         "is_verified": true
     },
     {
@@ -632,7 +632,7 @@
         "date": "May 25-29, 2026",
         "start_date": "2026-05-25",
         "url": "https://www.ipdps.org/ipdps2026/2026-call-for-papers.html",
-        "location": "New Orleans, LA",
+        "location": "New Orleans, LA, USA",
         "is_verified": false
     },
     {
@@ -656,7 +656,7 @@
         "date": "May 18-21, 2026",
         "start_date": "2026-05-18",
         "url": "https://www.ieee-security.org/TC/SP2026/cfpapers.html",
-        "location": "San Francisco, CA",
+        "location": "San Francisco, CA, USA",
         "is_verified": false
     },
     {
@@ -732,7 +732,7 @@
         "date": "July 13-16, 2026",
         "start_date": "2026-07-13",
         "url": "https://hpdc.sci.utah.edu/2026",
-        "location": "Cleveland, OH",
+        "location": "Cleveland, OH, USA",
         "is_verified": false
     },
     {
@@ -756,7 +756,7 @@
         "date": "February 25-26, 2026",
         "start_date": "2026-02-25",
         "url": "https://hotmobile.org/2026/",
-        "location": "Atlanta, GA",
+        "location": "Atlanta, GA, USA",
         "is_verified": false
     },
     {
@@ -819,7 +819,7 @@
         "date": "July 26-29, 2026",
         "start_date": "2026-07-26",
         "url": "https://www.dac.com/",
-        "location": "Long Beach, CA",
+        "location": "Long Beach, CA, USA",
         "is_verified": false
     },
     {
@@ -913,19 +913,6 @@
         "is_verified": false
     },
     {
-        "venue": "ACM ATC",
-        "year": 2026,
-        "subtitle": "",
-        "deadline": "2026-06-10",
-        "early_notification": "2026-08-01",
-        "notification": "2026-09-18",
-        "date": "November 16-18, 2026",
-        "start_date": "2026-11-16",
-        "url": "https://sigops.org/s/conferences/atc/2026/",
-        "location": "Hong Kong",
-        "is_verified": true
-    },
-    {
         "venue": "ASPLOS",
         "year": 2026,
         "subtitle": "Summer",
@@ -934,7 +921,7 @@
         "date": "March 22-26, 2026",
         "start_date": "2026-03-22",
         "url": "https://www.asplos-conference.org/asplos2026/cfp/",
-        "location": "Pittsburgh, PA",
+        "location": "Pittsburgh, PA, USA",
         "is_verified": false
     },
     {
@@ -975,6 +962,19 @@
         "is_verified": true
     },
     {
+        "venue": "ACM ATC",
+        "year": 2026,
+        "subtitle": "",
+        "deadline": "2026-06-10",
+        "early_notification": "2026-08-01",
+        "notification": "2026-09-18",
+        "date": "November 16-18, 2026",
+        "start_date": "2026-11-16",
+        "url": "https://sigops.org/s/conferences/atc/2026/",
+        "location": "Hong Kong",
+        "is_verified": true
+    },
+    {
         "venue": "SoCC",
         "year": 2025,
         "subtitle": "",
@@ -995,7 +995,7 @@
         "date": "June 8-12, 2026",
         "start_date": "2026-06-08",
         "url": "http://www.sigmetrics.org/sigmetrics2026",
-        "location": "Ann Arbor, MI",
+        "location": "Ann Arbor, MI, USA",
         "is_verified": false
     },
     {
@@ -1055,7 +1055,7 @@
         "date": "July 10-11, 2025",
         "start_date": "2025-07-10",
         "url": "https://www.hotstorage.org/2025",
-        "location": "Boston, MA",
+        "location": "Boston, MA, USA",
         "is_verified": false
     },
     {
@@ -1079,7 +1079,7 @@
         "date": "November 17-18, 2025",
         "start_date": "2025-11-17",
         "url": "https://conferences.sigcomm.org/hotnets/2025",
-        "location": "College Park, MD",
+        "location": "College Park, MD, USA",
         "is_verified": false
     },
     {
@@ -1091,7 +1091,7 @@
         "date": "July 7-9, 2025",
         "start_date": "2025-07-07",
         "url": "https://www.usenix.org/conference/atc25",
-        "location": "Boston, MA",
+        "location": "Boston, MA, USA",
         "is_verified": false
     },
     {
@@ -1103,7 +1103,7 @@
         "date": "March 22-26, 2026",
         "start_date": "2026-03-22",
         "url": "https://www.asplos-conference.org/asplos2026/cfp/",
-        "location": "Pittsburgh, PA",
+        "location": "Pittsburgh, PA, USA",
         "is_verified": false
     }
 ]
