@@ -500,14 +500,14 @@
         "venue": "NeurIPS",
         "year": 2026,
         "subtitle": "",
-        "abstract_deadline": "2026-05-15",
-        "deadline": "2026-05-22",
+        "abstract_deadline": "2026-05-04",
+        "deadline": "2026-05-06",
         "notification": "2026-09-24",
         "date": "December 6-12, 2026",
         "start_date": "2026-12-06",
         "url": "https://neurips.cc/Conferences/2026",
         "location": "Sydney, Australia",
-        "is_verified": false
+        "is_verified": true
     },
     {
         "venue": "NDSS",
