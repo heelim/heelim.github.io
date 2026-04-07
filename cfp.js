@@ -393,6 +393,16 @@ document.addEventListener('DOMContentLoaded', () => {
             return eventDate >= today;
         });
 
+        // Deduplicate conferences by Venue + Year to avoid multiple CFP cycles showing as multiple events
+        const uniqueMap = new Map();
+        filteredCfps.forEach(cfp => {
+            const key = `${cfp.venue}-${cfp.year}`;
+            if (!uniqueMap.has(key)) {
+                uniqueMap.set(key, cfp);
+            }
+        });
+        filteredCfps = Array.from(uniqueMap.values());
+
         // 2. Multi-category Filtering (Domain OR Keyword)
         if (upcomingSelectedKeywords.size > 0 || upcomingSelectedDomains.size > 0) {
             filteredCfps = filteredCfps.filter(cfp => {
@@ -474,7 +484,6 @@ document.addEventListener('DOMContentLoaded', () => {
           <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
             <span class="item-title" style="font-weight: 600;">
               ${cfp.url ? `<a href="${cfp.url}" target="_blank" style="color: var(--accent); text-decoration: none;">${cfp.venue} ${cfp.year}</a>` : `<span style="color: var(--accent);">${cfp.venue} ${cfp.year}</span>`}
-              ${cfp.subtitle ? `<span style="color: #94a3b8; font-weight: 400; font-size: 0.9em;">(${cfp.subtitle})</span>` : ''}
               <div style="margin-top: 4px; display: flex; flex-wrap: wrap;">${domainTags}</div>
               ${rankingBadges}
             </span>
