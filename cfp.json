@@ -94,10 +94,10 @@
         "subtitle": "",
         "deadline": "2026-12-11",
         "notification": "March 2027",
-        "date": "July 2027",
-        "start_date": "2027-07-01",
+        "date": "July 7-9, 2027",
+        "start_date": "2027-07-07",
         "url": "https://www.usenix.org/conference/osdi27",
-        "location": "TBD",
+        "location": "Baltimore, MD, USA",
         "is_verified": false
     },
     {
@@ -603,13 +603,14 @@
         "venue": "ISPASS",
         "year": 2026,
         "subtitle": "",
-        "deadline": "2025-12-12",
+        "abstract_deadline": "2025-12-08",
+        "deadline": "2025-12-15",
         "notification": "",
-        "date": "April 2026",
-        "start_date": "2026-04-01",
+        "date": "April 26-28, 2026",
+        "start_date": "2026-04-26",
         "url": "https://ispass.org/ispass2026/",
         "location": "Seoul, South Korea",
-        "is_verified": false
+        "is_verified": true
     },
     {
         "venue": "ISCA",
@@ -639,13 +640,14 @@
         "venue": "INFOCOM",
         "year": 2026,
         "subtitle": "",
+        "abstract_deadline": "2025-07-24",
         "deadline": "2025-07-31",
         "notification": "2025-12-08",
         "date": "May 18-21, 2026",
         "start_date": "2026-05-18",
         "url": "https://infocom2026.ieee-infocom.org/",
-        "location": "Paris, France",
-        "is_verified": false
+        "location": "Tokyo, Japan",
+        "is_verified": true
     },
     {
         "venue": "IEEE S&P",
@@ -727,13 +729,13 @@
         "year": 2026,
         "subtitle": "",
         "abstract_deadline": "2026-01-29",
-        "deadline": "2026-02-06",
+        "deadline": "2026-02-05",
         "notification": "2026-03-31",
         "date": "July 13-16, 2026",
         "start_date": "2026-07-13",
         "url": "https://hpdc.sci.utah.edu/2026",
         "location": "Cleveland, OH, USA",
-        "is_verified": false
+        "is_verified": true
     },
     {
         "venue": "HPCA",
@@ -916,13 +918,14 @@
         "venue": "ASPLOS",
         "year": 2026,
         "subtitle": "Summer",
+        "abstract_deadline": "2025-08-13",
         "deadline": "2025-08-20",
         "notification": "2025-11-24",
         "date": "March 22-26, 2026",
         "start_date": "2026-03-22",
         "url": "https://www.asplos-conference.org/asplos2026/cfp/",
         "location": "Pittsburgh, PA, USA",
-        "is_verified": false
+        "is_verified": true
     },
     {
         "venue": "AsiaCCS",
