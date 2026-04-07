@@ -710,7 +710,7 @@
         "start_date": "2026-07-06",
         "url": "https://icml.cc/Conferences/2026",
         "location": "Seoul, South Korea",
-        "is_verified": false
+        "is_verified": true
     },
     {
         "venue": "ICDCS",
@@ -718,11 +718,11 @@
         "subtitle": "",
         "deadline": "2025-12-12",
         "notification": "",
-        "date": "July 2026",
+        "date": "June 22-25, 2026",
         "start_date": "2026-07-01",
-        "url": "https://icdcs2026.edas.info/",
+        "url": "https://icdcs2026.icdcs.org",
         "location": "South Korea",
-        "is_verified": false
+        "is_verified": true
     },
     {
         "venue": "HPDC",
