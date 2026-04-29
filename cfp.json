@@ -241,14 +241,26 @@
     {
         "venue": "CGO",
         "year": 2027,
-        "subtitle": "",
+        "subtitle": "R1",
+        "deadline": "2026-06-11",
+        "notification": "2026-08-03",
+        "date": "TBA",
+        "start_date": "TBA",
+        "url": "https://conf.researchr.org/home/cgo-2027",
+        "location": "Salt Lake City, Utah, USA",
+        "is_verified": true
+    },
+    {
+        "venue": "CGO",
+        "year": 2027,
+        "subtitle": "R2",
         "deadline": "2026-09-10",
-        "notification": "2026-11-03",
-        "date": "January 2027",
-        "start_date": "2027-01-30",
-        "url": "https://cgo.org/cgo2027/",
-        "location": "TBD",
-        "is_verified": false
+        "notification": "2026-11-02",
+        "date": "TBA",
+        "start_date": "TBA",
+        "url": "https://conf.researchr.org/home/cgo-2027",
+        "location": "Salt Lake City, Utah, USA",
+        "is_verified": true
     },
     {
         "venue": "ASPLOS",
