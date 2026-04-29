@@ -129,14 +129,28 @@
     {
         "venue": "NDSS",
         "year": 2027,
-        "subtitle": "Cycle-1",
-        "deadline": "2026-04-17",
-        "notification": "2026-06-20",
-        "date": "February 21-25, 2027",
-        "start_date": "2027-02-21",
+        "subtitle": "Spring Cycle",
+        "deadline": "2026-05-06",
+        "early_notification": "2026-06-12",
+        "notification": "2026-09-02",
+        "date": "March 22-26, 2027",
+        "start_date": "2027-03-22",
         "url": "https://www.ndss-symposium.org/ndss2027",
-        "location": "TBD",
-        "is_verified": false
+        "location": "Seoul, South Korea",
+        "is_verified": true
+    },
+    {
+        "venue": "NDSS",
+        "year": 2027,
+        "subtitle": "Fall Cycle",
+        "deadline": "2026-08-19",
+        "early_notification": "2026-09-25",
+        "notification": "2026-12-16",
+        "date": "March 22-26, 2027",
+        "start_date": "2027-03-22",
+        "url": "https://www.ndss-symposium.org/ndss2027",
+        "location": "Seoul, South Korea",
+        "is_verified": true
     },
     {
         "venue": "ISCA",
