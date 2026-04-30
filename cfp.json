@@ -263,6 +263,18 @@
         "is_verified": false
     },
     {
+        "venue": "DATE",
+        "year": 2027,
+        "subtitle": "",
+        "abstract_deadline": "2026-09-13",
+        "deadline": "2026-09-20",
+        "date": "March 22-24, 2027",
+        "start_date": "2027-03-22",
+        "url": "https://www.date-conference.com/date-2027-call-papers",
+        "location": "Dresden, Germany",
+        "is_verified": true
+    },
+    {
         "venue": "CGO",
         "year": 2027,
         "subtitle": "R1",
