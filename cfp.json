@@ -253,6 +253,16 @@
         "is_verified": true
     },
     {
+        "venue": "DAC",
+        "year": 2027,
+        "subtitle": "",
+        "date": "July 10-16, 2027",
+        "start_date": "2027-07-10",
+        "url": "https://www.dac.com/",
+        "location": "San Jose Convention Center, San Jose, CA, USA",
+        "is_verified": false
+    },
+    {
         "venue": "CGO",
         "year": 2027,
         "subtitle": "R1",
