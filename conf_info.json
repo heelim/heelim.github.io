@@ -720,6 +720,23 @@
         "kiise": "최우수",
         "bk21plus": "3"
     },
+    "DATE": {
+        "fullname": "Design, Automation & Test in Europe Conference",
+        "domains": [
+            "Hardware",
+            "Design Automation",
+            "Embedded Systems"
+        ],
+        "keywords": [
+            "Electronic Design Automation",
+            "Hardware Design",
+            "System Design",
+            "VLSI",
+            "Embedded Systems"
+        ],
+        "kiise": "우수",
+        "bk21plus": "2"
+    },
     "LCTES": {
         "domains": [
             "Embedded Systems",

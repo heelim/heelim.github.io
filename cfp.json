@@ -1,5 +1,17 @@
 [
     {
+        "venue": "WWW",
+        "year": 2027,
+        "subtitle": "Estimated",
+        "deadline": "2026-10-07",
+        "notification": "2027-01-13",
+        "date": "TBA",
+        "start_date": "TBA",
+        "url": "https://thewebconf.org/",
+        "location": "TBD",
+        "is_verified": false
+    },
+    {
         "venue": "VLSI Symposium",
         "year": 2027,
         "subtitle": "",
@@ -75,6 +87,18 @@
         "url": "https://2027.sigmod.org/",
         "location": "Huntington Beach, CA, USA",
         "is_verified": true
+    },
+    {
+        "venue": "RTAS",
+        "year": 2027,
+        "subtitle": "Estimated",
+        "deadline": "2026-11-14",
+        "notification": "2027-01-23",
+        "date": "TBA",
+        "start_date": "TBA",
+        "url": "https://www.rtas.org/",
+        "location": "TBD",
+        "is_verified": false
     },
     {
         "venue": "PPoPP",
@@ -770,6 +794,19 @@
         "start_date": "2026-07-01",
         "url": "https://icdcs2026.icdcs.org",
         "location": "South Korea",
+        "is_verified": true
+    },
+    {
+        "venue": "ICCD",
+        "year": 2026,
+        "subtitle": "",
+        "abstract_deadline": "2026-05-15",
+        "deadline": "2026-05-22",
+        "notification": "2026-08-20",
+        "date": "November 16-18, 2026",
+        "start_date": "2026-11-16",
+        "url": "https://www.iccd-conf.com/home.html",
+        "location": "Hong Kong SAR, China",
         "is_verified": true
     },
     {
