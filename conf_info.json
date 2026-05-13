@@ -647,6 +647,23 @@
         "kiise": "우수",
         "bk21plus": "3"
     },
+    "ICCD": {
+        "fullname": "IEEE International Conference on Computer Design",
+        "domains": [
+            "Computer Architecture",
+            "Hardware",
+            "Design Automation"
+        ],
+        "keywords": [
+            "Computer Design",
+            "Computer Architecture",
+            "Electronic Design Automation",
+            "Hardware Design",
+            "Verification and Test"
+        ],
+        "kiise": "우수",
+        "bk21plus": "1"
+    },
     "ICML": {
         "domains": [
             "Machine Learning",

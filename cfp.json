@@ -8,17 +8,17 @@
         "date": "TBA",
         "start_date": "TBA",
         "url": "https://thewebconf.org/",
-        "location": "TBD",
+        "location": "Dublin, Ireland",
         "is_verified": false
     },
     {
         "venue": "VLSI Symposium",
         "year": 2027,
-        "subtitle": "",
-        "deadline": "2027-01-25",
-        "notification": "2027-04-15",
-        "date": "June 2027",
-        "start_date": "2027-06-14",
+        "subtitle": "Estimated",
+        "deadline": "TBD",
+        "notification": "TBD",
+        "date": "June, 2027",
+        "start_date": "TBD",
         "url": "https://vlsisymposium.org/",
         "location": "Kyoto, Japan",
         "is_verified": false
@@ -26,7 +26,7 @@
     {
         "venue": "SOSP",
         "year": 2027,
-        "subtitle": "",
+        "subtitle": "Estimated",
         "abstract_deadline": "2027-03-25",
         "deadline": "2027-03-31",
         "notification": "2027-07-02",
