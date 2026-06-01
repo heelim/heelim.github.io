@@ -1,5 +1,18 @@
 [
     {
+        "venue": "POPL",
+        "year": 2027,
+        "subtitle": "Estimated",
+        "deadline": "2026-07-09",
+        "early_notification": "2026-10-05",
+        "notification": "2026-11-09",
+        "date": "January 10–16, 2027",
+        "start_date": "2027-01-10",
+        "url": "https://popl27.sigplan.org",
+        "location": "Mexico City, Mexico",
+        "is_verified": true
+    },
+    {
         "venue": "WWW",
         "year": 2027,
         "subtitle": "Estimated",
@@ -218,13 +231,14 @@
         "venue": "HPCA",
         "year": 2027,
         "subtitle": "",
-        "deadline": "2026-08-01",
-        "notification": "2026-11-05",
-        "date": "February 2027",
-        "start_date": "2027-02-01",
-        "url": "https://www.hpca-conf.org/2027",
+        "abstract_deadline": "2026-07-24",
+        "deadline": "2026-07-31",
+        "notification": "2026-11-06",
+        "date": "January 30 - February 3, 2027",
+        "start_date": "2027-01-30",
+        "url": "https://conf.researchr.org/home/hpca-2027",
         "location": "TBD",
-        "is_verified": false
+        "is_verified": true
     },
     {
         "venue": "FAST",
