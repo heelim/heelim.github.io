@@ -112,6 +112,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (orderRes && orderRes.ok) {
                 confOrder = await orderRes.json();
             }
+            if (confOrder && confOrder.length > 0) {
+                const confOrderSet = new Set(confOrder);
+                allCfps = allCfps.filter(cfp => confOrderSet.has(cfp.venue));
+            }
             
             if (updatedRes && updatedRes.ok) {
                 const dateStr = await updatedRes.text();
@@ -156,9 +160,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderFilters() {
         const allKeywords = new Set();
         const allDomains = new Set();
-        Object.values(confInfo).forEach(info => {
-            if (info.keywords) info.keywords.forEach(kw => allKeywords.add(kw));
-            if (info.domains) info.domains.forEach(dom => allDomains.add(dom));
+        const visibleVenues = new Set(allCfps.map(cfp => cfp.venue));
+
+        visibleVenues.forEach(venue => {
+            const info = confInfo[venue];
+            if (info) {
+                if (info.keywords) info.keywords.forEach(kw => allKeywords.add(kw));
+                if (info.domains) info.domains.forEach(dom => allDomains.add(dom));
+            }
         });
 
         // Render Domains
