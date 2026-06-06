@@ -76,13 +76,36 @@ document.addEventListener('DOMContentLoaded', () => {
             const rawCfps = await cfpRes.json();
             allCfps = [];
             for (const [venue, years] of Object.entries(rawCfps)) {
-                for (const [year, subtitles] of Object.entries(years)) {
-                    for (const [subtitle, entry] of Object.entries(subtitles)) {
+                for (const [year, yearData] of Object.entries(years)) {
+                    const shared = {
+                        date: yearData.date || "",
+                        start_date: yearData.start_date || "",
+                        url: yearData.url || "",
+                        location: yearData.location || ""
+                    };
+                    for (const [key, value] of Object.entries(yearData)) {
+                        // Skip shared field keys
+                        if (['date', 'start_date', 'url', 'location'].includes(key)) {
+                            continue;
+                        }
+                        
+                        const subtitle = key;
+                        const entry = value;
                         allCfps.push({
                             venue,
                             year: parseInt(year),
                             subtitle: subtitle === "none" ? "" : subtitle,
-                            ...entry
+                            // Fallback to shared details
+                            date: entry.date !== undefined ? entry.date : shared.date,
+                            start_date: entry.start_date !== undefined ? entry.start_date : shared.start_date,
+                            url: entry.url !== undefined ? entry.url : shared.url,
+                            location: entry.location !== undefined ? entry.location : shared.location,
+                            // Subtitle-specific fields
+                            deadline: entry.deadline,
+                            abstract_deadline: entry.abstract_deadline,
+                            early_notification: entry.early_notification,
+                            notification: entry.notification,
+                            is_verified: entry.is_verified
                         });
                     }
                 }
