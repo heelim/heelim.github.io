@@ -58,8 +58,12 @@ document.addEventListener('DOMContentLoaded', () => {
     let confOrder = [];
     let selectedKeywords = new Set();
     let selectedDomains = new Set();
+    let sortBy = 'default';
+    let sortOrder = 'asc';
     
     const today = new Date();
+    const todayStart = new Date(today);
+    todayStart.setHours(0, 0, 0, 0);
 
     async function loadData() {
         try {
@@ -242,6 +246,30 @@ document.addEventListener('DOMContentLoaded', () => {
         return isNaN(parsed) ? new Date(9999, 11, 31) : parsed;
     }
 
+    function isCfpDeadlinePassed(cfp) {
+        const dl = cfp.deadline;
+        if (!dl || dl === "TBD" || dl === "TBA" || dl.trim() === "") {
+            return cfp.year < today.getFullYear();
+        }
+        const d = parseDate(dl);
+        if (d.getFullYear() === 9999) {
+            return cfp.year < today.getFullYear();
+        }
+        return d < todayStart;
+    }
+
+    function isCfpStartDatePassed(cfp) {
+        const sd = cfp.start_date;
+        if (!sd || sd === "TBD" || sd === "TBA" || sd.trim() === "") {
+            return cfp.year < today.getFullYear();
+        }
+        const d = parseDate(sd);
+        if (d.getFullYear() === 9999) {
+            return cfp.year < today.getFullYear();
+        }
+        return d < todayStart;
+    }
+
     function toIsoDate(date) {
         return date.toISOString().split('T')[0];
     }
@@ -409,13 +437,118 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Sort grouped by confOrder
+        // Sort grouped by current sort options
         grouped.sort((a, b) => {
-            let idxA = confOrder.indexOf(a.venue);
-            let idxB = confOrder.indexOf(b.venue);
-            if (idxA === -1) idxA = confOrder.length;
-            if (idxB === -1) idxB = confOrder.length;
-            return idxA - idxB;
+            let valA, valB;
+
+            if (sortBy === 'default') {
+                let idxA = confOrder.indexOf(a.venue);
+                let idxB = confOrder.indexOf(b.venue);
+                if (idxA === -1) idxA = confOrder.length;
+                if (idxB === -1) idxB = confOrder.length;
+                return idxA - idxB;
+            }
+
+            if (sortBy === 'name') {
+                valA = a.venue.toLowerCase();
+                valB = b.venue.toLowerCase();
+                if (valA < valB) return sortOrder === 'asc' ? -1 : 1;
+                if (valA > valB) return sortOrder === 'asc' ? 1 : -1;
+                return 0;
+            }
+
+            if (sortBy === 'bk') {
+                const infoA = confInfo[a.venue] || {};
+                const infoB = confInfo[b.venue] || {};
+                valA = parseInt(infoA.bk21plus) || 0;
+                valB = parseInt(infoB.bk21plus) || 0;
+                
+                if (valA === 0 && valB === 0) {
+                    return a.venue.localeCompare(b.venue);
+                }
+                if (valA === 0) return 1;
+                if (valB === 0) return -1;
+                
+                if (valA !== valB) {
+                    return sortOrder === 'asc' ? valA - valB : valB - valA;
+                }
+                return a.venue.localeCompare(b.venue);
+            }
+
+            if (sortBy === 'kiise') {
+                const infoA = confInfo[a.venue] || {};
+                const infoB = confInfo[b.venue] || {};
+                const mapRank = (rank) => {
+                    if (rank === '최우수') return 3;
+                    if (rank === '우수') return 2;
+                    return 0;
+                };
+                valA = mapRank(infoA.kiise);
+                valB = mapRank(infoB.kiise);
+                
+                if (valA === 0 && valB === 0) {
+                    return a.venue.localeCompare(b.venue);
+                }
+                if (valA === 0) return 1;
+                if (valB === 0) return -1;
+                
+                if (valA !== valB) {
+                    return sortOrder === 'asc' ? valA - valB : valB - valA;
+                }
+                return a.venue.localeCompare(b.venue);
+            }
+
+            if (sortBy === 'deadline') {
+                const getNearestDeadline = (group) => {
+                    let minDate = new Date(9999, 11, 31);
+                    group.cycles.forEach(cfp => {
+                        if (isCfpDeadlinePassed(cfp)) return;
+                        const d = parseDate(cfp.deadline);
+                        if (d < minDate) {
+                            minDate = d;
+                        }
+                    });
+                    return minDate;
+                };
+                valA = getNearestDeadline(a);
+                valB = getNearestDeadline(b);
+                if (valA.getFullYear() === 9999 && valB.getFullYear() === 9999) {
+                    return a.venue.localeCompare(b.venue);
+                }
+                if (valA.getFullYear() === 9999) return 1;
+                if (valB.getFullYear() === 9999) return -1;
+                if (valA.getTime() !== valB.getTime()) {
+                    return sortOrder === 'asc' ? valA - valB : valB - valA;
+                }
+                return a.venue.localeCompare(b.venue);
+            }
+
+            if (sortBy === 'start_date') {
+                const getNearestStart = (group) => {
+                    let minDate = new Date(9999, 11, 31);
+                    group.cycles.forEach(cfp => {
+                        if (isCfpStartDatePassed(cfp)) return;
+                        const d = parseDate(cfp.start_date);
+                        if (d < minDate) {
+                            minDate = d;
+                        }
+                    });
+                    return minDate;
+                };
+                valA = getNearestStart(a);
+                valB = getNearestStart(b);
+                if (valA.getFullYear() === 9999 && valB.getFullYear() === 9999) {
+                    return a.venue.localeCompare(b.venue);
+                }
+                if (valA.getFullYear() === 9999) return 1;
+                if (valB.getFullYear() === 9999) return -1;
+                if (valA.getTime() !== valB.getTime()) {
+                    return sortOrder === 'asc' ? valA - valB : valB - valA;
+                }
+                return a.venue.localeCompare(b.venue);
+            }
+
+            return 0;
         });
 
         // Rows mapping (Separated into Labels and Timelines)
@@ -759,6 +892,13 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
+        // 3. Filter out passed deadlines or start dates if sorting by them
+        if (sortBy === 'deadline') {
+            filteredCfps = filteredCfps.filter(cfp => !isCfpDeadlinePassed(cfp));
+        } else if (sortBy === 'start_date') {
+            filteredCfps = filteredCfps.filter(cfp => !isCfpStartDatePassed(cfp));
+        }
+
         cfpList.innerHTML = generateGanttHtml(filteredCfps);
         scrollToToday();
     }
@@ -788,6 +928,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    function setupSort() {
+        const sortBySelect = document.getElementById('sort-by');
+        const sortOrderBtn = document.getElementById('sort-order');
+        const orderIcon = document.getElementById('order-icon');
+        const orderText = document.getElementById('order-text');
+
+        if (sortBySelect) {
+            sortBySelect.value = sortBy;
+            sortBySelect.addEventListener('change', (e) => {
+                sortBy = e.target.value;
+                renderCfps();
+            });
+        }
+
+        if (sortOrderBtn) {
+            sortOrderBtn.addEventListener('click', () => {
+                sortOrder = sortOrder === 'asc' ? 'desc' : 'asc';
+                if (orderIcon) {
+                    orderIcon.innerText = sortOrder === 'asc' ? '▲' : '▼';
+                }
+                if (orderText) {
+                    orderText.innerText = sortOrder === 'asc' ? 'Asc' : 'Desc';
+                }
+                renderCfps();
+            });
+        }
+    }
+
     setupHoverSync();
+    setupSort();
     loadData();
 });
