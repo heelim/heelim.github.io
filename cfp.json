@@ -237,15 +237,16 @@
     },
     "SIGMETRICS": {
         "2025": {
-            "date": "June 8-12, 2026",
-            "start_date": "2026-06-08",
-            "finish_date": "2026-06-12",
-            "url": "http://www.sigmetrics.org/sigmetrics2026",
-            "location": "Ann Arbor, MI, USA",
-            "Summer": {
-                "deadline": "2025-07-29",
-                "notification": "2025-09-26",
-                "is_verified": false
+            "date": "June 9-13, 2025",
+            "start_date": "2025-06-09",
+            "finish_date": "2025-06-13",
+            "url": "http://www.sigmetrics.org/sigmetrics2025",
+            "location": "Stony Brook University, New York, USA",
+            "Winter": {
+                "abstract_deadline": "2025-01-15",
+                "deadline": "2025-01-22",
+                "notification": "2025-03-18",
+                "is_verified": true
             }
         },
         "2026": {
@@ -254,10 +255,23 @@
             "finish_date": "2026-06-12",
             "url": "http://www.sigmetrics.org/sigmetrics2026",
             "location": "Ann Arbor, MI, USA",
+            "Summer": {
+                "abstract_deadline": "2025-07-22",
+                "deadline": "2025-07-29",
+                "notification": "2025-09-26",
+                "is_verified": true
+            },
+            "Fall": {
+                "abstract_deadline": "2025-10-07",
+                "deadline": "2025-10-14",
+                "notification": "2025-12-12",
+                "is_verified": true
+            },
             "Winter": {
+                "abstract_deadline": "2026-01-06",
                 "deadline": "2026-01-13",
                 "notification": "2026-03-13",
-                "is_verified": false
+                "is_verified": true
             }
         }
     },
@@ -1169,7 +1183,7 @@
             "location": "Boston, MA, USA",
             "none": {
                 "deadline": "2026-03-01",
-                "notification": "2026-06-15",
+                "notification": "2026-04-15",
                 "is_verified": true
             }
         },
