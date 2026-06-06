@@ -482,6 +482,9 @@
             "url": "https://www.dac.com/",
             "location": "San Jose Convention Center, San Jose, CA, USA",
             "none": {
+                "abstract_deadline": "2026-10-07",
+                "deadline": "2026-10-14",
+                "notification": "2027-03-09",
                 "is_verified": false
             }
         }
