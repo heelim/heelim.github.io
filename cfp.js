@@ -46,19 +46,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const cfpList = document.getElementById('cfp-list');
-    const sortFieldSelect = document.getElementById('sort-field');
-    const sortOrderSelect = document.getElementById('sort-order');
     const keywordContainer = document.getElementById('keyword-container');
     const domainContainer = document.getElementById('domain-container');
 
     const upcomingList = document.getElementById('upcoming-list');
-    const upcomingSortFieldSelect = document.getElementById('upcoming-sort-field');
-    const upcomingSortOrderSelect = document.getElementById('upcoming-sort-order');
     const upcomingKeywordContainer = document.getElementById('upcoming-keyword-container');
     const upcomingDomainContainer = document.getElementById('upcoming-domain-container');
 
     let allCfps = [];
     let confInfo = {};
+    let confOrder = [];
     let selectedKeywords = new Set();
     let selectedDomains = new Set();
     let showPast = false;
@@ -71,9 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function loadData() {
         try {
-            const [cfpRes, infoRes, updatedRes] = await Promise.all([
+            const [cfpRes, infoRes, orderRes, updatedRes] = await Promise.all([
                 fetch('cfp.json'),
                 fetch('conf_info.json'),
+                fetch('conf_order.json').catch(() => null),
                 fetch('last.updated').catch(() => null)
             ]);
             const rawCfps = await cfpRes.json();
@@ -114,6 +112,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
             confInfo = await infoRes.json();
+            if (orderRes && orderRes.ok) {
+                confOrder = await orderRes.json();
+            }
             
             if (updatedRes && updatedRes.ok) {
                 const dateStr = await updatedRes.text();
@@ -347,16 +348,15 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
         }
 
-        // Group filtered cfps by venue + year
+        // Group filtered cfps by venue (all years together)
         const grouped = [];
         const groupMap = new Map();
         
         filteredCfps.forEach(cfp => {
-            const key = `${cfp.venue}-${cfp.year}`;
+            const key = cfp.venue;
             if (!groupMap.has(key)) {
                 const groupEntry = {
                     venue: cfp.venue,
-                    year: cfp.year,
                     url: cfp.url,
                     is_verified: cfp.is_verified,
                     cycles: [cfp]
@@ -373,6 +373,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     existing.url = cfp.url;
                 }
             }
+        });
+
+        // Sort grouped by confOrder
+        grouped.sort((a, b) => {
+            let idxA = confOrder.indexOf(a.venue);
+            let idxB = confOrder.indexOf(b.venue);
+            if (idxA === -1) idxA = confOrder.length;
+            if (idxB === -1) idxB = confOrder.length;
+            return idxA - idxB;
         });
 
         // Rows mapping (Separated into Labels and Timelines)
@@ -572,7 +581,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
-            const displayName = `${group.venue} ${group.year}`;
+            const displayName = group.venue;
             const verifiedBadge = group.is_verified ? `<span class="gantt-badge-verified" title="Verified Deadline">✓</span>` : '';
             const displayUrl = group.url ? `<a href="${group.url}" target="_blank" class="gantt-venue-name">${displayName}${verifiedBadge}</a>` : `<span class="gantt-venue-name">${displayName}${verifiedBadge}</span>`;
             
@@ -645,9 +654,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderCfps() {
-        const field = sortFieldSelect.value;
-        const order = sortOrderSelect.value;
-
         // 1. Initial Filtering (Upcoming vs. Past)
         let filteredCfps = allCfps.filter(cfp => {
             const deadlineDate = parseDate(cfp.deadline);
@@ -668,61 +674,17 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // 3. Sorting
-        filteredCfps.sort((a, b) => {
-            let valA, valB;
-
-            if (field === 'venue') {
-                valA = a.venue;
-                valB = b.venue;
-                const comparison = valA.localeCompare(valB);
-                return order === 'asc' ? comparison : -comparison;
-            } else {
-                // Use parseDate for deadline, start_date, and notification
-                valA = parseDate(a[field]);
-                valB = parseDate(b[field]);
-                const comparison = valA - valB;
-                return order === 'asc' ? comparison : -comparison;
-            }
-        });
-
-        if (field === 'bk21plus') {
-            filteredCfps.sort((a, b) => {
-                const infoA = confInfo[a.venue] || {};
-                const infoB = confInfo[b.venue] || {};
-                const scoreA = parseInt(infoA.bk21plus) || 0;
-                const scoreB = parseInt(infoB.bk21plus) || 0;
-
-                if (scoreA === 0 && scoreB === 0) return 0;
-                if (scoreA === 0) return 1;
-                if (scoreB === 0) return -1;
-
-                return order === 'asc' ? scoreA - scoreB : scoreB - scoreA;
-            });
-        }
-
         cfpList.innerHTML = generateGanttHtml(filteredCfps, true);
         scrollToToday();
     }
 
-    sortFieldSelect.addEventListener('change', renderCfps);
-    sortOrderSelect.addEventListener('change', renderCfps);
-    upcomingSortFieldSelect.addEventListener('change', renderUpcomingCfps);
-    upcomingSortOrderSelect.addEventListener('change', renderUpcomingCfps);
-
     function renderUpcomingCfps() {
-        const field = upcomingSortFieldSelect.value;
-        const order = upcomingSortOrderSelect.value;
-
         // 1. Initial Filtering (Upcoming vs. Past based on start_date or fallback to date/deadline)
         let filteredCfps = allCfps.filter(cfp => {
-            // We use start_date or date as the event date
             const eventDate = parseDate(cfp.start_date || cfp.date || cfp.deadline);
             if (upcomingShowPast) return true;
             return eventDate >= today;
         });
-
-        // Deduplication removed; generateGanttHtml groups all cycles by Venue + Year automatically
 
         // 2. Multi-category Filtering (Domain OR Keyword)
         if (upcomingSelectedKeywords.size > 0 || upcomingSelectedDomains.size > 0) {
@@ -736,34 +698,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 return matchesDomain || matchesKeyword;
             });
         }
-
-        // 3. Sorting
-        filteredCfps.sort((a, b) => {
-            let valA, valB;
-
-            if (field === 'venue') {
-                valA = a.venue;
-                valB = b.venue;
-                const comparison = valA.localeCompare(valB);
-                return order === 'asc' ? comparison : -comparison;
-            } else if (field === 'bk21plus') {
-                const infoA = confInfo[a.venue] || {};
-                const infoB = confInfo[b.venue] || {};
-                const scoreA = parseInt(infoA.bk21plus) || 0;
-                const scoreB = parseInt(infoB.bk21plus) || 0;
-
-                if (scoreA === 0 && scoreB === 0) return 0;
-                if (scoreA === 0) return 1;
-                if (scoreB === 0) return -1;
-
-                return order === 'asc' ? scoreA - scoreB : scoreB - scoreA;
-            } else {
-                valA = parseDate(a[field] || a.date);
-                valB = parseDate(b[field] || b.date);
-                const comparison = valA - valB;
-                return order === 'asc' ? comparison : -comparison;
-            }
-        });
 
         upcomingList.innerHTML = generateGanttHtml(filteredCfps, false);
         scrollToToday();
