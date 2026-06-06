@@ -58,6 +58,17 @@
                 "notification": "2025-09-17",
                 "is_verified": false
             }
+        },
+        "2026": {
+            "date": "November 16-17, 2026",
+            "start_date": "2026-11-16",
+            "url": "https://conferences.sigcomm.org/hotnets/2026/",
+            "location": "Salt Lake City, Utah, USA",
+            "none": {
+                "deadline": "2026-07-16",
+                "notification": "2026-09-24",
+                "is_verified": true
+            }
         }
     },
     "HotOS": {
@@ -69,6 +80,17 @@
             "none": {
                 "deadline": "2025-01-15",
                 "notification": "2025-04-01",
+                "is_verified": false
+            }
+        },
+        "2027": {
+            "date": "May 24-26, 2027",
+            "start_date": "2027-05-24",
+            "url": "https://sigops.org/s/conferences/hotos/2027/",
+            "location": "Burghausen, Bavaria, Germany",
+            "Estimated": {
+                "deadline": "2027-01-15",
+                "notification": "2027-04-01",
                 "is_verified": false
             }
         }
@@ -84,6 +106,17 @@
                 "notification": "2025-05-16",
                 "is_verified": false
             }
+        },
+        "2026": {
+            "date": "September 28-29, 2026",
+            "start_date": "2026-09-28",
+            "url": "https://www.hotstorage.org/2026/",
+            "location": "Prague, Czechia",
+            "none": {
+                "deadline": "2026-06-12",
+                "notification": "2026-07-24",
+                "is_verified": true
+            }
         }
     },
     "ISMM": {
@@ -96,6 +129,17 @@
                 "deadline": "2025-03-11",
                 "notification": "2025-05-06",
                 "is_verified": false
+            }
+        },
+        "2026": {
+            "date": "June 16, 2026",
+            "start_date": "2026-06-16",
+            "url": "https://conf.researchr.org/home/ismm-2026",
+            "location": "Boulder, CO, USA",
+            "none": {
+                "deadline": "2026-03-27",
+                "notification": "2026-05-04",
+                "is_verified": true
             }
         }
     },
@@ -161,6 +205,17 @@
                 "notification": "2025-07-09",
                 "is_verified": false
             }
+        },
+        "2026": {
+            "date": "October 11-14, 2026",
+            "start_date": "2026-10-11",
+            "url": "https://raid2026.org/",
+            "location": "Lancaster, United Kingdom",
+            "none": {
+                "deadline": "2026-04-16",
+                "notification": "2026-07-10",
+                "is_verified": true
+            }
         }
     },
     "SIGMETRICS": {
@@ -198,6 +253,23 @@
                 "notification": "2025-09-26",
                 "is_verified": false
             }
+        },
+        "2026": {
+            "date": "November 18-20, 2026",
+            "start_date": "2026-11-18",
+            "url": "https://acmsocc.org/2026/index.html",
+            "location": "Singapore",
+            "Round-1": {
+                "deadline": "2026-02-14",
+                "notification": "2026-04-29",
+                "is_verified": true
+            },
+            "Round-2": {
+                "abstract_deadline": "2026-07-07",
+                "deadline": "2026-07-14",
+                "notification": "2026-09-26",
+                "is_verified": true
+            }
         }
     },
     "ACM ATC": {
@@ -232,8 +304,8 @@
         "2026": {
             "date": "June 1-6, 2026",
             "start_date": "2026-06-01",
-            "location": "Bangalore, India",
             "url": "https://asiaccs2026.cse.iitkgp.ac.in/",
+            "location": "Bangalore, India",
             "Cycle-1": {
                 "deadline": "2025-08-25",
                 "early_notification": "2025-10-01",
