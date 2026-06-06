@@ -1,1212 +1,1219 @@
-[
-    {
-        "venue": "POPL",
-        "year": 2027,
-        "subtitle": "Estimated",
-        "deadline": "2026-07-09",
-        "early_notification": "2026-10-05",
-        "notification": "2026-11-09",
-        "date": "January 10–16, 2027",
-        "start_date": "2027-01-10",
-        "url": "https://popl27.sigplan.org",
-        "location": "Mexico City, Mexico",
-        "is_verified": true
-    },
-    {
-        "venue": "WWW",
-        "year": 2027,
-        "subtitle": "Estimated",
-        "deadline": "2026-10-07",
-        "notification": "2027-01-13",
-        "date": "TBA",
-        "start_date": "TBA",
-        "url": "https://thewebconf.org/",
-        "location": "Dublin, Ireland",
-        "is_verified": false
-    },
-    {
-        "venue": "VLSI Symposium",
-        "year": 2027,
-        "subtitle": "Estimated",
-        "deadline": "TBD",
-        "notification": "TBD",
-        "date": "June, 2027",
-        "start_date": "TBD",
-        "url": "https://vlsisymposium.org/",
-        "location": "Kyoto, Japan",
-        "is_verified": false
-    },
-    {
-        "venue": "SOSP",
-        "year": 2027,
-        "subtitle": "Estimated",
-        "abstract_deadline": "2027-03-25",
-        "deadline": "2027-03-31",
-        "notification": "2027-07-02",
-        "date": "September 28 - October 1, 2027",
-        "start_date": "2027-09-28",
-        "url": "https://sigops.org/s/conferences/sosp/2027",
-        "location": "TBD",
-        "is_verified": false
-    },
-    {
-        "venue": "SIGMOD",
-        "year": 2027,
-        "subtitle": "Cycle-4",
-        "abstract_deadline": "2026-10-10",
-        "deadline": "2026-10-17",
-        "notification": "2027-01-19",
-        "date": "June 13-19, 2027",
-        "start_date": "2027-06-13",
-        "url": "https://2027.sigmod.org/",
-        "location": "Huntington Beach, CA, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "SIGMOD",
-        "year": 2027,
-        "subtitle": "Cycle-3",
-        "abstract_deadline": "2026-07-10",
-        "deadline": "2026-07-17",
-        "notification": "2026-10-19",
-        "date": "June 13-19, 2027",
-        "start_date": "2027-06-13",
-        "url": "https://2027.sigmod.org/",
-        "location": "Huntington Beach, CA, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "SIGMOD",
-        "year": 2027,
-        "subtitle": "Cycle-2",
-        "abstract_deadline": "2026-04-10",
-        "deadline": "2026-04-17",
-        "notification": "2026-07-19",
-        "date": "June 13-19, 2027",
-        "start_date": "2027-06-13",
-        "url": "https://2027.sigmod.org/",
-        "location": "Huntington Beach, CA, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "SIGMOD",
-        "year": 2027,
-        "subtitle": "Cycle-1",
-        "abstract_deadline": "2026-01-10",
-        "deadline": "2026-01-17",
-        "notification": "2026-04-19",
-        "date": "June 13-19, 2027",
-        "start_date": "2027-06-13",
-        "url": "https://2027.sigmod.org/",
-        "location": "Huntington Beach, CA, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "RTAS",
-        "year": 2027,
-        "subtitle": "Estimated",
-        "deadline": "2026-11-14",
-        "notification": "2027-01-23",
-        "date": "TBA",
-        "start_date": "TBA",
-        "url": "https://www.rtas.org/",
-        "location": "TBD",
-        "is_verified": false
-    },
-    {
-        "venue": "PPoPP",
-        "year": 2027,
-        "subtitle": "",
-        "deadline": "2026-08-31",
-        "notification": "2026-11-09",
-        "date": "January 30 - February 3, 2027",
-        "start_date": "2027-01-30",
-        "url": "https://ppopp27.sigplan.org",
-        "location": "TBD",
-        "is_verified": false
-    },
-    {
-        "venue": "OSDI",
-        "year": 2027,
-        "subtitle": "",
-        "deadline": "2026-12-11",
-        "notification": "March 2027",
-        "date": "July 7-9, 2027",
-        "start_date": "2027-07-07",
-        "url": "https://www.usenix.org/conference/osdi27",
-        "location": "Baltimore, MD, USA",
-        "is_verified": false
-    },
-    {
-        "venue": "NSDI",
-        "year": 2027,
-        "subtitle": "Spring",
-        "abstract_deadline": "2026-04-16",
-        "deadline": "2026-04-23",
-        "notification": "2026-07-01",
-        "date": "April 2027",
-        "start_date": "2027-04-01",
-        "url": "https://www.usenix.org/conference/nsdi27",
-        "location": "Providence, RI, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "NSDI",
-        "year": 2027,
-        "subtitle": "Fall",
-        "abstract_deadline": "2026-09-10",
-        "deadline": "2026-09-17",
-        "notification": "2026-12-01",
-        "date": "April 2027",
-        "start_date": "2027-04-01",
-        "url": "https://www.usenix.org/conference/nsdi27",
-        "location": "Providence, RI, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "NDSS",
-        "year": 2027,
-        "subtitle": "Spring Cycle",
-        "deadline": "2026-05-06",
-        "early_notification": "2026-06-12",
-        "notification": "2026-09-02",
-        "date": "March 22-26, 2027",
-        "start_date": "2027-03-22",
-        "url": "https://www.ndss-symposium.org/ndss2027",
-        "location": "Seoul, South Korea",
-        "is_verified": true
-    },
-    {
-        "venue": "NDSS",
-        "year": 2027,
-        "subtitle": "Fall Cycle",
-        "deadline": "2026-08-19",
-        "early_notification": "2026-09-25",
-        "notification": "2026-12-16",
-        "date": "March 22-26, 2027",
-        "start_date": "2027-03-22",
-        "url": "https://www.ndss-symposium.org/ndss2027",
-        "location": "Seoul, South Korea",
-        "is_verified": true
-    },
-    {
-        "venue": "ISCA",
-        "year": 2027,
-        "subtitle": "",
-        "deadline": "2026-11-17",
-        "notification": "2027-03-27",
-        "date": "June 2027",
-        "start_date": "2027-06-14",
-        "url": "http://iscaconf.org/isca2027",
-        "location": "TBD",
-        "is_verified": false
-    },
-    {
-        "venue": "IEEE S&P",
-        "year": 2027,
-        "subtitle": "Cycle-1",
-        "abstract_deadline": "2026-06-05",
-        "deadline": "2026-06-12",
-        "notification": "2026-09-08",
-        "date": "May 17-21, 2027",
-        "start_date": "2027-05-17",
-        "url": "https://www.ieee-security.org/TC/SP2027/",
-        "location": "TBD",
-        "is_verified": false
-    },
-    {
-        "venue": "ICSE",
-        "year": 2027,
-        "subtitle": "Summer",
-        "abstract_deadline": "2026-06-23",
-        "deadline": "2026-06-30",
-        "notification": "2026-10-20",
-        "date": "April 25 - May 1, 2027",
-        "start_date": "2027-04-25",
-        "url": "https://conf.researchr.org/home/icse-2027",
-        "location": "Dublin, Ireland",
-        "is_verified": true
-    },
-    {
-        "venue": "HPCA",
-        "year": 2027,
-        "subtitle": "",
-        "abstract_deadline": "2026-07-24",
-        "deadline": "2026-07-31",
-        "notification": "2026-11-06",
-        "date": "January 30 - February 3, 2027",
-        "start_date": "2027-01-30",
-        "url": "https://conf.researchr.org/home/hpca-2027",
-        "location": "TBD",
-        "is_verified": true
-    },
-    {
-        "venue": "FAST",
-        "year": 2027,
-        "subtitle": "Spring",
-        "deadline": "2026-03-17",
-        "notification": "2026-06-04",
-        "date": "February 23-25, 2027",
-        "start_date": "2027-02-23",
-        "url": "https://www.usenix.org/conference/fast27",
-        "location": "Renton, WA, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "FAST",
-        "year": 2027,
-        "subtitle": "Fall",
-        "deadline": "2026-09-15",
-        "notification": "2026-12-08",
-        "date": "February 23-25, 2027",
-        "start_date": "2027-02-23",
-        "url": "https://www.usenix.org/conference/fast27",
-        "location": "Renton, WA, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "EuroSys",
-        "year": 2027,
-        "subtitle": "Spring",
-        "abstract_deadline": "2026-05-07",
-        "deadline": "2026-05-14",
-        "notification": "2026-08-21",
-        "date": "April 19-24, 2027",
-        "start_date": "2027-04-19",
-        "url": "https://2027.eurosys.org",
-        "location": "Rabat, Morocco",
-        "is_verified": true
-    },
-    {
-        "venue": "EuroSys",
-        "year": 2027,
-        "subtitle": "Fall",
-        "abstract_deadline": "2026-09-17",
-        "deadline": "2026-09-24",
-        "notification": "2027-01-29",
-        "date": "April 19-24, 2027",
-        "start_date": "2027-04-19",
-        "url": "https://2027.eurosys.org",
-        "location": "Rabat, Morocco",
-        "is_verified": true
-    },
-    {
-        "venue": "DAC",
-        "year": 2027,
-        "subtitle": "",
-        "date": "July 10-16, 2027",
-        "start_date": "2027-07-10",
-        "url": "https://www.dac.com/",
-        "location": "San Jose Convention Center, San Jose, CA, USA",
-        "is_verified": false
-    },
-    {
-        "venue": "DATE",
-        "year": 2027,
-        "subtitle": "",
-        "abstract_deadline": "2026-09-13",
-        "deadline": "2026-09-20",
-        "date": "March 22-24, 2027",
-        "start_date": "2027-03-22",
-        "url": "https://www.date-conference.com/date-2027-call-papers",
-        "location": "Dresden, Germany",
-        "is_verified": true
-    },
-    {
-        "venue": "CGO",
-        "year": 2027,
-        "subtitle": "R1",
-        "deadline": "2026-06-11",
-        "notification": "2026-08-03",
-        "date": "TBA",
-        "start_date": "TBA",
-        "url": "https://conf.researchr.org/home/cgo-2027",
-        "location": "Salt Lake City, Utah, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "CGO",
-        "year": 2027,
-        "subtitle": "R2",
-        "deadline": "2026-09-10",
-        "notification": "2026-11-02",
-        "date": "TBA",
-        "start_date": "TBA",
-        "url": "https://conf.researchr.org/home/cgo-2027",
-        "location": "Salt Lake City, Utah, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "ASPLOS",
-        "year": 2027,
-        "subtitle": "Spring",
-        "deadline": "2026-04-15",
-        "notification": "2026-07-27",
-        "date": "March 30 - April 3, 2027",
-        "start_date": "2027-03-30",
-        "url": "https://www.asplos-conference.org/asplos2026/call-for-papers-asplos27/",
-        "location": "Crete, Greece",
-        "is_verified": true
-    },
-    {
-        "venue": "ASPLOS",
-        "year": 2027,
-        "subtitle": "September",
-        "deadline": "2026-09-09",
-        "notification": "2026-12-21",
-        "date": "March 30 - April 3, 2027",
-        "start_date": "2027-03-30",
-        "url": "https://www.asplos-conference.org/asplos2026/call-for-papers-asplos27/",
-        "location": "Crete, Greece",
-        "is_verified": true
-    },
-    {
-        "venue": "VLSI Symposium",
-        "year": 2026,
-        "subtitle": "",
-        "deadline": "2026-01-26",
-        "notification": "2026-04-15",
-        "date": "June 14-18, 2026",
-        "start_date": "2026-06-14",
-        "url": "https://vlsisymposium.org/",
-        "location": "Honolulu, HI, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "Usenix Security",
-        "year": 2026,
-        "subtitle": "Winter",
-        "abstract_deadline": "2026-01-29",
-        "deadline": "2026-02-05",
-        "notification": "2026-05-14",
-        "date": "August 12-14, 2026",
-        "start_date": "2026-08-12",
-        "url": "https://www.usenix.org/conference/usenixsecurity26",
-        "location": "Baltimore, MD, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "Usenix Security",
-        "year": 2026,
-        "subtitle": "Fall",
-        "deadline": "2025-08-26",
-        "notification": "2025-12-04",
-        "date": "August 12-14, 2026",
-        "start_date": "2026-08-12",
-        "url": "https://www.usenix.org/conference/usenixsecurity26",
-        "location": "Baltimore, MD, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "SPAA",
-        "year": 2026,
-        "subtitle": "",
-        "abstract_deadline": "2026-02-20",
-        "deadline": "2026-02-27",
-        "notification": "2026-05-15",
-        "date": "July 6-10, 2026",
-        "start_date": "2026-07-06",
-        "url": "https://spaa.acm.org/",
-        "location": "Raleigh, NC, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "SOSP",
-        "year": 2026,
-        "subtitle": "",
-        "abstract_deadline": "2026-03-26",
-        "deadline": "2026-04-01",
-        "notification": "2026-07-03",
-        "date": "September 29 - October 2, 2026",
-        "start_date": "2026-09-29",
-        "url": "https://sigops.org/s/conferences/sosp/2026",
-        "location": "Prague, Czech Republic",
-        "is_verified": true
-    },
-    {
-        "venue": "SIGMETRICS",
-        "year": 2026,
-        "subtitle": "Winter",
-        "deadline": "2026-01-13",
-        "notification": "2026-03-13",
-        "date": "June 8-12, 2026",
-        "start_date": "2026-06-08",
-        "url": "http://www.sigmetrics.org/sigmetrics2026",
-        "location": "Ann Arbor, MI, USA",
-        "is_verified": false
-    },
-    {
-        "venue": "SIGCOMM",
-        "year": 2026,
-        "subtitle": "",
-        "abstract_deadline": "2026-01-30",
-        "deadline": "2026-02-06",
-        "notification": "April 2026",
-        "date": "August 5-7, 2026",
-        "start_date": "2026-08-05",
-        "url": "http://conferences.sigcomm.org/sigcomm/2026",
-        "location": "Denver, CO, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "SC",
-        "year": 2026,
-        "subtitle": "",
-        "abstract_deadline": "2026-04-01",
-        "deadline": "2026-04-08",
-        "notification": "2026-07-01",
-        "date": "November 15-20, 2026",
-        "start_date": "2026-11-15",
-        "url": "https://sc26.supercomputing.org/all-dates-deadlines",
-        "location": "Chicago, IL, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "RTSS",
-        "year": 2026,
-        "subtitle": "",
-        "deadline": "2026-05-21",
-        "notification": "July 2026",
-        "date": "December 9-11, 2026",
-        "start_date": "2026-12-09",
-        "url": "https://2026.rtss.org/",
-        "location": "Yokohama, Japan",
-        "is_verified": true
-    },
-    {
-        "venue": "RTAS",
-        "year": 2026,
-        "subtitle": "",
-        "deadline": "2025-11-13",
-        "notification": "2026-01-29",
-        "date": "May 12-14, 2026",
-        "start_date": "2026-05-12",
-        "url": "https://www.rtas.org/",
-        "location": "Saint Malo, France",
-        "is_verified": false
-    },
-    {
-        "venue": "PPoPP",
-        "year": 2026,
-        "subtitle": "",
-        "deadline": "2025-09-01",
-        "notification": "2025-11-10",
-        "date": "January 31 - February 4, 2026",
-        "start_date": "2026-01-31",
-        "url": "https://ppopp26.sigplan.org",
-        "location": "Sydney, Australia",
-        "is_verified": false
-    },
-    {
-        "venue": "POPL",
-        "year": 2026,
-        "subtitle": "",
-        "deadline": "2025-07-10",
-        "notification": "2025-10-02",
-        "date": "January 11-17, 2026",
-        "start_date": "2026-01-11",
-        "url": "https://popl26.sigplan.org/",
-        "location": "Chicago, IL, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "PLDI",
-        "year": 2026,
-        "subtitle": "",
-        "deadline": "2025-11-13",
-        "notification": "2026-03-05",
-        "date": "June 15-19, 2026",
-        "start_date": "2026-06-15",
-        "url": "https://pldi26.sigplan.org",
-        "location": "Boulder, CO, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "PACT",
-        "year": 2026,
-        "subtitle": "",
-        "abstract_deadline": "2026-04-23",
-        "deadline": "2026-04-30",
-        "notification": "2026-08-05",
-        "date": "October 19-22, 2026",
-        "start_date": "2026-10-19",
-        "url": "https://pact2026.github.io/",
-        "location": "Chicago, IL, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "OSDI",
-        "year": 2026,
-        "subtitle": "annual",
-        "deadline": "2025-12-11",
-        "notification": "2026-03-26",
-        "date": "July 13-15, 2026",
-        "start_date": "2026-07-13",
-        "url": "https://www.usenix.org/conference/osdi26",
-        "location": "Seattle, WA, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "OOPSLA",
-        "year": 2026,
-        "subtitle": "Cycle-2",
-        "deadline": "2026-03-17",
-        "notification": "2026-06-10",
-        "date": "October 3-9, 2026",
-        "start_date": "2026-10-03",
-        "url": "https://conf.researchr.org/track/splash-2026/oopsla-2026",
-        "location": "Oakland, CA, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "OOPSLA",
-        "year": 2026,
-        "subtitle": "Cycle-1",
-        "deadline": "2025-10-10",
-        "notification": "2025-12-17",
-        "date": "October 3-9, 2026",
-        "start_date": "2026-10-03",
-        "url": "https://conf.researchr.org/track/splash-2026/oopsla-2026",
-        "location": "Oakland, CA, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "NSDI",
-        "year": 2026,
-        "subtitle": "Fall",
-        "deadline": "2025-09-18",
-        "notification": "2025-12-09",
-        "date": "May 4-6, 2026",
-        "start_date": "2026-05-04",
-        "url": "https://www.usenix.org/conference/nsdi26",
-        "location": "Renton, WA, USA",
-        "is_verified": false
-    },
-    {
-        "venue": "NeurIPS",
-        "year": 2026,
-        "subtitle": "",
-        "abstract_deadline": "2026-05-04",
-        "deadline": "2026-05-06",
-        "notification": "2026-09-24",
-        "date": "December 6-12, 2026",
-        "start_date": "2026-12-06",
-        "url": "https://neurips.cc/Conferences/2026",
-        "location": "Sydney, Australia",
-        "is_verified": true
-    },
-    {
-        "venue": "NDSS",
-        "year": 2026,
-        "subtitle": "Fall",
-        "deadline": "2025-08-06",
-        "notification": "2025-10-22",
-        "date": "February 23-27, 2026",
-        "start_date": "2026-02-23",
-        "url": "https://www.ndss-symposium.org/ndss2026",
-        "location": "San Diego, CA, USA",
-        "is_verified": false
-    },
-    {
-        "venue": "MobiCom",
-        "year": 2026,
-        "subtitle": "Cycle-2",
-        "abstract_deadline": "2026-03-06",
-        "deadline": "2026-03-13",
-        "early_notification": "2026-05-21",
-        "notification": "2026-06-22",
-        "date": "October 26-30, 2026",
-        "start_date": "2026-10-26",
-        "url": "https://www.sigmobile.org/mobicom/2026/",
-        "location": "Austin, TX, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "Middleware",
-        "year": 2026,
-        "subtitle": "Winter",
-        "deadline": "2025-12-11",
-        "notification": "2026-03-06",
-        "date": "December 14-18, 2026",
-        "start_date": "2026-12-14",
-        "url": "https://middleware-conf.github.io/2026",
-        "location": "Tarragona, Spain",
-        "is_verified": true
-    },
-    {
-        "venue": "Middleware",
-        "year": 2026,
-        "subtitle": "Summer",
-        "abstract_deadline": "2026-05-29",
-        "deadline": "2026-06-05",
-        "notification": "2026-08-28",
-        "date": "December 14-18, 2026",
-        "start_date": "2026-12-14",
-        "url": "https://middleware-conf.github.io/2026",
-        "location": "Tarragona, Spain",
-        "is_verified": true
-    },
-    {
-        "venue": "MICRO",
-        "year": 2026,
-        "subtitle": "",
-        "abstract_deadline": "2026-03-31",
-        "deadline": "2026-04-07",
-        "notification": "2026-07-07",
-        "date": "October 31 - November 4, 2026",
-        "start_date": "2026-10-31",
-        "url": "http://www.microarch.org/micro59",
-        "location": "Athens, Greece",
-        "is_verified": true
-    },
-    {
-        "venue": "LCTES",
-        "year": 2026,
-        "subtitle": "",
-        "abstract_deadline": "2026-03-13",
-        "deadline": "2026-03-20",
-        "notification": "2026-05-01",
-        "date": "June 15-16, 2026",
-        "start_date": "2026-06-15",
-        "url": "https://pldi26.sigplan.org/home/LCTES-2026",
-        "location": "Boulder, CO, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "KDD",
-        "year": 2026,
-        "subtitle": "Cycle-2",
-        "abstract_deadline": "2026-02-01",
-        "deadline": "2026-02-08",
-        "notification": "2026-05-16",
-        "date": "August 9-13, 2026",
-        "start_date": "2026-08-09",
-        "url": "https://kdd2026.kdd.org",
-        "location": "Jeju, South Korea",
-        "is_verified": true
-    },
-    {
-        "venue": "ISPASS",
-        "year": 2026,
-        "subtitle": "",
-        "abstract_deadline": "2025-12-08",
-        "deadline": "2025-12-15",
-        "notification": "",
-        "date": "April 26-28, 2026",
-        "start_date": "2026-04-26",
-        "url": "https://ispass.org/ispass2026/",
-        "location": "Seoul, South Korea",
-        "is_verified": true
-    },
-    {
-        "venue": "ISCA",
-        "year": 2026,
-        "subtitle": "",
-        "deadline": "2025-11-17",
-        "notification": "2026-03-27",
-        "date": "June 27 - July 1, 2026",
-        "start_date": "2026-06-27",
-        "url": "http://iscaconf.org/isca2026",
-        "location": "Raleigh, NC, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "IPDPS",
-        "year": 2026,
-        "subtitle": "",
-        "deadline": "2025-10-09",
-        "notification": "2025-12-18",
-        "date": "May 25-29, 2026",
-        "start_date": "2026-05-25",
-        "url": "https://www.ipdps.org/ipdps2026/2026-call-for-papers.html",
-        "location": "New Orleans, LA, USA",
-        "is_verified": false
-    },
-    {
-        "venue": "INFOCOM",
-        "year": 2026,
-        "subtitle": "",
-        "abstract_deadline": "2025-07-24",
-        "deadline": "2025-07-31",
-        "notification": "2025-12-08",
-        "date": "May 18-21, 2026",
-        "start_date": "2026-05-18",
-        "url": "https://infocom2026.ieee-infocom.org/",
-        "location": "Tokyo, Japan",
-        "is_verified": true
-    },
-    {
-        "venue": "IEEE S&P",
-        "year": 2026,
-        "subtitle": "Winter",
-        "deadline": "2025-11-13",
-        "notification": "2026-03-09",
-        "date": "May 18-21, 2026",
-        "start_date": "2026-05-18",
-        "url": "https://www.ieee-security.org/TC/SP2026/cfpapers.html",
-        "location": "San Francisco, CA, USA",
-        "is_verified": false
-    },
-    {
-        "venue": "ICS",
-        "year": 2026,
-        "subtitle": "Cycle-2",
-        "abstract_deadline": "2026-02-02",
-        "deadline": "2026-02-09",
-        "notification": "2026-04-06",
-        "date": "July 6-9, 2026",
-        "start_date": "2026-07-06",
-        "url": "https://dipsa-qub.github.io/ICS2026-webpage",
-        "location": "Belfast, UK",
-        "is_verified": true
-    },
-    {
-        "venue": "ICS",
-        "year": 2026,
-        "subtitle": "Cycle-1",
-        "deadline": "2025-12-16",
-        "notification": "March 2026",
-        "date": "July 6-9, 2026",
-        "start_date": "2026-07-06",
-        "url": "https://dipsa-qub.github.io/ICS2026-webpage",
-        "location": "Belfast, UK",
-        "is_verified": false
-    },
-    {
-        "venue": "ICPP",
-        "year": 2026,
-        "subtitle": "",
-        "abstract_deadline": "2026-04-24",
-        "deadline": "2026-05-01",
-        "notification": "2026-06-30",
-        "date": "September 28 - October 1, 2026",
-        "start_date": "2026-09-28",
-        "url": "https://icpp2026.github.io",
-        "location": "Singapore",
-        "is_verified": true
-    },
-    {
-        "venue": "ICML",
-        "year": 2026,
-        "subtitle": "",
-        "abstract_deadline": "2026-01-23",
-        "deadline": "2026-01-28",
-        "notification": "May 2026",
-        "date": "July 6-11, 2026",
-        "start_date": "2026-07-06",
-        "url": "https://icml.cc/Conferences/2026",
-        "location": "Seoul, South Korea",
-        "is_verified": true
-    },
-    {
-        "venue": "ICDCS",
-        "year": 2026,
-        "subtitle": "",
-        "deadline": "2025-12-12",
-        "notification": "",
-        "date": "June 22-25, 2026",
-        "start_date": "2026-07-01",
-        "url": "https://icdcs2026.icdcs.org",
-        "location": "South Korea",
-        "is_verified": true
-    },
-    {
-        "venue": "ICCD",
-        "year": 2026,
-        "subtitle": "",
-        "abstract_deadline": "2026-05-29",
-        "deadline": "2026-06-05",
-        "notification": "2026-08-20",
-        "camera_ready": "2026-09-17",
-        "date": "November 16-18, 2026",
-        "start_date": "2026-11-16",
-        "url": "https://www.iccd-conf.com/home.html",
-        "location": "Hong Kong SAR, China",
-        "is_verified": true
-    },
-    {
-        "venue": "HPDC",
-        "year": 2026,
-        "subtitle": "",
-        "abstract_deadline": "2026-01-29",
-        "deadline": "2026-02-05",
-        "notification": "2026-03-31",
-        "date": "July 13-16, 2026",
-        "start_date": "2026-07-13",
-        "url": "https://hpdc.sci.utah.edu/2026",
-        "location": "Cleveland, OH, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "HPCA",
-        "year": 2026,
-        "subtitle": "",
-        "deadline": "2025-08-01",
-        "notification": "2025-11-07",
-        "date": "January 31 - February 4, 2026",
-        "start_date": "2026-01-31",
-        "url": "https://www.hpca-conf.org/2026",
-        "location": "Sydney, Australia",
-        "is_verified": true
-    },
-    {
-        "venue": "HotMobile",
-        "year": 2026,
-        "subtitle": "",
-        "deadline": "2025-10-31",
-        "notification": "2025-12-16",
-        "date": "February 25-26, 2026",
-        "start_date": "2026-02-25",
-        "url": "https://hotmobile.org/2026/",
-        "location": "Atlanta, GA, USA",
-        "is_verified": false
-    },
-    {
-        "venue": "Euro-Par",
-        "year": 2026,
-        "subtitle": "",
-        "abstract_deadline": "2026-02-26",
-        "deadline": "2026-03-06",
-        "notification": "2026-04-30",
-        "date": "August 24-28, 2026",
-        "start_date": "2026-08-24",
-        "url": "http://2026.euro-par.org",
-        "location": "Pisa, Italy",
-        "is_verified": true
-    },
-    {
-        "venue": "EMSOFT",
-        "year": 2026,
-        "subtitle": "Journal Track",
-        "abstract_deadline": "2026-03-23",
-        "deadline": "2026-03-30",
-        "notification": "2026-07-17",
-        "date": "October 4-9, 2026",
-        "start_date": "2026-10-04",
-        "url": "https://esweek.org/emsoft/",
-        "location": "Barcelona, Spain",
-        "is_verified": true
-    },
-    {
-        "venue": "ECRTS",
-        "year": 2026,
-        "subtitle": "",
-        "deadline": "2026-02-26",
-        "notification": "2026-04-20",
-        "date": "July 7-10, 2026",
-        "start_date": "2026-07-07",
-        "url": "https://www.ecrts.org/",
-        "location": "Lund, Sweden",
-        "is_verified": true
-    },
-    {
-        "venue": "DSN",
-        "year": 2026,
-        "subtitle": "",
-        "deadline": "2025-12-04",
-        "notification": "2026-03-19",
-        "date": "June 22-25, 2026",
-        "start_date": "2026-06-22",
-        "url": "https://dsn2026.github.io/",
-        "location": "Budapest, Hungary",
-        "is_verified": false
-    },
-    {
-        "venue": "DAC",
-        "year": 2026,
-        "subtitle": "",
-        "abstract_deadline": "2025-11-11",
-        "deadline": "2025-11-19",
-        "notification": "2026-03-09",
-        "date": "July 26-29, 2026",
-        "start_date": "2026-07-26",
-        "url": "https://www.dac.com/",
-        "location": "Long Beach, CA, USA",
-        "is_verified": false
-    },
-    {
-        "venue": "CoNEXT",
-        "year": 2026,
-        "subtitle": "Winter",
-        "deadline": "2025-12-11",
-        "notification": "2025-12-08",
-        "date": "December 7-10, 2026",
-        "start_date": "2026-12-07",
-        "url": "https://conferences2.sigcomm.org/co-next/2026",
-        "location": "Utrecht, The Netherlands",
-        "is_verified": false
-    },
-    {
-        "venue": "CoNEXT",
-        "year": 2026,
-        "subtitle": "June",
-        "abstract_deadline": "2026-05-29",
-        "deadline": "2026-06-05",
-        "early_notification": "July, 2026",
-        "notification": "2026-09-11",
-        "date": "December 7-10, 2026",
-        "start_date": "2026-12-07",
-        "url": "https://conferences2.sigcomm.org/co-next/2026",
-        "location": "Utrecht, The Netherlands",
-        "is_verified": true
-    },
-    {
-        "venue": "CGO",
-        "year": 2026,
-        "subtitle": "",
-        "deadline": "2025-09-11",
-        "notification": "2025-11-03",
-        "date": "January 31 - February 4, 2026",
-        "start_date": "2026-01-31",
-        "url": "https://cgo.org/cgo2026/",
-        "location": "Sydney, Australia",
-        "is_verified": false
-    },
-    {
-        "venue": "CF",
-        "year": 2026,
-        "subtitle": "",
-        "deadline": "2026-01-19",
-        "notification": "2026-03-09",
-        "date": "May 19-21, 2026",
-        "start_date": "2026-05-19",
-        "url": "http://www.computingfrontiers.org/2026",
-        "location": "Catania, Sicily, Italy",
-        "is_verified": false
-    },
-    {
-        "venue": "CCS",
-        "year": 2026,
-        "subtitle": "Cycle-2",
-        "abstract_deadline": "2026-04-22",
-        "deadline": "2026-04-29",
-        "early_notification": "2026-06-03",
-        "notification": "2026-07-17",
-        "date": "November 15-19, 2026",
-        "start_date": "2026-11-15",
-        "url": "https://www.sigsac.org/ccs/CCS2026/call-for/call-for-papers.html",
-        "location": "The Hague, The Netherlands",
-        "is_verified": true
-    },
-    {
-        "venue": "CCS",
-        "year": 2026,
-        "subtitle": "Cycle-1",
-        "abstract_deadline": "2026-01-07",
-        "deadline": "2026-01-14",
-        "early_notification": "2026-02-20",
-        "notification": "2026-04-09",
-        "date": "November 15-19, 2026",
-        "start_date": "2026-11-15",
-        "url": "https://www.sigsac.org/ccs/CCS2026/call-for/call-for-papers.html",
-        "location": "The Hague, The Netherlands",
-        "is_verified": false
-    },
-    {
-        "venue": "CC",
-        "year": 2026,
-        "subtitle": "",
-        "deadline": "2025-11-10",
-        "notification": "2025-12-10",
-        "date": "January 31 - February 1, 2026",
-        "start_date": "2026-01-31",
-        "url": "https://conf.researchr.org/home/CC-2026",
-        "location": "Sydney, Australia",
-        "is_verified": false
-    },
-    {
-        "venue": "ASPLOS",
-        "year": 2026,
-        "subtitle": "Summer",
-        "abstract_deadline": "2025-08-13",
-        "deadline": "2025-08-20",
-        "notification": "2025-11-24",
-        "date": "March 22-26, 2026",
-        "start_date": "2026-03-22",
-        "url": "https://www.asplos-conference.org/asplos2026/cfp/",
-        "location": "Pittsburgh, PA, USA",
-        "is_verified": true
-    },
-    {
-        "venue": "AsiaCCS",
-        "year": 2026,
-        "subtitle": "Cycle-2",
-        "deadline": "2025-12-12",
-        "notification": "2026-03-10",
-        "date": "June 1-6, 2026",
-        "start_date": "2026-06-01",
-        "url": "https://asiaccs2026.org/",
-        "location": "Bangalore, India",
-        "is_verified": false
-    },
-    {
-        "venue": "AsiaCCS",
-        "year": 2026,
-        "subtitle": "Cycle-1",
-        "deadline": "2025-08-25",
-        "notification": "2025-11-19",
-        "date": "June 1-6, 2026",
-        "start_date": "2026-06-01",
-        "url": "https://asiaccs2026.org/",
-        "location": "Bangalore, India",
-        "is_verified": false
-    },
-    {
-        "venue": "ASE",
-        "year": 2026,
-        "subtitle": "",
-        "deadline": "2026-03-26",
-        "early_notification": "2026-05-25",
-        "notification": "2026-06-18",
-        "date": "October 12-16, 2026",
-        "start_date": "2026-10-12",
-        "url": "https://conf.researchr.org/home/ase-2026",
-        "location": "Munich, Germany",
-        "is_verified": true
-    },
-    {
-        "venue": "ACM ATC",
-        "year": 2026,
-        "subtitle": "",
-        "deadline": "2026-06-10",
-        "early_notification": "2026-08-01",
-        "notification": "2026-09-18",
-        "date": "November 16-18, 2026",
-        "start_date": "2026-11-16",
-        "url": "https://sigops.org/s/conferences/atc/2026/",
-        "location": "Hong Kong",
-        "is_verified": true
-    },
-    {
-        "venue": "SoCC",
-        "year": 2025,
-        "subtitle": "",
-        "deadline": "2025-07-14",
-        "notification": "2025-09-26",
-        "date": "November 19-21, 2025",
-        "start_date": "2025-11-19",
-        "url": "http://acmsocc.org/2025/papers.html",
-        "location": "Virtual event",
-        "is_verified": false
-    },
-    {
-        "venue": "SIGMETRICS",
-        "year": 2025,
-        "subtitle": "Summer",
-        "deadline": "2025-07-29",
-        "notification": "2025-09-26",
-        "date": "June 8-12, 2026",
-        "start_date": "2026-06-08",
-        "url": "http://www.sigmetrics.org/sigmetrics2026",
-        "location": "Ann Arbor, MI, USA",
-        "is_verified": false
-    },
-    {
-        "venue": "RAID",
-        "year": 2025,
-        "subtitle": "",
-        "deadline": "2025-04-24",
-        "notification": "2025-07-09",
-        "date": "October 19-22, 2025",
-        "start_date": "2025-10-19",
-        "url": "https://raid-2025.github.io/",
-        "location": "Ploen, Germany",
-        "is_verified": false
-    },
-    {
-        "venue": "MobiCom",
-        "year": 2025,
-        "subtitle": "",
-        "deadline": "2025-03-18",
-        "notification": "2025-06-24",
-        "date": "November 4-8, 2025",
-        "start_date": "2025-11-04",
-        "url": "https://www.sigmobile.org/mobicom/2025/",
-        "location": "Washington, D.C.",
-        "is_verified": false
-    },
-    {
-        "venue": "MICRO",
-        "year": 2025,
-        "subtitle": "",
-        "deadline": "2025-04-11",
-        "notification": "2025-07-14",
-        "date": "October 18-22, 2025",
-        "start_date": "2025-10-18",
-        "url": "http://www.microarch.org/micro58",
-        "location": "Seoul, Korea",
-        "is_verified": false
-    },
-    {
-        "venue": "ISMM",
-        "year": 2025,
-        "subtitle": "",
-        "deadline": "2025-03-11",
-        "notification": "2025-05-06",
-        "date": "June 17, 2025",
-        "start_date": "2025-06-17",
-        "url": "https://conf.researchr.org/home/ismm-2025",
-        "location": "Seoul, South Korea",
-        "is_verified": false
-    },
-    {
-        "venue": "HotStorage",
-        "year": 2025,
-        "subtitle": "",
-        "deadline": "2025-04-04",
-        "notification": "2025-05-16",
-        "date": "July 10-11, 2025",
-        "start_date": "2025-07-10",
-        "url": "https://www.hotstorage.org/2025",
-        "location": "Boston, MA, USA",
-        "is_verified": false
-    },
-    {
-        "venue": "HotOS",
-        "year": 2025,
-        "subtitle": "",
-        "deadline": "2025-01-15",
-        "notification": "2025-04-01",
-        "date": "May 14-16, 2025",
-        "start_date": "2025-05-14",
-        "url": "https://sigops.org/s/conferences/hotos/2025",
-        "location": "Banff, Alberta",
-        "is_verified": false
-    },
-    {
-        "venue": "HotNets",
-        "year": 2025,
-        "subtitle": "",
-        "deadline": "2025-07-09",
-        "notification": "2025-09-17",
-        "date": "November 17-18, 2025",
-        "start_date": "2025-11-17",
-        "url": "https://conferences.sigcomm.org/hotnets/2025",
-        "location": "College Park, MD, USA",
-        "is_verified": false
-    },
-    {
-        "venue": "ATC",
-        "year": 2025,
-        "subtitle": "",
-        "deadline": "2025-01-14",
-        "notification": "2025-04-25",
-        "date": "July 7-9, 2025",
-        "start_date": "2025-07-07",
-        "url": "https://www.usenix.org/conference/atc25",
-        "location": "Boston, MA, USA",
-        "is_verified": false
-    },
-    {
-        "venue": "ASPLOS",
-        "year": 2025,
-        "subtitle": "Spring",
-        "deadline": "2025-03-12",
-        "notification": "2025-06-24",
-        "date": "March 22-26, 2026",
-        "start_date": "2026-03-22",
-        "url": "https://www.asplos-conference.org/asplos2026/cfp/",
-        "location": "Pittsburgh, PA, USA",
-        "is_verified": false
+{
+    "ASPLOS": {
+        "2025": {
+            "Spring": {
+                "deadline": "2025-03-12",
+                "notification": "2025-06-24",
+                "date": "March 22-26, 2026",
+                "start_date": "2026-03-22",
+                "url": "https://www.asplos-conference.org/asplos2026/cfp/",
+                "location": "Pittsburgh, PA, USA",
+                "is_verified": false
+            }
+        },
+        "2026": {
+            "Summer": {
+                "abstract_deadline": "2025-08-13",
+                "deadline": "2025-08-20",
+                "notification": "2025-11-24",
+                "date": "March 22-26, 2026",
+                "start_date": "2026-03-22",
+                "url": "https://www.asplos-conference.org/asplos2026/cfp/",
+                "location": "Pittsburgh, PA, USA",
+                "is_verified": true
+            }
+        },
+        "2027": {
+            "September": {
+                "deadline": "2026-09-09",
+                "notification": "2026-12-21",
+                "date": "March 30 - April 3, 2027",
+                "start_date": "2027-03-30",
+                "url": "https://www.asplos-conference.org/asplos2026/call-for-papers-asplos27/",
+                "location": "Crete, Greece",
+                "is_verified": true
+            },
+            "Spring": {
+                "deadline": "2026-04-15",
+                "notification": "2026-07-27",
+                "date": "March 30 - April 3, 2027",
+                "start_date": "2027-03-30",
+                "url": "https://www.asplos-conference.org/asplos2026/call-for-papers-asplos27/",
+                "location": "Crete, Greece",
+                "is_verified": true
+            }
+        }
+    },
+    "ATC": {
+        "2025": {
+            "none": {
+                "deadline": "2025-01-14",
+                "notification": "2025-04-25",
+                "date": "July 7-9, 2025",
+                "start_date": "2025-07-07",
+                "url": "https://www.usenix.org/conference/atc25",
+                "location": "Boston, MA, USA",
+                "is_verified": false
+            }
+        }
+    },
+    "HotNets": {
+        "2025": {
+            "none": {
+                "deadline": "2025-07-09",
+                "notification": "2025-09-17",
+                "date": "November 17-18, 2025",
+                "start_date": "2025-11-17",
+                "url": "https://conferences.sigcomm.org/hotnets/2025",
+                "location": "College Park, MD, USA",
+                "is_verified": false
+            }
+        }
+    },
+    "HotOS": {
+        "2025": {
+            "none": {
+                "deadline": "2025-01-15",
+                "notification": "2025-04-01",
+                "date": "May 14-16, 2025",
+                "start_date": "2025-05-14",
+                "url": "https://sigops.org/s/conferences/hotos/2025",
+                "location": "Banff, Alberta",
+                "is_verified": false
+            }
+        }
+    },
+    "HotStorage": {
+        "2025": {
+            "none": {
+                "deadline": "2025-04-04",
+                "notification": "2025-05-16",
+                "date": "July 10-11, 2025",
+                "start_date": "2025-07-10",
+                "url": "https://www.hotstorage.org/2025",
+                "location": "Boston, MA, USA",
+                "is_verified": false
+            }
+        }
+    },
+    "ISMM": {
+        "2025": {
+            "none": {
+                "deadline": "2025-03-11",
+                "notification": "2025-05-06",
+                "date": "June 17, 2025",
+                "start_date": "2025-06-17",
+                "url": "https://conf.researchr.org/home/ismm-2025",
+                "location": "Seoul, South Korea",
+                "is_verified": false
+            }
+        }
+    },
+    "MICRO": {
+        "2025": {
+            "none": {
+                "deadline": "2025-04-11",
+                "notification": "2025-07-14",
+                "date": "October 18-22, 2025",
+                "start_date": "2025-10-18",
+                "url": "http://www.microarch.org/micro58",
+                "location": "Seoul, Korea",
+                "is_verified": false
+            }
+        },
+        "2026": {
+            "none": {
+                "abstract_deadline": "2026-03-31",
+                "deadline": "2026-04-07",
+                "notification": "2026-07-07",
+                "date": "October 31 - November 4, 2026",
+                "start_date": "2026-10-31",
+                "url": "http://www.microarch.org/micro59",
+                "location": "Athens, Greece",
+                "is_verified": true
+            }
+        }
+    },
+    "MobiCom": {
+        "2025": {
+            "none": {
+                "deadline": "2025-03-18",
+                "notification": "2025-06-24",
+                "date": "November 4-8, 2025",
+                "start_date": "2025-11-04",
+                "url": "https://www.sigmobile.org/mobicom/2025/",
+                "location": "Washington, D.C.",
+                "is_verified": false
+            }
+        },
+        "2026": {
+            "Cycle-2": {
+                "abstract_deadline": "2026-03-06",
+                "deadline": "2026-03-13",
+                "early_notification": "2026-05-21",
+                "notification": "2026-06-22",
+                "date": "October 26-30, 2026",
+                "start_date": "2026-10-26",
+                "url": "https://www.sigmobile.org/mobicom/2026/",
+                "location": "Austin, TX, USA",
+                "is_verified": true
+            }
+        }
+    },
+    "RAID": {
+        "2025": {
+            "none": {
+                "deadline": "2025-04-24",
+                "notification": "2025-07-09",
+                "date": "October 19-22, 2025",
+                "start_date": "2025-10-19",
+                "url": "https://raid-2025.github.io/",
+                "location": "Ploen, Germany",
+                "is_verified": false
+            }
+        }
+    },
+    "SIGMETRICS": {
+        "2025": {
+            "Summer": {
+                "deadline": "2025-07-29",
+                "notification": "2025-09-26",
+                "date": "June 8-12, 2026",
+                "start_date": "2026-06-08",
+                "url": "http://www.sigmetrics.org/sigmetrics2026",
+                "location": "Ann Arbor, MI, USA",
+                "is_verified": false
+            }
+        },
+        "2026": {
+            "Winter": {
+                "deadline": "2026-01-13",
+                "notification": "2026-03-13",
+                "date": "June 8-12, 2026",
+                "start_date": "2026-06-08",
+                "url": "http://www.sigmetrics.org/sigmetrics2026",
+                "location": "Ann Arbor, MI, USA",
+                "is_verified": false
+            }
+        }
+    },
+    "SoCC": {
+        "2025": {
+            "none": {
+                "deadline": "2025-07-14",
+                "notification": "2025-09-26",
+                "date": "November 19-21, 2025",
+                "start_date": "2025-11-19",
+                "url": "http://acmsocc.org/2025/papers.html",
+                "location": "Virtual event",
+                "is_verified": false
+            }
+        }
+    },
+    "ACM ATC": {
+        "2026": {
+            "none": {
+                "deadline": "2026-06-10",
+                "early_notification": "2026-08-01",
+                "notification": "2026-09-18",
+                "date": "November 16-18, 2026",
+                "start_date": "2026-11-16",
+                "url": "https://sigops.org/s/conferences/atc/2026/",
+                "location": "Hong Kong",
+                "is_verified": true
+            }
+        }
+    },
+    "ASE": {
+        "2026": {
+            "none": {
+                "deadline": "2026-03-26",
+                "early_notification": "2026-05-25",
+                "notification": "2026-06-18",
+                "date": "October 12-16, 2026",
+                "start_date": "2026-10-12",
+                "url": "https://conf.researchr.org/home/ase-2026",
+                "location": "Munich, Germany",
+                "is_verified": true
+            }
+        }
+    },
+    "AsiaCCS": {
+        "2026": {
+            "Cycle-1": {
+                "deadline": "2025-08-25",
+                "notification": "2025-11-19",
+                "date": "June 1-6, 2026",
+                "start_date": "2026-06-01",
+                "url": "https://asiaccs2026.org/",
+                "location": "Bangalore, India",
+                "is_verified": false
+            },
+            "Cycle-2": {
+                "deadline": "2025-12-12",
+                "notification": "2026-03-10",
+                "date": "June 1-6, 2026",
+                "start_date": "2026-06-01",
+                "url": "https://asiaccs2026.org/",
+                "location": "Bangalore, India",
+                "is_verified": false
+            }
+        }
+    },
+    "CC": {
+        "2026": {
+            "none": {
+                "deadline": "2025-11-10",
+                "notification": "2025-12-10",
+                "date": "January 31 - February 1, 2026",
+                "start_date": "2026-01-31",
+                "url": "https://conf.researchr.org/home/CC-2026",
+                "location": "Sydney, Australia",
+                "is_verified": false
+            }
+        }
+    },
+    "CCS": {
+        "2026": {
+            "Cycle-1": {
+                "abstract_deadline": "2026-01-07",
+                "deadline": "2026-01-14",
+                "early_notification": "2026-02-20",
+                "notification": "2026-04-09",
+                "date": "November 15-19, 2026",
+                "start_date": "2026-11-15",
+                "url": "https://www.sigsac.org/ccs/CCS2026/call-for/call-for-papers.html",
+                "location": "The Hague, The Netherlands",
+                "is_verified": false
+            },
+            "Cycle-2": {
+                "abstract_deadline": "2026-04-22",
+                "deadline": "2026-04-29",
+                "early_notification": "2026-06-03",
+                "notification": "2026-07-17",
+                "date": "November 15-19, 2026",
+                "start_date": "2026-11-15",
+                "url": "https://www.sigsac.org/ccs/CCS2026/call-for/call-for-papers.html",
+                "location": "The Hague, The Netherlands",
+                "is_verified": true
+            }
+        }
+    },
+    "CF": {
+        "2026": {
+            "none": {
+                "deadline": "2026-01-19",
+                "notification": "2026-03-09",
+                "date": "May 19-21, 2026",
+                "start_date": "2026-05-19",
+                "url": "http://www.computingfrontiers.org/2026",
+                "location": "Catania, Sicily, Italy",
+                "is_verified": false
+            }
+        }
+    },
+    "CGO": {
+        "2026": {
+            "none": {
+                "deadline": "2025-09-11",
+                "notification": "2025-11-03",
+                "date": "January 31 - February 4, 2026",
+                "start_date": "2026-01-31",
+                "url": "https://cgo.org/cgo2026/",
+                "location": "Sydney, Australia",
+                "is_verified": false
+            }
+        },
+        "2027": {
+            "R1": {
+                "deadline": "2026-06-11",
+                "notification": "2026-08-03",
+                "date": "TBA",
+                "start_date": "TBA",
+                "url": "https://conf.researchr.org/home/cgo-2027",
+                "location": "Salt Lake City, Utah, USA",
+                "is_verified": true
+            },
+            "R2": {
+                "deadline": "2026-09-10",
+                "notification": "2026-11-02",
+                "date": "TBA",
+                "start_date": "TBA",
+                "url": "https://conf.researchr.org/home/cgo-2027",
+                "location": "Salt Lake City, Utah, USA",
+                "is_verified": true
+            }
+        }
+    },
+    "CoNEXT": {
+        "2026": {
+            "June": {
+                "abstract_deadline": "2026-05-29",
+                "deadline": "2026-06-05",
+                "early_notification": "July, 2026",
+                "notification": "2026-09-11",
+                "date": "December 7-10, 2026",
+                "start_date": "2026-12-07",
+                "url": "https://conferences2.sigcomm.org/co-next/2026",
+                "location": "Utrecht, The Netherlands",
+                "is_verified": true
+            },
+            "Winter": {
+                "deadline": "2025-12-11",
+                "notification": "2025-12-08",
+                "date": "December 7-10, 2026",
+                "start_date": "2026-12-07",
+                "url": "https://conferences2.sigcomm.org/co-next/2026",
+                "location": "Utrecht, The Netherlands",
+                "is_verified": false
+            }
+        }
+    },
+    "DAC": {
+        "2026": {
+            "none": {
+                "abstract_deadline": "2025-11-11",
+                "deadline": "2025-11-19",
+                "notification": "2026-03-09",
+                "date": "July 26-29, 2026",
+                "start_date": "2026-07-26",
+                "url": "https://www.dac.com/",
+                "location": "Long Beach, CA, USA",
+                "is_verified": false
+            }
+        },
+        "2027": {
+            "none": {
+                "date": "July 10-16, 2027",
+                "start_date": "2027-07-10",
+                "url": "https://www.dac.com/",
+                "location": "San Jose Convention Center, San Jose, CA, USA",
+                "is_verified": false
+            }
+        }
+    },
+    "DSN": {
+        "2026": {
+            "none": {
+                "deadline": "2025-12-04",
+                "notification": "2026-03-19",
+                "date": "June 22-25, 2026",
+                "start_date": "2026-06-22",
+                "url": "https://dsn2026.github.io/",
+                "location": "Budapest, Hungary",
+                "is_verified": false
+            }
+        }
+    },
+    "ECRTS": {
+        "2026": {
+            "none": {
+                "deadline": "2026-02-26",
+                "notification": "2026-04-20",
+                "date": "July 7-10, 2026",
+                "start_date": "2026-07-07",
+                "url": "https://www.ecrts.org/",
+                "location": "Lund, Sweden",
+                "is_verified": true
+            }
+        }
+    },
+    "EMSOFT": {
+        "2026": {
+            "Journal Track": {
+                "abstract_deadline": "2026-03-23",
+                "deadline": "2026-03-30",
+                "notification": "2026-07-17",
+                "date": "October 4-9, 2026",
+                "start_date": "2026-10-04",
+                "url": "https://esweek.org/emsoft/",
+                "location": "Barcelona, Spain",
+                "is_verified": true
+            }
+        }
+    },
+    "Euro-Par": {
+        "2026": {
+            "none": {
+                "abstract_deadline": "2026-02-26",
+                "deadline": "2026-03-06",
+                "notification": "2026-04-30",
+                "date": "August 24-28, 2026",
+                "start_date": "2026-08-24",
+                "url": "http://2026.euro-par.org",
+                "location": "Pisa, Italy",
+                "is_verified": true
+            }
+        }
+    },
+    "HotMobile": {
+        "2026": {
+            "none": {
+                "deadline": "2025-10-31",
+                "notification": "2025-12-16",
+                "date": "February 25-26, 2026",
+                "start_date": "2026-02-25",
+                "url": "https://hotmobile.org/2026/",
+                "location": "Atlanta, GA, USA",
+                "is_verified": false
+            }
+        }
+    },
+    "HPCA": {
+        "2026": {
+            "none": {
+                "deadline": "2025-08-01",
+                "notification": "2025-11-07",
+                "date": "January 31 - February 4, 2026",
+                "start_date": "2026-01-31",
+                "url": "https://www.hpca-conf.org/2026",
+                "location": "Sydney, Australia",
+                "is_verified": true
+            }
+        },
+        "2027": {
+            "none": {
+                "abstract_deadline": "2026-07-24",
+                "deadline": "2026-07-31",
+                "notification": "2026-11-06",
+                "date": "January 30 - February 3, 2027",
+                "start_date": "2027-01-30",
+                "url": "https://conf.researchr.org/home/hpca-2027",
+                "location": "TBD",
+                "is_verified": true
+            }
+        }
+    },
+    "HPDC": {
+        "2026": {
+            "none": {
+                "abstract_deadline": "2026-01-29",
+                "deadline": "2026-02-05",
+                "notification": "2026-03-31",
+                "date": "July 13-16, 2026",
+                "start_date": "2026-07-13",
+                "url": "https://hpdc.sci.utah.edu/2026",
+                "location": "Cleveland, OH, USA",
+                "is_verified": true
+            }
+        }
+    },
+    "ICCD": {
+        "2026": {
+            "none": {
+                "abstract_deadline": "2026-05-29",
+                "deadline": "2026-06-05",
+                "notification": "2026-08-20",
+                "camera_ready": "2026-09-17",
+                "date": "November 16-18, 2026",
+                "start_date": "2026-11-16",
+                "url": "https://www.iccd-conf.com/home.html",
+                "location": "Hong Kong SAR, China",
+                "is_verified": true
+            }
+        }
+    },
+    "ICDCS": {
+        "2026": {
+            "none": {
+                "deadline": "2025-12-12",
+                "notification": "",
+                "date": "June 22-25, 2026",
+                "start_date": "2026-07-01",
+                "url": "https://icdcs2026.icdcs.org",
+                "location": "South Korea",
+                "is_verified": true
+            }
+        }
+    },
+    "ICML": {
+        "2026": {
+            "none": {
+                "abstract_deadline": "2026-01-23",
+                "deadline": "2026-01-28",
+                "notification": "May 2026",
+                "date": "July 6-11, 2026",
+                "start_date": "2026-07-06",
+                "url": "https://icml.cc/Conferences/2026",
+                "location": "Seoul, South Korea",
+                "is_verified": true
+            }
+        }
+    },
+    "ICPP": {
+        "2026": {
+            "none": {
+                "abstract_deadline": "2026-04-24",
+                "deadline": "2026-05-01",
+                "notification": "2026-06-30",
+                "date": "September 28 - October 1, 2026",
+                "start_date": "2026-09-28",
+                "url": "https://icpp2026.github.io",
+                "location": "Singapore",
+                "is_verified": true
+            }
+        }
+    },
+    "ICS": {
+        "2026": {
+            "Cycle-1": {
+                "deadline": "2025-12-16",
+                "notification": "March 2026",
+                "date": "July 6-9, 2026",
+                "start_date": "2026-07-06",
+                "url": "https://dipsa-qub.github.io/ICS2026-webpage",
+                "location": "Belfast, UK",
+                "is_verified": false
+            },
+            "Cycle-2": {
+                "abstract_deadline": "2026-02-02",
+                "deadline": "2026-02-09",
+                "notification": "2026-04-06",
+                "date": "July 6-9, 2026",
+                "start_date": "2026-07-06",
+                "url": "https://dipsa-qub.github.io/ICS2026-webpage",
+                "location": "Belfast, UK",
+                "is_verified": true
+            }
+        }
+    },
+    "IEEE S&P": {
+        "2026": {
+            "Winter": {
+                "deadline": "2025-11-13",
+                "notification": "2026-03-09",
+                "date": "May 18-21, 2026",
+                "start_date": "2026-05-18",
+                "url": "https://www.ieee-security.org/TC/SP2026/cfpapers.html",
+                "location": "San Francisco, CA, USA",
+                "is_verified": false
+            }
+        },
+        "2027": {
+            "Cycle-1": {
+                "abstract_deadline": "2026-06-04",
+                "deadline": "2026-06-11",
+                "notification": "2026-09-11",
+                "date": "TBA",
+                "start_date": "TBA",
+                "url": "https://www.ieee-security.org/TC/SP2027/cfpapers.html",
+                "location": "Montreal, Canada",
+                "is_verified": true
+            },
+            "Cycle-2": {
+                "abstract_deadline": "2026-11-10",
+                "deadline": "2026-11-17",
+                "notification": "2027-03-05",
+                "date": "TBA",
+                "start_date": "TBA",
+                "url": "https://www.ieee-security.org/TC/SP2027/cfpapers.html",
+                "location": "Montreal, Canada",
+                "is_verified": true
+            }
+        }
+    },
+    "INFOCOM": {
+        "2026": {
+            "none": {
+                "abstract_deadline": "2025-07-24",
+                "deadline": "2025-07-31",
+                "notification": "2025-12-08",
+                "date": "May 18-21, 2026",
+                "start_date": "2026-05-18",
+                "url": "https://infocom2026.ieee-infocom.org/",
+                "location": "Tokyo, Japan",
+                "is_verified": true
+            }
+        }
+    },
+    "IPDPS": {
+        "2026": {
+            "none": {
+                "deadline": "2025-10-09",
+                "notification": "2025-12-18",
+                "date": "May 25-29, 2026",
+                "start_date": "2026-05-25",
+                "url": "https://www.ipdps.org/ipdps2026/2026-call-for-papers.html",
+                "location": "New Orleans, LA, USA",
+                "is_verified": false
+            }
+        }
+    },
+    "ISCA": {
+        "2026": {
+            "none": {
+                "deadline": "2025-11-17",
+                "notification": "2026-03-27",
+                "date": "June 27 - July 1, 2026",
+                "start_date": "2026-06-27",
+                "url": "http://iscaconf.org/isca2026",
+                "location": "Raleigh, NC, USA",
+                "is_verified": true
+            }
+        },
+        "2027": {
+            "none": {
+                "deadline": "2026-11-17",
+                "notification": "2027-03-27",
+                "date": "June 2027",
+                "start_date": "2027-06-14",
+                "url": "http://iscaconf.org/isca2027",
+                "location": "TBD",
+                "is_verified": false
+            }
+        }
+    },
+    "ISPASS": {
+        "2026": {
+            "none": {
+                "abstract_deadline": "2025-12-08",
+                "deadline": "2025-12-15",
+                "notification": "",
+                "date": "April 26-28, 2026",
+                "start_date": "2026-04-26",
+                "url": "https://ispass.org/ispass2026/",
+                "location": "Seoul, South Korea",
+                "is_verified": true
+            }
+        }
+    },
+    "KDD": {
+        "2026": {
+            "Cycle-2": {
+                "abstract_deadline": "2026-02-01",
+                "deadline": "2026-02-08",
+                "notification": "2026-05-16",
+                "date": "August 9-13, 2026",
+                "start_date": "2026-08-09",
+                "url": "https://kdd2026.kdd.org",
+                "location": "Jeju, South Korea",
+                "is_verified": true
+            }
+        }
+    },
+    "LCTES": {
+        "2026": {
+            "none": {
+                "abstract_deadline": "2026-03-13",
+                "deadline": "2026-03-20",
+                "notification": "2026-05-01",
+                "date": "June 15-16, 2026",
+                "start_date": "2026-06-15",
+                "url": "https://pldi26.sigplan.org/home/LCTES-2026",
+                "location": "Boulder, CO, USA",
+                "is_verified": true
+            }
+        }
+    },
+    "Middleware": {
+        "2026": {
+            "Summer": {
+                "abstract_deadline": "2026-05-29",
+                "deadline": "2026-06-05",
+                "notification": "2026-08-28",
+                "date": "December 14-18, 2026",
+                "start_date": "2026-12-14",
+                "url": "https://middleware-conf.github.io/2026",
+                "location": "Tarragona, Spain",
+                "is_verified": true
+            },
+            "Winter": {
+                "deadline": "2025-12-11",
+                "notification": "2026-03-06",
+                "date": "December 14-18, 2026",
+                "start_date": "2026-12-14",
+                "url": "https://middleware-conf.github.io/2026",
+                "location": "Tarragona, Spain",
+                "is_verified": true
+            }
+        }
+    },
+    "NDSS": {
+        "2026": {
+            "Fall": {
+                "deadline": "2025-08-06",
+                "notification": "2025-10-22",
+                "date": "February 23-27, 2026",
+                "start_date": "2026-02-23",
+                "url": "https://www.ndss-symposium.org/ndss2026",
+                "location": "San Diego, CA, USA",
+                "is_verified": false
+            }
+        },
+        "2027": {
+            "Fall Cycle": {
+                "deadline": "2026-08-19",
+                "early_notification": "2026-09-25",
+                "notification": "2026-12-16",
+                "date": "March 22-26, 2027",
+                "start_date": "2027-03-22",
+                "url": "https://www.ndss-symposium.org/ndss2027",
+                "location": "Seoul, South Korea",
+                "is_verified": true
+            },
+            "Spring Cycle": {
+                "deadline": "2026-05-06",
+                "early_notification": "2026-06-12",
+                "notification": "2026-09-02",
+                "date": "March 22-26, 2027",
+                "start_date": "2027-03-22",
+                "url": "https://www.ndss-symposium.org/ndss2027",
+                "location": "Seoul, South Korea",
+                "is_verified": true
+            }
+        }
+    },
+    "NeurIPS": {
+        "2026": {
+            "none": {
+                "abstract_deadline": "2026-05-04",
+                "deadline": "2026-05-06",
+                "notification": "2026-09-24",
+                "date": "December 6-12, 2026",
+                "start_date": "2026-12-06",
+                "url": "https://neurips.cc/Conferences/2026",
+                "location": "Sydney, Australia",
+                "is_verified": true
+            }
+        }
+    },
+    "NSDI": {
+        "2026": {
+            "Fall": {
+                "deadline": "2025-09-18",
+                "notification": "2025-12-09",
+                "date": "May 4-6, 2026",
+                "start_date": "2026-05-04",
+                "url": "https://www.usenix.org/conference/nsdi26",
+                "location": "Renton, WA, USA",
+                "is_verified": false
+            }
+        },
+        "2027": {
+            "Fall": {
+                "abstract_deadline": "2026-09-10",
+                "deadline": "2026-09-17",
+                "notification": "2026-12-01",
+                "date": "April 2027",
+                "start_date": "2027-04-01",
+                "url": "https://www.usenix.org/conference/nsdi27",
+                "location": "Providence, RI, USA",
+                "is_verified": true
+            },
+            "Spring": {
+                "abstract_deadline": "2026-04-16",
+                "deadline": "2026-04-23",
+                "notification": "2026-07-01",
+                "date": "April 2027",
+                "start_date": "2027-04-01",
+                "url": "https://www.usenix.org/conference/nsdi27",
+                "location": "Providence, RI, USA",
+                "is_verified": true
+            }
+        }
+    },
+    "OOPSLA": {
+        "2026": {
+            "Cycle-1": {
+                "deadline": "2025-10-10",
+                "notification": "2025-12-17",
+                "date": "October 3-9, 2026",
+                "start_date": "2026-10-03",
+                "url": "https://conf.researchr.org/track/splash-2026/oopsla-2026",
+                "location": "Oakland, CA, USA",
+                "is_verified": true
+            },
+            "Cycle-2": {
+                "deadline": "2026-03-17",
+                "notification": "2026-06-10",
+                "date": "October 3-9, 2026",
+                "start_date": "2026-10-03",
+                "url": "https://conf.researchr.org/track/splash-2026/oopsla-2026",
+                "location": "Oakland, CA, USA",
+                "is_verified": true
+            }
+        }
+    },
+    "OSDI": {
+        "2026": {
+            "annual": {
+                "deadline": "2025-12-11",
+                "notification": "2026-03-26",
+                "date": "July 13-15, 2026",
+                "start_date": "2026-07-13",
+                "url": "https://www.usenix.org/conference/osdi26",
+                "location": "Seattle, WA, USA",
+                "is_verified": true
+            }
+        },
+        "2027": {
+            "none": {
+                "deadline": "2026-12-11",
+                "notification": "March 2027",
+                "date": "July 7-9, 2027",
+                "start_date": "2027-07-07",
+                "url": "https://www.usenix.org/conference/osdi27",
+                "location": "Baltimore, MD, USA",
+                "is_verified": false
+            }
+        }
+    },
+    "PACT": {
+        "2026": {
+            "none": {
+                "abstract_deadline": "2026-04-23",
+                "deadline": "2026-04-30",
+                "notification": "2026-08-05",
+                "date": "October 19-22, 2026",
+                "start_date": "2026-10-19",
+                "url": "https://pact2026.github.io/",
+                "location": "Chicago, IL, USA",
+                "is_verified": true
+            }
+        }
+    },
+    "PLDI": {
+        "2026": {
+            "none": {
+                "deadline": "2025-11-13",
+                "notification": "2026-03-05",
+                "date": "June 15-19, 2026",
+                "start_date": "2026-06-15",
+                "url": "https://pldi26.sigplan.org",
+                "location": "Boulder, CO, USA",
+                "is_verified": true
+            }
+        }
+    },
+    "POPL": {
+        "2026": {
+            "none": {
+                "deadline": "2025-07-10",
+                "notification": "2025-10-02",
+                "date": "January 11-17, 2026",
+                "start_date": "2026-01-11",
+                "url": "https://popl26.sigplan.org/",
+                "location": "Chicago, IL, USA",
+                "is_verified": true
+            }
+        },
+        "2027": {
+            "Estimated": {
+                "deadline": "2026-07-09",
+                "early_notification": "2026-10-05",
+                "notification": "2026-11-09",
+                "date": "January 10–16, 2027",
+                "start_date": "2027-01-10",
+                "url": "https://popl27.sigplan.org",
+                "location": "Mexico City, Mexico",
+                "is_verified": true
+            }
+        }
+    },
+    "PPoPP": {
+        "2026": {
+            "none": {
+                "deadline": "2025-09-01",
+                "notification": "2025-11-10",
+                "date": "January 31 - February 4, 2026",
+                "start_date": "2026-01-31",
+                "url": "https://ppopp26.sigplan.org",
+                "location": "Sydney, Australia",
+                "is_verified": false
+            }
+        },
+        "2027": {
+            "none": {
+                "deadline": "2026-08-31",
+                "notification": "2026-11-09",
+                "date": "January 30 - February 3, 2027",
+                "start_date": "2027-01-30",
+                "url": "https://ppopp27.sigplan.org",
+                "location": "TBD",
+                "is_verified": false
+            }
+        }
+    },
+    "RTAS": {
+        "2026": {
+            "none": {
+                "deadline": "2025-11-13",
+                "notification": "2026-01-29",
+                "date": "May 12-14, 2026",
+                "start_date": "2026-05-12",
+                "url": "https://www.rtas.org/",
+                "location": "Saint Malo, France",
+                "is_verified": false
+            }
+        },
+        "2027": {
+            "Estimated": {
+                "deadline": "2026-11-14",
+                "notification": "2027-01-23",
+                "date": "TBA",
+                "start_date": "TBA",
+                "url": "https://www.rtas.org/",
+                "location": "TBD",
+                "is_verified": false
+            }
+        }
+    },
+    "RTSS": {
+        "2026": {
+            "none": {
+                "deadline": "2026-05-21",
+                "notification": "July 2026",
+                "date": "December 9-11, 2026",
+                "start_date": "2026-12-09",
+                "url": "https://2026.rtss.org/",
+                "location": "Yokohama, Japan",
+                "is_verified": true
+            }
+        }
+    },
+    "SC": {
+        "2026": {
+            "none": {
+                "abstract_deadline": "2026-04-01",
+                "deadline": "2026-04-08",
+                "notification": "2026-07-01",
+                "date": "November 15-20, 2026",
+                "start_date": "2026-11-15",
+                "url": "https://sc26.supercomputing.org/all-dates-deadlines",
+                "location": "Chicago, IL, USA",
+                "is_verified": true
+            }
+        }
+    },
+    "SIGCOMM": {
+        "2026": {
+            "none": {
+                "abstract_deadline": "2026-01-30",
+                "deadline": "2026-02-06",
+                "notification": "April 2026",
+                "date": "August 5-7, 2026",
+                "start_date": "2026-08-05",
+                "url": "http://conferences.sigcomm.org/sigcomm/2026",
+                "location": "Denver, CO, USA",
+                "is_verified": true
+            }
+        }
+    },
+    "SOSP": {
+        "2026": {
+            "none": {
+                "abstract_deadline": "2026-03-26",
+                "deadline": "2026-04-01",
+                "notification": "2026-07-03",
+                "date": "September 29 - October 2, 2026",
+                "start_date": "2026-09-29",
+                "url": "https://sigops.org/s/conferences/sosp/2026",
+                "location": "Prague, Czech Republic",
+                "is_verified": true
+            }
+        },
+        "2027": {
+            "Estimated": {
+                "abstract_deadline": "2027-03-25",
+                "deadline": "2027-03-31",
+                "notification": "2027-07-02",
+                "date": "September 28 - October 1, 2027",
+                "start_date": "2027-09-28",
+                "url": "https://sigops.org/s/conferences/sosp/2027",
+                "location": "TBD",
+                "is_verified": false
+            }
+        }
+    },
+    "SPAA": {
+        "2026": {
+            "none": {
+                "abstract_deadline": "2026-02-20",
+                "deadline": "2026-02-27",
+                "notification": "2026-05-15",
+                "date": "July 6-10, 2026",
+                "start_date": "2026-07-06",
+                "url": "https://spaa.acm.org/",
+                "location": "Raleigh, NC, USA",
+                "is_verified": true
+            }
+        }
+    },
+    "Usenix Security": {
+        "2026": {
+            "Fall": {
+                "deadline": "2025-08-26",
+                "notification": "2025-12-04",
+                "date": "August 12-14, 2026",
+                "start_date": "2026-08-12",
+                "url": "https://www.usenix.org/conference/usenixsecurity26",
+                "location": "Baltimore, MD, USA",
+                "is_verified": true
+            },
+            "Winter": {
+                "abstract_deadline": "2026-01-29",
+                "deadline": "2026-02-05",
+                "notification": "2026-05-14",
+                "date": "August 12-14, 2026",
+                "start_date": "2026-08-12",
+                "url": "https://www.usenix.org/conference/usenixsecurity26",
+                "location": "Baltimore, MD, USA",
+                "is_verified": true
+            }
+        }
+    },
+    "VLSI Symposium": {
+        "2026": {
+            "none": {
+                "deadline": "2026-01-26",
+                "notification": "2026-04-15",
+                "date": "June 14-18, 2026",
+                "start_date": "2026-06-14",
+                "url": "https://vlsisymposium.org/",
+                "location": "Honolulu, HI, USA",
+                "is_verified": true
+            }
+        },
+        "2027": {
+            "Estimated": {
+                "deadline": "TBD",
+                "notification": "TBD",
+                "date": "June, 2027",
+                "start_date": "TBD",
+                "url": "https://vlsisymposium.org/",
+                "location": "Kyoto, Japan",
+                "is_verified": false
+            }
+        }
+    },
+    "DATE": {
+        "2027": {
+            "none": {
+                "abstract_deadline": "2026-09-13",
+                "deadline": "2026-09-20",
+                "date": "March 22-24, 2027",
+                "start_date": "2027-03-22",
+                "url": "https://www.date-conference.com/date-2027-call-papers",
+                "location": "Dresden, Germany",
+                "is_verified": true
+            }
+        }
+    },
+    "EuroSys": {
+        "2027": {
+            "Fall": {
+                "abstract_deadline": "2026-09-17",
+                "deadline": "2026-09-24",
+                "notification": "2027-01-29",
+                "date": "April 19-24, 2027",
+                "start_date": "2027-04-19",
+                "url": "https://2027.eurosys.org",
+                "location": "Rabat, Morocco",
+                "is_verified": true
+            },
+            "Spring": {
+                "abstract_deadline": "2026-05-07",
+                "deadline": "2026-05-14",
+                "notification": "2026-08-21",
+                "date": "April 19-24, 2027",
+                "start_date": "2027-04-19",
+                "url": "https://2027.eurosys.org",
+                "location": "Rabat, Morocco",
+                "is_verified": true
+            }
+        }
+    },
+    "FAST": {
+        "2027": {
+            "Fall": {
+                "deadline": "2026-09-15",
+                "notification": "2026-12-08",
+                "date": "February 23-25, 2027",
+                "start_date": "2027-02-23",
+                "url": "https://www.usenix.org/conference/fast27",
+                "location": "Renton, WA, USA",
+                "is_verified": true
+            },
+            "Spring": {
+                "deadline": "2026-03-17",
+                "notification": "2026-06-04",
+                "date": "February 23-25, 2027",
+                "start_date": "2027-02-23",
+                "url": "https://www.usenix.org/conference/fast27",
+                "location": "Renton, WA, USA",
+                "is_verified": true
+            }
+        }
+    },
+    "ICSE": {
+        "2027": {
+            "Summer": {
+                "abstract_deadline": "2026-06-23",
+                "deadline": "2026-06-30",
+                "notification": "2026-10-20",
+                "date": "April 25 - May 1, 2027",
+                "start_date": "2027-04-25",
+                "url": "https://conf.researchr.org/home/icse-2027",
+                "location": "Dublin, Ireland",
+                "is_verified": true
+            }
+        }
+    },
+    "SIGMOD": {
+        "2027": {
+            "Cycle-1": {
+                "abstract_deadline": "2026-01-10",
+                "deadline": "2026-01-17",
+                "notification": "2026-04-19",
+                "date": "June 13-19, 2027",
+                "start_date": "2027-06-13",
+                "url": "https://2027.sigmod.org/",
+                "location": "Huntington Beach, CA, USA",
+                "is_verified": true
+            },
+            "Cycle-2": {
+                "abstract_deadline": "2026-04-10",
+                "deadline": "2026-04-17",
+                "notification": "2026-07-19",
+                "date": "June 13-19, 2027",
+                "start_date": "2027-06-13",
+                "url": "https://2027.sigmod.org/",
+                "location": "Huntington Beach, CA, USA",
+                "is_verified": true
+            },
+            "Cycle-3": {
+                "abstract_deadline": "2026-07-10",
+                "deadline": "2026-07-17",
+                "notification": "2026-10-19",
+                "date": "June 13-19, 2027",
+                "start_date": "2027-06-13",
+                "url": "https://2027.sigmod.org/",
+                "location": "Huntington Beach, CA, USA",
+                "is_verified": true
+            },
+            "Cycle-4": {
+                "abstract_deadline": "2026-10-10",
+                "deadline": "2026-10-17",
+                "notification": "2027-01-19",
+                "date": "June 13-19, 2027",
+                "start_date": "2027-06-13",
+                "url": "https://2027.sigmod.org/",
+                "location": "Huntington Beach, CA, USA",
+                "is_verified": true
+            }
+        }
+    },
+    "WWW": {
+        "2027": {
+            "Estimated": {
+                "deadline": "2026-10-07",
+                "notification": "2027-01-13",
+                "date": "TBA",
+                "start_date": "TBA",
+                "url": "https://thewebconf.org/",
+                "location": "Dublin, Ireland",
+                "is_verified": false
+            }
+        }
     }
-]
+}

@@ -73,7 +73,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 fetch('conf_info.json'),
                 fetch('last.updated').catch(() => null)
             ]);
-            allCfps = await cfpRes.json();
+            const rawCfps = await cfpRes.json();
+            allCfps = [];
+            for (const [venue, years] of Object.entries(rawCfps)) {
+                for (const [year, subtitles] of Object.entries(years)) {
+                    for (const [subtitle, entry] of Object.entries(subtitles)) {
+                        allCfps.push({
+                            venue,
+                            year: parseInt(year),
+                            subtitle: subtitle === "none" ? "" : subtitle,
+                            ...entry
+                        });
+                    }
+                }
+            }
             confInfo = await infoRes.json();
             
             if (updatedRes && updatedRes.ok) {
