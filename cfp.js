@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     function showTab(tabId) {
         if (!tabId) return;
+        if (!document.getElementById(tabId)) {
+            tabId = 'profile';
+            window.location.hash = tabId;
+        }
 
         // Update nav links
         document.querySelectorAll('.nav-link').forEach(l => {
@@ -49,20 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const keywordContainer = document.getElementById('keyword-container');
     const domainContainer = document.getElementById('domain-container');
 
-    const upcomingList = document.getElementById('upcoming-list');
-    const upcomingKeywordContainer = document.getElementById('upcoming-keyword-container');
-    const upcomingDomainContainer = document.getElementById('upcoming-domain-container');
-
     let allCfps = [];
     let confInfo = {};
     let confOrder = [];
     let selectedKeywords = new Set();
     let selectedDomains = new Set();
-    let showPast = false;
-    
-    let upcomingSelectedKeywords = new Set();
-    let upcomingSelectedDomains = new Set();
-    let upcomingShowPast = false;
     
     const today = new Date();
 
@@ -81,12 +76,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     const shared = {
                         date: yearData.date || "",
                         start_date: yearData.start_date || "",
+                        finish_date: yearData.finish_date || "",
                         url: yearData.url || "",
                         location: yearData.location || ""
                     };
                     for (const [key, value] of Object.entries(yearData)) {
                         // Skip shared field keys
-                        if (['date', 'start_date', 'url', 'location'].includes(key)) {
+                        if (['date', 'start_date', 'finish_date', 'url', 'location'].includes(key)) {
                             continue;
                         }
                         
@@ -99,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             // Fallback to shared details
                             date: entry.date !== undefined ? entry.date : shared.date,
                             start_date: entry.start_date !== undefined ? entry.start_date : shared.start_date,
+                            finish_date: entry.finish_date !== undefined ? entry.finish_date : shared.finish_date,
                             url: entry.url !== undefined ? entry.url : shared.url,
                             location: entry.location !== undefined ? entry.location : shared.location,
                             // Subtitle-specific fields
@@ -121,13 +118,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 const cleanDate = dateStr.trim();
                 const el1 = document.getElementById('cfp-last-updated');
                 if (el1) el1.innerText = `Last updated: ${cleanDate}`;
-                const el2 = document.getElementById('upcoming-last-updated');
-                if (el2) el2.innerText = `Last updated: ${cleanDate}`;
             }
 
             renderFilters();
             renderCfps();
-            renderUpcomingCfps();
             setupToggle();
         } catch (error) {
             console.error('Error loading data:', error);
@@ -138,11 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function setupToggle() {
         const toggles = [
             { btnId: 'domain-toggle', wrapperId: 'domain-collapsible', iconId: 'domain-icon', activeBg: 'rgba(16, 185, 129, 0.2)', inactiveBg: 'rgba(16, 185, 129, 0.1)' },
-            { btnId: 'keyword-toggle', wrapperId: 'keyword-collapsible', iconId: 'keyword-icon', activeBg: 'rgba(59, 130, 246, 0.2)', inactiveBg: 'rgba(59, 130, 246, 0.1)' },
-            { btnId: 'past-toggle', iconId: 'past-icon', activeBg: 'rgba(148, 163, 184, 0.2)', inactiveBg: 'rgba(148, 163, 184, 0.1)' },
-            { btnId: 'upcoming-domain-toggle', wrapperId: 'upcoming-domain-collapsible', iconId: 'upcoming-domain-icon', activeBg: 'rgba(16, 185, 129, 0.2)', inactiveBg: 'rgba(16, 185, 129, 0.1)' },
-            { btnId: 'upcoming-keyword-toggle', wrapperId: 'upcoming-keyword-collapsible', iconId: 'upcoming-keyword-icon', activeBg: 'rgba(59, 130, 246, 0.2)', inactiveBg: 'rgba(59, 130, 246, 0.1)' },
-            { btnId: 'upcoming-past-toggle', iconId: 'upcoming-past-icon', activeBg: 'rgba(148, 163, 184, 0.2)', inactiveBg: 'rgba(148, 163, 184, 0.1)' }
+            { btnId: 'keyword-toggle', wrapperId: 'keyword-collapsible', iconId: 'keyword-icon', activeBg: 'rgba(59, 130, 246, 0.2)', inactiveBg: 'rgba(59, 130, 246, 0.1)' }
         ];
 
         toggles.forEach(t => {
@@ -155,14 +145,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     let isExpanded;
                     if (wrapper) {
                         isExpanded = wrapper.classList.toggle('expanded');
-                    } else if (t.btnId === 'past-toggle') {
-                        showPast = !showPast;
-                        isExpanded = showPast;
-                        renderCfps();
-                    } else if (t.btnId === 'upcoming-past-toggle') {
-                        upcomingShowPast = !upcomingShowPast;
-                        isExpanded = upcomingShowPast;
-                        renderUpcomingCfps();
                     }
                     icon.style.transform = isExpanded ? 'rotate(45deg)' : 'rotate(0deg)';
                     toggleBtn.style.background = isExpanded ? t.activeBg : t.inactiveBg;
@@ -188,7 +170,6 @@ document.addEventListener('DOMContentLoaded', () => {
             </label>
         `).join('');
         domainContainer.innerHTML = domainsHtml;
-        upcomingDomainContainer.innerHTML = domainsHtml;
 
         // Render Keywords
         const sortedKeywords = Array.from(allKeywords).sort();
@@ -199,7 +180,6 @@ document.addEventListener('DOMContentLoaded', () => {
             </label>
         `).join('');
         keywordContainer.innerHTML = keywordsHtmlStr;
-        upcomingKeywordContainer.innerHTML = keywordsHtmlStr;
 
         // Listeners for Domains (CFP)
         domainContainer.querySelectorAll('input').forEach(input => {
@@ -216,21 +196,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        // Listeners for Domains (Upcoming)
-        upcomingDomainContainer.querySelectorAll('input').forEach(input => {
-            input.addEventListener('change', (e) => {
-                const dom = e.target.value;
-                if (e.target.checked) {
-                    upcomingSelectedDomains.add(dom);
-                    e.target.parentElement.classList.add('domain-active');
-                } else {
-                    upcomingSelectedDomains.delete(dom);
-                    e.target.parentElement.classList.remove('domain-active');
-                }
-                renderUpcomingCfps();
-            });
-        });
-
         // Listeners for Keywords (CFP)
         keywordContainer.querySelectorAll('input').forEach(input => {
             input.addEventListener('change', (e) => {
@@ -243,21 +208,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     e.target.parentElement.classList.remove('active');
                 }
                 renderCfps();
-            });
-        });
-
-        // Listeners for Keywords (Upcoming)
-        upcomingKeywordContainer.querySelectorAll('input').forEach(input => {
-            input.addEventListener('change', (e) => {
-                const kw = e.target.value;
-                if (e.target.checked) {
-                    upcomingSelectedKeywords.add(kw);
-                    e.target.parentElement.classList.add('active');
-                } else {
-                    upcomingSelectedKeywords.delete(kw);
-                    e.target.parentElement.classList.remove('active');
-                }
-                renderUpcomingCfps();
             });
         });
     }
@@ -283,6 +233,28 @@ document.addEventListener('DOMContentLoaded', () => {
         return isNaN(parsed) ? new Date(9999, 11, 31) : parsed;
     }
 
+    function toIsoDate(date) {
+        return date.toISOString().split('T')[0];
+    }
+
+    function addDays(date, days) {
+        const result = new Date(date);
+        result.setDate(result.getDate() + days);
+        return result;
+    }
+
+    function parseConferenceDateRange(cfp) {
+        const startDateObj = parseDate(cfp.start_date);
+        const finishDateObj = parseDate(cfp.finish_date);
+        if (startDateObj.getFullYear() === 9999) return null;
+        if (finishDateObj.getFullYear() === 9999) return null;
+
+        return {
+            start: toIsoDate(startDateObj),
+            end: toIsoDate(addDays(finishDateObj, 1))
+        };
+    }
+
     const monthWidth = 80;
 
     function getDateX(dateStr, startDate, totalMs, timelineWidth) {
@@ -294,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return Math.max(0, Math.min(1, ratio)) * timelineWidth;
     }
 
-    function generateGanttHtml(filteredCfps, isCfpTab) {
+    function generateGanttHtml(filteredCfps) {
         if (filteredCfps.length === 0) {
             return '<p style="color: #64748b; padding: 2rem; text-align: center;">No matching conferences found.</p>';
         }
@@ -391,16 +363,6 @@ document.addEventListener('DOMContentLoaded', () => {
         grouped.forEach((group, index) => {
             const info = confInfo[group.venue] || {};
             
-            // Determine if the group is past
-            let isPast = true;
-            group.cycles.forEach(cfp => {
-                const refDateStr = isCfpTab ? cfp.deadline : (cfp.start_date || cfp.date || cfp.deadline);
-                const refDate = parseDate(refDateStr);
-                if (refDate >= today) {
-                    isPast = false;
-                }
-            });
-
             const bkText = info.bk21plus ? `🎓 ${info.bk21plus}` : '';
             let kiiseText = '';
             if (info.kiise === '최우수') {
@@ -420,11 +382,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     cfp.notification,
                     cfp.start_date,
                 ];
-                if (cfp.start_date) {
-                    const startDateObj = parseDate(cfp.start_date);
-                    const endDateObj = new Date(startDateObj);
-                    endDateObj.setDate(startDateObj.getDate() + 4);
-                    dates.push(endDateObj.toISOString().split('T')[0]);
+                const conferenceRange = parseConferenceDateRange(cfp);
+                if (conferenceRange) {
+                    dates.push(conferenceRange.end);
                 }
                 
                 let minX = Infinity;
@@ -471,6 +431,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const rowHeight = 30 + maxTracksUsed * 20;
 
             let elementsHtml = '';
+            const renderedEventYears = new Set();
 
             cycleTracks.forEach(item => {
                 const cfp = item.cfp;
@@ -543,35 +504,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     `;
                 }
 
-                // 6. Event Bar (start_date -> end_date)
-                const startX = getDateX(cfp.start_date, startDate, totalMs, timelineWidth);
-                if (startX !== null) {
-                    let endX = null;
-                    if (cfp.date && cfp.date.includes('-')) {
-                        const rangeMatch = cfp.date.match(/-\s*([A-Za-z]+)?\s*(\d+),\s*(\d{4})/);
-                        if (rangeMatch) {
-                            const monthName = rangeMatch[1] || parseDate(cfp.start_date).toLocaleString('default', { month: 'long' });
-                            const day = rangeMatch[2];
-                            const year = rangeMatch[3];
-                            const parsedEnd = new Date(`${monthName} ${day}, ${year}`);
-                            if (!isNaN(parsedEnd)) {
-                                endX = getDateX(parsedEnd.toISOString().split('T')[0], startDate, totalMs, timelineWidth);
-                            }
-                        }
-                    }
-                    
-                    if (endX === null) {
-                        const startDateObj = parseDate(cfp.start_date);
-                        const endDateObj = new Date(startDateObj);
-                        endDateObj.setDate(startDateObj.getDate() + 4);
-                        endX = getDateX(endDateObj.toISOString().split('T')[0], startDate, totalMs, timelineWidth);
-                    }
+                // 6. Event Bar (start_date -> end_date), once per conference year.
+                const conferenceRange = parseConferenceDateRange(cfp);
+                const startX = conferenceRange ? getDateX(conferenceRange.start, startDate, totalMs, timelineWidth) : null;
+                if (conferenceRange && startX !== null && !renderedEventYears.has(cfp.year)) {
+                    renderedEventYears.add(cfp.year);
+                    const endX = getDateX(conferenceRange.end, startDate, totalMs, timelineWidth);
 
                     if (endX !== null && endX > startX) {
                         elementsHtml += `
                             <div class="gantt-event-bar" style="left: ${startX}px; width: ${Math.max(12, endX - startX)}px; top: ${trackTop + 6}px; height: 8px; border-radius: 4px;">
                                 <div class="gantt-tooltip">
-                                    <strong>Conference Event${cycleSuffix}</strong><br>
+                                    <strong>${cfp.venue} ${cfp.year}</strong><br>
                                     Date: ${cfp.date}<br>
                                     Location: ${cfp.location}
                                 </div>
@@ -586,14 +530,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const displayUrl = group.url ? `<a href="${group.url}" target="_blank" class="gantt-venue-name">${displayName}${verifiedBadge}</a>` : `<span class="gantt-venue-name">${displayName}${verifiedBadge}</span>`;
             
             labelsHtml += `
-                <div class="gantt-row-label-cell ${isPast ? 'past-row' : ''}" data-row-index="${index}" style="height: ${rowHeight}px;">
+                <div class="gantt-row-label-cell" data-row-index="${index}" style="height: ${rowHeight}px;">
                     ${displayUrl}
                     <div class="gantt-venue-meta">${metaText}</div>
                 </div>
             `;
 
             timelineRowsHtml += `
-                <div class="gantt-row-timeline ${isPast ? 'past-row' : ''}" data-row-index="${index}" style="width: ${timelineWidth}px; height: ${rowHeight}px;">
+                <div class="gantt-row-timeline" data-row-index="${index}" style="width: ${timelineWidth}px; height: ${rowHeight}px;">
                     ${elementsHtml}
                 </div>
             `;
@@ -654,12 +598,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderCfps() {
-        // 1. Initial Filtering (Upcoming vs. Past)
-        let filteredCfps = allCfps.filter(cfp => {
-            const deadlineDate = parseDate(cfp.deadline);
-            if (showPast) return true;
-            return deadlineDate >= today;
-        });
+        // 1. Start with all conferences.
+        let filteredCfps = allCfps;
 
         // 2. Multi-category Filtering (Domain OR Keyword)
         if (selectedKeywords.size > 0 || selectedDomains.size > 0) {
@@ -674,32 +614,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        cfpList.innerHTML = generateGanttHtml(filteredCfps, true);
-        scrollToToday();
-    }
-
-    function renderUpcomingCfps() {
-        // 1. Initial Filtering (Upcoming vs. Past based on start_date or fallback to date/deadline)
-        let filteredCfps = allCfps.filter(cfp => {
-            const eventDate = parseDate(cfp.start_date || cfp.date || cfp.deadline);
-            if (upcomingShowPast) return true;
-            return eventDate >= today;
-        });
-
-        // 2. Multi-category Filtering (Domain OR Keyword)
-        if (upcomingSelectedKeywords.size > 0 || upcomingSelectedDomains.size > 0) {
-            filteredCfps = filteredCfps.filter(cfp => {
-                const info = confInfo[cfp.venue];
-                if (!info) return false;
-
-                const matchesDomain = info.domains && info.domains.some(dom => upcomingSelectedDomains.has(dom));
-                const matchesKeyword = info.keywords && info.keywords.some(kw => upcomingSelectedKeywords.has(kw));
-
-                return matchesDomain || matchesKeyword;
-            });
-        }
-
-        upcomingList.innerHTML = generateGanttHtml(filteredCfps, false);
+        cfpList.innerHTML = generateGanttHtml(filteredCfps);
         scrollToToday();
     }
 
