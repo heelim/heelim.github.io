@@ -700,7 +700,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             const maxTracksUsed = accumulatedTracks || 1;
-            const rowHeight = 30 + maxTracksUsed * 20;
+            const rowHeight = 16 + maxTracksUsed * 14;
 
             let elementsHtml = '';
             const renderedEventYears = new Set();
@@ -708,7 +708,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cycleTracks.forEach(item => {
                 const cfp = item.cfp;
                 const cycleSuffix = ` (${cfp.year}${cfp.subtitle ? ` (${cfp.subtitle})` : ''})`;
-                const trackTop = 15 + item.trackIndex * 20;
+                const trackTop = 8 + item.trackIndex * 14;
 
                 // 1. Review Phase (deadline -> notification)
                 const dlX = getDateX(cfp.deadline, startDate, totalMs, timelineWidth);
@@ -928,16 +928,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    function updateSortOrderVisibility() {
+        const sortOrderBtn = document.getElementById('sort-order');
+        if (!sortOrderBtn) return;
+        sortOrderBtn.style.display = (sortBy === 'default') ? 'none' : 'inline-flex';
+    }
+
     function setupSort() {
         const sortBySelect = document.getElementById('sort-by');
         const sortOrderBtn = document.getElementById('sort-order');
         const orderIcon = document.getElementById('order-icon');
         const orderText = document.getElementById('order-text');
 
+        updateSortOrderVisibility();
+
         if (sortBySelect) {
             sortBySelect.value = sortBy;
             sortBySelect.addEventListener('change', (e) => {
                 sortBy = e.target.value;
+                updateSortOrderVisibility();
                 renderCfps();
             });
         }

@@ -336,7 +336,7 @@ p.subtitle {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--fg);
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 8px;
   font-size: 0.875rem;
   font-family: inherit;
@@ -344,11 +344,25 @@ p.subtitle {
   transition: all 0.2s;
   outline: none;
   appearance: none;
+  box-sizing: border-box;
+  height: 2.1rem;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
+select.sort-select {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='rgba(148, 163, 184, 0.5)'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: right 0.75rem center;
+  background-position: right 0.6rem center;
   background-size: 1rem;
-  padding-right: 2.5rem;
+  padding-right: 2rem;
+}
+
+button.sort-select {
+  background-image: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 .sort-select:hover {
@@ -433,7 +447,7 @@ p.subtitle {
   border: 1px solid var(--border);
   border-radius: 24px;
   overflow: hidden;
-  margin-top: 1.5rem;
+  margin-top: 0.25rem;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
 }
 
@@ -464,7 +478,7 @@ p.subtitle {
 }
 
 .gantt-row-label-cell {
-  min-height: 50px;
+  min-height: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -557,7 +571,7 @@ p.subtitle {
 }
 
 .gantt-row-timeline {
-  min-height: 50px;
+  min-height: 30px;
   position: relative;
   border-bottom: 1px solid rgba(255, 255, 255, 0.03);
   background-image: repeating-linear-gradient(to right, transparent, transparent 79px, rgba(255, 255, 255, 0.03) 79px, rgba(255, 255, 255, 0.03) 80px);
