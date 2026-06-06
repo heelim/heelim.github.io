@@ -819,5 +819,24 @@
             "Integrated Circuits",
             "Hardware Design"
         ]
+    },
+    "WWW": {
+        "fullname": "The Web Conference",
+        "domains": [
+            "Web",
+            "Information Systems",
+            "Machine Learning",
+            "Data Mining"
+        ],
+        "keywords": [
+            "World Wide Web",
+            "Web Search",
+            "Social Networks",
+            "Information Retrieval",
+            "Semantic Web",
+            "Web Infrastructure"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
     }
 }
