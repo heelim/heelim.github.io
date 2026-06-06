@@ -320,6 +320,59 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
         }
 
+        // Outer helper functions for interval calculations
+        const getSubmissionInterval = (cfp) => {
+            const dates = [
+                cfp.abstract_deadline,
+                cfp.deadline,
+                cfp.notification
+            ].filter(Boolean);
+            
+            let minX = Infinity;
+            let maxX = -Infinity;
+            dates.forEach(dateStr => {
+                const x = getDateX(dateStr, startDate, totalMs, timelineWidth);
+                if (x !== null) {
+                    minX = Math.min(minX, x);
+                    maxX = Math.max(maxX, x);
+                }
+            });
+            if (minX === Infinity || maxX === -Infinity) return null;
+            return { start: minX - 8, end: maxX + 8 };
+        };
+
+        const getConferenceInterval = (cfp) => {
+            const conferenceRange = parseConferenceDateRange(cfp);
+            if (!conferenceRange) return null;
+            const startX = getDateX(conferenceRange.start, startDate, totalMs, timelineWidth);
+            const endX = getDateX(conferenceRange.end, startDate, totalMs, timelineWidth);
+            if (startX === null || endX === null) return null;
+            return { start: startX - 8, end: endX + 8 };
+        };
+
+        const getSubmissionStart = (cfp) => {
+            const dates = [cfp.abstract_deadline, cfp.deadline].filter(Boolean);
+            let minX = Infinity;
+            dates.forEach(dateStr => {
+                const x = getDateX(dateStr, startDate, totalMs, timelineWidth);
+                if (x !== null) {
+                    minX = Math.min(minX, x);
+                }
+            });
+            return minX;
+        };
+
+        const getSortKey = (cfp) => {
+            const subStart = getSubmissionStart(cfp);
+            if (subStart !== Infinity) return subStart;
+            const confRange = parseConferenceDateRange(cfp);
+            if (confRange) {
+                const x = getDateX(confRange.start, startDate, totalMs, timelineWidth);
+                if (x !== null) return x;
+            }
+            return Infinity;
+        };
+
         // Group filtered cfps by venue (all years together)
         const grouped = [];
         const groupMap = new Map();
@@ -372,62 +425,139 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (info.kiise) {
                 kiiseText = `✨ ${info.kiise}`;
             }
-            const metaText = [bkText, kiiseText].filter(Boolean).join(' | ');
+            const metaText = [bkText, kiiseText].filter(Boolean).join(' ');
 
-            // Calculate horizontal span for each cycle
-            const getCycleSpan = (cfp) => {
-                const dates = [
-                    cfp.abstract_deadline,
-                    cfp.deadline,
-                    cfp.notification,
-                    cfp.start_date,
-                ];
-                const conferenceRange = parseConferenceDateRange(cfp);
-                if (conferenceRange) {
-                    dates.push(conferenceRange.end);
+            // Group cycles by year to implement year-exclusive scheduling
+            const cyclesByYear = {};
+            group.cycles.forEach(cfp => {
+                const yr = cfp.year || 9999;
+                if (!cyclesByYear[yr]) {
+                    cyclesByYear[yr] = [];
                 }
-                
+                cyclesByYear[yr].push(cfp);
+            });
+
+            // Sort years chronologically
+            const sortedYears = Object.keys(cyclesByYear).map(Number).sort((a, b) => a - b);
+
+            // Compute occupied intervals per year to check for inter-year overlaps
+            const yearIntervals = {};
+            sortedYears.forEach(year => {
                 let minX = Infinity;
                 let maxX = -Infinity;
-                dates.forEach(dateStr => {
-                    const x = getDateX(dateStr, startDate, totalMs, timelineWidth);
-                    if (x !== null) {
-                        minX = Math.min(minX, x);
-                        maxX = Math.max(maxX, x);
+                cyclesByYear[year].forEach(cfp => {
+                    const subInt = getSubmissionInterval(cfp);
+                    if (subInt) {
+                        minX = Math.min(minX, subInt.start);
+                        maxX = Math.max(maxX, subInt.end);
+                    }
+                    const confInt = getConferenceInterval(cfp);
+                    if (confInt) {
+                        minX = Math.min(minX, confInt.start);
+                        maxX = Math.max(maxX, confInt.end);
                     }
                 });
-                return {
-                    start: minX === Infinity ? 0 : minX - 20,
-                    end: maxX === -Infinity ? 0 : maxX + 20
-                };
+                if (minX === Infinity) minX = 0;
+                if (maxX === -Infinity) maxX = 0;
+                yearIntervals[year] = { start: minX, end: maxX };
+            });
+
+            let hasYearOverlap = false;
+            for (let i = 0; i < sortedYears.length; i++) {
+                for (let j = i + 1; j < sortedYears.length; j++) {
+                    const intA = yearIntervals[sortedYears[i]];
+                    const intB = yearIntervals[sortedYears[j]];
+                    if (intA.start < intB.end && intB.start < intA.end) {
+                        hasYearOverlap = true;
+                        break;
+                    }
+                }
+                if (hasYearOverlap) break;
+            }
+
+            const cycleTracks = [];
+            let accumulatedTracks = 0;
+
+            const overlaps = (intA, intB) => {
+                return intA.start < intB.end && intB.start < intA.end;
             };
 
-            // Modular round-robin track scheduling
-            const trackLimit = Math.min(3, group.cycles.length);
-            const cycleTracks = [];
+            const canPlaceOnTrack = (itemOccupied, trackIntervals) => {
+                for (const itemInt of itemOccupied) {
+                    for (const trackInt of trackIntervals) {
+                        if (overlaps(itemInt, trackInt)) {
+                            return false;
+                        }
+                    }
+                }
+                return true;
+            };
 
-            // Sort cycles by their start coordinate
-            const sortedCycles = group.cycles.map(cfp => ({
-                cfp,
-                span: getCycleSpan(cfp)
-            })).sort((a, b) => a.span.start - b.span.start);
+            sortedYears.forEach(year => {
+                const yearCycles = cyclesByYear[year];
+                // Sort cycles of this year chronologically by sortKey
+                const sortedYearCycles = yearCycles.map(cfp => ({
+                    cfp,
+                    sortKey: getSortKey(cfp)
+                })).sort((a, b) => a.sortKey - b.sortKey);
 
-            sortedCycles.forEach((item, idx) => {
-                const assignedTrack = idx % trackLimit;
-                cycleTracks.push({
-                    cfp: item.cfp,
-                    trackIndex: assignedTrack
+                // Determine which cycle renders the conference event bar.
+                const eventBarDates = new Set();
+                sortedYearCycles.forEach(item => {
+                    const conferenceRange = parseConferenceDateRange(item.cfp);
+                    if (conferenceRange) {
+                        const key = `${conferenceRange.start}_${conferenceRange.end}`;
+                        if (!eventBarDates.has(key)) {
+                            eventBarDates.add(key);
+                            item.rendersEventBar = true;
+                        } else {
+                            item.rendersEventBar = false;
+                        }
+                    } else {
+                        item.rendersEventBar = false;
+                    }
                 });
-            });
 
-            // Calculate max track index used
-            let maxTrackIndex = -1;
-            cycleTracks.forEach(ct => {
-                if (ct.trackIndex > maxTrackIndex) {
-                    maxTrackIndex = ct.trackIndex;
+                // Greedy track scheduling *within* this year
+                const yearTracksIntervals = [];
+
+                sortedYearCycles.forEach(item => {
+                    const occupied = [];
+                    const subInt = getSubmissionInterval(item.cfp);
+                    if (subInt) occupied.push(subInt);
+                    if (item.rendersEventBar) {
+                        const confInt = getConferenceInterval(item.cfp);
+                        if (confInt) occupied.push(confInt);
+                    }
+
+                    let assignedTrack = 0;
+                    while (assignedTrack < yearTracksIntervals.length) {
+                        if (canPlaceOnTrack(occupied, yearTracksIntervals[assignedTrack])) {
+                            break;
+                        }
+                        assignedTrack++;
+                    }
+
+                    if (!yearTracksIntervals[assignedTrack]) {
+                        yearTracksIntervals[assignedTrack] = [];
+                    }
+                    yearTracksIntervals[assignedTrack].push(...occupied);
+
+                    cycleTracks.push({
+                        cfp: item.cfp,
+                        trackIndex: (hasYearOverlap ? accumulatedTracks : 0) + assignedTrack
+                    });
+                });
+
+                const yearTracksUsed = yearTracksIntervals.length || 1;
+                if (hasYearOverlap) {
+                    accumulatedTracks += yearTracksUsed;
+                } else {
+                    accumulatedTracks = Math.max(accumulatedTracks, yearTracksUsed);
                 }
             });
-            const maxTracksUsed = maxTrackIndex === -1 ? 1 : (maxTrackIndex + 1);
+
+            const maxTracksUsed = accumulatedTracks || 1;
             const rowHeight = 30 + maxTracksUsed * 20;
 
             let elementsHtml = '';
@@ -435,7 +565,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             cycleTracks.forEach(item => {
                 const cfp = item.cfp;
-                const cycleSuffix = cfp.subtitle ? ` (${cfp.subtitle})` : '';
+                const cycleSuffix = ` (${cfp.year}${cfp.subtitle ? ` (${cfp.subtitle})` : ''})`;
                 const trackTop = 15 + item.trackIndex * 20;
 
                 // 1. Review Phase (deadline -> notification)
@@ -526,13 +656,19 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             const displayName = group.venue;
-            const verifiedBadge = group.is_verified ? `<span class="gantt-badge-verified" title="Verified Deadline">✓</span>` : '';
-            const displayUrl = group.url ? `<a href="${group.url}" target="_blank" class="gantt-venue-name">${displayName}${verifiedBadge}</a>` : `<span class="gantt-venue-name">${displayName}${verifiedBadge}</span>`;
+            const displayUrl = group.url 
+                ? `<a href="${group.url}" target="_blank" class="gantt-venue-name" style="flex-shrink: 1;">${displayName}</a>` 
+                : `<span class="gantt-venue-name" style="flex-shrink: 1;">${displayName}</span>`;
+            const metaSuffix = metaText 
+                ? `<span class="gantt-venue-meta" style="margin-top: 0; display: inline-flex; flex-shrink: 0; white-space: nowrap;">${metaText}</span>` 
+                : '';
             
             labelsHtml += `
                 <div class="gantt-row-label-cell" data-row-index="${index}" style="height: ${rowHeight}px;">
-                    ${displayUrl}
-                    <div class="gantt-venue-meta">${metaText}</div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; width: 100%; overflow: hidden;">
+                        ${displayUrl}
+                        ${metaSuffix}
+                    </div>
                 </div>
             `;
 
