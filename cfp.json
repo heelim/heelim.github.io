@@ -1082,6 +1082,97 @@
             }
         }
     },
+    "VLDB": {
+        "2026": {
+            "date": "August 31 - September 4, 2026",
+            "start_date": "2026-08-31",
+            "url": "https://vldb.org/2026/",
+            "location": "Boston, MA, USA",
+            "none": {
+                "deadline": "2026-03-01",
+                "notification": "2026-06-15",
+                "is_verified": true
+            }
+        },
+        "2027": {
+            "date": "August 23-27, 2027",
+            "start_date": "2027-08-23",
+            "url": "https://vldb.org/2027/",
+            "location": "Athens, Greece",
+            "April Cycle": {
+                "abstract_deadline": "2026-03-25",
+                "deadline": "2026-04-01",
+                "notification": "2026-05-15",
+                "is_verified": true
+            },
+            "August Cycle": {
+                "abstract_deadline": "2026-07-25",
+                "deadline": "2026-08-01",
+                "notification": "2026-09-15",
+                "is_verified": true
+            },
+            "December Cycle": {
+                "abstract_deadline": "2026-11-25",
+                "deadline": "2026-12-01",
+                "notification": "2027-01-15",
+                "is_verified": true
+            },
+            "February Cycle": {
+                "abstract_deadline": "2027-01-25",
+                "deadline": "2027-02-01",
+                "notification": "2027-03-15",
+                "is_verified": true
+            },
+            "January Cycle": {
+                "abstract_deadline": "2026-12-25",
+                "deadline": "2027-01-01",
+                "notification": "2027-02-15",
+                "is_verified": true
+            },
+            "July Cycle": {
+                "abstract_deadline": "2026-06-25",
+                "deadline": "2026-07-01",
+                "notification": "2026-08-15",
+                "is_verified": true
+            },
+            "June Cycle": {
+                "abstract_deadline": "2026-05-25",
+                "deadline": "2026-06-01",
+                "notification": "2026-07-15",
+                "is_verified": true
+            },
+            "March Cycle": {
+                "abstract_deadline": "2027-02-25",
+                "deadline": "2027-03-01",
+                "notification": "2027-04-15",
+                "is_verified": true
+            },
+            "May Cycle": {
+                "abstract_deadline": "2026-04-25",
+                "deadline": "2026-05-01",
+                "notification": "2026-06-15",
+                "is_verified": true
+            },
+            "November Cycle": {
+                "abstract_deadline": "2026-10-25",
+                "deadline": "2026-11-01",
+                "notification": "2026-12-15",
+                "is_verified": true
+            },
+            "October Cycle": {
+                "abstract_deadline": "2026-09-25",
+                "deadline": "2026-10-01",
+                "notification": "2026-11-15",
+                "is_verified": true
+            },
+            "September Cycle": {
+                "abstract_deadline": "2026-08-25",
+                "deadline": "2026-09-01",
+                "notification": "2026-10-15",
+                "is_verified": true
+            }
+        }
+    },
     "VLSI Symposium": {
         "2026": {
             "date": "June 14-18, 2026",

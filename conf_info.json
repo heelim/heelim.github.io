@@ -838,5 +838,20 @@
         ],
         "kiise": "최우수",
         "bk21plus": "4"
+    },
+    "VLDB": {
+        "fullname": "International Conference on Very Large Data Bases",
+        "domains": [
+            "Data Management",
+            "Distributed Systems"
+        ],
+        "keywords": [
+            "Databases",
+            "Data Management",
+            "Data Systems",
+            "Scalable Data Processing"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
     }
 }
