@@ -926,7 +926,7 @@
             "start_date": "2027-01-10",
             "url": "https://popl27.sigplan.org",
             "location": "Mexico City, Mexico",
-            "Estimated": {
+            "none": {
                 "deadline": "2026-07-09",
                 "early_notification": "2026-10-05",
                 "notification": "2026-11-09",
