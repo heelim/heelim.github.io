@@ -19,6 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 tab.classList.add('hidden');
             }
         });
+
+        // Scroll to today after tab becomes visible
+        setTimeout(scrollToToday, 100);
     }
 
     // Tab switching logic
@@ -279,6 +282,368 @@ document.addEventListener('DOMContentLoaded', () => {
         return isNaN(parsed) ? new Date(9999, 11, 31) : parsed;
     }
 
+    const monthWidth = 80;
+
+    function getDateX(dateStr, startDate, totalMs, timelineWidth) {
+        if (!dateStr || dateStr.trim() === "" || dateStr === "TBA" || dateStr === "TBD") return null;
+        const d = parseDate(dateStr);
+        if (d.getFullYear() === 9999) return null;
+        const dateMs = d - startDate;
+        const ratio = dateMs / totalMs;
+        return Math.max(0, Math.min(1, ratio)) * timelineWidth;
+    }
+
+    function generateGanttHtml(filteredCfps, isCfpTab) {
+        if (filteredCfps.length === 0) {
+            return '<p style="color: #64748b; padding: 2rem; text-align: center;">No matching conferences found.</p>';
+        }
+
+        // Dynamically calculate year range to fit all conferences
+        let computedMinYear = 2025;
+        let computedMaxYear = 2027;
+        
+        allCfps.forEach(cfp => {
+            if (cfp.year) {
+                if (cfp.year < computedMinYear) computedMinYear = cfp.year;
+                if (cfp.year > computedMaxYear) computedMaxYear = cfp.year;
+            }
+        });
+        
+        const totalMonths = (computedMaxYear - computedMinYear + 1) * 12;
+        const timelineWidth = totalMonths * monthWidth;
+        const startDate = new Date(computedMinYear, 0, 1);
+        const endDate = new Date(computedMaxYear, 11, 31);
+        const totalMs = endDate - startDate;
+
+        // Header Rows (Years and Months)
+        let yearsHtml = '';
+        let monthsHtml = '';
+        const monthsNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        
+        for (let y = computedMinYear; y <= computedMaxYear; y++) {
+            yearsHtml += `
+                <div class="gantt-year-block" style="width: ${12 * monthWidth}px;">
+                    ${y}
+                </div>
+            `;
+            for (let m = 0; m < 12; m++) {
+                monthsHtml += `
+                    <div class="gantt-month-block" style="width: ${monthWidth}px;">
+                        ${monthsNames[m]}
+                    </div>
+                `;
+            }
+        }
+
+        // Today line position
+        const todayStr = today.toISOString().split('T')[0];
+        const todayX = getDateX(todayStr, startDate, totalMs, timelineWidth);
+        let todayLineHtml = '';
+        if (todayX !== null && todayX >= 0 && todayX <= timelineWidth) {
+            todayLineHtml = `
+                <div class="gantt-today-line" style="left: ${todayX}px;">
+                    <div class="gantt-today-label">Today</div>
+                </div>
+            `;
+        }
+
+        // Group filtered cfps by venue + year
+        const grouped = [];
+        const groupMap = new Map();
+        
+        filteredCfps.forEach(cfp => {
+            const key = `${cfp.venue}-${cfp.year}`;
+            if (!groupMap.has(key)) {
+                const groupEntry = {
+                    venue: cfp.venue,
+                    year: cfp.year,
+                    url: cfp.url,
+                    is_verified: cfp.is_verified,
+                    cycles: [cfp]
+                };
+                groupMap.set(key, groupEntry);
+                grouped.push(groupEntry);
+            } else {
+                const existing = groupMap.get(key);
+                existing.cycles.push(cfp);
+                if (cfp.is_verified) {
+                    existing.is_verified = true;
+                }
+                if (!existing.url && cfp.url) {
+                    existing.url = cfp.url;
+                }
+            }
+        });
+
+        // Rows mapping (Separated into Labels and Timelines)
+        let labelsHtml = '';
+        let timelineRowsHtml = '';
+
+        grouped.forEach((group, index) => {
+            const info = confInfo[group.venue] || {};
+            
+            // Determine if the group is past
+            let isPast = true;
+            group.cycles.forEach(cfp => {
+                const refDateStr = isCfpTab ? cfp.deadline : (cfp.start_date || cfp.date || cfp.deadline);
+                const refDate = parseDate(refDateStr);
+                if (refDate >= today) {
+                    isPast = false;
+                }
+            });
+
+            const bkText = info.bk21plus ? `🎓 ${info.bk21plus}` : '';
+            let kiiseText = '';
+            if (info.kiise === '최우수') {
+                kiiseText = '🏆 최우수';
+            } else if (info.kiise === '우수') {
+                kiiseText = '🥈 우수';
+            } else if (info.kiise) {
+                kiiseText = `✨ ${info.kiise}`;
+            }
+            const metaText = [bkText, kiiseText].filter(Boolean).join(' | ');
+
+            // Calculate horizontal span for each cycle
+            const getCycleSpan = (cfp) => {
+                const dates = [
+                    cfp.abstract_deadline,
+                    cfp.deadline,
+                    cfp.notification,
+                    cfp.start_date,
+                ];
+                if (cfp.start_date) {
+                    const startDateObj = parseDate(cfp.start_date);
+                    const endDateObj = new Date(startDateObj);
+                    endDateObj.setDate(startDateObj.getDate() + 4);
+                    dates.push(endDateObj.toISOString().split('T')[0]);
+                }
+                
+                let minX = Infinity;
+                let maxX = -Infinity;
+                dates.forEach(dateStr => {
+                    const x = getDateX(dateStr, startDate, totalMs, timelineWidth);
+                    if (x !== null) {
+                        minX = Math.min(minX, x);
+                        maxX = Math.max(maxX, x);
+                    }
+                });
+                return {
+                    start: minX === Infinity ? 0 : minX - 20,
+                    end: maxX === -Infinity ? 0 : maxX + 20
+                };
+            };
+
+            // Modular round-robin track scheduling
+            const trackLimit = Math.min(3, group.cycles.length);
+            const cycleTracks = [];
+
+            // Sort cycles by their start coordinate
+            const sortedCycles = group.cycles.map(cfp => ({
+                cfp,
+                span: getCycleSpan(cfp)
+            })).sort((a, b) => a.span.start - b.span.start);
+
+            sortedCycles.forEach((item, idx) => {
+                const assignedTrack = idx % trackLimit;
+                cycleTracks.push({
+                    cfp: item.cfp,
+                    trackIndex: assignedTrack
+                });
+            });
+
+            // Calculate max track index used
+            let maxTrackIndex = -1;
+            cycleTracks.forEach(ct => {
+                if (ct.trackIndex > maxTrackIndex) {
+                    maxTrackIndex = ct.trackIndex;
+                }
+            });
+            const maxTracksUsed = maxTrackIndex === -1 ? 1 : (maxTrackIndex + 1);
+            const rowHeight = 30 + maxTracksUsed * 20;
+
+            let elementsHtml = '';
+
+            cycleTracks.forEach(item => {
+                const cfp = item.cfp;
+                const cycleSuffix = cfp.subtitle ? ` (${cfp.subtitle})` : '';
+                const trackTop = 15 + item.trackIndex * 20;
+
+                // 1. Review Phase (deadline -> notification)
+                const dlX = getDateX(cfp.deadline, startDate, totalMs, timelineWidth);
+                const notifX = getDateX(cfp.notification, startDate, totalMs, timelineWidth);
+                
+                if (dlX !== null && notifX !== null && notifX > dlX) {
+                    elementsHtml += `
+                        <div class="gantt-review-bar" style="left: ${dlX}px; width: ${notifX - dlX}px; top: ${trackTop + 5}px; height: 10px; border-radius: 3px;">
+                            <div class="gantt-tooltip">
+                                <strong>Review Phase${cycleSuffix}</strong><br>
+                                Deadline: ${cfp.deadline}<br>
+                                Notification: ${cfp.notification}
+                            </div>
+                        </div>
+                    `;
+                }
+
+                // 2. Abstract to Submission connecting bar (if both exist)
+                const abstX = getDateX(cfp.abstract_deadline, startDate, totalMs, timelineWidth);
+                if (abstX !== null && dlX !== null && dlX > abstX) {
+                    elementsHtml += `
+                        <div class="gantt-abstract-bar" style="left: ${abstX}px; width: ${dlX - abstX}px; top: ${trackTop + 5}px; height: 10px; border-radius: 3px;">
+                            <div class="gantt-tooltip">
+                                <strong>Abstract to Submission Phase${cycleSuffix}</strong><br>
+                                Abstract: ${cfp.abstract_deadline}<br>
+                                Submission: ${cfp.deadline}
+                            </div>
+                        </div>
+                    `;
+                }
+
+                // 3. Abstract Deadline (if any)
+                if (abstX !== null) {
+                    elementsHtml += `
+                        <div class="gantt-deadline-bar" style="left: ${abstX}px; background: #60a5fa; top: ${trackTop + 1}px; height: 18px; width: 5px;">
+                            <div class="gantt-tooltip">
+                                <strong>Abstract Deadline${cycleSuffix}</strong><br>
+                                Date: ${cfp.abstract_deadline}
+                            </div>
+                        </div>
+                    `;
+                }
+
+                // 4. Submission Deadline
+                if (dlX !== null) {
+                    elementsHtml += `
+                        <div class="gantt-deadline-bar" style="left: ${dlX}px; top: ${trackTop + 1}px; height: 18px; width: 5px;">
+                            <div class="gantt-tooltip">
+                                <strong>Submission Deadline${cycleSuffix}</strong><br>
+                                Date: ${cfp.deadline}
+                            </div>
+                        </div>
+                    `;
+                }
+
+                // 5. Notification Bar
+                if (notifX !== null) {
+                    elementsHtml += `
+                        <div class="gantt-notification-bar" style="left: ${notifX}px; top: ${trackTop + 1}px; height: 18px; width: 5px;">
+                            <div class="gantt-tooltip">
+                                <strong>Notification Date${cycleSuffix}</strong><br>
+                                Date: ${cfp.notification}
+                            </div>
+                        </div>
+                    `;
+                }
+
+                // 6. Event Bar (start_date -> end_date)
+                const startX = getDateX(cfp.start_date, startDate, totalMs, timelineWidth);
+                if (startX !== null) {
+                    let endX = null;
+                    if (cfp.date && cfp.date.includes('-')) {
+                        const rangeMatch = cfp.date.match(/-\s*([A-Za-z]+)?\s*(\d+),\s*(\d{4})/);
+                        if (rangeMatch) {
+                            const monthName = rangeMatch[1] || parseDate(cfp.start_date).toLocaleString('default', { month: 'long' });
+                            const day = rangeMatch[2];
+                            const year = rangeMatch[3];
+                            const parsedEnd = new Date(`${monthName} ${day}, ${year}`);
+                            if (!isNaN(parsedEnd)) {
+                                endX = getDateX(parsedEnd.toISOString().split('T')[0], startDate, totalMs, timelineWidth);
+                            }
+                        }
+                    }
+                    
+                    if (endX === null) {
+                        const startDateObj = parseDate(cfp.start_date);
+                        const endDateObj = new Date(startDateObj);
+                        endDateObj.setDate(startDateObj.getDate() + 4);
+                        endX = getDateX(endDateObj.toISOString().split('T')[0], startDate, totalMs, timelineWidth);
+                    }
+
+                    if (endX !== null && endX > startX) {
+                        elementsHtml += `
+                            <div class="gantt-event-bar" style="left: ${startX}px; width: ${Math.max(12, endX - startX)}px; top: ${trackTop + 6}px; height: 8px; border-radius: 4px;">
+                                <div class="gantt-tooltip">
+                                    <strong>Conference Event${cycleSuffix}</strong><br>
+                                    Date: ${cfp.date}<br>
+                                    Location: ${cfp.location}
+                                </div>
+                            </div>
+                        `;
+                    }
+                }
+            });
+
+            const displayName = `${group.venue} ${group.year}`;
+            const verifiedBadge = group.is_verified ? `<span class="gantt-badge-verified" title="Verified Deadline">✓</span>` : '';
+            const displayUrl = group.url ? `<a href="${group.url}" target="_blank" class="gantt-venue-name">${displayName}${verifiedBadge}</a>` : `<span class="gantt-venue-name">${displayName}${verifiedBadge}</span>`;
+            
+            labelsHtml += `
+                <div class="gantt-row-label-cell ${isPast ? 'past-row' : ''}" data-row-index="${index}" style="height: ${rowHeight}px;">
+                    ${displayUrl}
+                    <div class="gantt-venue-meta">${metaText}</div>
+                </div>
+            `;
+
+            timelineRowsHtml += `
+                <div class="gantt-row-timeline ${isPast ? 'past-row' : ''}" data-row-index="${index}" style="width: ${timelineWidth}px; height: ${rowHeight}px;">
+                    ${elementsHtml}
+                </div>
+            `;
+        });
+
+        return `
+            <div class="gantt-labels-column">
+                <div class="gantt-corner-label">Conferences</div>
+                ${labelsHtml}
+            </div>
+            <div class="gantt-timeline-scroll">
+                <div class="gantt-timeline-header">
+                    <div class="gantt-year-row" style="width: ${timelineWidth}px;">
+                        ${yearsHtml}
+                    </div>
+                    <div class="gantt-month-row" style="width: ${timelineWidth}px;">
+                        ${monthsHtml}
+                    </div>
+                </div>
+                <div class="gantt-timeline-body" style="width: ${timelineWidth}px;">
+                    ${todayLineHtml}
+                    ${timelineRowsHtml}
+                </div>
+            </div>
+        `;
+    }
+
+    function scrollToToday() {
+        const containers = document.querySelectorAll('.gantt-container');
+        containers.forEach(container => {
+            let computedMinYear = 2025;
+            let computedMaxYear = 2027;
+            
+            allCfps.forEach(cfp => {
+                if (cfp.year) {
+                    if (cfp.year < computedMinYear) computedMinYear = cfp.year;
+                    if (cfp.year > computedMaxYear) computedMaxYear = cfp.year;
+                }
+            });
+            
+            const totalMonths = (computedMaxYear - computedMinYear + 1) * 12;
+            const timelineWidth = totalMonths * monthWidth;
+            const startDate = new Date(computedMinYear, 0, 1);
+            const endDate = new Date(computedMaxYear, 11, 31);
+            const totalMs = endDate - startDate;
+
+            const todayStr = today.toISOString().split('T')[0];
+            const todayX = getDateX(todayStr, startDate, totalMs, timelineWidth);
+            if (todayX !== null) {
+                // Find the scrollable timeline area inside this container
+                const scrollArea = container.querySelector('.gantt-timeline-scroll');
+                if (scrollArea) {
+                    // Center this month (todayX) (subtract 20px for breathing room)
+                    scrollArea.scrollLeft = Math.max(0, todayX - 20);
+                }
+            }
+        });
+    }
+
     function renderCfps() {
         const field = sortFieldSelect.value;
         const order = sortOrderSelect.value;
@@ -336,80 +701,8 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        if (filteredCfps.length === 0) {
-            cfpList.innerHTML = '<p style="color: #64748b;">No matching conferences found.</p>';
-            return;
-        }
-
-        cfpList.innerHTML = filteredCfps.map(cfp => {
-            const abstDeadline = cfp.abstract_deadline ? parseDate(cfp.abstract_deadline) : null;
-            const fullDeadline = parseDate(cfp.deadline);
-
-            let targetDeadline = fullDeadline;
-            let targetLabel = "";
-
-            if (abstDeadline && abstDeadline >= today) {
-                targetDeadline = abstDeadline;
-                targetLabel = " (Abstract)";
-            }
-
-            const diffTime = targetDeadline - today;
-            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-            const dDayValue = diffDays === 0 ? 'D-Day' : (diffDays < 0 ? `D+${Math.abs(diffDays)}` : `D-${diffDays}`);
-            const dDayText = dDayValue + targetLabel;
-
-            const isPast = fullDeadline < today;
-            const opacity = isPast ? '0.5' : '1';
-            const grayscale = isPast ? 'grayscale(100%)' : 'none';
-
-            const info = confInfo[cfp.venue];
-            const domainTags = info && info.domains ? info.domains.map(dom => `
-                <span style="font-size: 0.75rem; color: #10b981; font-weight: 600; margin-right: 0.5rem; text-transform: uppercase;">#${dom}</span>
-            `).join('') : '';
-
-            const rankingBadges = info && (info.bk21plus || info.kiise) ? `
-                <div style="margin-top: 6px; display: flex; gap: 0.5rem; align-items: center;">
-                    ${info.bk21plus ? `<span style="font-size: 0.7rem; padding: 0.15rem 0.5rem; background: rgba(16, 185, 129, 0.15); color: #10b981; border-radius: 4px; font-weight: 700; border: 1px solid rgba(16, 185, 129, 0.2);">BK21+ ${info.bk21plus}</span>` : ''}
-                    ${info.kiise ? `<span style="font-size: 0.7rem; padding: 0.15rem 0.5rem; background: rgba(59, 130, 246, 0.15); color: var(--accent); border-radius: 4px; font-weight: 700; border: 1px solid rgba(59, 130, 246, 0.2);">KIISE ${info.kiise}</span>` : ''}
-                </div>
-            ` : '';
-
-            const keywordsHtml = info && info.keywords ? `
-                <div style="display: flex; gap: 0.4rem; margin-top: 0.6rem; flex-wrap: wrap;">
-                    ${info.keywords.map(kw => `<span style="font-size: 0.75rem; padding: 0.1rem 0.5rem; background: rgba(255, 255, 255, 0.05); border-radius: 4px; color: #64748b; border: 1px solid rgba(255, 255, 255, 0.05);">${kw}</span>`).join('')}
-                </div>
-            ` : '';
-
-            return `
-        <div class="pub-item" style="margin-bottom: 0.5rem; padding: 1.2rem; background: rgba(255, 255, 255, 0.02); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05); opacity: ${opacity}; filter: ${grayscale};">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
-            <span class="item-title" style="font-weight: 600;">
-              ${cfp.url ? `<a href="${cfp.url}" target="_blank" style="color: var(--accent); text-decoration: none;">${cfp.venue} ${cfp.year}</a>` : `<span style="color: var(--accent);">${cfp.venue} ${cfp.year}</span>`}
-              ${cfp.is_verified ? `<span style="color: #10b981; font-size: 0.9em; margin-left: 0.3rem;" title="Verified">✓</span>` : `<span style="color: #f59e0b; font-size: 0.75em; margin-left: 0.3rem;" title="Estimated">(Estimated)</span>`}
-              ${cfp.subtitle ? `<span style="color: #94a3b8; font-weight: 400; font-size: 0.9em;">(${cfp.subtitle})</span>` : ''}
-              <div style="margin-top: 4px; display: flex; flex-wrap: wrap;">${domainTags}</div>
-              ${rankingBadges}
-            </span>
-            <span style="font-size: 0.8125rem; padding: 0.25rem 0.75rem; background: rgba(59, 130, 246, 0.1); color: var(--accent); border-radius: 20px; font-weight: 700; white-space: nowrap; text-align: center;">
-              ${dDayText}
-            </span>
-          </div>
-          <div style="font-size: 0.95rem; color: #94a3b8; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center;">
-            <span style="color: var(--fg); font-weight: 500;">
-              ${cfp.abstract_deadline ? `Abstract: <span style="color: #f87171; margin-right: 0.5rem;">${cfp.abstract_deadline}</span> <span style="opacity: 0.3; margin-right: 0.5rem;">|</span>` : ''}
-              Deadline: <span style="color: #f87171;">${cfp.deadline}</span>
-            </span>
-            ${cfp.early_notification ? `<span style="opacity: 0.3;">|</span><span>Early (Reject): <span style="color: #fbbf24;">${cfp.early_notification}</span></span>` : ''}
-            ${cfp.notification ? `<span style="opacity: 0.3;">|</span><span>${cfp.early_notification ? 'Final' : 'Notification'}: <span style="color: #fbbf24;">${cfp.notification}</span></span>` : ''}
-            <span style="opacity: 0.3;">|</span>
-            <span>Dates: ${cfp.date}</span>
-            <span style="opacity: 0.3;">|</span>
-            <span>Location: ${cfp.location}</span>
-          </div>
-          ${keywordsHtml}
-        </div>
-      `;
-        }).join('');
+        cfpList.innerHTML = generateGanttHtml(filteredCfps, true);
+        scrollToToday();
     }
 
     sortFieldSelect.addEventListener('change', renderCfps);
@@ -429,15 +722,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return eventDate >= today;
         });
 
-        // Deduplicate conferences by Venue + Year to avoid multiple CFP cycles showing as multiple events
-        const uniqueMap = new Map();
-        filteredCfps.forEach(cfp => {
-            const key = `${cfp.venue}-${cfp.year}`;
-            if (!uniqueMap.has(key)) {
-                uniqueMap.set(key, cfp);
-            }
-        });
-        filteredCfps = Array.from(uniqueMap.values());
+        // Deduplication removed; generateGanttHtml groups all cycles by Venue + Year automatically
 
         // 2. Multi-category Filtering (Domain OR Keyword)
         if (upcomingSelectedKeywords.size > 0 || upcomingSelectedDomains.size > 0) {
@@ -480,63 +765,35 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        if (filteredCfps.length === 0) {
-            upcomingList.innerHTML = '<p style="color: #64748b;">No matching conferences found.</p>';
-            return;
-        }
-
-        upcomingList.innerHTML = filteredCfps.map(cfp => {
-            const eventDate = parseDate(cfp.start_date || cfp.date || cfp.deadline);
-
-            const diffTime = eventDate - today;
-            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-            const dDayValue = diffDays === 0 ? 'D-Day' : (diffDays < 0 ? `D+${Math.abs(diffDays)}` : `D-${diffDays}`);
-
-            const isPast = eventDate < today;
-            // More muted presentation for past items
-            const opacity = isPast ? '0.5' : '1';
-            const grayscale = isPast ? 'grayscale(100%)' : 'none';
-
-            const info = confInfo[cfp.venue];
-            const domainTags = info && info.domains ? info.domains.map(dom => `
-                <span style="font-size: 0.75rem; color: #10b981; font-weight: 600; margin-right: 0.5rem; text-transform: uppercase;">#${dom}</span>
-            `).join('') : '';
-
-            const rankingBadges = info && (info.bk21plus || info.kiise) ? `
-                <div style="margin-top: 6px; display: flex; gap: 0.5rem; align-items: center;">
-                    ${info.bk21plus ? `<span style="font-size: 0.7rem; padding: 0.15rem 0.5rem; background: rgba(16, 185, 129, 0.15); color: #10b981; border-radius: 4px; font-weight: 700; border: 1px solid rgba(16, 185, 129, 0.2);">BK21+ ${info.bk21plus}</span>` : ''}
-                    ${info.kiise ? `<span style="font-size: 0.7rem; padding: 0.15rem 0.5rem; background: rgba(59, 130, 246, 0.15); color: var(--accent); border-radius: 4px; font-weight: 700; border: 1px solid rgba(59, 130, 246, 0.2);">KIISE ${info.kiise}</span>` : ''}
-                </div>
-            ` : '';
-
-            const keywordsHtml = info && info.keywords ? `
-                <div style="display: flex; gap: 0.4rem; margin-top: 0.6rem; flex-wrap: wrap;">
-                    ${info.keywords.map(kw => `<span style="font-size: 0.75rem; padding: 0.1rem 0.5rem; background: rgba(255, 255, 255, 0.05); border-radius: 4px; color: #64748b; border: 1px solid rgba(255, 255, 255, 0.05);">${kw}</span>`).join('')}
-                </div>
-            ` : '';
-
-            return `
-        <div class="pub-item" style="margin-bottom: 0.5rem; padding: 1.2rem; background: rgba(255, 255, 255, 0.02); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05); opacity: ${opacity}; filter: ${grayscale};">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
-            <span class="item-title" style="font-weight: 600;">
-              ${cfp.url ? `<a href="${cfp.url}" target="_blank" style="color: var(--accent); text-decoration: none;">${cfp.venue} ${cfp.year}</a>` : `<span style="color: var(--accent);">${cfp.venue} ${cfp.year}</span>`}
-              <div style="margin-top: 4px; display: flex; flex-wrap: wrap;">${domainTags}</div>
-              ${rankingBadges}
-            </span>
-            <span style="font-size: 0.8125rem; padding: 0.25rem 0.75rem; background: rgba(59, 130, 246, 0.1); color: var(--accent); border-radius: 20px; font-weight: 700; white-space: nowrap; text-align: center;">
-              ${dDayValue}
-            </span>
-          </div>
-          <div style="font-size: 0.95rem; color: #94a3b8; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center;">
-            <span style="color: var(--fg); font-weight: 500;">Dates: <span style="color: #f87171;">${cfp.date}</span></span>
-            <span style="opacity: 0.3;">|</span>
-            <span>Location: ${cfp.location}</span>
-          </div>
-          ${keywordsHtml}
-        </div>
-      `;
-        }).join('');
+        upcomingList.innerHTML = generateGanttHtml(filteredCfps, false);
+        scrollToToday();
     }
 
+    function setupHoverSync() {
+        const handleHover = (e, isEnter) => {
+            const rowEl = e.target.closest('[data-row-index]');
+            if (!rowEl) return;
+            
+            const rowIndex = rowEl.getAttribute('data-row-index');
+            const container = rowEl.closest('.gantt-container');
+            if (!container || rowIndex === null) return;
+            
+            const matchingRows = container.querySelectorAll(`[data-row-index="${rowIndex}"]`);
+            matchingRows.forEach(el => {
+                if (isEnter) {
+                    el.classList.add('gantt-row-hover');
+                } else {
+                    el.classList.remove('gantt-row-hover');
+                }
+            });
+        };
+
+        document.querySelectorAll('.gantt-container').forEach(container => {
+            container.addEventListener('mouseover', (e) => handleHover(e, true));
+            container.addEventListener('mouseout', (e) => handleHover(e, false));
+        });
+    }
+
+    setupHoverSync();
     loadData();
 });
