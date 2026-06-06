@@ -1,6 +1,6 @@
 {
     "ASPLOS": {
-        "2025": {
+        "2026": {
             "date": "March 22-26, 2026",
             "start_date": "2026-03-22",
             "url": "https://www.asplos-conference.org/asplos2026/cfp/",
@@ -9,13 +9,7 @@
                 "deadline": "2025-03-12",
                 "notification": "2025-06-24",
                 "is_verified": false
-            }
-        },
-        "2026": {
-            "date": "March 22-26, 2026",
-            "start_date": "2026-03-22",
-            "url": "https://www.asplos-conference.org/asplos2026/cfp/",
-            "location": "Pittsburgh, PA, USA",
+            },
             "Summer": {
                 "abstract_deadline": "2025-08-13",
                 "deadline": "2025-08-20",
@@ -239,15 +233,16 @@
             "date": "June 1-6, 2026",
             "start_date": "2026-06-01",
             "location": "Bangalore, India",
+            "url": "https://asiaccs2026.cse.iitkgp.ac.in/",
             "Cycle-1": {
-                "url": "https://asiaccs2026.org/",
                 "deadline": "2025-08-25",
+                "early_notification": "2025-10-01",
                 "notification": "2025-11-19",
                 "is_verified": false
             },
             "Cycle-2": {
-                "url": "https://asiaccs2026.cse.iitkgp.ac.in/",
                 "deadline": "2025-12-12",
+                "early_notification": "2026-01-21",
                 "notification": "2026-03-10",
                 "is_verified": false
             }
