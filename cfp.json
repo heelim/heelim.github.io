@@ -1303,7 +1303,8 @@
             "none": {
                 "abstract_deadline": "2026-09-13",
                 "deadline": "2026-09-20",
-                "is_verified": true
+                "notification": "2026-11-27",
+                "is_verified": false
             }
         }
     },
