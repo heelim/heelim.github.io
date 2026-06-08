@@ -544,6 +544,29 @@ button.sort-select {
   color: #fbbf24;
 }
 
+/* BK/KIISE toggle: hidden state */
+.gantt-labels-column {
+  transition: width 0.3s ease;
+}
+
+.gantt-corner-sub,
+.gantt-label-sub-cell {
+  transition: width 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+}
+
+.gantt-labels-column.ranks-hidden {
+  width: 150px;
+}
+
+.gantt-labels-column.ranks-hidden .gantt-corner-sub,
+.gantt-labels-column.ranks-hidden .gantt-label-sub-cell {
+  width: 0;
+  padding: 0;
+  opacity: 0;
+  border: none;
+}
+
 /* Right Column Timeline (Scrollable) */
 .gantt-timeline-scroll {
   flex-grow: 1;

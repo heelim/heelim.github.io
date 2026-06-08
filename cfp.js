@@ -907,6 +907,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cfpList.innerHTML = generateGanttHtml(filteredCfps);
         scrollToToday();
+        if (window._ranksApply) window._ranksApply();
     }
 
     function setupHoverSync() {
@@ -971,7 +972,36 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    let ranksVisible = true;
+
+    function setupRanksToggle() {
+        const btn = document.getElementById('ranks-toggle');
+        if (!btn) return;
+
+        function applyRanksState() {
+            const labelsCol = document.querySelector('.gantt-labels-column');
+            if (!labelsCol) return;
+            if (ranksVisible) {
+                labelsCol.classList.remove('ranks-hidden');
+                btn.style.opacity = '1';
+            } else {
+                labelsCol.classList.add('ranks-hidden');
+                btn.style.opacity = '0.45';
+            }
+        }
+
+        btn.addEventListener('click', () => {
+            ranksVisible = !ranksVisible;
+            applyRanksState();
+        });
+
+        // Re-apply after each render (gantt HTML is regenerated)
+        const origRender = renderCfps;
+        window._ranksApply = applyRanksState;
+    }
+
     setupHoverSync();
     setupSort();
+    setupRanksToggle();
     loadData();
 });
