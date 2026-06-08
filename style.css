@@ -453,41 +453,95 @@ button.sort-select {
 
 /* Left Column Labels (Static) */
 .gantt-labels-column {
-  width: 180px;
+  width: 220px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  background: rgba(15, 23, 42, 0.35); /* Transparent glass integration */
+  background: rgba(15, 23, 42, 0.35);
+  /* Transparent glass integration */
   border-right: 1px solid rgba(255, 255, 255, 0.08);
   z-index: 15;
 }
 
 .gantt-corner-label {
-  height: 68px; /* 36px year + 30px month + 2px border */
+  height: 68px;
+  /* 36px year + 30px month + 2px border */
   display: flex;
+  flex-direction: row;
   align-items: center;
-  padding-left: 1rem;
-  font-weight: 700;
-  color: var(--accent);
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   background: rgba(15, 23, 42, 0.65);
   box-sizing: border-box;
+  overflow: hidden;
+}
+
+.gantt-corner-name {
+  flex: 1 1 0;
+  min-width: 0;
+  padding-left: 1rem;
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.gantt-corner-sub {
+  width: 40px;
+  flex-shrink: 0;
+  text-align: center;
+  font-weight: 700;
+  color: #64748b;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-left: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 0 4px;
 }
 
 .gantt-row-label-cell {
   min-height: 30px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 0.75rem;
+  flex-direction: row;
+  align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.03);
   background: transparent;
   transition: background-color 0.2s ease;
   overflow: hidden;
   box-sizing: border-box;
+}
+
+.gantt-label-name-cell {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 0 0.5rem 0 0.75rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.gantt-label-sub-cell {
+  width: 40px;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 0.7rem;
+  color: #94a3b8;
+  border-left: 1px solid rgba(255, 255, 255, 0.04);
+  padding: 0 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.gantt-label-bk {
+  color: #a78bfa;
+}
+
+.gantt-label-kiise {
+  color: #fbbf24;
 }
 
 /* Right Column Timeline (Scrollable) */
@@ -504,14 +558,17 @@ button.sort-select {
 .gantt-timeline-scroll::-webkit-scrollbar {
   height: 8px;
 }
+
 .gantt-timeline-scroll::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.02);
   border-radius: 4px;
 }
+
 .gantt-timeline-scroll::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
 }
+
 .gantt-timeline-scroll::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.2);
 }
@@ -520,12 +577,14 @@ button.sort-select {
   display: flex;
   flex-direction: column;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-  background: rgba(15, 23, 42, 0.65); /* Unified darker header background */
+  background: rgba(15, 23, 42, 0.65);
+  /* Unified darker header background */
   z-index: 12;
   flex-shrink: 0;
 }
 
-.gantt-year-row, .gantt-month-row {
+.gantt-year-row,
+.gantt-month-row {
   display: flex;
   flex-direction: row;
 }
@@ -584,6 +643,7 @@ button.sort-select {
 .gantt-row-hover {
   background-color: #1e293b !important;
 }
+
 .gantt-row-timeline:hover,
 .gantt-row-timeline.gantt-row-hover {
   z-index: 50;
@@ -598,6 +658,7 @@ button.sort-select {
   text-overflow: ellipsis;
   text-decoration: none;
 }
+
 .gantt-venue-name:hover {
   text-decoration: underline;
 }
@@ -626,6 +687,7 @@ button.sort-select {
   cursor: pointer;
   transition: all 0.2s ease;
 }
+
 .gantt-review-bar:hover {
   background: linear-gradient(to right, rgba(239, 68, 68, 0.6), rgba(239, 68, 68, 0.3));
   border-color: rgba(239, 68, 68, 0.7);
@@ -645,6 +707,7 @@ button.sort-select {
   box-shadow: 0 0 6px rgba(59, 130, 246, 0.5);
   transition: transform 0.2s ease;
 }
+
 .gantt-deadline-bar:hover {
   transform: translateX(-50%) scaleY(1.1);
   background: #60a5fa;
@@ -663,6 +726,7 @@ button.sort-select {
   box-shadow: 0 0 6px rgba(234, 179, 8, 0.5);
   transition: transform 0.2s ease;
 }
+
 .gantt-notification-bar:hover {
   transform: translateX(-50%) scaleY(1.1);
   background: #fde047;
@@ -679,6 +743,7 @@ button.sort-select {
   box-shadow: 0 0 6px rgba(16, 185, 129, 0.3);
   transition: all 0.2s ease;
 }
+
 .gantt-event-bar:hover {
   height: 12px;
   top: 19px;
@@ -758,12 +823,14 @@ button.sort-select {
   }
 
   .gantt-labels-column {
-    width: 140px; /* slightly narrower on mobile */
+    width: 200px;
   }
+
   .gantt-corner-label {
     font-size: 0.8rem;
     padding-left: 0.5rem;
   }
+
   .gantt-row-label-cell {
     padding: 0 0.5rem;
   }
@@ -798,6 +865,7 @@ button.sort-select {
   cursor: pointer;
   transition: all 0.2s ease;
 }
+
 .gantt-abstract-bar:hover {
   background: linear-gradient(to right, rgba(59, 130, 246, 0.6), rgba(59, 130, 246, 0.3));
   border-color: rgba(59, 130, 246, 0.7);

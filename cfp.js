@@ -805,12 +805,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 ? `<span class="gantt-venue-meta" style="margin-top: 0; display: inline-flex; flex-shrink: 0; white-space: nowrap;">${metaText}</span>` 
                 : '';
             
+            const bkRaw = info.bk21plus ? `${info.bk21plus}` : '';
+            const kiiseRaw = info.kiise ? `${info.kiise}` : '';
+
             labelsHtml += `
                 <div class="gantt-row-label-cell" data-row-index="${index}" style="height: ${rowHeight}px;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; width: 100%; overflow: hidden;">
-                        ${displayUrl}
-                        ${metaSuffix}
-                    </div>
+                    <div class="gantt-label-name-cell">${displayUrl}</div>
+                    <div class="gantt-label-sub-cell gantt-label-bk">${bkRaw}</div>
+                    <div class="gantt-label-sub-cell gantt-label-kiise">${kiiseRaw}</div>
                 </div>
             `;
 
@@ -823,7 +825,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         return `
             <div class="gantt-labels-column">
-                <div class="gantt-corner-label">Conferences</div>
+                <div class="gantt-corner-label">
+                    <div class="gantt-corner-name">Conference</div>
+                    <div class="gantt-corner-sub">BK</div>
+                    <div class="gantt-corner-sub">KIISE</div>
+                </div>
                 ${labelsHtml}
             </div>
             <div class="gantt-timeline-scroll">
