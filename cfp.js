@@ -604,21 +604,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 yearIntervals[year] = { start: minX, end: maxX };
             });
 
-            let hasYearOverlap = false;
-            for (let i = 0; i < sortedYears.length; i++) {
-                for (let j = i + 1; j < sortedYears.length; j++) {
-                    const intA = yearIntervals[sortedYears[i]];
-                    const intB = yearIntervals[sortedYears[j]];
-                    if (intA.start < intB.end && intB.start < intA.end) {
-                        hasYearOverlap = true;
-                        break;
-                    }
-                }
-                if (hasYearOverlap) break;
-            }
-
-            const cycleTracks = [];
-            let accumulatedTracks = 0;
+            // Per-year track offset: track how much space each year actually needs,
+            // and only stack years that genuinely overlap with previously placed years.
+            const yearTrackOffset = {}; // year -> base track index
+            const placedYears = []; // { year, interval: { start, end }, trackOffset, trackCount }
 
             const overlaps = (intA, intB) => {
                 return intA.start < intB.end && intB.start < intA.end;
@@ -634,6 +623,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 return true;
             };
+
+            // First pass: determine track offset for each year independently
+            sortedYears.forEach(year => {
+                const yInt = yearIntervals[year];
+                // Find the max (trackOffset + trackCount) among all previously placed years
+                // that overlap with this year's interval.
+                let baseOffset = 0;
+                placedYears.forEach(py => {
+                    if (overlaps(yInt, py.interval)) {
+                        baseOffset = Math.max(baseOffset, py.trackOffset + py.trackCount);
+                    }
+                });
+                yearTrackOffset[year] = baseOffset;
+                placedYears.push({ year, interval: yInt, trackOffset: baseOffset, trackCount: 1 }); // trackCount updated below
+            });
+
+            const cycleTracks = [];
+            let maxTracksUsedOverall = 0;
 
             sortedYears.forEach(year => {
                 const yearCycles = cyclesByYear[year];
@@ -687,19 +694,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     cycleTracks.push({
                         cfp: item.cfp,
-                        trackIndex: (hasYearOverlap ? accumulatedTracks : 0) + assignedTrack
+                        trackIndex: yearTrackOffset[year] + assignedTrack
                     });
                 });
 
                 const yearTracksUsed = yearTracksIntervals.length || 1;
-                if (hasYearOverlap) {
-                    accumulatedTracks += yearTracksUsed;
-                } else {
-                    accumulatedTracks = Math.max(accumulatedTracks, yearTracksUsed);
-                }
+                // Update trackCount so subsequent overlapping years stack correctly
+                const py = placedYears.find(p => p.year === year);
+                if (py) py.trackCount = yearTracksUsed;
+                maxTracksUsedOverall = Math.max(maxTracksUsedOverall, yearTrackOffset[year] + yearTracksUsed);
             });
 
-            const maxTracksUsed = accumulatedTracks || 1;
+            const maxTracksUsed = maxTracksUsedOverall || 1;
             const rowHeight = 16 + maxTracksUsed * 14;
 
             let elementsHtml = '';
