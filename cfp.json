@@ -3251,13 +3251,13 @@
             "Fall Cycle": {
                 "deadline": "2026-08-19",
                 "early_notification": "2026-09-25",
-                "notification": "2026-12-16",
+                "notification": "2026-11-04",
                 "is_verified": true
             },
-            "Spring Cycle": {
+            "Summer Cycle": {
                 "deadline": "2026-05-06",
                 "early_notification": "2026-06-12",
-                "notification": "2026-09-02",
+                "notification": "2026-07-22",
                 "is_verified": true
             }
         }
