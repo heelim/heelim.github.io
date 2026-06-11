@@ -3603,16 +3603,6 @@
                 "deadline": "2026-03-17",
                 "notification": "2026-06-10",
                 "is_verified": true
-            },
-            "Cycle 2": {
-                "deadline": "2026-03-17",
-                "is_verified": false,
-                "notification": "2026-06-10"
-            },
-            "Cycle 1": {
-                "deadline": "2025-10-10",
-                "is_verified": false,
-                "notification": "2025-12-17"
             }
         }
     },
@@ -4571,26 +4561,16 @@
             "finish_date": "2026-08-14",
             "url": "https://www.usenix.org/conference/usenixsecurity26",
             "location": "Baltimore, MD, USA",
-            "Fall": {
+            "Cycle 2": {
                 "deadline": "2025-08-26",
                 "notification": "2025-12-04",
                 "is_verified": true
             },
-            "Winter": {
+            "Cycle 1": {
                 "abstract_deadline": "2026-01-29",
                 "deadline": "2026-02-05",
                 "notification": "2026-05-14",
                 "is_verified": true
-            },
-            "Cycle 1": {
-                "deadline": "2026-02-05",
-                "is_verified": false,
-                "notification": "2026-05-14"
-            },
-            "Cycle 2": {
-                "deadline": "2025-08-26",
-                "is_verified": false,
-                "notification": "2025-12-04"
             }
         },
         "2027": {
