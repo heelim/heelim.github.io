@@ -1175,6 +1175,23 @@
                 "notification": "2026-05-14",
                 "is_verified": true
             }
+        },
+        "2027": {
+            "date": "August 11-13, 2027",
+            "start_date": "2027-08-11",
+            "finish_date": "2027-08-13",
+            "url": "https://www.usenix.org/conference/usenixsecurity27",
+            "location": "Denver, CO, USA",
+            "Cycle 1": {
+                "abstract_deadline": "2026-08-18",
+                "deadline": "2026-08-25",
+                "is_verified": false
+            },
+            "Cycle 2": {
+                "abstract_deadline": "2027-01-19",
+                "deadline": "2027-01-26",
+                "is_verified": false
+            }
         }
     },
     "VLDB": {
