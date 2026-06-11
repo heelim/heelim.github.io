@@ -20,3 +20,4 @@ ref/
 *.csv
 git
 *.py
+*.bak
