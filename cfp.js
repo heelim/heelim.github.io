@@ -604,13 +604,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 yearIntervals[year] = { start: minX, end: maxX };
             });
 
-            // Single-pass per-year scheduling:
-            // For each year in order, (1) compute base track offset using real trackCounts
-            // of already-placed overlapping years, (2) do intra-year greedy scheduling,
-            // (3) register actual trackCount so later years can use it.
-            const yearTrackOffset = {}; // year -> base track index
-            const placedYears = []; // { year, interval, trackOffset, trackCount }
-
             const overlaps = (intA, intB) => {
                 return intA.start < intB.end && intB.start < intA.end;
             };
@@ -618,37 +611,51 @@ document.addEventListener('DOMContentLoaded', () => {
             const canPlaceOnTrack = (itemOccupied, trackIntervals) => {
                 for (const itemInt of itemOccupied) {
                     for (const trackInt of trackIntervals) {
-                        if (overlaps(itemInt, trackInt)) {
-                            return false;
-                        }
+                        if (overlaps(itemInt, trackInt)) return false;
                     }
                 }
                 return true;
             };
 
-            const cycleTracks = [];
-            let maxTracksUsedOverall = 0;
+            // ── Level 1: assign each year to a yearTrack ──────────────────────────
+            // yearTracks[i] = list of yearIntervals already on track i
+            const yearTracks = []; // yearTracks[trackIdx] = [{ start, end }, ...]
+            const yearToYearTrack = {}; // year -> trackIdx
 
             sortedYears.forEach(year => {
                 const yInt = yearIntervals[year];
+                let assigned = 0;
+                while (assigned < yearTracks.length) {
+                    if (!yearTracks[assigned].some(existing => overlaps(yInt, existing))) break;
+                    assigned++;
+                }
+                if (!yearTracks[assigned]) yearTracks[assigned] = [];
+                yearTracks[assigned].push(yInt);
+                yearToYearTrack[year] = assigned;
+            });
+
+            // For each yearTrack, count how many cycle-sub-tracks it eventually uses.
+            // We need a two-pass: first assign cycles, then compute prefix sums.
+            // yearTrackCycleCounts[trackIdx] = max cycle sub-tracks used on that yearTrack
+            const yearTrackCycleCounts = new Array(yearTracks.length).fill(0);
+
+            // ── Level 2: assign each cycle to a sub-track within its yearTrack ────
+            // subTrackIntervals[yearTrackIdx][subTrackIdx] = [intervals...]
+            const subTrackIntervals = yearTracks.map(() => []);
+
+            const cycleTracks = [];
+
+            sortedYears.forEach(year => {
                 const yearCycles = cyclesByYear[year];
+                const yt = yearToYearTrack[year];
 
-                // (1) Compute base offset using actual trackCounts of already-placed overlapping years
-                let baseOffset = 0;
-                placedYears.forEach(py => {
-                    if (overlaps(yInt, py.interval)) {
-                        baseOffset = Math.max(baseOffset, py.trackOffset + py.trackCount);
-                    }
-                });
-                yearTrackOffset[year] = baseOffset;
-
-                // Sort cycles of this year chronologically by sortKey
+                // Sort cycles chronologically
                 const sortedYearCycles = yearCycles.map(cfp => ({
                     cfp,
                     sortKey: getSortKey(cfp)
                 })).sort((a, b) => a.sortKey - b.sortKey);
 
-                // Determine which cycle renders the conference event bar.
+                // Determine which cycle renders the conference event bar
                 const eventBarDates = new Set();
                 sortedYearCycles.forEach(item => {
                     const conferenceRange = parseConferenceDateRange(item.cfp);
@@ -665,9 +672,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
 
-                // (2) Greedy track scheduling *within* this year
-                const yearTracksIntervals = [];
-
+                // Greedy sub-track assignment within this yearTrack
                 sortedYearCycles.forEach(item => {
                     const occupied = [];
                     const subInt = getSubmissionInterval(item.cfp);
@@ -677,32 +682,33 @@ document.addEventListener('DOMContentLoaded', () => {
                         if (confInt) occupied.push(confInt);
                     }
 
-                    let assignedTrack = 0;
-                    while (assignedTrack < yearTracksIntervals.length) {
-                        if (canPlaceOnTrack(occupied, yearTracksIntervals[assignedTrack])) {
-                            break;
-                        }
-                        assignedTrack++;
+                    let subTrack = 0;
+                    while (subTrack < subTrackIntervals[yt].length) {
+                        if (canPlaceOnTrack(occupied, subTrackIntervals[yt][subTrack])) break;
+                        subTrack++;
                     }
+                    if (!subTrackIntervals[yt][subTrack]) subTrackIntervals[yt][subTrack] = [];
+                    subTrackIntervals[yt][subTrack].push(...occupied);
 
-                    if (!yearTracksIntervals[assignedTrack]) {
-                        yearTracksIntervals[assignedTrack] = [];
-                    }
-                    yearTracksIntervals[assignedTrack].push(...occupied);
+                    yearTrackCycleCounts[yt] = Math.max(yearTrackCycleCounts[yt], subTrack + 1);
 
-                    cycleTracks.push({
-                        cfp: item.cfp,
-                        trackIndex: baseOffset + assignedTrack
-                    });
+                    cycleTracks.push({ cfp: item.cfp, yearTrack: yt, subTrack });
                 });
-
-                // (3) Register actual trackCount for this year so later years can use it
-                const yearTracksUsed = yearTracksIntervals.length || 1;
-                placedYears.push({ year, interval: yInt, trackOffset: baseOffset, trackCount: yearTracksUsed });
-                maxTracksUsedOverall = Math.max(maxTracksUsedOverall, baseOffset + yearTracksUsed);
             });
 
-            const maxTracksUsed = maxTracksUsedOverall || 1;
+            // Prefix sum: base absolute track index for each yearTrack
+            const yearTrackBase = new Array(yearTracks.length).fill(0);
+            for (let i = 1; i < yearTracks.length; i++) {
+                yearTrackBase[i] = yearTrackBase[i - 1] + (yearTrackCycleCounts[i - 1] || 1);
+            }
+
+            // Resolve final trackIndex for each cycle
+            cycleTracks.forEach(item => {
+                item.trackIndex = yearTrackBase[item.yearTrack] + item.subTrack;
+            });
+
+            const totalSubTracks = yearTrackBase[yearTracks.length - 1] + (yearTrackCycleCounts[yearTracks.length - 1] || 1);
+            const maxTracksUsed = totalSubTracks || 1;
             const rowHeight = 16 + maxTracksUsed * 14;
 
             let elementsHtml = '';
