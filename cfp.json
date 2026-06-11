@@ -111,7 +111,7 @@
                 "deadline": "2024-06-24",
                 "is_verified": false,
                 "notification": "2024-10-02",
-                "_track": 1
+                "_track": 0
             }
         },
         "2026": {
@@ -124,14 +124,14 @@
                 "deadline": "2025-03-12",
                 "notification": "2025-06-24",
                 "is_verified": false,
-                "_track": 2
+                "_track": 0
             },
             "Summer": {
                 "abstract_deadline": "2025-08-13",
                 "deadline": "2025-08-20",
                 "notification": "2025-11-24",
                 "is_verified": true,
-                "_track": 2
+                "_track": 0
             }
         },
         "2027": {
@@ -153,7 +153,7 @@
                 "_track": 0
             }
         },
-        "_max_tracks": 3
+        "_max_tracks": 2
     },
     "ATC": {
         "2017": {
@@ -1637,7 +1637,7 @@
                 "deadline": "2023-06-27",
                 "is_verified": false,
                 "notification": "2023-09-15",
-                "_track": 1
+                "_track": 0
             },
             "Winter": {
                 "deadline": "2022-11-30",
@@ -1655,13 +1655,13 @@
                 "deadline": "2024-06-27",
                 "is_verified": false,
                 "notification": "2024-09-12",
-                "_track": 2
+                "_track": 0
             },
             "Winter": {
                 "deadline": "2023-12-04",
                 "is_verified": false,
                 "notification": "2024-04-10",
-                "_track": 2
+                "_track": 0
             }
         },
         "2025": {
@@ -1673,13 +1673,13 @@
                 "deadline": "2025-06-05",
                 "is_verified": false,
                 "notification": "2025-09-12",
-                "_track": 3
+                "_track": 0
             },
             "Winter": {
                 "deadline": "2024-12-05",
                 "is_verified": false,
                 "notification": "2025-04-04",
-                "_track": 3
+                "_track": 1
             }
         },
         "2026": {
@@ -1709,7 +1709,7 @@
                 "_track": 1
             }
         },
-        "_max_tracks": 4
+        "_max_tracks": 2
     },
     "DAC": {
         "2026": {
@@ -3120,7 +3120,7 @@
                 "deadline": "2021-05-22",
                 "is_verified": false,
                 "notification": "2021-08-15",
-                "_track": 1
+                "_track": 0
             },
             "Winter": {
                 "deadline": "2020-12-01",
@@ -3138,13 +3138,13 @@
                 "deadline": "2022-05-15",
                 "is_verified": false,
                 "notification": "2022-08-09",
-                "_track": 2
+                "_track": 0
             },
             "Winter": {
                 "deadline": "2021-11-20",
                 "is_verified": false,
                 "notification": "2022-02-14",
-                "_track": 2
+                "_track": 0
             }
         },
         "2023": {
@@ -3174,7 +3174,7 @@
                 "deadline": "2024-05-24",
                 "is_verified": false,
                 "notification": "2024-09-06",
-                "_track": 1
+                "_track": 0
             },
             "Winter": {
                 "deadline": "2023-12-01",
@@ -3212,7 +3212,7 @@
                 "deadline": "2026-06-05",
                 "notification": "2026-08-28",
                 "is_verified": true,
-                "_track": 1
+                "_track": 0
             },
             "Winter": {
                 "deadline": "2025-12-11",
@@ -3221,7 +3221,7 @@
                 "_track": 1
             }
         },
-        "_max_tracks": 3
+        "_max_tracks": 2
     },
     "NDSS": {
         "2018": {
@@ -3507,7 +3507,7 @@
                 "deadline": "2021-09-15",
                 "is_verified": false,
                 "notification": "2021-12-15",
-                "_track": 1
+                "_track": 0
             }
         },
         "2023": {
@@ -3594,7 +3594,7 @@
                 "deadline": "2026-09-17",
                 "notification": "2026-12-01",
                 "is_verified": true,
-                "_track": 1
+                "_track": 0
             },
             "Spring": {
                 "abstract_deadline": "2026-04-16",
@@ -3676,7 +3676,7 @@
                 "deadline": "2022-04-15",
                 "is_verified": false,
                 "notification": "2022-06-30",
-                "_track": 1
+                "_track": 0
             },
             "Cycle 1": {
                 "deadline": "2021-10-12",
@@ -3694,13 +3694,13 @@
                 "deadline": "2023-04-14",
                 "is_verified": false,
                 "notification": "2023-06-30",
-                "_track": 2
+                "_track": 0
             },
             "Cycle 1": {
                 "deadline": "2022-10-28",
                 "is_verified": false,
                 "notification": "2022-12-22",
-                "_track": 2
+                "_track": 0
             }
         },
         "2024": {
@@ -3712,13 +3712,13 @@
                 "deadline": "2024-04-05",
                 "is_verified": false,
                 "notification": "2024-06-21",
-                "_track": 3
+                "_track": 0
             },
             "Cycle 1": {
                 "deadline": "2023-10-27",
                 "is_verified": false,
                 "notification": "2023-12-22",
-                "_track": 3
+                "_track": 1
             }
         },
         "2025": {
@@ -3730,13 +3730,13 @@
                 "deadline": "2025-03-25",
                 "is_verified": false,
                 "notification": "2025-06-12",
-                "_track": 4
+                "_track": 0
             },
             "Cycle 1": {
                 "deadline": "2024-10-15",
                 "is_verified": false,
                 "notification": "2024-12-18",
-                "_track": 4
+                "_track": 0
             }
         },
         "2026": {
@@ -3749,16 +3749,16 @@
                 "deadline": "2025-10-10",
                 "notification": "2025-12-17",
                 "is_verified": true,
-                "_track": 5
+                "_track": 1
             },
             "Cycle-2": {
                 "deadline": "2026-03-17",
                 "notification": "2026-06-10",
                 "is_verified": true,
-                "_track": 5
+                "_track": 0
             }
         },
-        "_max_tracks": 6
+        "_max_tracks": 2
     },
     "OSDI": {
         "2021": {
@@ -4784,28 +4784,28 @@
                 "deadline": "2026-12-01",
                 "notification": "2027-01-15",
                 "is_verified": true,
-                "_track": 1
+                "_track": 0
             },
             "February Cycle": {
                 "abstract_deadline": "2027-01-25",
                 "deadline": "2027-02-01",
                 "notification": "2027-03-15",
                 "is_verified": true,
-                "_track": 1
+                "_track": 0
             },
             "January Cycle": {
                 "abstract_deadline": "2026-12-25",
                 "deadline": "2027-01-01",
                 "notification": "2027-02-15",
                 "is_verified": true,
-                "_track": 2
+                "_track": 1
             },
             "July Cycle": {
                 "abstract_deadline": "2026-06-25",
                 "deadline": "2026-07-01",
                 "notification": "2026-08-15",
                 "is_verified": true,
-                "_track": 2
+                "_track": 0
             },
             "June Cycle": {
                 "abstract_deadline": "2026-05-25",
@@ -4819,28 +4819,28 @@
                 "deadline": "2027-03-01",
                 "notification": "2027-04-15",
                 "is_verified": true,
-                "_track": 2
+                "_track": 1
             },
             "May Cycle": {
                 "abstract_deadline": "2026-04-25",
                 "deadline": "2026-05-01",
                 "notification": "2026-06-15",
                 "is_verified": true,
-                "_track": 2
+                "_track": 0
             },
             "November Cycle": {
                 "abstract_deadline": "2026-10-25",
                 "deadline": "2026-11-01",
                 "notification": "2026-12-15",
                 "is_verified": true,
-                "_track": 2
+                "_track": 1
             },
             "October Cycle": {
                 "abstract_deadline": "2026-09-25",
                 "deadline": "2026-10-01",
                 "notification": "2026-11-15",
                 "is_verified": true,
-                "_track": 1
+                "_track": 0
             },
             "September Cycle": {
                 "abstract_deadline": "2026-08-25",
