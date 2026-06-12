@@ -420,6 +420,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const groupEntry = {
                     venue: cfp.venue,
                     url: cfp.url,
+                    latestYear: cfp.year,
                     is_verified: cfp.is_verified,
                     cycles: [cfp]
                 };
@@ -431,8 +432,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (cfp.is_verified) {
                     existing.is_verified = true;
                 }
-                if (!existing.url && cfp.url) {
+                // Always use the URL from the most recent year
+                if (cfp.url && cfp.year >= existing.latestYear) {
                     existing.url = cfp.url;
+                    existing.latestYear = cfp.year;
                 }
             }
         });
