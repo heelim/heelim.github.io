@@ -1,0 +1,307 @@
+{
+    "ACM TACO": {
+        "url": "https://dl.acm.org/journal/taco",
+        "General Submissions": {
+            "is_verified": true
+        }
+    },
+    "IEEE TC": {
+        "url": "https://www.computer.org/csdl/journal/tc",
+        "Special Issue on Hardware Security": {
+            "deadline": "2026-08-01",
+            "notification": "2026-11-01",
+            "is_verified": true
+        },
+        "Special Issue on Graph-Centric Computing: Algorithms, Systems, and Architectures": {
+            "deadline": "2026-07-15",
+            "notification": "2026-10-15",
+            "url": "https://www.computer.org/digital-library/journals/tc/cfp-graph-centric-computing",
+            "is_verified": true
+        }
+    },
+    "IEEE Micro": {
+        "url": "https://www.computer.org/csdl/mags/mi",
+        "Special Issue on Edge AI Compilers": {
+            "deadline": "2026-05-15",
+            "notification": "2026-08-15",
+            "is_verified": false
+        },
+        "Special Issue on GenAI in the Age of Chiplets": {
+            "deadline": "2026-08-02",
+            "notification": "2026-11-02",
+            "url": "https://www.computer.org/digital-library/magazines/mi/cfp-gen-ai-age-chiplets",
+            "is_verified": true
+        }
+    },
+    "IEEE TKDE": {
+        "url": "https://www.computer.org/digital-library/journals/tk/cfp-data-knowledge-empowered-genai",
+        "Special Issue on Data and Knowledge Empowered Generative Artificial Intelligence (DK-GenAI)": {
+            "deadline": "2026-06-30",
+            "notification": "2026-09-30",
+            "is_verified": true
+        }
+    },
+    "IEEE TSC": {
+        "url": "https://www.computer.org/digital-library/journals/tsc/cfp-language-models-ecosystems-design",
+        "Special Issue on Large Language Models in Service-Oriented Ecosystems Design: Advances and Applications": {
+            "deadline": "2026-10-31",
+            "notification": "2027-01-31",
+            "is_verified": true
+        }
+    },
+    "IEEE TDSC": {
+        "url": "https://www.computer.org/digital-library/journals/tq/cfp-dependable-secure-computing",
+        "Special Issue on AI Content Generation and Detection": {
+            "deadline": "2026-05-21",
+            "notification": "2026-07-20",
+            "url": "https://www.computer.org/digital-library/journals/tq/cfp-ai-content-generation-detection",
+            "is_verified": true
+        }
+    },
+    "IEEE TAC": {
+        "url": "https://www.computer.org/digital-library/journals/ta/tac-general-call-for-papers",
+        "Special Issue on Can AI Care? Affective LLMs for the Future of Mental Health": {
+            "deadline": "2026-01-30",
+            "notification": "2026-03-01",
+            "url": "https://www.computer.org/digital-library/journals/ta/can-ai-care-mental-health",
+            "is_verified": true
+        }
+    },
+    "IEEE TCBB": {
+        "url": "https://www.computer.org/digital-library/journals/bb/cfp-computational-biology-bioinformatics",
+        "AI-Driven Advancements in Bioinformatics for Life Science": {
+            "deadline": "2026-03-31",
+            "notification": "2026-06-30",
+            "url": "https://www.computer.org/digital-library/journals/bb/cfp-ai-driven-advancements-bioinformatics-life-science",
+            "is_verified": true
+        }
+    },
+    "IEEE TBD": {
+        "url": "https://www.computer.org/digital-library/journals/bd/cfp-ieee-transactions-on-big-data",
+        "Special Issue on Multi-Modal Large Language Representation Learning: Theory, Algorithms, and Applications": {
+            "deadline": "2025-12-31",
+            "notification": "2026-03-31",
+            "url": "https://www.computer.org/digital-library/journals/tbd/cfp-multi-modal-language-learning",
+            "is_verified": true
+        }
+    },
+    "IEEE TPDS": {
+        "url": "https://www.computer.org/digital-library/journals/td/cfp-parallel-distributed-systems",
+        "General Submissions": {
+            "is_verified": true
+        }
+    },
+    "IEEE TCAD": {
+        "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=43",
+        "General Submissions": {
+            "is_verified": true
+        }
+    },
+    "IEEE TSE": {
+        "url": "https://www.computer.org/digital-library/journals/ts/cfp-ieee-transactions-on-software-engineering",
+        "General Submissions": {
+            "is_verified": true
+        }
+    },
+    "IEEE TPAMI": {
+        "url": "https://www.computer.org/digital-library/journals/tp/cfp-ieee-pattern-analysis-machine-intelligence",
+        "General Submissions": {
+            "is_verified": true
+        }
+    },
+    "IEEE TMC": {
+        "url": "https://www.computer.org/digital-library/journals/tm/cfp-ieee-transactions-mobile-computing",
+        "General Submissions": {
+            "is_verified": true
+        }
+    },
+    "IEEE TCC": {
+        "url": "https://www.computer.org/digital-library/journals/cc/cfp-ieee-transactions-cloud-computing",
+        "General Submissions": {
+            "is_verified": true
+        }
+    },
+    "IEEE TVCG": {
+        "url": "https://www.computer.org/digital-library/journals/tg/cfp-ieee-transactions-on-visualization-computer-graphics",
+        "General Submissions": {
+            "is_verified": true
+        }
+    },
+    "IEEE CAL": {
+        "url": "https://www.computer.org/digital-library/journals/ca/cfp-ieee-computer-architecture-letters",
+        "General Submissions": {
+            "is_verified": true
+        }
+    },
+    "IEEE TSUSC": {
+        "url": "https://www.computer.org/digital-library/journals/su/cfp-sustainable-computing",
+        "General Submissions": {
+            "is_verified": true
+        }
+    },
+    "IEEE TETC": {
+        "url": "https://www.computer.org/digital-library/journals/ec/technical-tracks",
+        "General Submissions": {
+            "is_verified": true
+        }
+    },
+    "IEEE/ACM ToN": {
+        "url": "https://www.computer.org/digital-library/journals/nt/cfp-trans-on-networking",
+        "General Submissions": {
+            "is_verified": true
+        }
+    },
+    "IEEE OJCS": {
+        "url": "https://www.computer.org/digital-library/journals/oj/cfp-open-journal",
+        "General Submissions": {
+            "is_verified": true
+        }
+    },
+    "IEEE TP": {
+        "url": "https://www.computer.org/digital-library/journals/pr/cfp-general-submissions",
+        "General Submissions": {
+            "is_verified": true
+        }
+    },
+    "Computer": {
+        "url": "https://www.computer.org/digital-library/magazines/co/cfp-computer-magazine",
+        "Special Issue on Games & AI Engines": {
+            "deadline": "2026-09-01",
+            "notification": "2026-12-01",
+            "url": "https://www.computer.org/digital-library/magazines/co/cfp-games-ai-engines",
+            "is_verified": true
+        },
+        "Special Issue on Computing and Communication in Outer Space": {
+            "deadline": "2026-10-01",
+            "notification": "2027-01-01",
+            "url": "https://www.computer.org/digital-library/magazines/co/cfp-computing-communication-outer-space",
+            "is_verified": true
+        },
+        "Special Issue on Democratizing Microelectronics: Open-Source Tools and Chiplet-Enabled Prototyping": {
+            "deadline": "2026-08-01",
+            "notification": "2026-11-01",
+            "url": "https://www.computer.org/digital-library/magazines/co/cfp-democratizing-microelectronics-open-source-chiplet",
+            "is_verified": true
+        }
+    },
+    "IEEE Software": {
+        "url": "https://www.computer.org/digital-library/magazines/so/cfp-ieee-software",
+        "Special Issue on Building Trustworthy Software in the Time of AI": {
+            "deadline": "2026-11-05",
+            "notification": "2027-02-05",
+            "url": "https://www.computer.org/digital-library/magazines/so/cfp-building-trustworthy-software-ai",
+            "is_verified": true
+        },
+        "Special Issue on Human-Centric AI for Software Engineering": {
+            "deadline": "2026-09-07",
+            "notification": "2026-12-07",
+            "url": "https://www.computer.org/digital-library/magazines/so/cfp-human-centric-ai",
+            "is_verified": true
+        },
+        "Special Issue on The Edge–Cloud Continuum: Software Challenges and Innovations": {
+            "deadline": "2026-07-07",
+            "notification": "2026-10-07",
+            "url": "https://www.computer.org/digital-library/magazines/so/cfp-edge-cloud-continuum",
+            "is_verified": true
+        }
+    },
+    "IEEE Security & Privacy": {
+        "url": "https://www.computer.org/digital-library/magazines/sp/cfp-ieee-security-and-privacy",
+        "Special Issue on One Decade of GDPR – Contributions to Data Protection and Future Challenges": {
+            "deadline": "2026-12-01",
+            "notification": "2027-03-01",
+            "url": "https://www.computer.org/digital-library/magazines/sp/cfp-one-decade-gdpr-challenges",
+            "is_verified": true
+        },
+        "Special Issue on Real-World Security: Impact Beyond the Publications": {
+            "deadline": "2026-11-01",
+            "notification": "2027-02-01",
+            "url": "https://www.computer.org/digital-library/magazines/sp/cfp-real-world-security-impact",
+            "is_verified": true
+        },
+        "Special Issue on Inclusive Security and Privacy Engineering": {
+            "deadline": "2026-08-17",
+            "notification": "2026-11-17",
+            "url": "https://www.computer.org/digital-library/magazines/sp/cfp-inclusive-security-privacy-engineering",
+            "is_verified": true
+        }
+    },
+    "IEEE Pervasive": {
+        "url": "https://www.computer.org/digital-library/magazines/pvc/cfp-pervasive-computing",
+        "Special Issue on Revisiting Mobility": {
+            "deadline": "2026-10-08",
+            "notification": "2027-01-08",
+            "url": "https://www.computer.org/digital-library/magazines/pc/cfp-revisiting-mobility",
+            "is_verified": true
+        },
+        "Special Issue on Embodied Pervasive Computing": {
+            "deadline": "2026-07-08",
+            "notification": "2026-10-08",
+            "url": "https://www.computer.org/digital-library/magazines/pc/cfp-embodied-pervasive-computing-agents",
+            "is_verified": true
+        }
+    },
+    "IEEE CG&A": {
+        "url": "https://www.computer.org/digital-library/magazines/cg/cfp-ieee-computer-graphics-and-applications",
+        "Special Issue on Next-Generation XR Displays: Visual Computing from AI Glasses to Immersive Systems": {
+            "deadline": "2026-09-30",
+            "notification": "2026-12-30",
+            "url": "https://www.computer.org/digital-library/magazines/cg/cfp-next-generation-xr-displays",
+            "is_verified": true
+        },
+        "Special Issue on AI Governance, Authenticity, and Provenance for Visual Media": {
+            "deadline": "2026-09-30",
+            "notification": "2026-12-30",
+            "url": "https://www.computer.org/digital-library/magazines/cg/cfp-ai-governance-authenticity-provenance",
+            "is_verified": true
+        }
+    },
+    "IT Professional": {
+        "url": "https://www.computer.org/digital-library/magazines/it/cfp-it-professional",
+        "CFP: Special Issue on Leading the Next Computing Frontier: Quantum and Intelligent Systems": {
+            "deadline": "2026-09-30",
+            "notification": "2026-12-30",
+            "url": "https://www.computer.org/digital-library/magazines/it/cfp-computing-frontier-quantum-intelligent",
+            "is_verified": true
+        }
+    },
+    "IEEE Intelligent Systems": {
+        "url": "https://www.computer.org/digital-library/magazine/is/cfp-ieee-intelligent-systems",
+        "General Submissions": {
+            "is_verified": true
+        }
+    },
+    "IEEE Internet Computing": {
+        "url": "https://www.computer.org/digital-library/magazines/ic/cfp-ieee-internet-computing",
+        "General Submissions": {
+            "is_verified": true
+        }
+    },
+    "IEEE MultiMedia": {
+        "url": "https://www.computer.org/digital-library/magazines/mu/cfp-ieee-multimedia",
+        "General Submissions": {
+            "is_verified": true
+        }
+    },
+    "IEEE Annals": {
+        "url": "https://www.computer.org/digital-library/magazines/an/cfp-ieee-annals-of-the-history-of-computing",
+        "Special Issue on New Perspectives on Computing History (50th Anniversary Issue)": {
+            "deadline": "2027-11-01",
+            "notification": "2028-02-01",
+            "url": "https://www.computer.org/digital-library/magazines/an/cfp-perspectives-computing-history-50th-anniversary",
+            "is_verified": true
+        },
+        "Special Issue on Reflections on Computing History": {
+            "deadline": "2027-06-01",
+            "notification": "2027-09-01",
+            "url": "https://www.computer.org/digital-library/magazines/an/cfp-reflections-computing-history",
+            "is_verified": true
+        }
+    },
+    "CiSE": {
+        "url": "https://www.computer.org/digital-library/magazines/cs/track-calls-for-papers",
+        "General Submissions": {
+            "is_verified": true
+        }
+    }
+}

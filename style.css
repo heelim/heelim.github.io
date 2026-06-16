@@ -894,3 +894,183 @@ button.sort-select {
   border-color: rgba(59, 130, 246, 0.7);
   box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
 }
+
+/* --- Premium Glassmorphic Table Styles --- */
+.journal-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4);
+}
+
+.journal-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-family: 'Inter', -apple-system, sans-serif;
+  color: #cbd5e1;
+}
+
+.journal-table th {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 1rem 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 23, 42, 0.5);
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  position: relative;
+}
+
+.journal-table th:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+  color: #f8fafc;
+}
+
+.journal-table th.sorted-asc::after {
+  content: ' ▲';
+  color: var(--accent);
+  font-size: 0.65rem;
+}
+
+.journal-table th.sorted-desc::after {
+  content: ' ▼';
+  color: var(--accent);
+  font-size: 0.65rem;
+}
+
+.journal-table td {
+  padding: 0.85rem 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  font-size: 0.8rem;
+  vertical-align: middle;
+  transition: background-color 0.15s ease;
+}
+
+.journal-table tr:hover td {
+  background-color: rgba(255, 255, 255, 0.015);
+}
+
+.journal-table tr.deadline-passed-row {
+  opacity: 0.45;
+}
+
+.journal-table tr.deadline-passed-row td {
+  text-decoration: none;
+}
+
+.venue-link-cell {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.venue-link-cell a {
+  color: #f8fafc;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.venue-link-cell a:hover {
+  color: var(--accent);
+}
+
+/* JCR quartiles */
+.quartile-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.q-q1 {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.q-q2 {
+  background: rgba(59, 130, 246, 0.15);
+  color: #3b82f6;
+  border: 1px solid rgba(59, 130, 246, 0.25);
+}
+
+.q-q3 {
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.q-q4 {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+/* CFP Title styling */
+.cfp-title-link {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.cfp-title-link:hover {
+  color: var(--accent);
+}
+
+.cfp-title-text {
+  color: #cbd5e1;
+  font-weight: 500;
+}
+
+/* Table keyword/domain tags */
+.table-tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #94a3b8;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.table-tag:last-child {
+  margin-right: 0;
+}
+
+/* Show/hide JCR metric columns based on parent state */
+.journal-table-wrapper.ranks-hidden .col-if,
+.journal-table-wrapper.ranks-hidden .col-q {
+  display: none;
+}
+
+/* Date cell styling */
+.date-cell {
+  font-family: monospace;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.date-cell.passed {
+  text-decoration: line-through;
+  opacity: 0.55;
+}
+
+.date-cell.soon {
+  color: #f43f5e;
+  font-weight: 600;
+}

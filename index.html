@@ -250,6 +250,67 @@
           </div>
         </section>
       </div>
+
+      <div id="journal" class="tab-content hidden">
+        <section id="journal-section">
+          <!-- Row 1: Title + Last Updated -->
+          <div style="display: flex; align-items: baseline; gap: 0.8rem; margin-bottom: 0.75rem;">
+            <h3 class="section-title" style="margin: 0;">Journals & Special Issues CFP</h3>
+            <span id="journal-last-updated"
+              style="font-size: 0.75rem; color: #64748b; font-weight: 400; opacity: 0.8;">Loading...</span>
+          </div>
+          <!-- Row 2: All control buttons -->
+          <div style="display: flex; gap: 0.4rem; align-items: center; flex-wrap: wrap; margin-bottom: 1rem;">
+            <select id="journal-sort-by" class="sort-select"
+              style="background: rgba(168, 85, 247, 0.1); color: #a855f7; border: 1px solid rgba(168, 85, 247, 0.2);">
+              <option value="default">Default</option>
+              <option value="deadline">Deadline</option>
+              <option value="name">Name</option>
+              <option value="start_date">Upcoming</option>
+              <option value="if">Impact Factor</option>
+              <option value="quartile">Quartile</option>
+            </select>
+            <button id="journal-sort-order" class="sort-select"
+              style="background: rgba(168, 85, 247, 0.1); color: #a855f7; border: 1px solid rgba(168, 85, 247, 0.2);">
+              <span id="journal-order-icon">▲</span><span id="journal-order-text">Asc</span>
+            </button>
+            <button id="journal-domain-toggle" class="sort-select"
+              style="background: rgba(16, 185, 129, 0.1); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.2);">
+              <span id="journal-domain-icon" style="transition: transform 0.3s ease;">⊕</span> Domains
+            </button>
+            <button id="journal-keyword-toggle" class="sort-select"
+              style="background: rgba(59, 130, 246, 0.1); color: var(--accent); border: 1px solid rgba(59, 130, 246, 0.2);">
+              <span id="journal-keyword-icon" style="transition: transform 0.3s ease;">⊕</span> Keywords
+            </button>
+            <button id="journal-ranks-toggle" class="sort-select"
+              style="background: rgba(251, 191, 36, 0.15); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.3);">
+              IF/Quartile
+            </button>
+          </div>
+
+          <div id="journal-domain-collapsible" class="collapsible-wrapper">
+            <div class="filter-section"
+              style="margin-bottom: 1rem; padding: 1rem; background: rgba(16, 185, 129, 0.03); border-radius: 12px; border: 1px solid rgba(16, 185, 129, 0.05);">
+              <div id="journal-domain-container" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                <!-- Dynamically populated -->
+              </div>
+            </div>
+          </div>
+
+          <div id="journal-keyword-collapsible" class="collapsible-wrapper">
+            <div class="filter-section"
+              style="margin-bottom: 1rem; padding: 1rem; background: rgba(59, 130, 246, 0.03); border-radius: 12px; border: 1px solid rgba(59, 130, 246, 0.05);">
+              <div id="journal-keyword-container" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                <!-- Dynamically populated -->
+              </div>
+            </div>
+          </div>
+
+          <div id="journal-list" class="journal-table-wrapper">
+            <p style="color: #64748b; padding: 1.5rem; text-align: center;">Loading journals...</p>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer style="margin-top: 4rem; color: #64748b; font-size: 0.875rem;">
@@ -257,6 +318,7 @@
     </footer>
   </div>
   <script src="cfp.js"></script>
+  <script src="journals.js"></script>
 </body>
 
 </html>

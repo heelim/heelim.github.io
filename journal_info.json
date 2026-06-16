@@ -1,0 +1,435 @@
+{
+    "ACM TACO": {
+        "domains": [
+            "Computer Architecture",
+            "Compilers"
+        ],
+        "keywords": [
+            "Compiler Optimization",
+            "Processor Architecture",
+            "Microarchitecture"
+        ],
+        "if": "2.2",
+        "quartile": "Q2"
+    },
+    "IEEE TC": {
+        "domains": [
+            "Computer Architecture",
+            "Hardware",
+            "Operating Systems"
+        ],
+        "keywords": [
+            "Computer Systems",
+            "High-Performance Computing",
+            "Memory Systems"
+        ],
+        "if": "3.7",
+        "quartile": "Q1"
+    },
+    "IEEE Micro": {
+        "domains": [
+            "Computer Architecture",
+            "Hardware"
+        ],
+        "keywords": [
+            "Processor Architecture",
+            "Hardware Accelerators",
+            "System Design",
+            "Chiplets",
+            "GenAI"
+        ],
+        "if": "2.8",
+        "quartile": "Q2"
+    },
+    "IEEE TPDS": {
+        "domains": [
+            "Distributed Systems",
+            "Parallel Computing"
+        ],
+        "keywords": [
+            "Parallel Algorithms",
+            "Parallel Architectures",
+            "Distributed Applications"
+        ],
+        "if": "4.3",
+        "quartile": "Q1"
+    },
+    "IEEE TCAD": {
+        "domains": [
+            "Hardware",
+            "Design Automation"
+        ],
+        "keywords": [
+            "Electronic Design Automation",
+            "Hardware/Software Co-design",
+            "VLSI"
+        ],
+        "if": "3.0",
+        "quartile": "Q2"
+    },
+    "IEEE TKDE": {
+        "domains": [
+            "Data Management",
+            "Data Mining",
+            "Machine Learning"
+        ],
+        "keywords": [
+            "Databases",
+            "Knowledge Discovery",
+            "Data Mining",
+            "Generative AI"
+        ],
+        "if": "8.9",
+        "quartile": "Q1"
+    },
+    "IEEE TSC": {
+        "domains": [
+            "Distributed Systems",
+            "Cloud Computing",
+            "Software Engineering"
+        ],
+        "keywords": [
+            "Services Computing",
+            "Large Language Models",
+            "Service-Oriented Ecosystems"
+        ],
+        "if": "8.1",
+        "quartile": "Q1"
+    },
+    "IEEE TDSC": {
+        "domains": [
+            "Computer Security",
+            "Distributed Systems"
+        ],
+        "keywords": [
+            "System Security",
+            "Cryptography",
+            "Reliability",
+            "Trustworthy Computing"
+        ],
+        "if": "7.3",
+        "quartile": "Q1"
+    },
+    "IEEE TSE": {
+        "domains": [
+            "Software Engineering"
+        ],
+        "keywords": [
+            "Software Architecture",
+            "Software Testing",
+            "Empirical Studies"
+        ],
+        "if": "6.5",
+        "quartile": "Q1"
+    },
+    "IEEE TPAMI": {
+        "domains": [
+            "Machine Learning",
+            "Computer Vision"
+        ],
+        "keywords": [
+            "Pattern Analysis",
+            "Deep Learning",
+            "Artificial Intelligence"
+        ],
+        "if": "20.8",
+        "quartile": "Q1"
+    },
+    "IEEE TMC": {
+        "domains": [
+            "Networking",
+            "Mobile Systems"
+        ],
+        "keywords": [
+            "Mobile Computing",
+            "Wireless Networks",
+            "Pervasive Computing"
+        ],
+        "if": "7.7",
+        "quartile": "Q1"
+    },
+    "IEEE TCC": {
+        "domains": [
+            "Cloud Computing",
+            "Distributed Systems"
+        ],
+        "keywords": [
+            "Virtualization",
+            "Datacenters",
+            "Edge Computing"
+        ],
+        "if": "5.3",
+        "quartile": "Q1"
+    },
+    "IEEE TBD": {
+        "domains": [
+            "Data Management",
+            "Data Mining",
+            "Machine Learning"
+        ],
+        "keywords": [
+            "Big Data",
+            "Representation Learning",
+            "Data Analytics"
+        ],
+        "if": "7.2",
+        "quartile": "Q1"
+    },
+    "IEEE TVCG": {
+        "domains": [
+            "Computer Graphics",
+            "Visualization"
+        ],
+        "keywords": [
+            "Information Visualization",
+            "Virtual Reality",
+            "Visual Analytics"
+        ],
+        "if": "4.2",
+        "quartile": "Q1"
+    },
+    "IEEE TAC": {
+        "domains": [
+            "Human-Computer Interaction",
+            "Machine Learning"
+        ],
+        "keywords": [
+            "Affective Computing",
+            "Emotion Recognition",
+            "Affective LLMs"
+        ],
+        "if": "9.6",
+        "quartile": "Q1"
+    },
+    "IEEE CAL": {
+        "domains": [
+            "Computer Architecture"
+        ],
+        "keywords": [
+            "Microarchitecture",
+            "Processor Design",
+            "Hardware Prototyping"
+        ],
+        "if": "1.5",
+        "quartile": "Q3"
+    },
+    "IEEE TSUSC": {
+        "domains": [
+            "Computer Architecture",
+            "Hardware",
+            "Systems"
+        ],
+        "keywords": [
+            "Sustainable Computing",
+            "Energy Efficiency",
+            "Green IT"
+        ],
+        "if": "3.0",
+        "quartile": "Q2"
+    },
+    "IEEE TETC": {
+        "domains": [
+            "Emerging Technologies",
+            "Computer Systems"
+        ],
+        "keywords": [
+            "Neuromorphic Computing",
+            "Quantum Computing",
+            "Edge AI"
+        ],
+        "if": "5.2",
+        "quartile": "Q1"
+    },
+    "IEEE/ACM ToN": {
+        "domains": [
+            "Networking"
+        ],
+        "keywords": [
+            "Network Protocols",
+            "Internet Architecture",
+            "Network Algorithms"
+        ],
+        "if": "3.7",
+        "quartile": "Q2"
+    },
+    "IEEE OJCS": {
+        "domains": [
+            "Computer Systems",
+            "Emerging Technologies"
+        ],
+        "keywords": [
+            "Open Source",
+            "General Computing",
+            "Zero Trust"
+        ],
+        "if": "3.2",
+        "quartile": "Q2"
+    },
+    "IEEE TP": {
+        "domains": [
+            "Computer Security"
+        ],
+        "keywords": [
+            "Privacy Protection",
+            "Data Anonymization",
+            "Differential Privacy"
+        ],
+        "if": "1.0",
+        "quartile": "Q4"
+    },
+    "IEEE TCBB": {
+        "domains": [
+            "Bioinformatics",
+            "Computational Biology"
+        ],
+        "keywords": [
+            "Sequence Analysis",
+            "Computational Biology",
+            "Health Informatics"
+        ],
+        "if": "4.5",
+        "quartile": "Q2"
+    },
+    "Computer": {
+        "domains": [
+            "Computer Systems",
+            "General Computing"
+        ],
+        "keywords": [
+            "Open-Source Hardware",
+            "AI Engines",
+            "Chiplets",
+            "Outer Space Computing"
+        ],
+        "if": "4.0",
+        "quartile": "Q1"
+    },
+    "IEEE Software": {
+        "domains": [
+            "Software Engineering"
+        ],
+        "keywords": [
+            "Software Practice",
+            "Trustworthy Software",
+            "Agentic Systems"
+        ],
+        "if": "3.3",
+        "quartile": "Q2"
+    },
+    "IEEE Security & Privacy": {
+        "domains": [
+            "Computer Security"
+        ],
+        "keywords": [
+            "Privacy Engineering",
+            "GDPR",
+            "Real-World Security"
+        ],
+        "if": "2.9",
+        "quartile": "Q2"
+    },
+    "IEEE Pervasive": {
+        "domains": [
+            "Human-Computer Interaction",
+            "Mobile Systems"
+        ],
+        "keywords": [
+            "Pervasive Computing",
+            "Mobility",
+            "Embodied AI",
+            "Sensing"
+        ],
+        "if": "2.8",
+        "quartile": "Q2"
+    },
+    "IEEE CG&A": {
+        "domains": [
+            "Computer Graphics",
+            "Visualization"
+        ],
+        "keywords": [
+            "XR Displays",
+            "Visual Media",
+            "AI Glasses"
+        ],
+        "if": "2.2",
+        "quartile": "Q2"
+    },
+    "IT Professional": {
+        "domains": [
+            "Computer Systems",
+            "Information Technology"
+        ],
+        "keywords": [
+            "Enterprise IT",
+            "Quantum Systems",
+            "Intelligent Systems"
+        ],
+        "if": "2.2",
+        "quartile": "Q2"
+    },
+    "IEEE Intelligent Systems": {
+        "domains": [
+            "Machine Learning",
+            "AI"
+        ],
+        "keywords": [
+            "Intelligent Systems",
+            "Applied AI",
+            "Knowledge Systems"
+        ],
+        "if": "6.4",
+        "quartile": "Q1"
+    },
+    "IEEE Internet Computing": {
+        "domains": [
+            "Networking",
+            "Cloud Computing"
+        ],
+        "keywords": [
+            "Internet Technologies",
+            "Edge Computing",
+            "Web Services"
+        ],
+        "if": "3.3",
+        "quartile": "Q2"
+    },
+    "IEEE MultiMedia": {
+        "domains": [
+            "Signal Processing",
+            "Graphics"
+        ],
+        "keywords": [
+            "Multimedia Systems",
+            "Hypermedia",
+            "Visual Computing"
+        ],
+        "if": "3.1",
+        "quartile": "Q2"
+    },
+    "IEEE Annals": {
+        "domains": [
+            "History of Computing"
+        ],
+        "keywords": [
+            "Computing History",
+            "Perspectives",
+            "Reflections"
+        ],
+        "if": "1.0",
+        "quartile": "Q3"
+    },
+    "CiSE": {
+        "domains": [
+            "Computational Science",
+            "Software Engineering"
+        ],
+        "keywords": [
+            "Scientific Computing",
+            "Computational Models",
+            "Simulation"
+        ],
+        "if": "1.8",
+        "quartile": "Q3"
+    }
+}

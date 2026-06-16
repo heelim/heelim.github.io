@@ -919,7 +919,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cfpList.innerHTML = generateGanttHtml(filteredCfps);
         scrollToToday();
-        if (window._ranksApply) window._ranksApply();
+        if (window._confRanksApply) window._confRanksApply();
     }
 
     function setupHoverSync() {
@@ -1009,7 +1009,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Re-apply after each render (gantt HTML is regenerated)
         const origRender = renderCfps;
-        window._ranksApply = applyRanksState;
+        window._confRanksApply = applyRanksState;
     }
 
     setupHoverSync();
