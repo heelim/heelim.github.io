@@ -853,5 +853,24 @@
         ],
         "kiise": "최우수",
         "bk21plus": "4"
+    },
+    "AAAI": {
+        "fullname": "AAAI Conference on Artificial Intelligence",
+        "domains": [
+            "Machine Learning",
+            "Deep Learning",
+            "AI"
+        ],
+        "keywords": [
+            "Deep Learning",
+            "Neural Networks",
+            "Machine Learning",
+            "AI",
+            "Reinforcement Learning",
+            "Natural Language Processing",
+            "Computer Vision"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
     }
 }
