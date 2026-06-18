@@ -872,5 +872,57 @@
         ],
         "kiise": "최우수",
         "bk21plus": "4"
+    },
+    "CVPR": {
+        "fullname": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+        "domains": [
+            "Computer Vision",
+            "Machine Learning",
+            "AI"
+        ],
+        "keywords": [
+            "Computer Vision",
+            "Pattern Recognition",
+            "Deep Learning",
+            "Image Processing",
+            "AI",
+            "Machine Learning"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
+    },
+    "ICCV": {
+        "fullname": "IEEE/CVF International Conference on Computer Vision",
+        "domains": [
+            "Computer Vision",
+            "Machine Learning",
+            "AI"
+        ],
+        "keywords": [
+            "Computer Vision",
+            "Deep Learning",
+            "Image Processing",
+            "AI",
+            "Machine Learning"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
+    },
+    "ECCV": {
+        "fullname": "European Conference on Computer Vision",
+        "domains": [
+            "Computer Vision",
+            "Machine Learning",
+            "AI"
+        ],
+        "keywords": [
+            "Computer Vision",
+            "Deep Learning",
+            "Image Processing",
+            "AI",
+            "Machine Learning"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
     }
 }

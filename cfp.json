@@ -4922,6 +4922,47 @@
             }
         }
     },
+    "ICCV": {
+        "2021": {
+            "date": "October 11-17, 2021",
+            "start_date": "2021-10-11",
+            "finish_date": "2021-10-17",
+            "url": "https://iccv2021.thecvf.com/",
+            "location": "Virtual",
+            "none": {
+                "abstract_deadline": "2021-03-10",
+                "deadline": "2021-03-17",
+                "notification": "2021-07-22",
+                "camera_ready": "2021-08-17",
+                "is_verified": true
+            }
+        },
+        "2023": {
+            "date": "October 2-6, 2023",
+            "start_date": "2023-10-02",
+            "finish_date": "2023-10-06",
+            "url": "https://iccv2023.thecvf.com/",
+            "location": "Paris, France",
+            "none": {
+                "deadline": "2023-03-08",
+                "notification": "2023-07-13",
+                "is_verified": true
+            }
+        },
+        "2025": {
+            "date": "October 19-23, 2025",
+            "start_date": "2025-10-19",
+            "finish_date": "2025-10-23",
+            "url": "https://iccv.thecvf.com/",
+            "location": "Honolulu, HI, USA",
+            "none": {
+                "abstract_deadline": "2025-03-03",
+                "deadline": "2025-03-07",
+                "notification": "2025-06-26",
+                "is_verified": true
+            }
+        }
+    },
     "OSDI": {
         "2021": {
             "date": "July 14-16, 2021",
@@ -5005,6 +5046,102 @@
                 "deadline": "2026-12-11",
                 "notification": "March 2027",
                 "is_verified": false
+            }
+        }
+    },
+    "ECCV": {
+        "2022": {
+            "date": "October 23-27, 2022",
+            "start_date": "2022-10-23",
+            "finish_date": "2022-10-27",
+            "url": "https://eccv2022.ecva.net",
+            "location": "Tel Aviv, Israel",
+            "none": {
+                "deadline": "2022-03-07",
+                "notification": "2022-07-03",
+                "camera_ready": "2022-07-20",
+                "is_verified": true
+            }
+        },
+        "2024": {
+            "date": "September 29 - October 4, 2024",
+            "start_date": "2024-09-29",
+            "finish_date": "2024-10-04",
+            "url": "https://eccv2024.ecva.net",
+            "location": "Milan, Italy",
+            "none": {
+                "abstract_deadline": "2024-02-29",
+                "deadline": "2024-03-07",
+                "notification": "2024-07-01",
+                "is_verified": true
+            }
+        },
+        "2026": {
+            "date": "September 8-13, 2026",
+            "start_date": "2026-09-08",
+            "finish_date": "2026-09-13",
+            "url": "https://eccv.ecva.net/Conferences/2026",
+            "location": "Malmö, Sweden",
+            "none": {
+                "abstract_deadline": "2026-02-26",
+                "deadline": "2026-03-05",
+                "notification": "2026-06-17",
+                "camera_ready": "2026-06-26",
+                "is_verified": true
+            }
+        }
+    },
+    "CVPR": {
+        "2023": {
+            "date": "June 18-22, 2023",
+            "start_date": "2023-06-18",
+            "finish_date": "2023-06-22",
+            "url": "https://cvpr.thecvf.com/Conferences/2023",
+            "location": "Vancouver, Canada",
+            "none": {
+                "abstract_deadline": "2022-11-04",
+                "deadline": "2022-11-11",
+                "notification": "2023-02-27",
+                "is_verified": true
+            }
+        },
+        "2024": {
+            "date": "June 17-21, 2024",
+            "start_date": "2024-06-17",
+            "finish_date": "2024-06-21",
+            "url": "https://cvpr.thecvf.com/Conferences/2024",
+            "location": "Seattle, WA, USA",
+            "none": {
+                "abstract_deadline": "2023-11-03",
+                "deadline": "2023-11-17",
+                "notification": "2024-02-26",
+                "is_verified": true
+            }
+        },
+        "2025": {
+            "date": "June 11-15, 2025",
+            "start_date": "2025-06-11",
+            "finish_date": "2025-06-15",
+            "url": "https://cvpr.thecvf.com/Conferences/2025",
+            "location": "Nashville, TN, USA",
+            "none": {
+                "abstract_deadline": "2024-11-07",
+                "deadline": "2024-11-14",
+                "notification": "2025-02-26",
+                "is_verified": true
+            }
+        },
+        "2026": {
+            "date": "June 3-7, 2026",
+            "start_date": "2026-06-03",
+            "finish_date": "2026-06-07",
+            "url": "https://cvpr.thecvf.com/Conferences/2026",
+            "location": "Denver, CO, USA",
+            "none": {
+                "abstract_deadline": "2025-11-07",
+                "deadline": "2025-11-13",
+                "notification": "2026-02-20",
+                "is_verified": true
             }
         }
     },
@@ -5767,6 +5904,22 @@
                 "deadline": "TBD",
                 "notification": "TBD",
                 "is_verified": false
+            }
+        }
+    },
+    "AAAI": {
+        "2027": {
+            "date": "February 16-23, 2027",
+            "start_date": "2027-02-16",
+            "finish_date": "2027-02-23",
+            "url": "https://aaai.org/conference/aaai/aaai-27/",
+            "location": "Montréal, Canada",
+            "none": {
+                "abstract_deadline": "2026-07-21",
+                "deadline": "2026-07-28",
+                "notification": "2026-11-30",
+                "camera_ready": "2026-12-14",
+                "is_verified": true
             }
         }
     },
