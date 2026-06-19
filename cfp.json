@@ -4914,11 +4914,11 @@
             "start_date": "2027-01-30",
             "finish_date": "2027-02-03",
             "url": "https://ppopp27.sigplan.org",
-            "location": "TBD",
+            "location": "Salt Lake City, Utah, USA",
             "none": {
-                "deadline": "2026-08-31",
-                "notification": "2026-11-09",
-                "is_verified": false
+                "deadline": "2026-08-03",
+                "notification": "2026-10-26",
+                "is_verified": true
             }
         }
     },
