@@ -1012,8 +1012,71 @@ document.addEventListener('DOMContentLoaded', () => {
         window._confRanksApply = applyRanksState;
     }
 
+    function setupTooltipPositioning() {
+        let activeBar = null;
+
+        function adjustPosition(bar, tooltip) {
+            const scrollContainer = cfpList.querySelector('.gantt-timeline-scroll');
+            if (!scrollContainer) return;
+
+            // Temporarily show the tooltip to measure its layout
+            tooltip.style.visibility = 'visible';
+            tooltip.style.opacity = '1';
+            tooltip.style.transform = 'translateX(-50%)'; // Reset to get natural bounding rect
+
+            const scrollRect = scrollContainer.getBoundingClientRect();
+            const tooltipRect = tooltip.getBoundingClientRect();
+
+            const overflowLeft = scrollRect.left - tooltipRect.left;
+            const overflowRight = tooltipRect.right - scrollRect.right;
+
+            if (overflowLeft > 0) {
+                tooltip.style.transform = `translateX(calc(-50% + ${overflowLeft + 8}px))`;
+            } else if (overflowRight > 0) {
+                tooltip.style.transform = `translateX(calc(-50% - ${overflowRight + 8}px))`;
+            } else {
+                tooltip.style.transform = 'translateX(-50%)';
+            }
+
+            // Reset visibility styles to let CSS handle hover state transition smoothly
+            tooltip.style.visibility = '';
+            tooltip.style.opacity = '';
+        }
+
+        cfpList.addEventListener('mouseover', (e) => {
+            const bar = e.target.closest('.gantt-review-bar, .gantt-deadline-bar, .gantt-notification-bar, .gantt-event-bar, .gantt-abstract-bar');
+            if (!bar) return;
+            const tooltip = bar.querySelector('.gantt-tooltip');
+            if (!tooltip) return;
+
+            activeBar = bar;
+            adjustPosition(bar, tooltip);
+        });
+
+        cfpList.addEventListener('mouseout', (e) => {
+            const bar = e.target.closest('.gantt-review-bar, .gantt-deadline-bar, .gantt-notification-bar, .gantt-event-bar, .gantt-abstract-bar');
+            if (!bar) return;
+            const tooltip = bar.querySelector('.gantt-tooltip');
+            if (!tooltip) return;
+
+            if (activeBar === bar) {
+                activeBar = null;
+            }
+            tooltip.style.transform = '';
+        });
+
+        cfpList.addEventListener('scroll', () => {
+            if (!activeBar || !activeBar.isConnected) return;
+            const tooltip = activeBar.querySelector('.gantt-tooltip');
+            if (tooltip) {
+                adjustPosition(activeBar, tooltip);
+            }
+        }, true); // Use capture phase because scroll does not bubble
+    }
+
     setupHoverSync();
     setupSort();
     setupRanksToggle();
+    setupTooltipPositioning();
     loadData();
 });

@@ -667,9 +667,12 @@ button.sort-select {
   background-color: #1e293b !important;
 }
 
-.gantt-row-timeline:hover,
-.gantt-row-timeline.gantt-row-hover {
-  z-index: 50;
+.gantt-review-bar:hover,
+.gantt-deadline-bar:hover,
+.gantt-notification-bar:hover,
+.gantt-event-bar:hover,
+.gantt-abstract-bar:hover {
+  z-index: 75; /* Stack the active bar & tooltip above the today line (z-index: 60) */
 }
 
 .gantt-venue-name {
