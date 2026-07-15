@@ -119,6 +119,18 @@
                 "notification": "2026-04-25",
                 "is_verified": false
             }
+        },
+        "2027": {
+            "date": "July 7-9, 2027",
+            "start_date": "2027-07-07",
+            "finish_date": "2027-07-09",
+            "url": "https://www.usenix.org/conference/atc25",
+            "location": "",
+            "Estimated": {
+                "deadline": "2027-01-14",
+                "notification": "2027-04-25",
+                "is_verified": false
+            }
         }
     },
     "CCS": {
@@ -1066,6 +1078,18 @@
                 "deadline": "2026-06-12",
                 "notification": "2026-07-24",
                 "is_verified": true
+            }
+        },
+        "2027": {
+            "date": "September 28-29, 2027",
+            "start_date": "2027-09-28",
+            "finish_date": "2027-09-29",
+            "url": "https://www.hotstorage.org/2026/",
+            "location": "",
+            "Estimated": {
+                "deadline": "2027-06-12",
+                "notification": "2027-07-24",
+                "is_verified": false
             }
         }
     },
@@ -2715,28 +2739,28 @@
             }
         },
         "2027": {
-            "date": "June 8-12, 2027",
-            "start_date": "2027-06-08",
-            "finish_date": "2027-06-12",
-            "url": "http://www.sigmetrics.org/sigmetrics2026",
-            "location": "",
-            "Estimated (Summer)": {
-                "abstract_deadline": "2026-07-22",
-                "deadline": "2026-07-29",
-                "notification": "2026-09-26",
-                "is_verified": false
+            "date": "June 7-11, 2027",
+            "start_date": "2027-06-07",
+            "finish_date": "2027-06-11",
+            "url": "https://www.sigmetrics.org/sigmetrics2027/",
+            "location": "Atlanta, GA, USA",
+            "Summer": {
+                "abstract_deadline": "2026-07-03",
+                "deadline": "2026-07-10",
+                "notification": "2026-09-09",
+                "is_verified": true
             },
-            "Estimated (Fall)": {
-                "abstract_deadline": "2026-10-07",
-                "deadline": "2026-10-14",
-                "notification": "2026-12-12",
-                "is_verified": false
+            "Fall": {
+                "abstract_deadline": "2026-10-02",
+                "deadline": "2026-10-09",
+                "notification": "2026-12-09",
+                "is_verified": true
             },
-            "Estimated (Winter)": {
-                "abstract_deadline": "2027-01-06",
-                "deadline": "2027-01-13",
-                "notification": "2027-03-13",
-                "is_verified": false
+            "Winter": {
+                "abstract_deadline": "2027-01-04",
+                "deadline": "2027-01-11",
+                "notification": "2027-03-10",
+                "is_verified": true
             }
         }
     },
@@ -2855,26 +2879,34 @@
             "finish_date": "2026-11-20",
             "url": "https://acmsocc.org/2026/index.html",
             "location": "Singapore",
-            "Cycle 1": {
-                "deadline": "2026-02-13",
-                "is_verified": false,
-                "notification": "2026-04-29"
-            },
             "Round-1": {
                 "deadline": "2026-02-14",
                 "notification": "2026-04-29",
                 "is_verified": true
-            },
-            "Cycle 2": {
-                "deadline": "2026-07-14",
-                "is_verified": false,
-                "notification": "2026-09-26"
             },
             "Round-2": {
                 "abstract_deadline": "2026-07-07",
                 "deadline": "2026-07-14",
                 "notification": "2026-09-26",
                 "is_verified": true
+            }
+        },
+        "2027": {
+            "date": "November 18-20, 2027",
+            "start_date": "2027-11-18",
+            "finish_date": "2027-11-20",
+            "url": "https://acmsocc.org/2026/index.html",
+            "location": "",
+            "Estimated (Round-1)": {
+                "deadline": "2027-02-14",
+                "notification": "2027-04-29",
+                "is_verified": false
+            },
+            "Estimated (Round-2)": {
+                "abstract_deadline": "2027-07-07",
+                "deadline": "2027-07-14",
+                "notification": "2027-09-26",
+                "is_verified": false
             }
         }
     },
@@ -3289,20 +3321,20 @@
             }
         },
         "2027": {
-            "date": "March 30 - April 3, 2027",
-            "start_date": "2027-03-30",
-            "finish_date": "2027-04-03",
-            "url": "https://www.asplos-conference.org/asplos2026/call-for-papers-asplos27/",
-            "location": "Crete, Greece",
+            "date": "April 11-15, 2027",
+            "start_date": "2027-04-11",
+            "finish_date": "2027-04-15",
+            "url": "https://asplos-conference.org/asplos2027/",
+            "location": "Heraklion, Crete, Greece",
             "Spring": {
                 "deadline": "2026-04-15",
                 "notification": "2026-07-27",
                 "is_verified": true
             },
             "Summer": {
-                "deadline": "2026-09-09",
-                "is_verified": false,
-                "notification": "2026-12-21"
+                "deadline": "2026-09-10",
+                "notification": "2026-12-21",
+                "is_verified": true
             }
         }
     },
@@ -4961,6 +4993,19 @@
                 "notification": "2025-06-26",
                 "is_verified": true
             }
+        },
+        "2027": {
+            "date": "October 2-8, 2027",
+            "start_date": "2027-10-02",
+            "finish_date": "2027-10-08",
+            "url": "https://iccv.thecvf.com/",
+            "location": "Hong Kong",
+            "Estimated": {
+                "abstract_deadline": "2027-03-03",
+                "deadline": "2027-03-07",
+                "notification": "2027-06-25",
+                "is_verified": false
+            }
         }
     },
     "OSDI": {
@@ -5089,6 +5134,19 @@
                 "camera_ready": "2026-06-26",
                 "is_verified": true
             }
+        },
+        "2028": {
+            "date": "September 2028",
+            "start_date": "2028-09-08",
+            "finish_date": "2028-09-13",
+            "url": "https://eccv.ecva.net/",
+            "location": "Bucharest, Romania",
+            "Estimated": {
+                "abstract_deadline": "2028-02-25",
+                "deadline": "2028-03-03",
+                "notification": "2028-06-16",
+                "is_verified": false
+            }
         }
     },
     "CVPR": {
@@ -5142,6 +5200,19 @@
                 "deadline": "2025-11-13",
                 "notification": "2026-02-20",
                 "is_verified": true
+            }
+        },
+        "2027": {
+            "date": "June 20-24, 2027",
+            "start_date": "2027-06-20",
+            "finish_date": "2027-06-24",
+            "url": "https://cvpr.thecvf.com/Conferences/2027/",
+            "location": "Seattle, WA, USA",
+            "Estimated": {
+                "abstract_deadline": "2026-11-07",
+                "deadline": "2026-11-13",
+                "notification": "2027-02-20",
+                "is_verified": false
             }
         }
     },
