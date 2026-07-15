@@ -3181,12 +3181,14 @@
             "Cycle 1": {
                 "abstract_deadline": "2026-08-18",
                 "deadline": "2026-08-25",
-                "is_verified": false
+                "notification": "2026-12-03",
+                "is_verified": true
             },
             "Cycle 2": {
                 "abstract_deadline": "2027-01-19",
                 "deadline": "2027-01-26",
-                "is_verified": false
+                "notification": "2027-05-06",
+                "is_verified": true
             }
         }
     },
