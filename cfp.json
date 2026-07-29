@@ -883,6 +883,18 @@
                 "notification": "2026-09-24",
                 "is_verified": true
             }
+        },
+        "2027": {
+            "date": "November 16-17, 2027",
+            "start_date": "2027-11-16",
+            "finish_date": "2027-11-17",
+            "url": "https://conferences.sigcomm.org/hotnets/2026/",
+            "location": "",
+            "Estimated": {
+                "deadline": "2027-07-16",
+                "notification": "2027-09-24",
+                "is_verified": false
+            }
         }
     },
     "HotOS": {
