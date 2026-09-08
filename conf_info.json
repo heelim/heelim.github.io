@@ -924,5 +924,23 @@
         ],
         "kiise": "최우수",
         "bk21plus": "4"
+    },
+    "ICLR": {
+        "fullname": "International Conference on Learning Representations",
+        "domains": [
+            "Machine Learning",
+            "Deep Learning"
+        ],
+        "keywords": [
+            "Deep Learning",
+            "Representation Learning",
+            "Neural Networks",
+            "Machine Learning",
+            "AI",
+            "Reinforcement Learning",
+            "Large Language Models"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
     }
 }
