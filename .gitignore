@@ -21,3 +21,4 @@ ref/
 git
 *.py
 *.bak
+__pycache__/
