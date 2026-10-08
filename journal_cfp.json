@@ -31,6 +31,16 @@
             "notification": "2026-11-02",
             "url": "https://www.computer.org/digital-library/magazines/mi/cfp-gen-ai-age-chiplets",
             "is_verified": true
+        },
+        "Top Picks from the 2026 Computer Architecture Conferences": {
+            "deadline": "2026-12-03",
+            "url": "https://www.computer.org/digital-library/magazines/mi/cfp-top-computer-architecture-conference-papers",
+            "is_verified": true
+        },
+        "Special Issue on Systems for Cryptographic Computing": {
+            "deadline": "2027-03-01",
+            "url": "https://www.computer.org/digital-library/magazines/mi/",
+            "is_verified": true
         }
     },
     "IEEE TKDE": {
@@ -55,6 +65,18 @@
             "deadline": "2026-05-21",
             "notification": "2026-07-20",
             "url": "https://www.computer.org/digital-library/journals/tq/cfp-ai-content-generation-detection",
+            "is_verified": true
+        },
+        "Special Issue on Safety, Alignment, and Responsibility of Large Language Models": {
+            "deadline": "2026-12-31",
+            "notification": "2027-05-31",
+            "url": "https://www.computer.org/digital-library/journals/tq/cfp-safety-alignment-responsibility-language",
+            "is_verified": true
+        },
+        "Special Issue on Trust, Privacy, and Security in Intelligent and Agentic Systems": {
+            "deadline": "2027-01-15",
+            "notification": "2027-08-31",
+            "url": "https://www.computer.org/digital-library/journals/tq/cfp-trust-privacy-security-agentic-systems",
             "is_verified": true
         }
     },
