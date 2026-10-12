@@ -2358,9 +2358,9 @@
             }
         },
         "2027": {
-            "date": "November 15-20, 2027",
-            "start_date": "2027-11-15",
-            "finish_date": "2027-11-20",
+            "date": "November 14-19, 2027",
+            "start_date": "2027-11-14",
+            "finish_date": "2027-11-19",
             "url": "https://sc26.supercomputing.org/all-dates-deadlines",
             "location": "Denver, CO, USA",
             "Estimated": {
@@ -4294,14 +4294,14 @@
             }
         },
         "2027": {
-            "date": "June 5-11, 2027",
+            "date": "June 5-9, 2027",
             "start_date": "2027-06-05",
-            "finish_date": "2027-06-11",
+            "finish_date": "2027-06-09",
             "url": "http://iscaconf.org/isca2027",
             "location": "Atlanta, GA, USA",
             "none": {
-                "deadline": "2026-11-17",
-                "notification": "2027-03-27",
+                "deadline": "2026-11-16",
+                "notification": "2027-03-26",
                 "is_verified": false
             }
         }
@@ -4589,7 +4589,7 @@
             "Fall Cycle": {
                 "deadline": "2026-08-19",
                 "early_notification": "2026-09-25",
-                "notification": "2026-11-04",
+                "notification": "2026-11-24",
                 "is_verified": true
             }
         },
@@ -4763,9 +4763,9 @@
             }
         },
         "2027": {
-            "date": "April 2027",
-            "start_date": "2027-04-01",
-            "finish_date": "2027-04-05",
+            "date": "May 11-13, 2027",
+            "start_date": "2027-05-11",
+            "finish_date": "2027-05-13",
             "url": "https://www.usenix.org/conference/nsdi27",
             "location": "Providence, RI, USA",
             "Spring": {
@@ -5229,7 +5229,7 @@
             "start_date": "2026-09-08",
             "finish_date": "2026-09-13",
             "url": "https://eccv.ecva.net/Conferences/2026",
-            "location": "Malmö, Sweden",
+            "location": "Malm\u00f6, Sweden",
             "none": {
                 "abstract_deadline": "2026-02-26",
                 "deadline": "2026-03-05",
@@ -5591,9 +5591,9 @@
             }
         },
         "2027": {
-            "date": "July 11-15, 2027",
+            "date": "July 11-14, 2027",
             "start_date": "2027-07-11",
-            "finish_date": "2027-07-15",
+            "finish_date": "2027-07-14",
             "url": "https://www.dac.com/",
             "location": "San Jose, CA, USA",
             "none": {
@@ -6149,7 +6149,7 @@
             "start_date": "2027-02-16",
             "finish_date": "2027-02-23",
             "url": "https://aaai.org/conference/aaai/aaai-27/",
-            "location": "Montréal, Canada",
+            "location": "Montr\u00e9al, Canada",
             "none": {
                 "abstract_deadline": "2026-07-21",
                 "deadline": "2026-07-28",
