@@ -2984,7 +2984,7 @@
             "start_date": "2027-09-28",
             "finish_date": "2027-10-01",
             "url": "https://sigops.org/s/conferences/sosp/2027",
-            "location": "TBD",
+            "location": "Vancouver, Canada",
             "Estimated": {
                 "abstract_deadline": "2027-03-25",
                 "deadline": "2027-03-31",
@@ -4042,9 +4042,9 @@
             }
         },
         "2027": {
-            "date": "TBA",
-            "start_date": "TBA",
-            "finish_date": "TBA",
+            "date": "May 17-19, 2027",
+            "start_date": "2027-05-17",
+            "finish_date": "2027-05-19",
             "url": "https://www.ieee-security.org/TC/SP2027/cfpapers.html",
             "location": "Montreal, Canada",
             "Cycle-1": {
@@ -4302,7 +4302,8 @@
             "none": {
                 "deadline": "2026-11-16",
                 "notification": "2027-03-26",
-                "is_verified": false
+                "is_verified": true,
+                "abstract_deadline": "2026-11-09"
             }
         }
     },
@@ -5229,7 +5230,7 @@
             "start_date": "2026-09-08",
             "finish_date": "2026-09-13",
             "url": "https://eccv.ecva.net/Conferences/2026",
-            "location": "Malm\u00f6, Sweden",
+            "location": "Malmö, Sweden",
             "none": {
                 "abstract_deadline": "2026-02-26",
                 "deadline": "2026-03-05",
@@ -5594,13 +5595,16 @@
             "date": "July 11-14, 2027",
             "start_date": "2027-07-11",
             "finish_date": "2027-07-14",
-            "url": "https://www.dac.com/",
+            "url": "https://dac.com/2027",
             "location": "San Jose, CA, USA",
             "none": {
                 "abstract_deadline": "2026-11-11",
                 "deadline": "2026-11-18",
                 "notification": "2027-02-24",
                 "is_verified": true
+            },
+            "Estimated": {
+                "is_verified": false
             }
         }
     },
@@ -5956,7 +5960,7 @@
             "date": "May 17-20, 2027",
             "start_date": "2027-05-17",
             "finish_date": "2027-05-20",
-            "url": "https://2027.rtas.org/cfp/",
+            "url": "https://2027.rtas.org/",
             "location": "Boulder, CO, USA",
             "none": {
                 "deadline": "2026-11-05",
@@ -6149,12 +6153,17 @@
             "start_date": "2027-02-16",
             "finish_date": "2027-02-23",
             "url": "https://aaai.org/conference/aaai/aaai-27/",
-            "location": "Montr\u00e9al, Canada",
+            "location": "Montréal, Canada",
             "none": {
                 "abstract_deadline": "2026-07-21",
                 "deadline": "2026-07-28",
                 "notification": "2026-11-30",
                 "camera_ready": "2026-12-14",
+                "is_verified": true
+            },
+            "Estimated": {
+                "deadline": "2026-07-28",
+                "notification": "2026-11-30",
                 "is_verified": true
             }
         },
@@ -6301,7 +6310,7 @@
             "start_date": "2027-04-26",
             "finish_date": "2027-04-30",
             "url": "https://iclr.cc/Conferences/2027/CallForPapers",
-            "location": "San Francisco, CA, USA",
+            "location": "California, USA",
             "none": {
                 "abstract_deadline": "2026-09-18",
                 "deadline": "2026-09-25",
