@@ -3309,7 +3309,7 @@
             "date": "April 11-15, 2027",
             "start_date": "2027-04-11",
             "finish_date": "2027-04-15",
-            "url": "https://www.asplos-conference.org/asplos2027/cfp/",
+            "url": "https://www.asplos-conference.org/asplos2027/",
             "location": "Heraklion, Crete, Greece",
             "Spring": {
                 "deadline": "2026-04-15",
@@ -3769,7 +3769,7 @@
             "date": "March 20-24, 2027",
             "start_date": "2027-03-20",
             "finish_date": "2027-03-24",
-            "url": "https://hpca-conf.org/2027/",
+            "url": "https://conf.researchr.org/home/hpca-2027",
             "location": "Salt Lake City, UT, USA",
             "none": {
                 "abstract_deadline": "2026-07-24",
@@ -4297,7 +4297,7 @@
             "date": "June 5-9, 2027",
             "start_date": "2027-06-05",
             "finish_date": "2027-06-09",
-            "url": "http://iscaconf.org/isca2027",
+            "url": "https://iscaconf.org/isca2027/",
             "location": "Atlanta, GA, USA",
             "none": {
                 "deadline": "2026-11-16",
@@ -4915,7 +4915,7 @@
             "date": "June 5-11, 2027",
             "start_date": "2027-06-05",
             "finish_date": "2027-06-11",
-            "url": "https://pldi27.sigplan.org/dates",
+            "url": "https://pldi27.sigplan.org/",
             "location": "Atlanta, GA, USA",
             "none": {
                 "deadline": "2026-11-12",
