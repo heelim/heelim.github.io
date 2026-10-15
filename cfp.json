@@ -1476,21 +1476,16 @@
             }
         },
         "2027": {
-            "date": "July 6-9, 2027",
-            "start_date": "2027-07-06",
-            "finish_date": "2027-07-09",
-            "url": "https://www.ics-conference.org/",
+            "date": "June 5-11, 2027",
+            "start_date": "2027-06-05",
+            "finish_date": "2027-06-11",
+            "url": "https://klab-ai3.github.io/ics2027/",
             "location": "Atlanta, GA, USA",
-            "Estimated (Cycle-1)": {
-                "deadline": "2026-12-16",
-                "notification": "2027-03-01",
-                "is_verified": false
-            },
-            "Estimated (Cycle-2)": {
-                "abstract_deadline": "2027-02-02",
-                "deadline": "2027-02-09",
-                "notification": "2027-04-06",
-                "is_verified": false
+            "none": {
+                "abstract_deadline": "2026-12-01",
+                "deadline": "2026-12-07",
+                "notification": "2027-03-12",
+                "is_verified": true
             }
         }
     },
