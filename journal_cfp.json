@@ -325,5 +325,11 @@
         "General Submissions": {
             "is_verified": true
         }
+    },
+    "IEEE TQE": {
+        "url": "https://tqe.ieee.org/",
+        "General Submissions": {
+            "is_verified": true
+        }
     }
 }
