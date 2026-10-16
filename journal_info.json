@@ -431,5 +431,19 @@
         ],
         "if": "1.8",
         "quartile": "Q3"
+    },
+    "IEEE TQE": {
+        "domains": [
+            "Quantum Computing",
+            "Hardware"
+        ],
+        "keywords": [
+            "Quantum Computation",
+            "Quantum Information",
+            "Quantum Communication",
+            "Quantum Devices"
+        ],
+        "if": "4.6",
+        "quartile": "Q1"
     }
 }
