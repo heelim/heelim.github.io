@@ -1202,7 +1202,7 @@
             "date": "July 13-16, 2027",
             "start_date": "2027-07-13",
             "finish_date": "2027-07-16",
-            "url": "TBD",
+            "url": "https://hpdc.sci.utah.edu/2026",
             "location": "",
             "Estimated": {
                 "abstract_deadline": "2027-01-29",
@@ -1338,7 +1338,7 @@
             "date": "September 28 - October 1, 2027",
             "start_date": "2027-09-28",
             "finish_date": "2027-10-01",
-            "url": "TBD",
+            "url": "https://icpp2026.github.io",
             "location": "",
             "Estimated": {
                 "abstract_deadline": "2027-04-24",
@@ -1749,7 +1749,7 @@
             "date": "October 31 - November 4, 2027",
             "start_date": "2027-10-31",
             "finish_date": "2027-11-04",
-            "url": "TBD",
+            "url": "http://www.microarch.org/micro59",
             "location": "",
             "Estimated": {
                 "abstract_deadline": "2027-03-31",
@@ -1915,7 +1915,7 @@
             "date": "December 14-18, 2027",
             "start_date": "2027-12-14",
             "finish_date": "2027-12-18",
-            "url": "TBD",
+            "url": "https://middleware-conf.github.io/2026",
             "location": "",
             "Estimated (Winter)": {
                 "deadline": "2026-12-11",
@@ -2220,7 +2220,7 @@
             "date": "October 19-22, 2027",
             "start_date": "2027-10-19",
             "finish_date": "2027-10-22",
-            "url": "TBD",
+            "url": "https://pact2026.github.io/",
             "location": "",
             "Estimated": {
                 "abstract_deadline": "2027-04-23",
@@ -2356,7 +2356,7 @@
             "date": "November 14-19, 2027",
             "start_date": "2027-11-14",
             "finish_date": "2027-11-19",
-            "url": "TBD",
+            "url": "https://sc26.supercomputing.org/all-dates-deadlines",
             "location": "Denver, CO, USA",
             "Estimated": {
                 "abstract_deadline": "2027-04-01",
@@ -5758,7 +5758,7 @@
             "date": "July 6-11, 2027",
             "start_date": "2027-07-06",
             "finish_date": "2027-07-11",
-            "url": "TBD",
+            "url": "https://icml.cc/Conferences/2026",
             "location": "",
             "Estimated": {
                 "abstract_deadline": "2027-01-23",
@@ -5888,7 +5888,7 @@
             "date": "December 6-12, 2027",
             "start_date": "2027-12-06",
             "finish_date": "2027-12-12",
-            "url": "TBD",
+            "url": "https://neurips.cc/Conferences/2026",
             "location": "",
             "Estimated": {
                 "abstract_deadline": "2027-05-04",
@@ -5981,7 +5981,7 @@
             "date": "December 9-11, 2027",
             "start_date": "2027-12-09",
             "finish_date": "2027-12-11",
-            "url": "TBD",
+            "url": "https://2026.rtss.org/",
             "location": "",
             "Estimated": {
                 "deadline": "2027-05-21",
