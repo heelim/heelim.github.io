@@ -7,11 +7,6 @@
     },
     "IEEE TC": {
         "url": "https://www.computer.org/csdl/journal/tc",
-        "Special Issue on Hardware Security": {
-            "deadline": "2026-08-01",
-            "notification": "2026-11-01",
-            "is_verified": true
-        },
         "Special Issue on Graph-Centric Computing: Algorithms, Systems, and Architectures": {
             "deadline": "2026-07-15",
             "notification": "2026-10-15",
@@ -27,7 +22,7 @@
             "is_verified": false
         },
         "Special Issue on GenAI in the Age of Chiplets": {
-            "deadline": "2026-08-02",
+            "deadline": "2026-09-19",
             "notification": "2026-11-02",
             "url": "https://www.computer.org/digital-library/magazines/mi/cfp-gen-ai-age-chiplets",
             "is_verified": true
