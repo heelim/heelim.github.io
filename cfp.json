@@ -2975,9 +2975,9 @@
             }
         },
         "2027": {
-            "date": "September 28 - October 1, 2027",
-            "start_date": "2027-09-28",
-            "finish_date": "2027-10-01",
+            "date": "November 30 - December 3, 2027",
+            "start_date": "2027-11-30",
+            "finish_date": "2027-12-03",
             "url": "https://sigops.org/s/conferences/sosp/2027",
             "location": "Vancouver, Canada",
             "Estimated": {
