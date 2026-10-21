@@ -1335,11 +1335,11 @@
             }
         },
         "2027": {
-            "date": "September 28 - October 1, 2027",
-            "start_date": "2027-09-28",
-            "finish_date": "2027-10-01",
-            "url": "https://icpp2026.github.io",
-            "location": "",
+            "date": "September 13-17, 2027",
+            "start_date": "2027-09-13",
+            "finish_date": "2027-09-17",
+            "url": "https://icpp2027.github.io",
+            "location": "Sapporo, Japan",
             "Estimated": {
                 "abstract_deadline": "2027-04-24",
                 "deadline": "2027-05-01",
