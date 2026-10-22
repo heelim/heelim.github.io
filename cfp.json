@@ -5225,7 +5225,7 @@
             "start_date": "2026-09-08",
             "finish_date": "2026-09-13",
             "url": "https://eccv.ecva.net/Conferences/2026",
-            "location": "Malmö, Sweden",
+            "location": "Malm\u00f6, Sweden",
             "none": {
                 "abstract_deadline": "2026-02-26",
                 "deadline": "2026-03-05",
@@ -5550,7 +5550,7 @@
             },
             "R2": {
                 "deadline": "2026-09-10",
-                "notification": "2026-11-02",
+                "notification": "2026-11-09",
                 "is_verified": true
             }
         },
@@ -6148,7 +6148,7 @@
             "start_date": "2027-02-16",
             "finish_date": "2027-02-23",
             "url": "https://aaai.org/conference/aaai/aaai-27/",
-            "location": "Montréal, Canada",
+            "location": "Montr\u00e9al, Canada",
             "none": {
                 "abstract_deadline": "2026-07-21",
                 "deadline": "2026-07-28",
