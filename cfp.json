@@ -6326,5 +6326,143 @@
                 "is_verified": false
             }
         }
+    },
+    "CAV": {
+        "2025": {
+            "date": "July 21-25, 2025",
+            "start_date": "2025-07-21",
+            "finish_date": "2025-07-25",
+            "url": "https://conferences.i-cav.org/2025/",
+            "location": "Zagreb, Croatia",
+            "none": {
+                "deadline": "2025-01-31",
+                "notification": "2025-04-02",
+                "is_verified": true
+            }
+        },
+        "2026": {
+            "date": "July 26-29, 2026",
+            "start_date": "2026-07-26",
+            "finish_date": "2026-07-29",
+            "url": "https://conferences.i-cav.org/2026/",
+            "location": "Lisbon, Portugal",
+            "none": {
+                "deadline": "2026-01-28",
+                "notification": "2026-04-17",
+                "is_verified": true
+            }
+        },
+        "2027": {
+            "date": "July 19-23, 2027",
+            "start_date": "2027-07-19",
+            "finish_date": "2027-07-23",
+            "url": "https://conferences.i-cav.org/2027/",
+            "location": "Amsterdam, The Netherlands",
+            "none": {
+                "deadline": "2027-01-20",
+                "notification": "2027-04-23",
+                "is_verified": true
+            }
+        },
+        "2028": {
+            "date": "July 19-23, 2028",
+            "start_date": "2028-07-19",
+            "finish_date": "2028-07-23",
+            "url": "https://conferences.i-cav.org/2027/",
+            "location": "",
+            "Estimated": {
+                "deadline": "2028-01-20",
+                "notification": "2028-04-23",
+                "is_verified": false
+            }
+        }
+    },
+    "SAS": {
+        "2025": {
+            "date": "October 13-14, 2025",
+            "start_date": "2025-10-13",
+            "finish_date": "2025-10-14",
+            "url": "https://conf.researchr.org/home/sas-2025",
+            "location": "Singapore",
+            "none": {
+                "deadline": "2025-05-11",
+                "notification": "2025-07-10",
+                "is_verified": true
+            }
+        },
+        "2026": {
+            "date": "October 6-8, 2026",
+            "start_date": "2026-10-06",
+            "finish_date": "2026-10-08",
+            "url": "https://conf.researchr.org/home/sas-2026",
+            "location": "Oakland, CA, USA",
+            "none": {
+                "deadline": "2026-05-07",
+                "notification": "2026-07-04",
+                "is_verified": true
+            }
+        },
+        "2027": {
+            "date": "October 10-15, 2027",
+            "start_date": "2027-10-10",
+            "finish_date": "2027-10-15",
+            "url": "https://conf.researchr.org/home/sas-2026",
+            "location": "Prague, Czechia",
+            "Estimated": {
+                "deadline": "2027-05-07",
+                "notification": "2027-07-04",
+                "is_verified": false
+            }
+        }
+    },
+    "ESOP": {
+        "2025": {
+            "date": "May 5-7, 2025",
+            "start_date": "2025-05-05",
+            "finish_date": "2025-05-07",
+            "url": "https://etaps.org/2025/conferences/esop/",
+            "location": "Hamilton, Canada",
+            "Round-2": {
+                "deadline": "2024-10-10",
+                "notification": "2024-12-19",
+                "is_verified": true
+            }
+        },
+        "2026": {
+            "date": "April 13-15, 2026",
+            "start_date": "2026-04-13",
+            "finish_date": "2026-04-15",
+            "url": "https://etaps.org/2026/conferences/esop/",
+            "location": "Turin, Italy",
+            "Round-2": {
+                "deadline": "2025-10-16",
+                "notification": "2025-12-22",
+                "is_verified": true
+            }
+        },
+        "2027": {
+            "date": "April 10-15, 2027",
+            "start_date": "2027-04-10",
+            "finish_date": "2027-04-15",
+            "url": "https://etaps.org/2027/conferences/esop/",
+            "location": "Copenhagen, Denmark",
+            "Round-2": {
+                "deadline": "2026-10-15",
+                "notification": "2026-12-22",
+                "is_verified": true
+            }
+        },
+        "2028": {
+            "date": "April 10-15, 2028",
+            "start_date": "2028-04-10",
+            "finish_date": "2028-04-15",
+            "url": "https://etaps.org/2027/",
+            "location": "",
+            "Estimated": {
+                "deadline": "2027-10-15",
+                "notification": "2027-12-22",
+                "is_verified": false
+            }
+        }
     }
 }
