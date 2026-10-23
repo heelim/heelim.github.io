@@ -942,5 +942,54 @@
         ],
         "kiise": "최우수",
         "bk21plus": "4"
+    },
+    "CAV": {
+        "fullname": "International Conference on Computer Aided Verification",
+        "domains": [
+            "Formal Methods",
+            "Programming Languages",
+            "Software Engineering"
+        ],
+        "keywords": [
+            "Formal Verification",
+            "Model Checking",
+            "Program Analysis",
+            "Theorem Proving",
+            "Software Verification",
+            "Hardware Verification"
+        ],
+        "kiise": "최우수",
+        "bk21plus": "4"
+    },
+    "SAS": {
+        "fullname": "International Static Analysis Symposium",
+        "domains": [
+            "Programming Languages",
+            "Software Engineering"
+        ],
+        "keywords": [
+            "Static Analysis",
+            "Program Analysis",
+            "Abstract Interpretation",
+            "Program Verification",
+            "Compilers"
+        ],
+        "kiise": "우수",
+        "bk21plus": "1"
+    },
+    "ESOP": {
+        "fullname": "European Symposium on Programming",
+        "domains": [
+            "Programming Languages"
+        ],
+        "keywords": [
+            "Programming Language Design",
+            "Program Semantics",
+            "Type Systems",
+            "Program Analysis",
+            "Concurrency"
+        ],
+        "kiise": "우수",
+        "bk21plus": "2"
     }
 }
