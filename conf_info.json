@@ -975,7 +975,7 @@
             "Compilers"
         ],
         "kiise": "우수",
-        "bk21plus": "2"
+        "bk21plus": "1"
     },
     "ESOP": {
         "fullname": "European Symposium on Programming",
@@ -989,7 +989,7 @@
             "Program Analysis",
             "Concurrency"
         ],
-        "kiise": "최우수",
-        "bk21plus": "3"
+        "kiise": "우수",
+        "bk21plus": "2"
     }
 }
