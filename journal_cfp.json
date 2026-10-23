@@ -144,6 +144,11 @@
             "notification": "2027-02-05",
             "url": "https://www.computer.org/digital-library/magazines/so/cfp-building-trustworthy-software-ai",
             "is_verified": true
+        },
+        "Special Issue on Next-Generation Software for Smart, Resilient and Sustainable Cities": {
+            "deadline": "2027-01-07",
+            "url": "https://www.computer.org/digital-library/magazines/so/cfp-next-gen-sustainable-cities",
+            "is_verified": true
         }
     },
     "IEEE Security & Privacy": {
