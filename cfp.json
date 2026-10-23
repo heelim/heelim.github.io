@@ -4413,16 +4413,16 @@
             }
         },
         "2027": {
-            "date": "April 26-28, 2027",
-            "start_date": "2027-04-26",
-            "finish_date": "2027-04-28",
-            "url": "https://ispass.org/ispass2026/",
-            "location": "",
-            "Estimated": {
-                "abstract_deadline": "2026-12-08",
-                "deadline": "2026-12-15",
-                "notification": "",
-                "is_verified": false
+            "date": "May 9-11, 2027",
+            "start_date": "2027-05-09",
+            "finish_date": "2027-05-11",
+            "url": "https://ispass.org/2027/",
+            "location": "New York City, NY, USA",
+            "none": {
+                "abstract_deadline": "2026-12-11",
+                "deadline": "2026-12-18",
+                "notification": "2027-03-08",
+                "is_verified": true
             }
         }
     },
