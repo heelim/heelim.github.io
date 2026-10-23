@@ -6403,11 +6403,11 @@
             }
         },
         "2027": {
-            "date": "October 6-8, 2027",
-            "start_date": "2027-10-06",
-            "finish_date": "2027-10-08",
-            "url": "https://conf.researchr.org/home/sas-2026",
-            "location": "",
+            "date": "October 10-15, 2027",
+            "start_date": "2027-10-10",
+            "finish_date": "2027-10-15",
+            "url": "https://conf.researchr.org/home/sas-2027",
+            "location": "Prague, Czechia",
             "Estimated": {
                 "deadline": "2027-05-07",
                 "notification": "2027-07-04",
