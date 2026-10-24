@@ -279,7 +279,7 @@
             "start_date": "2027-10-11",
             "finish_date": "2027-10-15",
             "url": "https://www.sigsac.org/ccs/CCS2027/",
-            "location": "Atlanta, USA",
+            "location": "Atlanta, GA, USA",
             "Estimated (Cycle-1)": {
                 "abstract_deadline": "2027-01-07",
                 "deadline": "2027-01-14",
@@ -725,7 +725,7 @@
             "start_date": "2027-08-23",
             "finish_date": "2027-08-27",
             "url": "https://2027.euro-par.org/",
-            "location": "Groningen, Netherlands",
+            "location": "Groningen, The Netherlands",
             "Estimated": {
                 "abstract_deadline": "2027-02-26",
                 "deadline": "2027-03-06",
@@ -1199,11 +1199,11 @@
             }
         },
         "2027": {
-            "date": "June 5-11, 2027",
-            "start_date": "2027-06-05",
-            "finish_date": "2027-06-11",
-            "url": "https://dlnext.acm.org/conference/hpdc",
-            "location": "Atlanta, GA, USA",
+            "date": "July 13-16, 2027",
+            "start_date": "2027-07-13",
+            "finish_date": "2027-07-16",
+            "url": "https://hpdc.sci.utah.edu/2026",
+            "location": "",
             "Estimated": {
                 "abstract_deadline": "2027-01-29",
                 "deadline": "2027-02-05",
@@ -2494,9 +2494,11 @@
             "finish_date": "2027-08-12",
             "url": "https://conferences.sigcomm.org/sigcomm/2027/",
             "location": "Bangkok, Thailand",
-            "none": {
-                "deadline": "2027-02-02",
-                "is_verified": true
+            "Estimated": {
+                "abstract_deadline": "2027-01-30",
+                "deadline": "2027-02-06",
+                "notification": "2027-04-01",
+                "is_verified": false
             }
         }
     },
@@ -2973,11 +2975,11 @@
             }
         },
         "2027": {
-            "date": "November 30-December 3, 2027",
+            "date": "November 30 - December 3, 2027",
             "start_date": "2027-11-30",
             "finish_date": "2027-12-03",
             "url": "https://sigops.org/s/conferences/sosp/2027",
-            "location": "Vancouver, BC, Canada",
+            "location": "Vancouver, Canada",
             "Estimated": {
                 "abstract_deadline": "2027-03-25",
                 "deadline": "2027-03-31",
@@ -3633,7 +3635,7 @@
             }
         },
         "2028": {
-            "date": "February 28-March 1, 2028",
+            "date": "February 28 - March 1, 2028",
             "start_date": "2028-02-28",
             "finish_date": "2028-03-01",
             "url": "https://www.usenix.org/conference/fast28",
@@ -5094,8 +5096,8 @@
             "date": "October 2-8, 2027",
             "start_date": "2027-10-02",
             "finish_date": "2027-10-08",
-            "url": "https://iccv.thecvf.com/Conferences/2027",
-            "location": "Hong Kong",
+            "url": "https://iccv.thecvf.com/",
+            "location": "Hong Kong, China",
             "Estimated": {
                 "abstract_deadline": "2027-03-03",
                 "deadline": "2027-03-07",
@@ -5303,8 +5305,8 @@
             "date": "June 20-25, 2027",
             "start_date": "2027-06-20",
             "finish_date": "2027-06-25",
-            "url": "https://cvpr.thecvf.com/Conferences/2027",
-            "location": "Seattle, Washington",
+            "url": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers",
+            "location": "Seattle, WA, USA",
             "none": {
                 "abstract_deadline": "2026-11-10",
                 "deadline": "2026-11-16",
@@ -5443,11 +5445,11 @@
             }
         },
         "2027": {
-            "date": "October 24-28, 2027",
-            "start_date": "2027-10-24",
-            "finish_date": "2027-10-28",
+            "date": "October 12-16, 2027",
+            "start_date": "2027-10-12",
+            "finish_date": "2027-10-16",
             "url": "https://conf.researchr.org/home/ase-2026",
-            "location": "El Paso, Texas",
+            "location": "",
             "Estimated": {
                 "deadline": "2027-03-26",
                 "early_notification": "2027-05-25",
@@ -5589,7 +5591,7 @@
             "start_date": "2027-07-11",
             "finish_date": "2027-07-14",
             "url": "https://dac.com/2027",
-            "location": "San Jose, California",
+            "location": "San Jose, CA, USA",
             "none": {
                 "abstract_deadline": "2026-11-11",
                 "deadline": "2026-11-18",
@@ -5785,7 +5787,7 @@
             "start_date": "2027-05-24",
             "finish_date": "2027-05-27",
             "url": "https://infocom2027.ieee-infocom.org/",
-            "location": "Honolulu, Hawaii, USA",
+            "location": "Honolulu, HI, USA",
             "Estimated": {
                 "abstract_deadline": "2026-07-24",
                 "deadline": "2026-07-31",
@@ -5825,17 +5827,18 @@
             "start_date": "2027-08-01",
             "finish_date": "2027-08-05",
             "url": "https://kdd2027.kdd.org/research-track-call-for-papers/",
-            "location": "San Jose, California",
+            "location": "San Jose, CA, USA",
             "Cycle-1": {
                 "abstract_deadline": "2026-07-19",
                 "deadline": "2026-07-26",
                 "notification": "2026-11-14",
                 "is_verified": true
             },
-            "Cycle-2": {
-                "deadline": "2026-07-26",
-                "notification": "2026-11-14",
-                "is_verified": true
+            "Estimated (Cycle-2)": {
+                "abstract_deadline": "2027-02-01",
+                "deadline": "2027-02-08",
+                "notification": "2027-05-16",
+                "is_verified": false
             }
         }
     },
@@ -6147,8 +6150,10 @@
             "url": "https://aaai.org/conference/aaai/aaai-27/",
             "location": "Montréal, Canada",
             "none": {
+                "abstract_deadline": "2026-07-21",
                 "deadline": "2026-07-28",
                 "notification": "2026-11-30",
+                "camera_ready": "2026-12-14",
                 "is_verified": true
             }
         },
@@ -6209,7 +6214,7 @@
             }
         },
         "2028": {
-            "date": "April 30-May 6, 2028",
+            "date": "April 30 - May 6, 2028",
             "start_date": "2028-04-30",
             "finish_date": "2028-05-06",
             "url": "https://conf.researchr.org/home/icse-2028",
