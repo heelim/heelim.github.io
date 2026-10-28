@@ -418,11 +418,11 @@
             }
         },
         "2027": {
-            "date": "May 19-21, 2027",
-            "start_date": "2027-05-19",
-            "finish_date": "2027-05-21",
-            "url": "http://www.computingfrontiers.org/2026",
-            "location": "",
+            "date": "May 25-27, 2027",
+            "start_date": "2027-05-25",
+            "finish_date": "2027-05-27",
+            "url": "https://www.computingfrontiers.org/2027/",
+            "location": "Trento, Italy",
             "none": {
                 "abstract_deadline": "2027-01-18",
                 "deadline": "2027-01-25",
@@ -580,11 +580,11 @@
             }
         },
         "2027": {
-            "date": "December 7-10, 2027",
-            "start_date": "2027-12-07",
-            "finish_date": "2027-12-10",
-            "url": "https://conferences2.sigcomm.org/co-next/2026",
-            "location": "",
+            "date": "December 6-9, 2027",
+            "start_date": "2027-12-06",
+            "finish_date": "2027-12-09",
+            "url": "https://conferences2.sigcomm.org/co-next/2027/",
+            "location": "Rio de Janeiro, Brazil",
             "Winter": {
                 "abstract_deadline": "2026-11-27",
                 "deadline": "2026-12-04",
@@ -1915,11 +1915,11 @@
             }
         },
         "2027": {
-            "date": "December 14-18, 2027",
-            "start_date": "2027-12-14",
-            "finish_date": "2027-12-18",
-            "url": "https://middleware-conf.github.io/2026",
-            "location": "",
+            "date": "December 13-17, 2027",
+            "start_date": "2027-12-13",
+            "finish_date": "2027-12-17",
+            "url": "https://middleware-conf.github.io/2027/",
+            "location": "Kyoto, Japan",
             "Winter": {
                 "abstract_deadline": "2026-11-27",
                 "deadline": "2026-12-04",
@@ -2978,7 +2978,7 @@
             "date": "November 30 - December 3, 2027",
             "start_date": "2027-11-30",
             "finish_date": "2027-12-03",
-            "url": "https://sigops.org/s/conferences/sosp/2027",
+            "url": "https://www.sosp.org/",
             "location": "Vancouver, Canada",
             "Estimated": {
                 "abstract_deadline": "2027-03-25",
@@ -5093,10 +5093,10 @@
             }
         },
         "2027": {
-            "date": "October 2-8, 2027",
-            "start_date": "2027-10-02",
-            "finish_date": "2027-10-08",
-            "url": "https://iccv.thecvf.com/",
+            "date": "October 3-7, 2027",
+            "start_date": "2027-10-03",
+            "finish_date": "2027-10-07",
+            "url": "https://iccv.thecvf.com/Conferences/2027",
             "location": "Hong Kong, China",
             "Estimated": {
                 "abstract_deadline": "2027-03-03",
@@ -5716,7 +5716,7 @@
             "date": "November 16-18, 2026",
             "start_date": "2026-11-16",
             "finish_date": "2026-11-18",
-            "url": "https://www.iccd-conf.com/home.html",
+            "url": "https://www.iccd-conf.com/2026/home.html",
             "location": "Hong Kong SAR, China",
             "none": {
                 "abstract_deadline": "2026-06-03",
@@ -6156,11 +6156,6 @@
                 "notification": "2026-11-30",
                 "camera_ready": "2026-12-14",
                 "is_verified": true
-            },
-            "Estimated": {
-                "deadline": "2026-07-28",
-                "notification": "2026-11-30",
-                "is_verified": true
             }
         },
         "2028": {
@@ -6235,9 +6230,9 @@
     },
     "SIGMOD": {
         "2027": {
-            "date": "June 13-19, 2027",
+            "date": "June 13-18, 2027",
             "start_date": "2027-06-13",
-            "finish_date": "2027-06-19",
+            "finish_date": "2027-06-18",
             "url": "https://2027.sigmod.org/",
             "location": "Huntington Beach, CA, USA",
             "Cycle-1": {
@@ -6454,11 +6449,11 @@
             }
         },
         "2028": {
-            "date": "April 10-15, 2028",
-            "start_date": "2028-04-10",
-            "finish_date": "2028-04-15",
-            "url": "https://etaps.org/2027/",
-            "location": "",
+            "date": "April 2-7, 2028",
+            "start_date": "2028-04-02",
+            "finish_date": "2028-04-07",
+            "url": "https://etaps.org/2028/",
+            "location": "Karlsruhe, Germany",
             "Estimated": {
                 "deadline": "2027-10-15",
                 "notification": "2027-12-22",
