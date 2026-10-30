@@ -5645,15 +5645,14 @@
             }
         },
         "2027": {
-            "date": "July 7-10, 2027",
-            "start_date": "2027-07-07",
-            "finish_date": "2027-07-10",
-            "url": "https://www.ecrts.org/",
-            "location": "",
-            "Estimated": {
+            "date": "July 13-16, 2027",
+            "start_date": "2027-07-13",
+            "finish_date": "2027-07-16",
+            "url": "https://www.ecrts.org/call-for-papers/",
+            "location": "Prague, Czech Republic",
+            "none": {
                 "deadline": "2027-02-26",
-                "notification": "2027-04-20",
-                "is_verified": false
+                "is_verified": true
             }
         }
     },
@@ -6460,5 +6459,8 @@
                 "is_verified": false
             }
         }
+    },
+    "last": {
+        "updated": "October 30, 2026"
     }
 }
