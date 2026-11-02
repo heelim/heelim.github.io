@@ -991,5 +991,24 @@
         ],
         "kiise": "우수",
         "bk21plus": "2"
+    },
+    "MLSys": {
+        "fullname": "Conference on Machine Learning and Systems",
+        "domains": [
+            "Machine Learning",
+            "Systems",
+            "High-Performance Computing"
+        ],
+        "keywords": [
+            "Machine Learning Systems",
+            "ML Infrastructure",
+            "Large Language Models",
+            "Distributed Training",
+            "Hardware Accelerators",
+            "ML Compilers",
+            "Model Training and Inference"
+        ],
+        "kiise": "우수",
+        "bk21plus": "2"
     }
 }
