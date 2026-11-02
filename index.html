@@ -195,58 +195,43 @@
 
       <div id="cfp" class="tab-content hidden">
         <section id="cfp-section">
-          <!-- Row 1: Title + Last Updated -->
-          <div style="display: flex; align-items: baseline; gap: 0.8rem; margin-bottom: 0.75rem;">
-            <h3 class="section-title" style="margin: 0; padding: 0; border: none;">Call for Papers</h3>
-            <span id="cfp-last-updated"
-              style="font-size: 0.75rem; color: var(--g4); font-weight: 400; opacity: 0.8;">Last updated: Apr 7,
-              2026</span>
+          <div class="cfp-head">
+            <h3>Call for Papers</h3>
+            <span id="cfp-last-updated" class="cfp-updated">Last updated: Apr 7, 2026</span>
           </div>
-          <!-- Row 2: All control buttons -->
-          <div style="display: flex; gap: 0.4rem; align-items: center; flex-wrap: wrap; margin-bottom: 1rem;">
-            <select id="sort-by" class="sort-select"
-              style="background: rgba(var(--ink), 0.1); color: var(--g1); border: 1px solid rgba(var(--ink), 0.2);">
-              <option value="default">Default</option>
-              <option value="deadline">Deadline</option>
-              <option value="name">Name</option>
-              <option value="start_date">Upcoming</option>
-              <option value="bk">BK21+</option>
-              <option value="kiise">KIISE</option>
+
+          <div class="cfp-controls">
+            <select id="sort-by" class="sort-select" aria-label="Sort by">
+              <option value="default">Sort: Default</option>
+              <option value="deadline">Sort: Deadline</option>
+              <option value="name">Sort: Name</option>
+              <option value="start_date">Sort: Upcoming</option>
+              <option value="bk">Sort: BK21+</option>
+              <option value="kiise">Sort: KIISE</option>
             </select>
-            <button id="sort-order" class="sort-select"
-              style="background: rgba(var(--ink), 0.1); color: var(--g1); border: 1px solid rgba(var(--ink), 0.2);">
+            <button id="sort-order" class="sort-select" type="button">
               <span id="order-icon">▲</span><span id="order-text">Asc</span>
             </button>
-            <button id="domain-toggle" class="sort-select"
-              style="background: rgba(var(--ink), 0.1); color: var(--g1); border: 1px solid rgba(var(--ink), 0.2);">
-              <span id="domain-icon" style="transition: transform 0.3s ease;">⊕</span> Domains
-            </button>
-            <button id="keyword-toggle" class="sort-select"
-              style="background: rgba(var(--ink), 0.1); color: var(--accent); border: 1px solid rgba(var(--ink), 0.2);">
-              <span id="keyword-icon" style="transition: transform 0.3s ease;">⊕</span> Keywords
-            </button>
-            <button id="ranks-toggle" class="sort-select"
-              style="background: rgba(var(--ink), 0.15); color: var(--g2); border: 1px solid rgba(var(--ink), 0.3);">
-              BK/KIISE
-            </button>
+            <span class="spacer"></span>
+            <button id="domain-toggle" class="sort-select" type="button"><span id="domain-icon">+</span> Domains</button>
+            <button id="keyword-toggle" class="sort-select" type="button"><span id="keyword-icon">+</span> Keywords</button>
+            <button id="ranks-toggle" class="sort-select on" type="button">BK/KIISE</button>
           </div>
 
           <div id="domain-collapsible" class="collapsible-wrapper">
-            <div class="filter-section"
-              style="margin-bottom: 1rem; padding: 1rem; background: rgba(var(--ink), 0.03); border-radius: 12px; border: 1px solid rgba(var(--ink), 0.05);">
-              <div id="domain-container" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-                <!-- Dynamically populated -->
-              </div>
-            </div>
+            <div id="domain-container" class="chip-row"></div>
           </div>
 
           <div id="keyword-collapsible" class="collapsible-wrapper">
-            <div class="filter-section"
-              style="margin-bottom: 1rem; padding: 1rem; background: rgba(var(--ink), 0.03); border-radius: 12px; border: 1px solid rgba(var(--ink), 0.05);">
-              <div id="keyword-container" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-                <!-- Dynamically populated -->
-              </div>
-            </div>
+            <div id="keyword-container" class="chip-row"></div>
+          </div>
+
+          <div class="cfp-legend">
+            <span><i class="lg lg-dl"></i>Submission deadline</span>
+            <span><i class="lg lg-abs"></i>Abstract deadline</span>
+            <span><i class="lg lg-review"></i>Review</span>
+            <span><i class="lg lg-notif"></i>Notification</span>
+            <span><i class="lg lg-event"></i>Conference</span>
           </div>
 
           <div id="cfp-list" class="gantt-container">
