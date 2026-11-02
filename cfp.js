@@ -50,13 +50,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const cfpList = document.getElementById('cfp-list');
-    const keywordContainer = document.getElementById('keyword-container');
+    // Keyword filter disabled (conf_info.json keeps its keywords data).
+    // const keywordContainer = document.getElementById('keyword-container');
     const domainContainer = document.getElementById('domain-container');
 
     let allCfps = [];
     let confInfo = {};
     let confOrder = [];
-    let selectedKeywords = new Set();
+    // let selectedKeywords = new Set();
     let selectedDomains = new Set();
     let sortBy = 'default';
     let sortOrder = 'asc';
@@ -140,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function setupToggle() {
         const toggles = [
             { btnId: 'domain-toggle', wrapperId: 'domain-collapsible', iconId: 'domain-icon' },
-            { btnId: 'keyword-toggle', wrapperId: 'keyword-collapsible', iconId: 'keyword-icon' }
+            // { btnId: 'keyword-toggle', wrapperId: 'keyword-collapsible', iconId: 'keyword-icon' }
         ];
 
         toggles.forEach(t => {
@@ -162,14 +163,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderFilters() {
-        const allKeywords = new Set();
+        // const allKeywords = new Set();
         const allDomains = new Set();
         const visibleVenues = new Set(allCfps.map(cfp => cfp.venue));
 
         visibleVenues.forEach(venue => {
             const info = confInfo[venue];
             if (info) {
-                if (info.keywords) info.keywords.forEach(kw => allKeywords.add(kw));
+                // if (info.keywords) info.keywords.forEach(kw => allKeywords.add(kw));
                 if (info.domains) info.domains.forEach(dom => allDomains.add(dom));
             }
         });
@@ -184,6 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `).join('');
         domainContainer.innerHTML = domainsHtml;
 
+        /* Keyword filter disabled.
         // Render Keywords
         const sortedKeywords = Array.from(allKeywords).sort();
         const keywordsHtmlStr = sortedKeywords.map(kw => `
@@ -193,6 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </label>
         `).join('');
         keywordContainer.innerHTML = keywordsHtmlStr;
+        */
 
         // Listeners for Domains (CFP)
         domainContainer.querySelectorAll('input').forEach(input => {
@@ -209,6 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
+        /* Keyword filter disabled.
         // Listeners for Keywords (CFP)
         keywordContainer.querySelectorAll('input').forEach(input => {
             input.addEventListener('change', (e) => {
@@ -223,6 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 renderCfps();
             });
         });
+        */
     }
 
     function parseDate(dateStr) {
@@ -897,16 +902,18 @@ document.addEventListener('DOMContentLoaded', () => {
         // 1. Start with all conferences.
         let filteredCfps = allCfps;
 
-        // 2. Multi-category Filtering (Domain OR Keyword)
-        if (selectedKeywords.size > 0 || selectedDomains.size > 0) {
+        // 2. Domain filtering (keyword filter disabled)
+        // if (selectedKeywords.size > 0 || selectedDomains.size > 0) {
+        if (selectedDomains.size > 0) {
             filteredCfps = filteredCfps.filter(cfp => {
                 const info = confInfo[cfp.venue];
                 if (!info) return false;
 
                 const matchesDomain = info.domains && info.domains.some(dom => selectedDomains.has(dom));
-                const matchesKeyword = info.keywords && info.keywords.some(kw => selectedKeywords.has(kw));
+                // const matchesKeyword = info.keywords && info.keywords.some(kw => selectedKeywords.has(kw));
 
-                return matchesDomain || matchesKeyword;
+                // return matchesDomain || matchesKeyword;
+                return matchesDomain;
             });
         }
 

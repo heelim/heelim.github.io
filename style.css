@@ -645,7 +645,8 @@ button.sort-select {
 .gantt-notification-bar:hover,
 .gantt-event-bar:hover,
 .gantt-abstract-bar:hover {
-  background: rgba(var(--ink), 0.2);
+  /* Lift the hovered bar (and its tooltip) above every other bar and the Today line (z-index: 60) */
+  z-index: 100;
 }
 
 .gantt-venue-name {
@@ -855,9 +856,7 @@ button.sort-select {
 }
 
 .gantt-abstract-bar:hover {
-  background: linear-gradient(to right, rgba(var(--ink), 0.6), rgba(var(--ink), 0.3));
-  border-color: rgba(var(--ink), 0.7);
-  box-shadow: 0 0 8px rgba(var(--ink), 0.3);
+  background: rgba(var(--ink), 0.2);
 }
 
 /* --- Premium Glassmorphic Table Styles --- */
