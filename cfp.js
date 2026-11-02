@@ -139,8 +139,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function setupToggle() {
         const toggles = [
-            { btnId: 'domain-toggle', wrapperId: 'domain-collapsible', iconId: 'domain-icon', activeBg: 'rgba(var(--ink), 0.2)', inactiveBg: 'rgba(var(--ink), 0.1)' },
-            { btnId: 'keyword-toggle', wrapperId: 'keyword-collapsible', iconId: 'keyword-icon', activeBg: 'rgba(var(--ink), 0.2)', inactiveBg: 'rgba(var(--ink), 0.1)' }
+            { btnId: 'domain-toggle', wrapperId: 'domain-collapsible', iconId: 'domain-icon' },
+            { btnId: 'keyword-toggle', wrapperId: 'keyword-collapsible', iconId: 'keyword-icon' }
         ];
 
         toggles.forEach(t => {
@@ -154,8 +154,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (wrapper) {
                         isExpanded = wrapper.classList.toggle('expanded');
                     }
-                    icon.style.transform = isExpanded ? 'rotate(45deg)' : 'rotate(0deg)';
-                    toggleBtn.style.background = isExpanded ? t.activeBg : t.inactiveBg;
+                    icon.textContent = isExpanded ? '−' : '+';
+                    toggleBtn.classList.toggle('on', !!isExpanded);
                 });
             }
         });
@@ -995,10 +995,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!labelsCol) return;
             if (ranksVisible) {
                 labelsCol.classList.remove('ranks-hidden');
-                btn.style.opacity = '1';
+                btn.classList.add('on');
             } else {
                 labelsCol.classList.add('ranks-hidden');
-                btn.style.opacity = '0.45';
+                btn.classList.remove('on');
             }
         }
 
