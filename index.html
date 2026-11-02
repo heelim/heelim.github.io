@@ -5,6 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Heelim Choi | Personal Site</title>
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        t = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      }
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +34,7 @@
           <a href="http://corelab.yonsei.ac.kr" target="_blank">Compiler Research Laboratory (CoreLab)</a>
           <a href="https://ee.yonsei.ac.kr" target="_blank">Electrical and Electronic Engineering (EE)</a>
           <a href="https://www.yonsei.ac.kr" target="_blank">Yonsei University</a>
-          <span style="color: #a3a3a3; font-size: 0.95rem;">E-mail: [first_name] [at] yonsei.ac.kr</span>
+          <span style="color: var(--g3); font-size: 0.95rem;">E-mail: [first_name] [at] yonsei.ac.kr</span>
         </div>
       </div>
     </header>
@@ -33,6 +43,7 @@
       <nav class="main-nav">
         <div class="nav-link active" data-tab="profile">Profile</div>
         <div class="nav-link" data-tab="cfp">CFP</div>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle light/dark mode"></button>
       </nav>
 
       <div id="profile" class="tab-content">
@@ -165,7 +176,7 @@
               <span class="pub-highlight">Heelim Choi</span>
               , Jaeho Lee, Hoyun Youm, Dongyoon Lee, and Hanjun Kim</span>
             <span class="pub-venue">IEEE Internet of Things Journal, August 2024.</span>
-            <span class="item-meta" style="color: #fafafa; font-weight: 700;">IF=8.2, Q1 (JCR 2023)</span>
+            <span class="item-meta" style="color: var(--fg); font-weight: 700;">IF=8.2, Q1 (JCR 2023)</span>
           </div>
 
           <h4 class="pub-type-header">Poster</h4>
@@ -195,13 +206,13 @@
           <div style="display: flex; align-items: baseline; gap: 0.8rem; margin-bottom: 0.75rem;">
             <h3 class="section-title" style="margin: 0;">Call for Papers</h3>
             <span id="cfp-last-updated"
-              style="font-size: 0.75rem; color: #737373; font-weight: 400; opacity: 0.8;">Last updated: Apr 7,
+              style="font-size: 0.75rem; color: var(--g4); font-weight: 400; opacity: 0.8;">Last updated: Apr 7,
               2026</span>
           </div>
           <!-- Row 2: All control buttons -->
           <div style="display: flex; gap: 0.4rem; align-items: center; flex-wrap: wrap; margin-bottom: 1rem;">
             <select id="sort-by" class="sort-select"
-              style="background: rgba(255, 255, 255, 0.1); color: #e5e5e5; border: 1px solid rgba(255, 255, 255, 0.2);">
+              style="background: rgba(var(--ink), 0.1); color: var(--g1); border: 1px solid rgba(var(--ink), 0.2);">
               <option value="default">Default</option>
               <option value="deadline">Deadline</option>
               <option value="name">Name</option>
@@ -210,26 +221,26 @@
               <option value="kiise">KIISE</option>
             </select>
             <button id="sort-order" class="sort-select"
-              style="background: rgba(255, 255, 255, 0.1); color: #e5e5e5; border: 1px solid rgba(255, 255, 255, 0.2);">
+              style="background: rgba(var(--ink), 0.1); color: var(--g1); border: 1px solid rgba(var(--ink), 0.2);">
               <span id="order-icon">▲</span><span id="order-text">Asc</span>
             </button>
             <button id="domain-toggle" class="sort-select"
-              style="background: rgba(255, 255, 255, 0.1); color: #e5e5e5; border: 1px solid rgba(255, 255, 255, 0.2);">
+              style="background: rgba(var(--ink), 0.1); color: var(--g1); border: 1px solid rgba(var(--ink), 0.2);">
               <span id="domain-icon" style="transition: transform 0.3s ease;">⊕</span> Domains
             </button>
             <button id="keyword-toggle" class="sort-select"
-              style="background: rgba(255, 255, 255, 0.1); color: var(--accent); border: 1px solid rgba(255, 255, 255, 0.2);">
+              style="background: rgba(var(--ink), 0.1); color: var(--accent); border: 1px solid rgba(var(--ink), 0.2);">
               <span id="keyword-icon" style="transition: transform 0.3s ease;">⊕</span> Keywords
             </button>
             <button id="ranks-toggle" class="sort-select"
-              style="background: rgba(255, 255, 255, 0.15); color: #d4d4d4; border: 1px solid rgba(255, 255, 255, 0.3);">
+              style="background: rgba(var(--ink), 0.15); color: var(--g2); border: 1px solid rgba(var(--ink), 0.3);">
               BK/KIISE
             </button>
           </div>
 
           <div id="domain-collapsible" class="collapsible-wrapper">
             <div class="filter-section"
-              style="margin-bottom: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.03); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05);">
+              style="margin-bottom: 1rem; padding: 1rem; background: rgba(var(--ink), 0.03); border-radius: 12px; border: 1px solid rgba(var(--ink), 0.05);">
               <div id="domain-container" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
                 <!-- Dynamically populated -->
               </div>
@@ -238,7 +249,7 @@
 
           <div id="keyword-collapsible" class="collapsible-wrapper">
             <div class="filter-section"
-              style="margin-bottom: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.03); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05);">
+              style="margin-bottom: 1rem; padding: 1rem; background: rgba(var(--ink), 0.03); border-radius: 12px; border: 1px solid rgba(var(--ink), 0.05);">
               <div id="keyword-container" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
                 <!-- Dynamically populated -->
               </div>
@@ -246,7 +257,7 @@
           </div>
 
           <div id="cfp-list" class="gantt-container">
-            <p style="color: #737373;">Loading conferences...</p>
+            <p style="color: var(--g4);">Loading conferences...</p>
           </div>
         </section>
       </div>
@@ -257,12 +268,12 @@
           <div style="display: flex; align-items: baseline; gap: 0.8rem; margin-bottom: 0.75rem;">
             <h3 class="section-title" style="margin: 0;">Journals & Special Issues CFP</h3>
             <span id="journal-last-updated"
-              style="font-size: 0.75rem; color: #737373; font-weight: 400; opacity: 0.8;">Loading...</span>
+              style="font-size: 0.75rem; color: var(--g4); font-weight: 400; opacity: 0.8;">Loading...</span>
           </div>
           <!-- Row 2: All control buttons -->
           <div style="display: flex; gap: 0.4rem; align-items: center; flex-wrap: wrap; margin-bottom: 1rem;">
             <select id="journal-sort-by" class="sort-select"
-              style="background: rgba(255, 255, 255, 0.1); color: #e5e5e5; border: 1px solid rgba(255, 255, 255, 0.2);">
+              style="background: rgba(var(--ink), 0.1); color: var(--g1); border: 1px solid rgba(var(--ink), 0.2);">
               <option value="default">Default</option>
               <option value="deadline">Deadline</option>
               <option value="name">Name</option>
@@ -271,26 +282,26 @@
               <option value="quartile">Quartile</option>
             </select>
             <button id="journal-sort-order" class="sort-select"
-              style="background: rgba(255, 255, 255, 0.1); color: #e5e5e5; border: 1px solid rgba(255, 255, 255, 0.2);">
+              style="background: rgba(var(--ink), 0.1); color: var(--g1); border: 1px solid rgba(var(--ink), 0.2);">
               <span id="journal-order-icon">▲</span><span id="journal-order-text">Asc</span>
             </button>
             <button id="journal-domain-toggle" class="sort-select"
-              style="background: rgba(255, 255, 255, 0.1); color: #e5e5e5; border: 1px solid rgba(255, 255, 255, 0.2);">
+              style="background: rgba(var(--ink), 0.1); color: var(--g1); border: 1px solid rgba(var(--ink), 0.2);">
               <span id="journal-domain-icon" style="transition: transform 0.3s ease;">⊕</span> Domains
             </button>
             <button id="journal-keyword-toggle" class="sort-select"
-              style="background: rgba(255, 255, 255, 0.1); color: var(--accent); border: 1px solid rgba(255, 255, 255, 0.2);">
+              style="background: rgba(var(--ink), 0.1); color: var(--accent); border: 1px solid rgba(var(--ink), 0.2);">
               <span id="journal-keyword-icon" style="transition: transform 0.3s ease;">⊕</span> Keywords
             </button>
             <button id="journal-ranks-toggle" class="sort-select"
-              style="background: rgba(255, 255, 255, 0.15); color: #d4d4d4; border: 1px solid rgba(255, 255, 255, 0.3);">
+              style="background: rgba(var(--ink), 0.15); color: var(--g2); border: 1px solid rgba(var(--ink), 0.3);">
               IF/Quartile
             </button>
           </div>
 
           <div id="journal-domain-collapsible" class="collapsible-wrapper">
             <div class="filter-section"
-              style="margin-bottom: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.03); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05);">
+              style="margin-bottom: 1rem; padding: 1rem; background: rgba(var(--ink), 0.03); border-radius: 12px; border: 1px solid rgba(var(--ink), 0.05);">
               <div id="journal-domain-container" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
                 <!-- Dynamically populated -->
               </div>
@@ -299,7 +310,7 @@
 
           <div id="journal-keyword-collapsible" class="collapsible-wrapper">
             <div class="filter-section"
-              style="margin-bottom: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.03); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05);">
+              style="margin-bottom: 1rem; padding: 1rem; background: rgba(var(--ink), 0.03); border-radius: 12px; border: 1px solid rgba(var(--ink), 0.05);">
               <div id="journal-keyword-container" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
                 <!-- Dynamically populated -->
               </div>
@@ -307,16 +318,32 @@
           </div>
 
           <div id="journal-list" class="journal-table-wrapper">
-            <p style="color: #737373; padding: 1.5rem; text-align: center;">Loading journals...</p>
+            <p style="color: var(--g4); padding: 1.5rem; text-align: center;">Loading journals...</p>
           </div>
         </section>
       </div>
     </main>
 
-    <footer style="margin-top: 4rem; color: #737373; font-size: 0.875rem;">
+    <footer style="margin-top: 4rem; color: var(--g4); font-size: 0.875rem;">
       <p>&copy; 2026 Heelim Choi.</p>
     </footer>
   </div>
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var btn = document.getElementById('theme-toggle');
+      function render() {
+        btn.textContent = root.getAttribute('data-theme') === 'light' ? '☾ Dark' : '☀ Light';
+      }
+      btn.addEventListener('click', function () {
+        var next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        render();
+      });
+      render();
+    })();
+  </script>
   <script src="cfp.js"></script>
   <script src="journals.js"></script>
 </body>

@@ -94,8 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function setupToggle() {
         const toggles = [
-            { btnId: 'journal-domain-toggle', wrapperId: 'journal-domain-collapsible', iconId: 'journal-domain-icon', activeBg: 'rgba(255, 255, 255, 0.2)', inactiveBg: 'rgba(255, 255, 255, 0.1)' },
-            { btnId: 'journal-keyword-toggle', wrapperId: 'journal-keyword-collapsible', iconId: 'journal-keyword-icon', activeBg: 'rgba(255, 255, 255, 0.2)', inactiveBg: 'rgba(255, 255, 255, 0.1)' }
+            { btnId: 'journal-domain-toggle', wrapperId: 'journal-domain-collapsible', iconId: 'journal-domain-icon', activeBg: 'rgba(var(--ink), 0.2)', inactiveBg: 'rgba(var(--ink), 0.1)' },
+            { btnId: 'journal-keyword-toggle', wrapperId: 'journal-keyword-collapsible', iconId: 'journal-keyword-icon', activeBg: 'rgba(var(--ink), 0.2)', inactiveBg: 'rgba(var(--ink), 0.1)' }
         ];
 
         toggles.forEach(t => {
@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function generateTableHtml(filteredCfps) {
         if (filteredCfps.length === 0) {
-            return '<p style="color: #737373; padding: 2rem; text-align: center;">No matching journals found.</p>';
+            return '<p style="color: var(--g4); padding: 2rem; text-align: center;">No matching journals found.</p>';
         }
 
         const formatDateStr = (dateStr) => {
@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const subtitle = cfp.subtitle || 'General Submissions';
             const trackText = cfp.subtitle
                 ? (cfp.url ? `<a href="${cfp.url}" target="_blank" class="cfp-title-link">${subtitle}</a>` : `<span class="cfp-title-text">${subtitle}</span>`)
-                : `<span class="cfp-title-text" style="color: #737373; font-style: italic;">${subtitle}</span>`;
+                : `<span class="cfp-title-text" style="color: var(--g4); font-style: italic;">${subtitle}</span>`;
                 
             const deadlineDate = cfp.deadline ? cfp.deadline : 'Ongoing';
             const deadlineClass = isPassed ? 'passed' : (deadlineDate !== 'Ongoing' && parseDate(deadlineDate) - todayStart < 7 * 24 * 60 * 60 * 1000 ? 'soon' : '');

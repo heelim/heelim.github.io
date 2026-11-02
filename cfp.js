@@ -139,8 +139,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function setupToggle() {
         const toggles = [
-            { btnId: 'domain-toggle', wrapperId: 'domain-collapsible', iconId: 'domain-icon', activeBg: 'rgba(255, 255, 255, 0.2)', inactiveBg: 'rgba(255, 255, 255, 0.1)' },
-            { btnId: 'keyword-toggle', wrapperId: 'keyword-collapsible', iconId: 'keyword-icon', activeBg: 'rgba(255, 255, 255, 0.2)', inactiveBg: 'rgba(255, 255, 255, 0.1)' }
+            { btnId: 'domain-toggle', wrapperId: 'domain-collapsible', iconId: 'domain-icon', activeBg: 'rgba(var(--ink), 0.2)', inactiveBg: 'rgba(var(--ink), 0.1)' },
+            { btnId: 'keyword-toggle', wrapperId: 'keyword-collapsible', iconId: 'keyword-icon', activeBg: 'rgba(var(--ink), 0.2)', inactiveBg: 'rgba(var(--ink), 0.1)' }
         ];
 
         toggles.forEach(t => {
@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function generateGanttHtml(filteredCfps) {
         if (filteredCfps.length === 0) {
-            return '<p style="color: #737373; padding: 2rem; text-align: center;">No matching conferences found.</p>';
+            return '<p style="color: var(--g4); padding: 2rem; text-align: center;">No matching conferences found.</p>';
         }
 
         // Dynamically calculate year range to fit all conferences
@@ -755,7 +755,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // 3. Abstract Deadline (if any)
                 if (abstX !== null) {
                     elementsHtml += `
-                        <div class="gantt-deadline-bar" style="left: ${abstX}px; background: #fca5a5; top: ${trackTop + 1}px; height: 18px; width: 5px;">
+                        <div class="gantt-deadline-bar" style="left: ${abstX}px; background: var(--dl-soft); top: ${trackTop + 1}px; height: 18px; width: 5px;">
                             <div class="gantt-tooltip">
                                 <strong>Abstract Deadline${cycleSuffix}</strong><br>
                                 Date: ${cfp.abstract_deadline}
