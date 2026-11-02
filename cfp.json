@@ -5870,6 +5870,44 @@
             }
         }
     },
+    "MLSys": {
+        "2025": {
+            "date": "May 12-15, 2025",
+            "start_date": "2025-05-12",
+            "finish_date": "2025-05-15",
+            "url": "https://mlsys.org/Conferences/2025",
+            "location": "Santa Clara, CA, USA",
+            "none": {
+                "deadline": "2024-10-31",
+                "notification": "2025-01-27",
+                "is_verified": true
+            }
+        },
+        "2026": {
+            "date": "May 18-22, 2026",
+            "start_date": "2026-05-18",
+            "finish_date": "2026-05-22",
+            "url": "https://mlsys.org/Conferences/2026",
+            "location": "Bellevue, WA, USA",
+            "none": {
+                "deadline": "2025-10-30",
+                "notification": "2026-01-26",
+                "is_verified": true
+            }
+        },
+        "2027": {
+            "date": "June 21-25, 2027",
+            "start_date": "2027-06-21",
+            "finish_date": "2027-06-25",
+            "url": "https://mlsys.org/Conferences/2027",
+            "location": "Bellevue, WA, USA",
+            "none": {
+                "deadline": "2026-10-30",
+                "notification": "2027-02-28",
+                "is_verified": true
+            }
+        }
+    },
     "NeurIPS": {
         "2026": {
             "date": "December 6-12, 2026",
