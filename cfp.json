@@ -3452,15 +3452,17 @@
             "start_date": "2026-04-27",
             "finish_date": "2026-04-30",
             "url": "https://2026.eurosys.org/",
-            "location": "",
+            "location": "Edinburgh, UK",
             "Spring": {
+                "abstract_deadline": "2025-05-08",
                 "deadline": "2025-05-15",
-                "is_verified": false,
+                "is_verified": true,
                 "notification": "2025-08-22"
             },
             "Fall": {
+                "abstract_deadline": "2025-09-18",
                 "deadline": "2025-09-25",
-                "is_verified": false,
+                "is_verified": true,
                 "notification": "2026-01-30"
             }
         },
@@ -5595,11 +5597,8 @@
             "none": {
                 "abstract_deadline": "2026-11-11",
                 "deadline": "2026-11-18",
-                "notification": "2027-02-24",
+                "notification": "2027-03-08",
                 "is_verified": true
-            },
-            "Estimated": {
-                "is_verified": false
             }
         }
     },
