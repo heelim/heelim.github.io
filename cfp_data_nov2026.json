@@ -1,0 +1,504 @@
+{
+  "generated_date": "2026-11-09",
+  "note": "CFP information for 12 architecture/systems conferences. Verified from official sources where available.",
+  "conferences": [
+    {
+      "name": "CGO 2028",
+      "full_name": "International Symposium on Code Generation and Optimization",
+      "status": "CFP_NOT_PUBLISHED",
+      "conference_dates": {
+        "expected": "March 2028",
+        "location": "TBD"
+      },
+      "deadlines": {
+        "status": "ESTIMATED",
+        "first_round_submission": "Expected mid-June 2027",
+        "estimated_from": "CGO 2027 pattern (June 11, 2026)"
+      },
+      "details": {
+        "submission_model": "Two-round submission (like CGO 2027)",
+        "page_limit": "11 pages (based on CGO 2027)",
+        "notes": "CGO 2028 CFP not yet available. Based on CGO 2027, expect first-round deadline around mid-June 2027."
+      },
+      "official_url": "Expected: https://cgo.org/ or similar",
+      "reference_conference": "CGO 2027 info: https://2027.cgo.org/"
+    },
+    {
+      "name": "PACT 2027",
+      "full_name": "International Conference on Parallel Architectures and Compilation Techniques",
+      "status": "CFP_NOT_PUBLISHED",
+      "conference_dates": {
+        "expected": "October 2027",
+        "location": "TBD"
+      },
+      "deadlines": {
+        "status": "ESTIMATED",
+        "abstract_submission": "Expected late April 2027 (around April 23)",
+        "paper_submission": "Expected late April 2027 (around April 30)",
+        "estimated_from": "PACT 2026 pattern (April 23/30, 2026)"
+      },
+      "details": {
+        "page_limit": "10 pages (based on PACT 2026)",
+        "notes": "PACT 2027 CFP not yet published. PACT 2026 had extended deadlines to April 30, 2026."
+      },
+      "official_url": "Expected similar to https://pact2026.github.io/",
+      "reference_conference": "PACT 2026: https://pact2026.github.io/"
+    },
+    {
+      "name": "PPoPP 2028",
+      "full_name": "ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming",
+      "status": "CFP_NOT_PUBLISHED",
+      "conference_dates": {
+        "expected": "March 2028",
+        "location": "TBD"
+      },
+      "deadlines": {
+        "status": "ESTIMATED",
+        "paper_submission": "Expected early August 2027 (around August 3)",
+        "estimated_from": "PPoPP 2027 pattern (August 3, 2026)"
+      },
+      "details": {
+        "notes": "PPoPP 2028 CFP not yet available. PPoPP 2027 had single-round submission with August 3, 2026 deadline."
+      },
+      "official_url": "Expected similar to https://ppopp27.sigplan.org/",
+      "reference_conference": "PPoPP 2027: https://conf.researchr.org/track/PPoPP-2027/PPoPP-2027-papers"
+    },
+    {
+      "name": "EuroSys 2028",
+      "full_name": "European Conference on Computer Systems",
+      "status": "CFP_NOT_PUBLISHED",
+      "conference_dates": {
+        "expected": "April 2028",
+        "location": "TBD"
+      },
+      "deadlines": {
+        "status": "ESTIMATED",
+        "spring_cycle": {
+          "abstract": "Expected mid-May 2027",
+          "paper": "Expected mid-May 2027"
+        },
+        "fall_cycle": {
+          "abstract": "Expected mid-September 2027 (around September 17)",
+          "paper": "Expected late September 2027 (around September 24)"
+        },
+        "estimated_from": "EuroSys 2027 pattern (May 7/14 and Sep 17/24, 2026)"
+      },
+      "details": {
+        "submission_model": "Two deadlines (Spring and Fall cycles)",
+        "page_limit": "12 pages (based on EuroSys 2027)",
+        "notes": "EuroSys 2028 CFP not published. EuroSys typically has spring and fall submission cycles."
+      },
+      "official_url": "Expected: https://202X.eurosys.org/",
+      "reference_conference": "EuroSys 2027: https://2027.eurosys.org/cfp.html"
+    },
+    {
+      "name": "HPCA 2027",
+      "full_name": "IEEE International Symposium on High-Performance Computer Architecture",
+      "status": "CFP_PUBLISHED",
+      "conference_dates": {
+        "dates": "March 20-24, 2027",
+        "location": "Salt Lake City, Utah, USA",
+        "colocated_with": "HPCA/CGO/PPoPP/CC 2027"
+      },
+      "deadlines": {
+        "status": "VERIFIED",
+        "timezone": "AoE (Anywhere on Earth, UTC-12)",
+        "paper_registration_abstract": "July 24, 2026, 11:59 PM AoE",
+        "paper_submission": "July 31, 2026, 11:59 PM AoE",
+        "revision_rebuttal_period": "September 28 - October 11, 2026 AoE",
+        "notification": "November 6, 2026",
+        "camera_ready": "TBA"
+      },
+      "submission_details": {
+        "page_limit": "11 pages (not including references)",
+        "references": "No page limit, must list all authors",
+        "format": "PDF, double-blind review",
+        "font": "Minimum 10pt font",
+        "line_spacing": "Minimum 12pt leading",
+        "submission_site": "https://hpca2027.hotcrp.com/",
+        "topics": [
+          "Processor, memory, and storage systems architecture",
+          "Instruction-, thread-, and data-level parallelism",
+          "Interconnection networks and network interface architecture",
+          "Domain-specific architectures and Accelerators",
+          "FPGA, CGRA, and Reconfigurable systems",
+          "Near/In-Memory computing",
+          "Cloud, Datacenters, cluster/distributed systems",
+          "Approximate computing",
+          "Compilers/Languages/Runtimes for novel architectures",
+          "IoT, Mobile, Edge, and Embedded architectures",
+          "Effects of circuits or technology on architecture",
+          "Architecture modeling and simulation methodologies",
+          "Neuromorphic computing",
+          "Quantum, Superconducting and Emerging technologies",
+          "Reliability/Fault Tolerance, Energy Efficiency and Sustainability",
+          "Security/Privacy",
+          "Evaluation and measurement of real computing systems"
+        ],
+        "special_requirements": {
+          "senior_author_requirement": "Each paper must designate a senior author who may be asked to serve as a light PC member (reviewing no more than 6 papers)",
+          "registration_requirements": [
+            "Paper title must be close to final version at registration",
+            "Author list cannot change after registration (order can change)",
+            "Conflict list must be finalized by registration",
+            "Abstract must be close to final version at registration"
+          ],
+          "ai_policy": "Must disclose AI-generated content in an 'AI use' appendix (after references, not counted in page limit)",
+          "concurrent_submissions": "Not allowed, except for arXiv/IEEE CAL",
+          "arxiv_policy": "Can submit papers that appear on arXiv or IEEE CAL, encouraged to use different titles"
+        },
+        "industry_track": "Separate Industry Track with separate CFP available"
+      },
+      "official_url": "https://conf.researchr.org/track/hpca-2027/hpca-2027-main-conference/",
+      "contact": "hpca27chairs@gmail.com",
+      "notes": "HPCA 2027 main track deadlines have PASSED (submission deadline was July 31, 2026). Notification expected November 6, 2026. Co-located with CGO, PPoPP, and CC."
+    },
+    {
+      "name": "ICPP 2027",
+      "full_name": "International Conference on Parallel Processing",
+      "status": "CFP_NOT_PUBLISHED",
+      "conference_dates": {
+        "dates": "September 13-17, 2027",
+        "location": "Sapporo, Japan"
+      },
+      "deadlines": {
+        "status": "ESTIMATED",
+        "paper_submission": "Expected mid-April 2027",
+        "estimated_from": "ICPP 2026 pattern (May 1, 2026)"
+      },
+      "details": {
+        "notes": "ICPP 2027 website is up but states 'More details, including Call for Papers, coming soon!' Expected CFP release around March 2027."
+      },
+      "official_url": "https://icpp2027.github.io/",
+      "reference_conference": "ICPP 2026 deadline: May 1, 2026"
+    },
+    {
+      "name": "SC 2027",
+      "full_name": "International Conference for High Performance Computing, Networking, Storage and Analysis",
+      "status": "CFP_NOT_PUBLISHED",
+      "conference_dates": {
+        "dates": "November 14-19, 2027",
+        "location": "Denver, CO, USA"
+      },
+      "deadlines": {
+        "status": "ESTIMATED",
+        "abstract_submission": "Expected late March 2027 (around April 1)",
+        "paper_submission": "Expected early April 2027 (around April 8)",
+        "estimated_from": "SC 2026 pattern (April 1/8, 2026)"
+      },
+      "details": {
+        "notes": "SC 2027 CFP not yet published. SC conferences typically have abstract deadline in late March/early April, with papers due about a week later."
+      },
+      "official_url": "Expected at https://sc27.supercomputing.org/",
+      "reference_conference": "SC 2026 dates: Abstract April 1, Paper April 8, 2026"
+    },
+    {
+      "name": "MobiCom 2027",
+      "full_name": "ACM International Conference on Mobile Computing and Networking",
+      "status": "PARTIAL_CFP_PUBLISHED",
+      "conference_dates": {
+        "dates": "October 18-22, 2027",
+        "location": "TBD"
+      },
+      "deadlines": {
+        "status": "MIXED",
+        "timezone": "AoE (Anywhere on Earth)",
+        "summer_cycle": {
+          "status": "CLOSED",
+          "abstract_registration": "August 26, 2026, 11:59 PM AoE",
+          "paper_submission": "September 2, 2026, 11:59 PM AoE",
+          "early_reject_notification": "October 23, 2026",
+          "rebuttal_period": "November 3-6, 2026",
+          "final_notification": "November 19, 2026"
+        },
+        "winter_cycle": {
+          "status": "TBD",
+          "abstract_registration": "TBD",
+          "paper_submission": "TBD",
+          "early_reject_notification": "TBD",
+          "rebuttal_period": "TBD",
+          "final_notification": "TBD"
+        }
+      },
+      "submission_details": {
+        "submission_model": "Two deadlines (Summer and Winter cycles)",
+        "review_process": "Two-round with early reject notification and rebuttal",
+        "double_blind": true,
+        "one_shot_revision": "Papers can be revised once if not selected after first round"
+      },
+      "official_url": "https://www.sigmobile.org/mobicom/2027/",
+      "notes": "MobiCom 2027 summer cycle has CLOSED. Winter cycle deadlines not yet announced. Typical pattern: ~March and ~August deadlines."
+    },
+    {
+      "name": "SIGCOMM 2027",
+      "full_name": "ACM SIGCOMM Conference",
+      "status": "CFP_PUBLISHED",
+      "conference_dates": {
+        "dates": "August 8-12, 2027",
+        "location": "Bangkok, Thailand"
+      },
+      "deadlines": {
+        "status": "VERIFIED",
+        "timezone": "Not explicitly stated on CFP page (typically AoE)",
+        "paper_submission": "February 2, 2027",
+        "rebuttal_period": "From April 27, 2027"
+      },
+      "submission_details": {
+        "page_limit": "12 pages (excluding references and appendices)",
+        "format": "Two-column, 10-point format",
+        "review_process": "Double-blind",
+        "appendices": "Optional, reviewers not required to read",
+        "submission_site": "https://sigcomm27.hotcrp.com",
+        "official_publication_date": "July 18, 2027",
+        "shepherding": "Accepted papers may be shepherded",
+        "orcid_requirement": "Authors must include ORCID at submission time"
+      },
+      "official_url": "https://conferences.sigcomm.org/sigcomm/2027/",
+      "notes": "SIGCOMM 2027 CFP was posted October 19, 2026. Hard deadline of February 2, 2027 with no extensions."
+    },
+    {
+      "name": "USENIX Security 2027",
+      "full_name": "USENIX Security Symposium",
+      "status": "CFP_PUBLISHED",
+      "conference_dates": {
+        "dates": "August 11-13, 2027",
+        "location": "Denver, CO, USA"
+      },
+      "deadlines": {
+        "status": "VERIFIED",
+        "timezone": "AoE (Anywhere on Earth)",
+        "cycle_1": {
+          "status": "CLOSED",
+          "mandatory_registration": "August 18, 2026",
+          "paper_submission": "August 25, 2026",
+          "submission_artifacts": "August 28, 2026",
+          "early_reject_notification": "October 6, 2026",
+          "rebuttal_period": "November 5-12, 2026",
+          "notification": "December 3, 2026",
+          "shepherded_approval": "December 15, 2026",
+          "final_papers": "January 14, 2027"
+        },
+        "cycle_2": {
+          "status": "OPEN",
+          "mandatory_registration": "January 19, 2027",
+          "paper_submission": "January 26, 2027",
+          "submission_artifacts": "January 29, 2027",
+          "early_reject_notification": "March 9, 2027",
+          "rebuttal_period": "April 8-15, 2027",
+          "notification": "May 6, 2027",
+          "shepherded_approval": "May 18, 2027",
+          "final_papers": "June 3, 2027"
+        }
+      },
+      "submission_details": {
+        "page_limit": "13 pages of body text",
+        "total_limit": {
+          "initial_submission": "Unlimited appendices and references",
+          "camera_ready": "Maximum 20 total pages"
+        },
+        "format": "Double-blind review",
+        "submission_limit": "Maximum 7 papers per cycle per author",
+        "open_science_appendix": "Required",
+        "ethics_appendix": "Recommended for papers with ethical concerns",
+        "embargo_requests": {
+          "cycle_1_deadline": "February 11, 2027",
+          "cycle_2_deadline": "July 1, 2027",
+          "embargo_release": "August 11, 2027 (first day of symposium)"
+        }
+      },
+      "official_url": "https://www.usenix.org/conference/usenixsecurity27/call-for-papers",
+      "contact": "sec27chairs@usenix.org",
+      "notes": "USENIX Security 2027 has two cycles. Cycle 1 has CLOSED (submission was August 25, 2026). Cycle 2 is OPEN with registration deadline January 19, 2027 and submission deadline January 26, 2027."
+    },
+    {
+      "name": "NDSS 2027",
+      "full_name": "Network and Distributed System Security Symposium",
+      "status": "CFP_PUBLISHED",
+      "conference_dates": {
+        "dates": "March 22-26, 2027",
+        "location": "Seoul, Republic of Korea"
+      },
+      "deadlines": {
+        "status": "VERIFIED",
+        "timezone": "AoE (UTC-12)",
+        "summer_cycle": {
+          "status": "CLOSED",
+          "paper_submission": "May 6, 2026",
+          "early_reject_round2_notification": "June 18, 2026",
+          "rebuttal_period": "July 15-17, 2026 (tentative)",
+          "interactive_discussion": "July 15-22, 2026 (tentative)",
+          "author_notification": "July 29, 2026 (tentative)",
+          "major_revision_resubmission": "August 19, 2026",
+          "major_revision_notification": "September 2, 2026",
+          "camera_ready": "September 30, 2026"
+        },
+        "fall_cycle": {
+          "status": "CLOSED",
+          "paper_submission": "August 19, 2026",
+          "early_reject_round2_notification": "September 25, 2026",
+          "author_notification": "November 4, 2026",
+          "major_revision_resubmission": "December 2, 2026",
+          "major_revision_notification": "December 16, 2026",
+          "camera_ready": "January 6, 2027"
+        },
+        "rebuttal_in_progress": {
+          "current_deadline": "November 21, 2026 (Fall cycle rebuttal)"
+        }
+      },
+      "submission_details": {
+        "submission_limit": "Maximum 6 papers per author per cycle (12 total)",
+        "review_outcomes": [
+          "Accept",
+          "Minor Revision (with shepherd)",
+          "Major Revision (can resubmit with revision tasks)",
+          "Reject (cannot resubmit to NDSS 2027)"
+        ],
+        "double_blind": true,
+        "withdrawal_policy": "Cannot withdraw after reviews are sent"
+      },
+      "official_url": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
+      "notes": "NDSS 2027 both cycles have CLOSED for new submissions. Fall cycle papers currently in final major revision stage with rebuttal deadline November 21, 2026."
+    },
+    {
+      "name": "CCS 2027",
+      "full_name": "ACM Conference on Computer and Communications Security",
+      "status": "CFP_PUBLISHED_DATES_TBD",
+      "conference_dates": {
+        "dates": "October 11-15, 2027",
+        "location": "Atlanta, USA"
+      },
+      "deadlines": {
+        "status": "TBD",
+        "timezone": "AoE (UTC-12)",
+        "cycle_a": {
+          "status": "ESTIMATED",
+          "abstract_registration": "Estimated: January 6, 2027",
+          "paper_submission": "Estimated: January 13, 2027"
+        },
+        "cycle_b": {
+          "status": "ESTIMATED",
+          "abstract_registration": "Estimated: April 21, 2027",
+          "paper_submission": "Estimated: April 28, 2027",
+          "artifact_upload_deadline": "Estimated: May 2, 2027 (3-day grace period for anonymous artifacts)"
+        }
+      },
+      "submission_details": {
+        "page_limit": "12 pages (excluding bibliography, appendices, and supplementary material)",
+        "format": "ACM sigconf 2-column format, double-blind",
+        "submission_limit": "Maximum 7 papers per cycle per author",
+        "registration_requirements": {
+          "one_week_before_deadline": [
+            "Definitive title",
+            "Definitive abstract",
+            "Definitive track",
+            "Track justification"
+          ],
+          "cannot_change_after_registration": [
+            "Title",
+            "Abstract",
+            "Track",
+            "Track justification"
+          ],
+          "by_submission_deadline": [
+            "Author list finalized",
+            "ORCIDs for all authors",
+            "Open Science appendix required",
+            "Ethical Considerations appendix if applicable",
+            "Acknowledge submission terms"
+          ]
+        },
+        "open_science_policy": "Required Open Science appendix listing all artifacts",
+        "artifact_requirements": {
+          "hosting": "Must use anonymous hosting (e.g., anonymous.4open.science)",
+          "cycle_b_grace_period": "3-day grace period after May 2, 2027 deadline",
+          "prohibited_hosting": "Personal websites, Google Drive, non-anonymized GitHub"
+        },
+        "ai_policy": {
+          "disclosure_required": true,
+          "minor_use": "Brief statement in Acknowledgements",
+          "substantive_use": "Dedicated 'Generative AI Usage' section required",
+          "reviewer_restrictions": "Reviewers cannot upload manuscripts to public AI tools"
+        },
+        "tracks": "Multi-track format with separate Track Chairs and committees",
+        "review_outcomes": [
+          "Accept",
+          "Minor Revision",
+          "Reject"
+        ],
+        "withdrawal_policy": "Withdrawal prohibited before final decision notification",
+        "open_access": "100% Open Access starting 2026, $250 APC for members, $350 for non-members"
+      },
+      "official_url": "https://www.sigsac.org/ccs/CCS2027/cfp.html",
+      "workshop_proposal_deadline": "March 20, 2027",
+      "notes": "CCS 2027 CFP is published but specific dates are listed as TBD. Estimated dates based on previous cycles: Cycle A ~January 13, 2027 and Cycle B ~April 28, 2027. Papers rejected from Cycle A cannot be resubmitted to Cycle B. New for 2027: 3-day grace period for Cycle B artifacts."
+    }
+  ],
+  "summary": {
+    "cfp_published_and_open": [
+      "SIGCOMM 2027 (Feb 2, 2027)",
+      "USENIX Security 2027 Cycle 2 (Jan 26, 2027)"
+    ],
+    "cfp_published_but_closed": [
+      "HPCA 2027 (deadline passed: July 31, 2026)",
+      "MobiCom 2027 Summer cycle (deadline passed: Sep 2, 2026)",
+      "USENIX Security 2027 Cycle 1 (deadline passed: Aug 25, 2026)",
+      "NDSS 2027 (both cycles closed, in review stage)"
+    ],
+    "cfp_published_dates_tbd": [
+      "CCS 2027 (dates TBD, estimated Jan/Apr 2027)",
+      "MobiCom 2027 Winter cycle (dates TBD)"
+    ],
+    "cfp_not_yet_published": [
+      "CGO 2028 (expected mid-June 2027)",
+      "PACT 2027 (expected late April 2027)",
+      "PPoPP 2028 (expected early August 2027)",
+      "EuroSys 2028 (expected May/Sep 2027)",
+      "ICPP 2027 (expected mid-April 2027)",
+      "SC 2027 (expected late March/early April 2027)"
+    ],
+    "upcoming_deadlines_november_2026": [
+      {
+        "conference": "NDSS 2027 Fall Cycle",
+        "deadline": "November 21, 2026",
+        "type": "Rebuttal submission (final major revision)"
+      },
+      {
+        "conference": "USENIX Security 2027 Cycle 2",
+        "deadline": "January 19, 2027",
+        "type": "Mandatory registration"
+      },
+      {
+        "conference": "USENIX Security 2027 Cycle 2",
+        "deadline": "January 26, 2027",
+        "type": "Paper submission"
+      },
+      {
+        "conference": "SIGCOMM 2027",
+        "deadline": "February 2, 2027",
+        "type": "Paper submission"
+      }
+    ]
+  },
+  "verification_notes": {
+    "verified_from_official_sources": [
+      "HPCA 2027",
+      "SIGCOMM 2027",
+      "USENIX Security 2027",
+      "NDSS 2027"
+    ],
+    "partial_information": [
+      "MobiCom 2027 (summer cycle verified, winter TBD)",
+      "CCS 2027 (CFP published but dates TBD)"
+    ],
+    "estimated_based_on_patterns": [
+      "CGO 2028",
+      "PACT 2027",
+      "PPoPP 2028",
+      "EuroSys 2028",
+      "ICPP 2027",
+      "SC 2027"
+    ],
+    "last_verified": "November 9, 2026",
+    "recommendation": "Always check official conference websites before planning submissions, as deadlines may be updated or extended."
+  }
+}
