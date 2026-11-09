@@ -5223,9 +5223,9 @@
             }
         },
         "2026": {
-            "date": "September 8-13, 2026",
+            "date": "September 8-12, 2026",
             "start_date": "2026-09-08",
-            "finish_date": "2026-09-13",
+            "finish_date": "2026-09-12",
             "url": "https://eccv.ecva.net/Conferences/2026",
             "location": "Malmö, Sweden",
             "none": {
@@ -5531,7 +5531,7 @@
             "date": "January 31 - February 4, 2026",
             "start_date": "2026-01-31",
             "finish_date": "2026-02-04",
-            "url": "https://cgo.org/cgo2026/",
+            "url": "https://2026.cgo.org/",
             "location": "Sydney, Australia",
             "none": {
                 "deadline": "2025-09-11",
@@ -5753,11 +5753,11 @@
             }
         },
         "2027": {
-            "date": "July 6-11, 2027",
-            "start_date": "2027-07-06",
-            "finish_date": "2027-07-11",
-            "url": "https://icml.cc/Conferences/2026",
-            "location": "",
+            "date": "July 31 - August 6, 2027",
+            "start_date": "2027-07-31",
+            "finish_date": "2027-08-06",
+            "url": "https://icml.cc/Conferences/2027",
+            "location": "Rio de Janeiro, Brazil",
             "Estimated": {
                 "abstract_deadline": "2027-01-23",
                 "deadline": "2027-01-28",
