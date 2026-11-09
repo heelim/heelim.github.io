@@ -1923,11 +1923,13 @@
             "Winter": {
                 "abstract_deadline": "2026-11-27",
                 "deadline": "2026-12-04",
+                "notification": "2027-03-29",
                 "is_verified": true
             },
             "Summer": {
                 "abstract_deadline": "2027-05-28",
                 "deadline": "2027-06-04",
+                "notification": "2027-09-13",
                 "is_verified": true
             }
         }
@@ -6496,5 +6498,6 @@
                 "is_verified": false
             }
         }
-    }
+    },
+    "last.updated": "November 9, 2026"
 }
