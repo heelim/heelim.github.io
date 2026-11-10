@@ -1,0 +1,270 @@
+Total venues to check: 68
+Conferences: 60
+Journals: 8
+
+=== URLs to check ===
+
+CGO:
+  2026: https://2026.cgo.org/
+  2027: https://conf.researchr.org/home/cgo-2027
+  2028: https://cgo.org/
+
+MICRO:
+  2026: http://www.microarch.org/micro59
+  2027: http://www.microarch.org/micro59
+
+ASPLOS:
+  2026: https://www.asplos-conference.org/asplos2026/cfp/
+  2027: https://www.asplos-conference.org/asplos2027/
+  2028: https://www.asplos-conference.org/
+
+PACT:
+  2026: https://pact2026.github.io/
+  2027: https://pact2026.github.io/
+
+DAC:
+  2026: https://www.dac.com/
+  2027: https://dac.com/2027
+
+PPoPP:
+  2026: https://ppopp26.sigplan.org
+  2027: https://ppopp27.sigplan.org/
+  2028: https://ppopp28.sigplan.org/
+
+EuroSys:
+  2026: https://2026.eurosys.org/
+  2027: https://2027.eurosys.org/cfp.html
+  2028: https://www.eurosys.org/
+
+PLDI:
+  2026: https://pldi26.sigplan.org
+  2027: https://pldi27.sigplan.org/
+
+HPCA:
+  2026: https://www.hpca-conf.org/2026
+  2027: https://conf.researchr.org/home/hpca-2027
+  2028: https://hpca-conf.org/
+
+ICPP:
+  2026: https://icpp2026.github.io
+  2027: https://icpp2027.github.io
+
+ISCA:
+  2026: http://iscaconf.org/isca2026
+  2027: https://iscaconf.org/isca2027/
+
+OSDI:
+  2026: https://www.usenix.org/conference/osdi26
+  2027: https://www.usenix.org/conference/osdi27
+
+SOSP:
+  2026: https://sigops.org/s/conferences/sosp/2026
+  2027: https://www.sosp.org/
+
+RTSS:
+  2026: https://2026.rtss.org/
+  2027: https://2026.rtss.org/
+
+RTAS:
+  2026: https://www.rtas.org/
+  2027: https://2027.rtas.org/
+
+CC:
+  2026: https://conf.researchr.org/home/CC-2026
+  2027: https://conf.researchr.org/home/CC-2027
+
+LCTES:
+  2026: https://pldi26.sigplan.org/home/LCTES-2026
+  2027: https://pldi27.sigplan.org/
+
+EMSOFT:
+  2026: https://esweek.org/emsoft/
+  2027: https://esweek.org/emsoft/
+
+SC:
+  2026: https://sc26.supercomputing.org/all-dates-deadlines
+  2027: https://sc26.supercomputing.org/all-dates-deadlines
+
+Usenix Security:
+  2026: https://www.usenix.org/conference/usenixsecurity26
+  2027: https://www.usenix.org/conference/usenixsecurity27/call-for-papers
+
+CCS:
+  2026: https://www.sigsac.org/ccs/CCS2026/call-for/call-for-papers.html
+  2027: https://www.sigsac.org/ccs/CCS2027/
+
+IEEE S&P:
+  2026: https://www.ieee-security.org/TC/SP2026/cfpapers.html
+  2027: https://www.ieee-security.org/TC/SP2027/cfpapers.html
+
+NDSS:
+  2026: https://www.ndss-symposium.org/ndss2026
+  2027: https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/
+  2028: https://www.ndss-symposium.org/
+
+NSDI:
+  2026: https://www.usenix.org/conference/nsdi26
+  2027: https://www.usenix.org/conference/nsdi27
+  2028: https://www.usenix.org/conference/nsdi28
+
+SIGMOD:
+  2027: https://2027.sigmod.org/
+
+VLDB:
+  2026: https://vldb.org/2026/
+  2027: https://vldb.org/2027/
+
+WWW:
+  2027: https://www2027.thewebconf.org/research-track-papers/
+
+KDD:
+  2026: https://kdd2026.kdd.org
+  2027: https://kdd2027.kdd.org/research-track-call-for-papers/
+
+DSN:
+  2026: https://dsn2026.github.io/
+  2027: https://dsn2027-berlin.github.io/call-for-contributions/
+
+ICS:
+  2026: https://dipsa-qub.github.io/ICS2026-webpage
+  2027: https://klab-ai3.github.io/ics2027/
+
+ECRTS:
+  2026: https://www.ecrts.org/
+  2027: https://www.ecrts.org/call-for-papers/
+
+OOPSLA:
+  2026: https://conf.researchr.org/track/splash-2026/oopsla-2026
+  2027: https://conf.researchr.org/track/splash-2027/splashoopsla2027
+
+POPL:
+  2026: https://popl26.sigplan.org/
+  2027: https://conf.researchr.org/home/POPL-2027
+  2028: https://popl28.sigplan.org/
+
+CAV:
+  2026: https://conferences.i-cav.org/2026/
+  2027: https://conferences.i-cav.org/2027/
+  2028: https://conferences.i-cav.org/2027/
+
+SAS:
+  2026: https://conf.researchr.org/home/sas-2026
+  2027: https://conf.researchr.org/home/sas-2027
+
+ESOP:
+  2026: https://etaps.org/2026/conferences/esop/
+  2027: https://etaps.org/2027/conferences/esop/
+  2028: https://etaps.org/2028/
+
+DATE:
+  2027: https://www.date-conference.com/date-2027-call-papers
+  2028: https://www.date-conference.com/
+
+ICCD:
+  2026: https://www.iccd-conf.com/2026/home.html
+  2027: https://www.iccd-conf.com/home.html
+
+ISPASS:
+  2026: https://ispass.org/ispass2026/
+  2027: https://ispass.org/2027/
+
+FAST:
+  2026: https://www.usenix.org/conference/fast26
+  2027: https://www.usenix.org/conference/fast27
+  2028: https://www.usenix.org/conference/fast28
+
+SIGMETRICS:
+  2026: http://www.sigmetrics.org/sigmetrics2026
+  2027: https://www.sigmetrics.org/sigmetrics2027/
+
+Middleware:
+  2026: https://middleware-conf.github.io/2026
+  2027: https://middleware-conf.github.io/2027/
+
+AsiaCCS:
+  2026: https://asiaccs2026.cse.iitkgp.ac.in/
+  2027: https://asiaccs2027.cityu.edu.mo/call-for-papers/index.html
+
+ICDCS:
+  2026: https://icdcs2026.icdcs.org
+  2027: https://icdcs2027.icdcs.org/
+
+SPAA:
+  2026: https://spaa.acm.org/
+  2027: https://spaa.acm.org/spaa-2027-call-for-papers/
+
+HPDC:
+  2026: https://hpdc.sci.utah.edu/2026
+  2027: https://hpdc.sci.utah.edu/2026
+
+IPDPS:
+  2026: https://www.ipdps.org/ipdps2026/2026-call-for-papers.html
+  2027: https://www.ipdps.org/ipdps2027/2027-call-for-papers.html
+
+Euro-Par:
+  2026: http://2026.euro-par.org
+  2027: https://2027.euro-par.org/
+
+MobiCom:
+  2026: https://www.sigmobile.org/mobicom/2026/
+  2027: https://www.sigmobile.org/mobicom/2027/
+
+SIGCOMM:
+  2026: http://conferences.sigcomm.org/sigcomm/2026
+  2027: https://conferences.sigcomm.org/sigcomm/2027/
+
+ICSE:
+  2027: https://conf.researchr.org/home/icse-2027
+  2028: https://conf.researchr.org/home/icse-2028
+
+ASE:
+  2026: https://conf.researchr.org/home/ase-2026
+  2027: https://conf.researchr.org/home/ase-2026
+
+CVPR:
+  2026: https://cvpr.thecvf.com/Conferences/2026
+  2027: https://cvpr.thecvf.com/Conferences/2027/CallForPapers
+
+ICCV:
+  2027: https://iccv.thecvf.com/Conferences/2027
+
+ECCV:
+  2026: https://eccv.ecva.net/Conferences/2026
+  2028: https://eccv.ecva.net/
+
+AAAI:
+  2027: https://aaai.org/conference/aaai/aaai-27/
+  2028: https://aaai.org/
+
+ICML:
+  2026: https://icml.cc/Conferences/2026
+  2027: https://icml.cc/Conferences/2027
+
+ICLR:
+  2026: https://iclr.cc/Conferences/2026
+  2027: https://iclr.cc/Conferences/2027/CallForPapers
+  2028: https://iclr.cc/
+
+MLSys:
+  2026: https://mlsys.org/Conferences/2026
+  2027: https://mlsys.org/Conferences/2027
+
+NeurIPS:
+  2026: https://neurips.cc/Conferences/2026
+  2027: https://neurips.cc/Conferences/2026
+
+IEEE TPDS: https://www.computer.org/digital-library/journals/td/cfp-parallel-distributed-systems
+
+IEEE TC: https://www.computer.org/csdl/journal/tc
+
+IEEE TDSC: https://www.computer.org/digital-library/journals/tq/cfp-dependable-secure-computing
+
+IEEE TCAD: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=43
+
+IEEE CAL: https://www.computer.org/digital-library/journals/ca/cfp-ieee-computer-architecture-letters
+
+IEEE Micro: https://www.computer.org/csdl/mags/mi
+
+ACM TACO: https://dl.acm.org/journal/taco
+
+IEEE TQE: https://tqe.ieee.org/

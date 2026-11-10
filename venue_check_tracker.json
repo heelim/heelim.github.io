@@ -1,0 +1,1717 @@
+[
+  {
+    "name": "CGO",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://2026.cgo.org/",
+        "location": "Sydney, Australia",
+        "start_date": "2026-01-31",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://conf.researchr.org/home/cgo-2027",
+        "location": "Salt Lake City, UT, USA",
+        "start_date": "2027-03-20",
+        "cycles": [
+          "R1",
+          "R2"
+        ]
+      },
+      {
+        "year": "2028",
+        "url": "https://cgo.org/",
+        "location": "",
+        "start_date": "2028-03-20",
+        "cycles": [
+          "Estimated (R1)",
+          "Estimated (R2)"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MICRO",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "http://www.microarch.org/micro59",
+        "location": "Athens, Greece",
+        "start_date": "2026-10-31",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "http://www.microarch.org/micro59",
+        "location": "",
+        "start_date": "2027-10-31",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ASPLOS",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://www.asplos-conference.org/asplos2026/cfp/",
+        "location": "Pittsburgh, PA, USA",
+        "start_date": "2026-03-22",
+        "cycles": [
+          "Spring",
+          "Summer"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://www.asplos-conference.org/asplos2027/",
+        "location": "Heraklion, Crete, Greece",
+        "start_date": "2027-04-11",
+        "cycles": [
+          "Spring",
+          "Summer"
+        ]
+      },
+      {
+        "year": "2028",
+        "url": "https://www.asplos-conference.org/",
+        "location": "",
+        "start_date": "2028-04-11",
+        "cycles": [
+          "Estimated (Spring)",
+          "Estimated (Summer)"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PACT",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://pact2026.github.io/",
+        "location": "Chicago, IL, USA",
+        "start_date": "2026-10-19",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://pact2026.github.io/",
+        "location": "",
+        "start_date": "2027-10-19",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DAC",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://www.dac.com/",
+        "location": "Long Beach, CA, USA",
+        "start_date": "2026-07-26",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://dac.com/2027",
+        "location": "San Jose, CA, USA",
+        "start_date": "2027-07-11",
+        "cycles": [
+          "none"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PPoPP",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://ppopp26.sigplan.org",
+        "location": "Sydney, Australia",
+        "start_date": "2026-01-31",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://ppopp27.sigplan.org/",
+        "location": "Salt Lake City, UT, USA",
+        "start_date": "2027-03-20",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2028",
+        "url": "https://ppopp28.sigplan.org/",
+        "location": "",
+        "start_date": "2028-03-20",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EuroSys",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://2026.eurosys.org/",
+        "location": "Edinburgh, UK",
+        "start_date": "2026-04-27",
+        "cycles": [
+          "Spring",
+          "Fall"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://2027.eurosys.org/cfp.html",
+        "location": "Rabat, Morocco",
+        "start_date": "2027-04-19",
+        "cycles": [
+          "Spring",
+          "Fall"
+        ]
+      },
+      {
+        "year": "2028",
+        "url": "https://www.eurosys.org/",
+        "location": "",
+        "start_date": "2028-04-19",
+        "cycles": [
+          "Estimated (Spring)",
+          "Estimated (Fall)"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PLDI",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://pldi26.sigplan.org",
+        "location": "Boulder, CO, USA",
+        "start_date": "2026-06-15",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://pldi27.sigplan.org/",
+        "location": "Atlanta, GA, USA",
+        "start_date": "2027-06-05",
+        "cycles": [
+          "none"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HPCA",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://www.hpca-conf.org/2026",
+        "location": "Sydney, Australia",
+        "start_date": "2026-01-31",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://conf.researchr.org/home/hpca-2027",
+        "location": "Salt Lake City, UT, USA",
+        "start_date": "2027-03-20",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2028",
+        "url": "https://hpca-conf.org/",
+        "location": "",
+        "start_date": "2028-03-20",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ICPP",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://icpp2026.github.io",
+        "location": "Singapore",
+        "start_date": "2026-09-28",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://icpp2027.github.io",
+        "location": "Sapporo, Japan",
+        "start_date": "2027-09-13",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ISCA",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "http://iscaconf.org/isca2026",
+        "location": "Raleigh, NC, USA",
+        "start_date": "2026-06-27",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://iscaconf.org/isca2027/",
+        "location": "Atlanta, GA, USA",
+        "start_date": "2027-06-05",
+        "cycles": [
+          "none"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "OSDI",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://www.usenix.org/conference/osdi26",
+        "location": "Seattle, WA, USA",
+        "start_date": "2026-07-13",
+        "cycles": [
+          "annual"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://www.usenix.org/conference/osdi27",
+        "location": "Baltimore, MD, USA",
+        "start_date": "2027-07-07",
+        "cycles": [
+          "none"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SOSP",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://sigops.org/s/conferences/sosp/2026",
+        "location": "Prague, Czech Republic",
+        "start_date": "2026-09-29",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://www.sosp.org/",
+        "location": "Vancouver, Canada",
+        "start_date": "2027-11-30",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RTSS",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://2026.rtss.org/",
+        "location": "Yokohama, Japan",
+        "start_date": "2026-12-09",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://2026.rtss.org/",
+        "location": "",
+        "start_date": "2027-12-09",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RTAS",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://www.rtas.org/",
+        "location": "Saint Malo, France",
+        "start_date": "2026-05-12",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://2027.rtas.org/",
+        "location": "Boulder, CO, USA",
+        "start_date": "2027-05-17",
+        "cycles": [
+          "none"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CC",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://conf.researchr.org/home/CC-2026",
+        "location": "Sydney, Australia",
+        "start_date": "2026-01-31",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://conf.researchr.org/home/CC-2027",
+        "location": "Salt Lake City, UT, USA",
+        "start_date": "2027-03-20",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "LCTES",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://pldi26.sigplan.org/home/LCTES-2026",
+        "location": "Boulder, CO, USA",
+        "start_date": "2026-06-15",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://pldi27.sigplan.org/",
+        "location": "Atlanta, GA, USA",
+        "start_date": "2027-06-05",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EMSOFT",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://esweek.org/emsoft/",
+        "location": "Barcelona, Spain",
+        "start_date": "2026-10-04",
+        "cycles": [
+          "Journal Track"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://esweek.org/emsoft/",
+        "location": "",
+        "start_date": "2027-10-04",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SC",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://sc26.supercomputing.org/all-dates-deadlines",
+        "location": "Chicago, IL, USA",
+        "start_date": "2026-11-15",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://sc26.supercomputing.org/all-dates-deadlines",
+        "location": "Denver, CO, USA",
+        "start_date": "2027-11-14",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Usenix Security",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://www.usenix.org/conference/usenixsecurity26",
+        "location": "Baltimore, MD, USA",
+        "start_date": "2026-08-12",
+        "cycles": [
+          "Cycle 2",
+          "Cycle 1"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://www.usenix.org/conference/usenixsecurity27/call-for-papers",
+        "location": "Denver, CO, USA",
+        "start_date": "2027-08-11",
+        "cycles": [
+          "Cycle 1",
+          "Cycle 2"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CCS",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://www.sigsac.org/ccs/CCS2026/call-for/call-for-papers.html",
+        "location": "The Hague, The Netherlands",
+        "start_date": "2026-11-15",
+        "cycles": [
+          "Cycle-1",
+          "Cycle-2"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://www.sigsac.org/ccs/CCS2027/",
+        "location": "Atlanta, GA, USA",
+        "start_date": "2027-10-11",
+        "cycles": [
+          "Estimated (Cycle-1)",
+          "Estimated (Cycle-2)"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "IEEE S&P",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://www.ieee-security.org/TC/SP2026/cfpapers.html",
+        "location": "San Francisco, CA, USA",
+        "start_date": "2026-05-18",
+        "cycles": [
+          "Summer",
+          "Winter"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://www.ieee-security.org/TC/SP2027/cfpapers.html",
+        "location": "Montreal, Canada",
+        "start_date": "2027-05-17",
+        "cycles": [
+          "Cycle-1",
+          "Cycle-2"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NDSS",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://www.ndss-symposium.org/ndss2026",
+        "location": "San Diego, CA, USA",
+        "start_date": "2026-02-23",
+        "cycles": [
+          "Summer",
+          "Fall"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
+        "location": "Seoul, South Korea",
+        "start_date": "2027-03-22",
+        "cycles": [
+          "Summer Cycle",
+          "Fall Cycle"
+        ]
+      },
+      {
+        "year": "2028",
+        "url": "https://www.ndss-symposium.org/",
+        "location": "",
+        "start_date": "2028-03-22",
+        "cycles": [
+          "Estimated (Summer Cycle)",
+          "Estimated (Fall Cycle)"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NSDI",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://www.usenix.org/conference/nsdi26",
+        "location": "Renton, WA, USA",
+        "start_date": "2026-05-04",
+        "cycles": [
+          "Spring",
+          "Fall"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://www.usenix.org/conference/nsdi27",
+        "location": "Providence, RI, USA",
+        "start_date": "2027-05-11",
+        "cycles": [
+          "Spring",
+          "Fall"
+        ]
+      },
+      {
+        "year": "2028",
+        "url": "https://www.usenix.org/conference/nsdi28",
+        "location": "Santa Clara, CA, USA",
+        "start_date": "2028-05-09",
+        "cycles": [
+          "Estimated (Spring)",
+          "Estimated (Fall)"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2027",
+        "url": "https://2027.sigmod.org/",
+        "location": "Huntington Beach, CA, USA",
+        "start_date": "2027-06-13",
+        "cycles": [
+          "Cycle-1",
+          "Cycle-2",
+          "Cycle-3",
+          "Cycle-4"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "VLDB",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://vldb.org/2026/",
+        "location": "Boston, MA, USA",
+        "start_date": "2026-08-31",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://vldb.org/2027/",
+        "location": "Athens, Greece",
+        "start_date": "2027-08-23",
+        "cycles": [
+          "April Cycle",
+          "May Cycle",
+          "June Cycle",
+          "July Cycle",
+          "August Cycle",
+          "September Cycle",
+          "October Cycle",
+          "November Cycle",
+          "December Cycle",
+          "January Cycle",
+          "February Cycle",
+          "March Cycle"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WWW",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2027",
+        "url": "https://www2027.thewebconf.org/research-track-papers/",
+        "location": "Dublin, Ireland",
+        "start_date": "2027-05-10",
+        "cycles": [
+          "Full Paper",
+          "Short Paper"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "KDD",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://kdd2026.kdd.org",
+        "location": "Jeju, South Korea",
+        "start_date": "2026-08-09",
+        "cycles": [
+          "Cycle-2"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://kdd2027.kdd.org/research-track-call-for-papers/",
+        "location": "San Jose, CA, USA",
+        "start_date": "2027-08-01",
+        "cycles": [
+          "Cycle-1",
+          "Estimated (Cycle-2)"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DSN",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://dsn2026.github.io/",
+        "location": "Budapest, Hungary",
+        "start_date": "2026-06-22",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://dsn2027-berlin.github.io/call-for-contributions/",
+        "location": "Berlin, Germany",
+        "start_date": "2027-06-22",
+        "cycles": [
+          "none"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ICS",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://dipsa-qub.github.io/ICS2026-webpage",
+        "location": "Belfast, UK",
+        "start_date": "2026-07-06",
+        "cycles": [
+          "Cycle-1",
+          "Cycle-2"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://klab-ai3.github.io/ics2027/",
+        "location": "Atlanta, GA, USA",
+        "start_date": "2027-06-05",
+        "cycles": [
+          "none"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECRTS",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://www.ecrts.org/",
+        "location": "Lund, Sweden",
+        "start_date": "2026-07-07",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://www.ecrts.org/call-for-papers/",
+        "location": "Prague, Czech Republic",
+        "start_date": "2027-07-13",
+        "cycles": [
+          "none"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "OOPSLA",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://conf.researchr.org/track/splash-2026/oopsla-2026",
+        "location": "Oakland, CA, USA",
+        "start_date": "2026-10-03",
+        "cycles": [
+          "Cycle-1",
+          "Cycle-2"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://conf.researchr.org/track/splash-2027/splashoopsla2027",
+        "location": "Prague, Czechia",
+        "start_date": "2027-10-10",
+        "cycles": [
+          "Cycle-1",
+          "Cycle-2"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POPL",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://popl26.sigplan.org/",
+        "location": "Chicago, IL, USA",
+        "start_date": "2026-01-11",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://conf.researchr.org/home/POPL-2027",
+        "location": "Mexico City, Mexico",
+        "start_date": "2027-01-10",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2028",
+        "url": "https://popl28.sigplan.org/",
+        "location": "",
+        "start_date": "2028-01-10",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CAV",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://conferences.i-cav.org/2026/",
+        "location": "Lisbon, Portugal",
+        "start_date": "2026-07-26",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://conferences.i-cav.org/2027/",
+        "location": "Amsterdam, The Netherlands",
+        "start_date": "2027-07-19",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2028",
+        "url": "https://conferences.i-cav.org/2027/",
+        "location": "",
+        "start_date": "2028-07-19",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SAS",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://conf.researchr.org/home/sas-2026",
+        "location": "Oakland, CA, USA",
+        "start_date": "2026-10-06",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://conf.researchr.org/home/sas-2027",
+        "location": "Prague, Czechia",
+        "start_date": "2027-10-10",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESOP",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://etaps.org/2026/conferences/esop/",
+        "location": "Turin, Italy",
+        "start_date": "2026-04-13",
+        "cycles": [
+          "Round-2"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://etaps.org/2027/conferences/esop/",
+        "location": "Copenhagen, Denmark",
+        "start_date": "2027-04-10",
+        "cycles": [
+          "Round-2"
+        ]
+      },
+      {
+        "year": "2028",
+        "url": "https://etaps.org/2028/",
+        "location": "Karlsruhe, Germany",
+        "start_date": "2028-04-02",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DATE",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2027",
+        "url": "https://www.date-conference.com/date-2027-call-papers",
+        "location": "Dresden, Germany",
+        "start_date": "2027-03-22",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2028",
+        "url": "https://www.date-conference.com/",
+        "location": "",
+        "start_date": "2028-03-22",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ICCD",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://www.iccd-conf.com/2026/home.html",
+        "location": "Hong Kong SAR, China",
+        "start_date": "2026-11-16",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://www.iccd-conf.com/home.html",
+        "location": "",
+        "start_date": "2027-11-16",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ISPASS",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://ispass.org/ispass2026/",
+        "location": "Seoul, South Korea",
+        "start_date": "2026-04-26",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://ispass.org/2027/",
+        "location": "New York City, NY, USA",
+        "start_date": "2027-05-09",
+        "cycles": [
+          "none"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FAST",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://www.usenix.org/conference/fast26",
+        "location": "",
+        "start_date": "2026-02-24",
+        "cycles": [
+          "Spring",
+          "Fall"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://www.usenix.org/conference/fast27",
+        "location": "Renton, WA, USA",
+        "start_date": "2027-02-23",
+        "cycles": [
+          "Spring",
+          "Fall"
+        ]
+      },
+      {
+        "year": "2028",
+        "url": "https://www.usenix.org/conference/fast28",
+        "location": "Seattle, WA, USA",
+        "start_date": "2028-02-28",
+        "cycles": [
+          "Estimated (Spring)",
+          "Estimated (Fall)"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SIGMETRICS",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "http://www.sigmetrics.org/sigmetrics2026",
+        "location": "Ann Arbor, MI, USA",
+        "start_date": "2026-06-08",
+        "cycles": [
+          "Summer",
+          "Fall",
+          "Winter"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://www.sigmetrics.org/sigmetrics2027/",
+        "location": "Atlanta, GA, USA",
+        "start_date": "2027-06-07",
+        "cycles": [
+          "Summer",
+          "Fall",
+          "Winter"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Middleware",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://middleware-conf.github.io/2026",
+        "location": "Tarragona, Spain",
+        "start_date": "2026-12-14",
+        "cycles": [
+          "Winter",
+          "Summer"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://middleware-conf.github.io/2027/",
+        "location": "Kyoto, Japan",
+        "start_date": "2027-12-13",
+        "cycles": [
+          "Winter",
+          "Summer"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AsiaCCS",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://asiaccs2026.cse.iitkgp.ac.in/",
+        "location": "Bangalore, India",
+        "start_date": "2026-06-01",
+        "cycles": [
+          "Cycle-1",
+          "Cycle-2"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://asiaccs2027.cityu.edu.mo/call-for-papers/index.html",
+        "location": "Macau",
+        "start_date": "2027-07-12",
+        "cycles": [
+          "Cycle-1",
+          "Cycle-2"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ICDCS",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://icdcs2026.icdcs.org",
+        "location": "South Korea",
+        "start_date": "2026-07-01",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://icdcs2027.icdcs.org/",
+        "location": "Melbourne, Australia",
+        "start_date": "2027-07-05",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SPAA",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://spaa.acm.org/",
+        "location": "Raleigh, NC, USA",
+        "start_date": "2026-07-06",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://spaa.acm.org/spaa-2027-call-for-papers/",
+        "location": "Atlanta, GA, USA",
+        "start_date": "2027-06-05",
+        "cycles": [
+          "Cycle-1",
+          "Cycle-2"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HPDC",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://hpdc.sci.utah.edu/2026",
+        "location": "Cleveland, OH, USA",
+        "start_date": "2026-07-13",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://hpdc.sci.utah.edu/2026",
+        "location": "",
+        "start_date": "2027-07-13",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "IPDPS",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://www.ipdps.org/ipdps2026/2026-call-for-papers.html",
+        "location": "New Orleans, LA, USA",
+        "start_date": "2026-05-25",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://www.ipdps.org/ipdps2027/2027-call-for-papers.html",
+        "location": "Seattle, WA, USA",
+        "start_date": "2027-06-01",
+        "cycles": [
+          "none"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Euro-Par",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "http://2026.euro-par.org",
+        "location": "Pisa, Italy",
+        "start_date": "2026-08-24",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://2027.euro-par.org/",
+        "location": "Groningen, The Netherlands",
+        "start_date": "2027-08-23",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MobiCom",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://www.sigmobile.org/mobicom/2026/",
+        "location": "Austin, TX, USA",
+        "start_date": "2026-10-26",
+        "cycles": [
+          "Cycle-2"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://www.sigmobile.org/mobicom/2027/",
+        "location": "",
+        "start_date": "2027-10-18",
+        "cycles": [
+          "Cycle-1",
+          "Estimated (Cycle-2)"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SIGCOMM",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "http://conferences.sigcomm.org/sigcomm/2026",
+        "location": "Denver, CO, USA",
+        "start_date": "2026-08-05",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://conferences.sigcomm.org/sigcomm/2027/",
+        "location": "Bangkok, Thailand",
+        "start_date": "2027-08-08",
+        "cycles": [
+          "none"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ICSE",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2027",
+        "url": "https://conf.researchr.org/home/icse-2027",
+        "location": "Dublin, Ireland",
+        "start_date": "2027-04-25",
+        "cycles": [
+          "Summer"
+        ]
+      },
+      {
+        "year": "2028",
+        "url": "https://conf.researchr.org/home/icse-2028",
+        "location": "Hawaii, USA",
+        "start_date": "2028-04-30",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ASE",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://conf.researchr.org/home/ase-2026",
+        "location": "Munich, Germany",
+        "start_date": "2026-10-12",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://conf.researchr.org/home/ase-2026",
+        "location": "",
+        "start_date": "2027-10-12",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CVPR",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://cvpr.thecvf.com/Conferences/2026",
+        "location": "Denver, CO, USA",
+        "start_date": "2026-06-03",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers",
+        "location": "Seattle, WA, USA",
+        "start_date": "2027-06-20",
+        "cycles": [
+          "none"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ICCV",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2027",
+        "url": "https://iccv.thecvf.com/Conferences/2027",
+        "location": "Hong Kong, China",
+        "start_date": "2027-10-03",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ECCV",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://eccv.ecva.net/Conferences/2026",
+        "location": "Malmö, Sweden",
+        "start_date": "2026-09-08",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2028",
+        "url": "https://eccv.ecva.net/",
+        "location": "Bucharest, Romania",
+        "start_date": "2028-09-08",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AAAI",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2027",
+        "url": "https://aaai.org/conference/aaai/aaai-27/",
+        "location": "Montréal, Canada",
+        "start_date": "2027-02-16",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2028",
+        "url": "https://aaai.org/",
+        "location": "",
+        "start_date": "2028-02-16",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ICML",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://icml.cc/Conferences/2026",
+        "location": "Seoul, South Korea",
+        "start_date": "2026-07-06",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://icml.cc/Conferences/2027",
+        "location": "Rio de Janeiro, Brazil",
+        "start_date": "2027-07-31",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ICLR",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://iclr.cc/Conferences/2026",
+        "location": "Rio de Janeiro, Brazil",
+        "start_date": "2026-04-23",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://iclr.cc/Conferences/2027/CallForPapers",
+        "location": "California, USA",
+        "start_date": "2027-04-26",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2028",
+        "url": "https://iclr.cc/",
+        "location": "",
+        "start_date": "2028-04-26",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MLSys",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://mlsys.org/Conferences/2026",
+        "location": "Bellevue, WA, USA",
+        "start_date": "2026-05-18",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://mlsys.org/Conferences/2027",
+        "location": "Bellevue, WA, USA",
+        "start_date": "2027-06-21",
+        "cycles": [
+          "none"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "NeurIPS",
+    "type": "conference",
+    "status": "NEEDS_CHECK",
+    "editions": [
+      {
+        "year": "2026",
+        "url": "https://neurips.cc/Conferences/2026",
+        "location": "Sydney, Australia",
+        "start_date": "2026-12-06",
+        "cycles": [
+          "none"
+        ]
+      },
+      {
+        "year": "2027",
+        "url": "https://neurips.cc/Conferences/2026",
+        "location": "",
+        "start_date": "2027-12-06",
+        "cycles": [
+          "Estimated"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "IEEE TPDS",
+    "type": "journal",
+    "status": "NEEDS_CHECK",
+    "url": "https://www.computer.org/digital-library/journals/td/cfp-parallel-distributed-systems",
+    "special_issues": [
+      "url",
+      "General Submissions"
+    ]
+  },
+  {
+    "name": "IEEE TC",
+    "type": "journal",
+    "status": "NEEDS_CHECK",
+    "url": "https://www.computer.org/csdl/journal/tc",
+    "special_issues": [
+      "url",
+      "Special Issue on Graph-Centric Computing: Algorithms, Systems, and Architectures"
+    ]
+  },
+  {
+    "name": "IEEE TDSC",
+    "type": "journal",
+    "status": "NEEDS_CHECK",
+    "url": "https://www.computer.org/digital-library/journals/tq/cfp-dependable-secure-computing",
+    "special_issues": [
+      "url",
+      "Special Issue on Safety, Alignment, and Responsibility of Large Language Models",
+      "Special Issue on Trust, Privacy, and Security in Intelligent and Agentic Systems"
+    ]
+  },
+  {
+    "name": "IEEE TCAD",
+    "type": "journal",
+    "status": "NEEDS_CHECK",
+    "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=43",
+    "special_issues": [
+      "url",
+      "General Submissions"
+    ]
+  },
+  {
+    "name": "IEEE CAL",
+    "type": "journal",
+    "status": "NEEDS_CHECK",
+    "url": "https://www.computer.org/digital-library/journals/ca/cfp-ieee-computer-architecture-letters",
+    "special_issues": [
+      "url",
+      "General Submissions"
+    ]
+  },
+  {
+    "name": "IEEE Micro",
+    "type": "journal",
+    "status": "NEEDS_CHECK",
+    "url": "https://www.computer.org/csdl/mags/mi",
+    "special_issues": [
+      "url",
+      "Top Picks from the 2026 Computer Architecture Conferences",
+      "Special Issue on Systems for Cryptographic Computing"
+    ]
+  },
+  {
+    "name": "ACM TACO",
+    "type": "journal",
+    "status": "NEEDS_CHECK",
+    "url": "https://dl.acm.org/journal/taco",
+    "special_issues": [
+      "url",
+      "General Submissions"
+    ]
+  },
+  {
+    "name": "IEEE TQE",
+    "type": "journal",
+    "status": "NEEDS_CHECK",
+    "url": "https://tqe.ieee.org/",
+    "special_issues": [
+      "url",
+      "General Submissions"
+    ]
+  }
+]

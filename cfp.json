@@ -264,7 +264,7 @@
                 "deadline": "2026-01-14",
                 "early_notification": "2026-02-20",
                 "notification": "2026-04-09",
-                "is_verified": false
+                "is_verified": true
             },
             "Cycle-2": {
                 "abstract_deadline": "2026-04-22",
@@ -2719,9 +2719,9 @@
             }
         },
         "2027": {
-            "date": "June 7-11, 2027",
+            "date": "June 7-10, 2027",
             "start_date": "2027-06-07",
-            "finish_date": "2027-06-11",
+            "finish_date": "2027-06-10",
             "url": "https://www.sigmetrics.org/sigmetrics2027/",
             "location": "Atlanta, GA, USA",
             "Summer": {
@@ -3293,7 +3293,8 @@
             "Spring": {
                 "deadline": "2025-03-12",
                 "notification": "2025-06-24",
-                "is_verified": false
+                "is_verified": true,
+                "abstract_deadline": "2025-03-05"
             },
             "Summer": {
                 "abstract_deadline": "2025-08-13",
@@ -4166,7 +4167,8 @@
             "none": {
                 "deadline": "2025-10-09",
                 "notification": "2025-12-18",
-                "is_verified": false
+                "is_verified": false,
+                "final_notification": "2026-02-02"
             }
         },
         "2027": {
@@ -4179,7 +4181,8 @@
                 "abstract_deadline": "2026-10-01",
                 "deadline": "2026-10-08",
                 "notification": "2026-12-18",
-                "is_verified": true
+                "is_verified": true,
+                "final_notification": "2027-02-02"
             }
         }
     },
@@ -4589,7 +4592,7 @@
             "Fall Cycle": {
                 "deadline": "2026-08-19",
                 "early_notification": "2026-09-25",
-                "notification": "2026-11-24",
+                "notification": "2026-12-02",
                 "is_verified": true
             }
         },
@@ -5473,13 +5476,13 @@
                 "deadline": "2025-08-25",
                 "early_notification": "2025-10-01",
                 "notification": "2025-11-19",
-                "is_verified": false
+                "is_verified": true
             },
             "Cycle-2": {
                 "deadline": "2025-12-12",
                 "early_notification": "2026-01-21",
                 "notification": "2026-03-10",
-                "is_verified": false
+                "is_verified": true
             }
         },
         "2027": {
@@ -5927,7 +5930,7 @@
             "date": "December 6-12, 2027",
             "start_date": "2027-12-06",
             "finish_date": "2027-12-12",
-            "url": "https://neurips.cc/Conferences/2026",
+            "url": "https://neurips.cc/Conferences/2027",
             "location": "",
             "Estimated": {
                 "abstract_deadline": "2027-05-04",
@@ -6011,9 +6014,10 @@
             "url": "https://2026.rtss.org/",
             "location": "Yokohama, Japan",
             "none": {
-                "deadline": "2026-05-21",
+                "deadline": "2026-05-26",
                 "notification": "July 2026",
-                "is_verified": true
+                "is_verified": true,
+                "abstract_deadline": "2026-05-21"
             }
         },
         "2027": {

@@ -1,0 +1,40 @@
+CFP Update Summary
+Date: 2026-11-10
+
+## Changes Applied
+
+### Official CFP Updates (Verified from source):
+
+1. **CCS 2026 Cycle-1**: Corrected to official dates
+   - Source: https://www.sigsac.org/ccs/CCS2026/call-for/call-for-papers.html
+   - Abstract deadline: 2026-01-07 (verified)
+   - Paper deadline: 2026-01-14 (verified)
+   - Notification: 2026-04-09 (verified)
+   - Status: is_verified = true
+
+2. **ASPLOS 2026 Spring**: Added missing abstract deadline
+   - Source: https://www.asplos-conference.org/asplos2026/cfp/
+   - Abstract deadline: 2025-03-05 (added)
+   - Status: is_verified = true
+
+3. **NDSS 2027 Fall Cycle**: Corrected notification date
+   - Source: https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/
+   - Notification: 2026-11-24 → 2026-12-02 (corrected)
+
+4. **AsiaCCS 2026 Cycle-1 & Cycle-2**: Updated verification status
+   - Source: https://asiaccs2026.cse.iitkgp.ac.in/
+   - Both cycles: is_verified = false → true (dates confirmed)
+
+5. **RTSS 2026**: Added abstract deadline and updated paper deadline
+   - Source: https://2026.rtss.org/
+   - Abstract deadline: 2026-05-21 (added)
+   - Paper deadline: 2026-05-21 → 2026-05-26 (updated)
+   - Status: is_verified = true
+
+6. **IPDPS 2026 & 2027**: Added final notification dates
+   - Source: https://www.ipdps.org/
+   - 2026: Added final_notification = 2026-02-02
+   - 2027: Added final_notification = 2027-02-02
+
+7. **NeurIPS 2027**: Fixed conference URL
+   - URL: https://neurips.cc/Conferences/2026 → https://neurips.cc/Conferences/2027
