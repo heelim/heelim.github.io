@@ -264,7 +264,7 @@
                 "deadline": "2026-01-14",
                 "early_notification": "2026-02-20",
                 "notification": "2026-04-09",
-                "is_verified": false
+                "is_verified": true
             },
             "Cycle-2": {
                 "abstract_deadline": "2026-04-22",
@@ -2480,9 +2480,9 @@
             }
         },
         "2026": {
-            "date": "August 5-7, 2026",
-            "start_date": "2026-08-05",
-            "finish_date": "2026-08-07",
+            "date": "August 17-21, 2026",
+            "start_date": "2026-08-17",
+            "finish_date": "2026-08-21",
             "url": "http://conferences.sigcomm.org/sigcomm/2026",
             "location": "Denver, CO, USA",
             "none": {
@@ -2719,9 +2719,9 @@
             }
         },
         "2027": {
-            "date": "June 7-11, 2027",
+            "date": "June 7-10, 2027",
             "start_date": "2027-06-07",
-            "finish_date": "2027-06-11",
+            "finish_date": "2027-06-10",
             "url": "https://www.sigmetrics.org/sigmetrics2027/",
             "location": "Atlanta, GA, USA",
             "Summer": {
@@ -3291,9 +3291,10 @@
             "url": "https://www.asplos-conference.org/asplos2026/cfp/",
             "location": "Pittsburgh, PA, USA",
             "Spring": {
+                "abstract_deadline": "2025-03-05",
                 "deadline": "2025-03-12",
                 "notification": "2025-06-24",
-                "is_verified": false
+                "is_verified": true
             },
             "Summer": {
                 "abstract_deadline": "2025-08-13",
@@ -3609,7 +3610,7 @@
             "start_date": "2026-02-24",
             "finish_date": "2026-02-26",
             "url": "https://www.usenix.org/conference/fast26",
-            "location": "",
+            "location": "Santa Clara, CA, USA",
             "Spring": {
                 "deadline": "2025-03-18",
                 "is_verified": false,
@@ -3878,13 +3879,13 @@
         },
         "2026": {
             "date": "June 22-25, 2026",
-            "start_date": "2026-07-01",
+            "start_date": "2026-06-22",
             "finish_date": "2026-06-25",
             "url": "https://icdcs2026.icdcs.org",
             "location": "South Korea",
             "none": {
-                "deadline": "2025-12-12",
-                "notification": "",
+                "deadline": "2026-01-21",
+                "notification": "2026-04-27",
                 "is_verified": true
             }
         },
@@ -4166,7 +4167,8 @@
             "none": {
                 "deadline": "2025-10-09",
                 "notification": "2025-12-18",
-                "is_verified": false
+                "is_verified": false,
+                "final_notification": "2026-02-02"
             }
         },
         "2027": {
@@ -4179,7 +4181,8 @@
                 "abstract_deadline": "2026-10-01",
                 "deadline": "2026-10-08",
                 "notification": "2026-12-18",
-                "is_verified": true
+                "is_verified": true,
+                "final_notification": "2027-02-02"
             }
         }
     },
@@ -4589,7 +4592,7 @@
             "Fall Cycle": {
                 "deadline": "2026-08-19",
                 "early_notification": "2026-09-25",
-                "notification": "2026-11-24",
+                "notification": "2026-12-02",
                 "is_verified": true
             }
         },
@@ -4771,13 +4774,13 @@
             "Spring": {
                 "abstract_deadline": "2026-04-16",
                 "deadline": "2026-04-23",
-                "notification": "2026-07-01",
+                "notification": "2026-07-23",
                 "is_verified": true
             },
             "Fall": {
                 "abstract_deadline": "2026-09-10",
                 "deadline": "2026-09-17",
-                "notification": "2026-12-01",
+                "notification": "2026-12-08",
                 "is_verified": true
             }
         },
@@ -5342,7 +5345,7 @@
                 "abstract_deadline": "2026-03-06",
                 "deadline": "2026-03-13",
                 "early_notification": "2026-05-21",
-                "notification": "2026-06-22",
+                "notification": "2026-06-29",
                 "is_verified": true
             }
         },
@@ -5473,13 +5476,13 @@
                 "deadline": "2025-08-25",
                 "early_notification": "2025-10-01",
                 "notification": "2025-11-19",
-                "is_verified": false
+                "is_verified": true
             },
             "Cycle-2": {
                 "deadline": "2025-12-12",
                 "early_notification": "2026-01-21",
                 "notification": "2026-03-10",
-                "is_verified": false
+                "is_verified": true
             }
         },
         "2027": {
@@ -5610,7 +5613,7 @@
             "start_date": "2026-06-22",
             "finish_date": "2026-06-25",
             "url": "https://dsn2026.github.io/",
-            "location": "Budapest, Hungary",
+            "location": "Charlotte, NC, USA",
             "none": {
                 "deadline": "2025-12-04",
                 "notification": "2026-03-19",
@@ -5851,8 +5854,8 @@
             "url": "https://pldi26.sigplan.org/home/LCTES-2026",
             "location": "Boulder, CO, USA",
             "none": {
-                "abstract_deadline": "2026-03-13",
-                "deadline": "2026-03-20",
+                "abstract_deadline": "2026-03-06",
+                "deadline": "2026-03-13",
                 "notification": "2026-05-01",
                 "is_verified": true
             }
@@ -5927,7 +5930,7 @@
             "date": "December 6-12, 2027",
             "start_date": "2027-12-06",
             "finish_date": "2027-12-12",
-            "url": "https://neurips.cc/Conferences/2026",
+            "url": "https://neurips.cc/Conferences/2027",
             "location": "",
             "Estimated": {
                 "abstract_deadline": "2027-05-04",
@@ -5943,7 +5946,7 @@
             "start_date": "2026-01-11",
             "finish_date": "2026-01-17",
             "url": "https://popl26.sigplan.org/",
-            "location": "Chicago, IL, USA",
+            "location": "Rennes, France",
             "none": {
                 "deadline": "2025-07-10",
                 "notification": "2025-10-02",
@@ -6011,7 +6014,8 @@
             "url": "https://2026.rtss.org/",
             "location": "Yokohama, Japan",
             "none": {
-                "deadline": "2026-05-21",
+                "abstract_deadline": "2026-05-21",
+                "deadline": "2026-05-26",
                 "notification": "July 2026",
                 "is_verified": true
             }
