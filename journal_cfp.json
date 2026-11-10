@@ -6,12 +6,7 @@
         }
     },
     "IEEE TC": {
-        "url": "https://www.computer.org/csdl/journal/tc",
-        "Special Issue on Graph-Centric Computing: Algorithms, Systems, and Architectures": {
-            "deadline": "2026-07-15",
-            "url": "https://www.computer.org/digital-library/journals/tc/cfp-graph-centric-computing",
-            "is_verified": true
-        }
+        "url": "https://www.computer.org/csdl/journal/tc"
     },
     "IEEE Micro": {
         "url": "https://www.computer.org/csdl/mags/mi",
