@@ -562,8 +562,8 @@
             "url": "https://conferences2.sigcomm.org/co-next/2026",
             "location": "Utrecht, The Netherlands",
             "Winter": {
-                "deadline": "2025-12-25",
-                "notification": "2025-12-22",
+                "deadline": "2025-12-11",
+                "notification": "2025-12-08",
                 "is_verified": false
             },
             "June": {
@@ -574,9 +574,9 @@
                 "is_verified": true
             },
             "Summer": {
-                "deadline": "2026-06-19",
+                "deadline": "2026-06-05",
                 "is_verified": false,
-                "notification": "2026-09-25"
+                "notification": "2026-09-11"
             }
         },
         "2027": {
@@ -2084,7 +2084,7 @@
             "date": "October 10-15, 2027",
             "start_date": "2027-10-10",
             "finish_date": "2027-10-15",
-            "url": "https://2027.splashcon.org/",
+            "url": "https://conf.researchr.org/track/splash-2027/splashoopsla2027",
             "location": "Prague, Czechia",
             "Cycle-1": {
                 "deadline": "2026-10-14",
@@ -3156,7 +3156,7 @@
             "date": "August 11-13, 2027",
             "start_date": "2027-08-11",
             "finish_date": "2027-08-13",
-            "url": "https://www.usenix.org/conference/usenixsecurity27",
+            "url": "https://www.usenix.org/conference/usenixsecurity27/call-for-papers",
             "location": "Denver, CO, USA",
             "Cycle 1": {
                 "abstract_deadline": "2026-08-18",
@@ -3473,7 +3473,7 @@
             "date": "April 19-23, 2027",
             "start_date": "2027-04-19",
             "finish_date": "2027-04-23",
-            "url": "https://2027.eurosys.org/",
+            "url": "https://2027.eurosys.org/cfp.html",
             "location": "Rabat, Morocco",
             "Spring": {
                 "abstract_deadline": "2026-05-07",
@@ -3770,7 +3770,7 @@
             "start_date": "2027-03-20",
             "finish_date": "2027-03-24",
             "url": "https://hpca-conf.org/2027/",
-            "location": "Salt Lake City, Utah, USA",
+            "location": "Salt Lake City, UT, USA",
             "none": {
                 "abstract_deadline": "2026-07-24",
                 "deadline": "2026-07-31",
@@ -4300,7 +4300,7 @@
             "start_date": "2027-06-05",
             "finish_date": "2027-06-09",
             "url": "https://iscaconf.org/isca2027/",
-            "location": "Atlanta, USA",
+            "location": "Atlanta, GA, USA",
             "none": {
                 "deadline": "2026-11-16",
                 "notification": "2027-03-26",
@@ -4424,7 +4424,7 @@
             "start_date": "2027-05-09",
             "finish_date": "2027-05-11",
             "url": "https://ispass.org/2027/",
-            "location": "New York City, USA",
+            "location": "New York City, NY, USA",
             "none": {
                 "abstract_deadline": "2026-12-11",
                 "deadline": "2026-12-18",
@@ -4581,8 +4581,8 @@
             "date": "March 22-26, 2027",
             "start_date": "2027-03-22",
             "finish_date": "2027-03-26",
-            "url": "https://www.ndss-symposium.org/ndss2027/",
-            "location": "Seoul, Republic of Korea",
+            "url": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
+            "location": "Seoul, South Korea",
             "Summer Cycle": {
                 "deadline": "2026-05-06",
                 "early_notification": "2026-06-18",
@@ -5039,7 +5039,7 @@
             "start_date": "2027-03-20",
             "finish_date": "2027-03-24",
             "url": "https://ppopp27.sigplan.org/",
-            "location": "Salt Lake City, Utah, USA",
+            "location": "Salt Lake City, UT, USA",
             "none": {
                 "deadline": "2026-08-03",
                 "notification": "2026-10-26",
@@ -5104,7 +5104,7 @@
             "start_date": "2027-10-03",
             "finish_date": "2027-10-07",
             "url": "https://iccv.thecvf.com/Conferences/2027",
-            "location": "Hong Kong",
+            "location": "Hong Kong, China",
             "Estimated": {
                 "abstract_deadline": "2027-03-03",
                 "deadline": "2027-03-07",
@@ -5312,7 +5312,7 @@
             "date": "June 20-25, 2027",
             "start_date": "2027-06-20",
             "finish_date": "2027-06-25",
-            "url": "https://cvpr.thecvf.com/",
+            "url": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers",
             "location": "Seattle, WA, USA",
             "none": {
                 "abstract_deadline": "2026-11-10",
@@ -5455,7 +5455,7 @@
             "date": "October 24-28, 2027",
             "start_date": "2027-10-24",
             "finish_date": "2027-10-28",
-            "url": "https://conf.researchr.org/home/ase-2026",
+            "url": "https://conf.researchr.org/home/ase-2027",
             "location": "El Paso, Texas, USA",
             "Estimated": {
                 "deadline": "2027-03-26",
@@ -5523,7 +5523,7 @@
             "start_date": "2027-03-20",
             "finish_date": "2027-03-24",
             "url": "https://conf.researchr.org/home/CC-2027",
-            "location": "Salt Lake City, Utah, USA",
+            "location": "Salt Lake City, UT, USA",
             "Estimated": {
                 "deadline": "2026-11-24",
                 "notification": "2026-12-24",
@@ -5597,7 +5597,7 @@
             "date": "July 11-14, 2027",
             "start_date": "2027-07-11",
             "finish_date": "2027-07-14",
-            "url": "https://www.dac.com/",
+            "url": "https://dac.com/2027",
             "location": "San Jose, CA, USA",
             "none": {
                 "abstract_deadline": "2026-11-11",
@@ -5624,7 +5624,7 @@
             "date": "June 22-25, 2027",
             "start_date": "2027-06-22",
             "finish_date": "2027-06-25",
-            "url": "https://www.dsn.org/",
+            "url": "https://dsn2027-berlin.github.io/call-for-contributions/",
             "location": "Berlin, Germany",
             "none": {
                 "abstract_deadline": "2026-11-25",
@@ -5830,8 +5830,8 @@
             "date": "August 1-5, 2027",
             "start_date": "2027-08-01",
             "finish_date": "2027-08-05",
-            "url": "https://kdd2027.kdd.org/",
-            "location": "San Jose, USA",
+            "url": "https://kdd2027.kdd.org/research-track-call-for-papers/",
+            "location": "San Jose, CA, USA",
             "Cycle-1": {
                 "abstract_deadline": "2026-07-19",
                 "deadline": "2026-07-26",
@@ -5957,7 +5957,7 @@
             "date": "January 10-16, 2027",
             "start_date": "2027-01-10",
             "finish_date": "2027-01-16",
-            "url": "https://popl27.sigplan.org/",
+            "url": "https://conf.researchr.org/home/POPL-2027",
             "location": "Mexico City, Mexico",
             "none": {
                 "deadline": "2026-07-09",
@@ -6191,7 +6191,7 @@
             "start_date": "2027-02-16",
             "finish_date": "2027-02-23",
             "url": "https://aaai.org/conference/aaai/aaai-27/",
-            "location": "Montreal, Canada",
+            "location": "Montréal, Canada",
             "none": {
                 "abstract_deadline": "2026-07-21",
                 "deadline": "2026-07-28",
@@ -6308,7 +6308,7 @@
             "date": "May 10-14, 2027",
             "start_date": "2027-05-10",
             "finish_date": "2027-05-14",
-            "url": "https://www2027.thewebconf.org/",
+            "url": "https://www2027.thewebconf.org/research-track-papers/",
             "location": "Dublin, Ireland",
             "Full Paper": {
                 "abstract_deadline": "2026-10-18",
@@ -6342,7 +6342,7 @@
             "date": "April 26-30, 2027",
             "start_date": "2027-04-26",
             "finish_date": "2027-04-30",
-            "url": "https://iclr.cc/",
+            "url": "https://iclr.cc/Conferences/2027/CallForPapers",
             "location": "California, USA",
             "none": {
                 "abstract_deadline": "2026-09-18",
