@@ -1341,7 +1341,7 @@
             "date": "September 13-17, 2027",
             "start_date": "2027-09-13",
             "finish_date": "2027-09-17",
-            "url": "https://icpp2027.github.io",
+            "url": "https://icpp2027.github.io/",
             "location": "Sapporo, Japan",
             "Estimated": {
                 "abstract_deadline": "2027-04-24",
@@ -2360,7 +2360,7 @@
             "date": "November 14-19, 2027",
             "start_date": "2027-11-14",
             "finish_date": "2027-11-19",
-            "url": "https://sc26.supercomputing.org/all-dates-deadlines",
+            "url": "https://supercomputing.org/",
             "location": "Denver, CO, USA",
             "Estimated": {
                 "abstract_deadline": "2027-04-01",
@@ -3769,7 +3769,7 @@
             "date": "March 20-24, 2027",
             "start_date": "2027-03-20",
             "finish_date": "2027-03-24",
-            "url": "https://conf.researchr.org/home/hpca-2027",
+            "url": "https://hpca-conf.org/2027/",
             "location": "Salt Lake City, UT, USA",
             "none": {
                 "abstract_deadline": "2026-07-24",
@@ -4042,9 +4042,9 @@
             }
         },
         "2027": {
-            "date": "May 17-19, 2027",
+            "date": "May 17-20, 2027",
             "start_date": "2027-05-17",
-            "finish_date": "2027-05-19",
+            "finish_date": "2027-05-20",
             "url": "https://www.ieee-security.org/TC/SP2027/cfpapers.html",
             "location": "Montreal, Canada",
             "Cycle-1": {
@@ -5452,11 +5452,11 @@
             }
         },
         "2027": {
-            "date": "October 12-16, 2027",
-            "start_date": "2027-10-12",
-            "finish_date": "2027-10-16",
-            "url": "https://conf.researchr.org/home/ase-2026",
-            "location": "",
+            "date": "October 24-28, 2027",
+            "start_date": "2027-10-24",
+            "finish_date": "2027-10-28",
+            "url": "https://conf.researchr.org/home/ase-2027",
+            "location": "El Paso, Texas, USA",
             "Estimated": {
                 "deadline": "2027-03-26",
                 "early_notification": "2027-05-25",
