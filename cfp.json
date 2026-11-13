@@ -5519,15 +5519,16 @@
             }
         },
         "2027": {
-            "date": "March 20-24, 2027",
+            "date": "March 20-21, 2027",
             "start_date": "2027-03-20",
-            "finish_date": "2027-03-24",
+            "finish_date": "2027-03-21",
             "url": "https://conf.researchr.org/home/CC-2027",
             "location": "Salt Lake City, UT, USA",
-            "Estimated": {
-                "deadline": "2026-11-24",
-                "notification": "2026-12-24",
-                "is_verified": false
+            "none": {
+                "abstract_deadline": "2026-12-01",
+                "deadline": "2026-12-03",
+                "notification": "2027-01-15",
+                "is_verified": true
             }
         }
     },
