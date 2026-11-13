@@ -35,8 +35,8 @@
     "IEEE TDSC": {
         "url": "https://www.computer.org/digital-library/journals/tq/cfp-dependable-secure-computing",
         "Special Issue on Safety, Alignment, and Responsibility of Large Language Models": {
-            "deadline": "2026-12-31",
-            "notification": "2027-05-31",
+            "deadline": "2027-02-28",
+            "notification": "2027-04-30",
             "url": "https://www.computer.org/digital-library/journals/tq/cfp-safety-alignment-responsibility-language",
             "is_verified": true
         },
