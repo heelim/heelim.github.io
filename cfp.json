@@ -1202,11 +1202,11 @@
             }
         },
         "2027": {
-            "date": "July 13-16, 2027",
-            "start_date": "2027-07-13",
-            "finish_date": "2027-07-16",
+            "date": "June 5-11, 2027",
+            "start_date": "2027-06-05",
+            "finish_date": "2027-06-11",
             "url": "https://hpdc.sci.utah.edu/2026",
-            "location": "",
+            "location": "Atlanta, GA, USA",
             "Estimated": {
                 "abstract_deadline": "2027-01-29",
                 "deadline": "2027-02-05",
@@ -5764,11 +5764,11 @@
             "finish_date": "2027-08-06",
             "url": "https://icml.cc/Conferences/2027",
             "location": "Rio de Janeiro, Brazil",
-            "Estimated": {
-                "abstract_deadline": "2027-01-23",
-                "deadline": "2027-01-28",
-                "notification": "2027-05-01",
-                "is_verified": false
+            "none": {
+                "abstract_deadline": "2027-01-14",
+                "deadline": "2027-01-22",
+                "notification": "2027-05-03",
+                "is_verified": true
             }
         }
     },
@@ -6258,16 +6258,16 @@
             }
         },
         "2028": {
-            "date": "April 30 - May 6, 2028",
-            "start_date": "2028-04-30",
-            "finish_date": "2028-05-06",
+            "date": "April 29 - May 7, 2028",
+            "start_date": "2028-04-29",
+            "finish_date": "2028-05-07",
             "url": "https://conf.researchr.org/home/icse-2028",
             "location": "Hawaii, USA",
-            "Estimated": {
-                "abstract_deadline": "2027-06-23",
-                "deadline": "2027-06-30",
-                "notification": "2027-10-20",
-                "is_verified": false
+            "none": {
+                "abstract_deadline": "2027-06-24",
+                "deadline": "2027-07-01",
+                "notification": "2027-10-21",
+                "is_verified": true
             }
         }
     },
