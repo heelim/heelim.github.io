@@ -1202,16 +1202,16 @@
             }
         },
         "2027": {
-            "date": "June 7-9, 2027",
+            "date": "June 7-10, 2027",
             "start_date": "2027-06-07",
-            "finish_date": "2027-06-09",
+            "finish_date": "2027-06-10",
             "url": "https://hpdc.sci.utah.edu/2027/",
             "location": "Atlanta, GA, USA",
-            "Estimated": {
-                "abstract_deadline": "2027-01-29",
-                "deadline": "2027-02-05",
-                "notification": "2027-03-31",
-                "is_verified": false
+            "none": {
+                "abstract_deadline": "2027-01-11",
+                "deadline": "2027-01-18",
+                "notification": "2027-03-30",
+                "is_verified": true
             }
         }
     },
@@ -5457,11 +5457,11 @@
             "finish_date": "2027-10-28",
             "url": "https://conf.researchr.org/home/ase-2027",
             "location": "El Paso, Texas, USA",
-            "Estimated": {
-                "deadline": "2027-03-26",
-                "early_notification": "2027-05-25",
-                "notification": "2027-06-18",
-                "is_verified": false
+            "none": {
+                "deadline": "2027-03-10",
+                "early_notification": "2027-05-12",
+                "notification": "2027-06-08",
+                "is_verified": true
             }
         }
     },
