@@ -4064,6 +4064,18 @@
                 "deadline": "2026-11-17",
                 "notification": "2027-03-05",
                 "is_verified": true
+            },
+            "Summer": {
+                "abstract_deadline": "2026-06-04",
+                "deadline": "2026-06-11",
+                "notification": "2026-09-11",
+                "is_verified": true
+            },
+            "Fall": {
+                "abstract_deadline": "2026-11-10",
+                "deadline": "2026-11-17",
+                "notification": "2027-03-05",
+                "is_verified": true
             }
         }
     },
@@ -4588,7 +4600,7 @@
             "start_date": "2027-03-22",
             "finish_date": "2027-03-26",
             "url": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
-            "location": "Seoul, South Korea",
+            "location": "Seoul, Republic of Korea",
             "Summer Cycle": {
                 "deadline": "2026-05-06",
                 "early_notification": "2026-06-18",
@@ -4599,6 +4611,14 @@
                 "deadline": "2026-08-19",
                 "early_notification": "2026-09-25",
                 "notification": "2026-12-02",
+                "is_verified": true
+            },
+            "Summer": {
+                "deadline": "2026-05-06",
+                "is_verified": true
+            },
+            "Fall": {
+                "deadline": "2026-08-19",
                 "is_verified": true
             }
         },
@@ -5685,6 +5705,12 @@
                 "deadline": "2026-03-30",
                 "notification": "2026-07-17",
                 "is_verified": true
+            },
+            "none": {
+                "abstract_deadline": "2026-03-23",
+                "deadline": "2026-03-30",
+                "notification": "2026-07-17",
+                "is_verified": true
             }
         },
         "2027": {
@@ -6011,7 +6037,7 @@
             "start_date": "2027-05-17",
             "finish_date": "2027-05-20",
             "url": "https://2027.rtas.org/",
-            "location": "Boulder, CO, USA",
+            "location": "Boulder, Colorado, USA",
             "none": {
                 "deadline": "2026-11-05",
                 "notification": "2027-01-28",
@@ -6029,7 +6055,7 @@
             "none": {
                 "abstract_deadline": "2026-05-21",
                 "deadline": "2026-05-26",
-                "notification": "July 2026",
+                "notification": "2026-07-25",
                 "is_verified": true
             }
         },
