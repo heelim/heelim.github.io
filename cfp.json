@@ -1202,10 +1202,10 @@
             }
         },
         "2027": {
-            "date": "June 5-11, 2027",
-            "start_date": "2027-06-05",
-            "finish_date": "2027-06-11",
-            "url": "https://hpdc.sci.utah.edu/2026",
+            "date": "June 7-9, 2027",
+            "start_date": "2027-06-07",
+            "finish_date": "2027-06-09",
+            "url": "https://hpdc.sci.utah.edu/2027/",
             "location": "Atlanta, GA, USA",
             "Estimated": {
                 "abstract_deadline": "2027-01-29",
@@ -2225,7 +2225,7 @@
             "start_date": "2027-10-19",
             "finish_date": "2027-10-22",
             "url": "https://pact2026.github.io/",
-            "location": "",
+            "location": "Tokyo, Japan",
             "Estimated": {
                 "abstract_deadline": "2027-04-23",
                 "deadline": "2027-04-30",
@@ -5354,7 +5354,7 @@
             "start_date": "2027-10-18",
             "finish_date": "2027-10-22",
             "url": "https://www.sigmobile.org/mobicom/2027/",
-            "location": "",
+            "location": "Athens, Greece",
             "Cycle-1": {
                 "abstract_deadline": "2026-08-26",
                 "deadline": "2026-09-02",
@@ -6158,6 +6158,19 @@
                 "deadline": "2027-03-01",
                 "notification": "2027-04-15",
                 "is_verified": true
+            }
+        },
+        "2028": {
+            "date": "August 28 - September 1, 2028",
+            "start_date": "2028-08-28",
+            "finish_date": "2028-09-01",
+            "url": "https://vldb.org/2028/",
+            "location": "Marrakech, Morocco",
+            "Estimated": {
+                "abstract_deadline": "2027-03-25",
+                "deadline": "2027-04-01",
+                "notification": "2027-05-15",
+                "is_verified": false
             }
         }
     },
