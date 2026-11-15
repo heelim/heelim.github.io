@@ -562,8 +562,8 @@
             "url": "https://conferences2.sigcomm.org/co-next/2026",
             "location": "Utrecht, The Netherlands",
             "Winter": {
-                "deadline": "2025-12-11",
-                "notification": "2025-12-08",
+                "deadline": "2025-12-25",
+                "notification": "2025-12-22",
                 "is_verified": false
             },
             "June": {
@@ -574,9 +574,9 @@
                 "is_verified": true
             },
             "Summer": {
-                "deadline": "2026-06-05",
+                "deadline": "2026-06-19",
                 "is_verified": false,
-                "notification": "2026-09-11"
+                "notification": "2026-09-25"
             }
         },
         "2027": {
@@ -3318,6 +3318,11 @@
                 "deadline": "2026-09-09",
                 "notification": "2026-12-21",
                 "is_verified": true
+            },
+            "Fall": {
+                "deadline": "2026-09-09",
+                "notification": "2026-12-21",
+                "is_verified": true
             }
         },
         "2028": {
@@ -3754,15 +3759,16 @@
             }
         },
         "2026": {
-            "date": "January 31 - February 4, 2026",
-            "start_date": "2026-01-31",
-            "finish_date": "2026-02-04",
+            "date": "March 1-5, 2026",
+            "start_date": "2026-03-01",
+            "finish_date": "2026-03-05",
             "url": "https://www.hpca-conf.org/2026",
             "location": "Sydney, Australia",
             "none": {
                 "deadline": "2025-08-01",
                 "notification": "2025-11-07",
-                "is_verified": true
+                "is_verified": true,
+                "abstract_deadline": "2025-07-25"
             }
         },
         "2027": {
@@ -4300,7 +4306,7 @@
             "start_date": "2027-06-05",
             "finish_date": "2027-06-09",
             "url": "https://iscaconf.org/isca2027/",
-            "location": "Atlanta, GA, USA",
+            "location": "Atlanta, USA",
             "none": {
                 "deadline": "2026-11-16",
                 "notification": "2027-03-26",
@@ -4918,7 +4924,7 @@
             "start_date": "2027-06-05",
             "finish_date": "2027-06-11",
             "url": "https://pldi27.sigplan.org/",
-            "location": "Atlanta, GA, USA",
+            "location": "Atlanta, Georgia, USA",
             "none": {
                 "deadline": "2026-11-12",
                 "notification": "2027-03-04",
@@ -5039,7 +5045,7 @@
             "start_date": "2027-03-20",
             "finish_date": "2027-03-24",
             "url": "https://ppopp27.sigplan.org/",
-            "location": "Salt Lake City, UT, USA",
+            "location": "Salt Lake City, Utah, USA",
             "none": {
                 "deadline": "2026-08-03",
                 "notification": "2026-10-26",
@@ -5181,6 +5187,12 @@
             "url": "https://www.usenix.org/conference/osdi26",
             "location": "Seattle, WA, USA",
             "annual": {
+                "deadline": "2025-12-11",
+                "notification": "2026-03-26",
+                "is_verified": true
+            },
+            "none": {
+                "abstract_deadline": "2025-12-04",
                 "deadline": "2025-12-11",
                 "notification": "2026-03-26",
                 "is_verified": true
@@ -5549,8 +5561,8 @@
             "date": "March 20-24, 2027",
             "start_date": "2027-03-20",
             "finish_date": "2027-03-24",
-            "url": "https://conf.researchr.org/home/cgo-2027",
-            "location": "Salt Lake City, UT, USA",
+            "url": "https://2027.cgo.org/track/cgo-2027-papers",
+            "location": "Salt Lake City, Utah, USA",
             "R1": {
                 "deadline": "2026-06-11",
                 "notification": "2026-08-03",
