@@ -3895,10 +3895,12 @@
             "finish_date": "2027-07-08",
             "url": "https://icdcs2027.icdcs.org/",
             "location": "Melbourne, Australia",
-            "Estimated": {
-                "deadline": "2026-12-12",
-                "notification": "",
-                "is_verified": false
+            "none": {
+                "abstract_deadline": "2027-01-06",
+                "deadline": "2027-01-13",
+                "early_notification": "2027-03-11",
+                "notification": "2027-04-18",
+                "is_verified": true
             }
         }
     },
