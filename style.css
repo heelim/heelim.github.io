@@ -223,6 +223,18 @@ a {
   text-underline-offset: 2px;
 }
 
+.pub-doi {
+  display: block;
+  font-size: 0.85em;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.pub-doi:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
 /* Tabs */
 .main-nav {
   display: flex;
