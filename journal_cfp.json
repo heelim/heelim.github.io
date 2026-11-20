@@ -6,10 +6,16 @@
         }
     },
     "IEEE TC": {
-        "url": "https://www.computer.org/csdl/journal/tc"
+        "url": "https://www.computer.org/csdl/journal/tc",
+        "General Submissions": {
+            "is_verified": true
+        }
     },
     "IEEE Micro": {
         "url": "https://www.computer.org/csdl/mags/mi",
+        "General Submissions": {
+            "is_verified": true
+        },
         "Top Picks from the 2026 Computer Architecture Conferences": {
             "deadline": "2026-12-03",
             "url": "https://www.computer.org/digital-library/magazines/mi/cfp-top-computer-architecture-conference-papers",
@@ -26,6 +32,9 @@
     },
     "IEEE TSC": {
         "url": "https://www.computer.org/digital-library/journals/tsc/cfp-language-models-ecosystems-design",
+        "General Submissions": {
+            "is_verified": true
+        },
         "Special Issue on Large Language Models in Service-Oriented Ecosystems Design: Advances and Applications": {
             "deadline": "2026-10-31",
             "notification": "2027-01-31",
@@ -34,6 +43,9 @@
     },
     "IEEE TDSC": {
         "url": "https://www.computer.org/digital-library/journals/tq/cfp-dependable-secure-computing",
+        "General Submissions": {
+            "is_verified": true
+        },
         "Special Issue on Safety, Alignment, and Responsibility of Large Language Models": {
             "deadline": "2027-02-28",
             "notification": "2027-04-30",
@@ -145,6 +157,9 @@
     },
     "IEEE Software": {
         "url": "https://www.computer.org/digital-library/magazines/so/cfp-ieee-software",
+        "General Submissions": {
+            "is_verified": true
+        },
         "Special Issue on Building Trustworthy Software in the Time of AI": {
             "deadline": "2026-11-05",
             "notification": "2027-02-05",
@@ -159,6 +174,9 @@
     },
     "IEEE Security & Privacy": {
         "url": "https://www.computer.org/digital-library/magazines/sp/cfp-ieee-security-and-privacy",
+        "General Submissions": {
+            "is_verified": true
+        },
         "Special Issue on One Decade of GDPR \u2013 Contributions to Data Protection and Future Challenges": {
             "deadline": "2026-12-01",
             "notification": "2027-03-01",
@@ -201,6 +219,9 @@
     },
     "IEEE Annals": {
         "url": "https://www.computer.org/digital-library/magazines/an/cfp-ieee-annals-of-the-history-of-computing",
+        "General Submissions": {
+            "is_verified": true
+        },
         "Special Issue on New Perspectives on Computing History (50th Anniversary Issue)": {
             "deadline": "2027-11-01",
             "notification": "2028-02-01",
