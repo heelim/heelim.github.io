@@ -17,7 +17,7 @@
         },
         "Special Issue on Systems for Cryptographic Computing": {
             "deadline": "2027-03-01",
-            "url": "https://www.computer.org/digital-library/magazines/mi/",
+            "url": "https://www.computer.org/digital-library/magazines/mi/cfp-systems-cryptographic-computing",
             "is_verified": true
         }
     },
@@ -44,6 +44,12 @@
             "deadline": "2027-01-15",
             "notification": "2027-08-31",
             "url": "https://www.computer.org/digital-library/journals/tq/cfp-trust-privacy-security-agentic-systems",
+            "is_verified": true
+        },
+        "Special Issue on Observability for Dependable and Secure Agent Systems": {
+            "deadline": "2027-09-30",
+            "notification": "2027-12-31",
+            "url": "https://www.computer.org/digital-library/journals/tq/cfp-observability-dependable-secure-agent",
             "is_verified": true
         }
     },
