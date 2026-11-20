@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return d < todayStart;
     }
 
-    function generateTableHtml(filteredCfps) {
+    function generateTableHtml(filteredCfps, variant) {
         if (filteredCfps.length === 0) {
             return '<p style="color: var(--g4); padding: 2rem; text-align: center;">No matching journals found.</p>';
         }
@@ -234,6 +234,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!dateStr || dateStr.trim() === "") return '—';
             return dateStr;
         };
+
+        const isGeneral = variant === 'general';
 
         const rowsHtml = filteredCfps.map(cfp => {
             const info = confInfo[cfp.venue] || {};
@@ -265,7 +267,17 @@ document.addEventListener('DOMContentLoaded', () => {
             const notifDate = formatDateStr(cfp.notification);
             const notifClass = cfp.notification && parseDate(cfp.notification) < todayStart ? 'passed' : '';
 
-            return `
+            if (isGeneral) {
+                return `
+                <tr ${rowClass}>
+                    <td class="venue-link-cell">${displayVenue}${checkmark}</td>
+                    <td class="col-if" style="font-weight: 500;">${impactFactor}</td>
+                    <td class="col-q">${qBadge}</td>
+                    <td class="date-cell ${deadlineClass}" style="font-weight: 500;">${deadlineDate}</td>
+                </tr>
+            `;
+            } else {
+                return `
                 <tr ${rowClass}>
                     <td class="venue-link-cell">${displayVenue}${checkmark}</td>
                     <td class="col-if" style="font-weight: 500;">${impactFactor}</td>
@@ -275,9 +287,27 @@ document.addEventListener('DOMContentLoaded', () => {
                     <td class="date-cell ${notifClass}">${notifDate}</td>
                 </tr>
             `;
+            }
         }).join('');
 
-        return `
+        if (isGeneral) {
+            return `
+            <table class="journal-table">
+                <thead>
+                    <tr>
+                        <th class="col-venue ${sortBy === 'name' ? 'sorted-' + sortOrder : ''}" data-sort="name">Journal</th>
+                        <th class="col-if ${sortBy === 'if' ? 'sorted-' + sortOrder : ''}" data-sort="if">IF</th>
+                        <th class="col-q ${sortBy === 'quartile' ? 'sorted-' + sortOrder : ''}" data-sort="quartile">Q</th>
+                        <th class="col-deadline ${sortBy === 'deadline' ? 'sorted-' + sortOrder : ''}" data-sort="deadline">Submission Due</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${rowsHtml}
+                </tbody>
+            </table>
+        `;
+        } else {
+            return `
             <table class="journal-table">
                 <thead>
                     <tr>
@@ -294,6 +324,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </tbody>
             </table>
         `;
+        }
     }
 
     function setupTableHeaderClicks() {
@@ -440,7 +471,29 @@ document.addEventListener('DOMContentLoaded', () => {
             return 0;
         });
 
-        cfpList.innerHTML = generateTableHtml(filteredCfps);
+        // Split into general and special issues
+        const generalCfps = filteredCfps.filter(cfp => cfp.subtitle === "");
+        const specialCfps = filteredCfps.filter(cfp => cfp.subtitle !== "");
+
+        let html = '';
+
+        // Render General Submissions section
+        html += '<h4 class="pub-type-header">General Submissions</h4>';
+        if (generalCfps.length === 0) {
+            html += '<p style="color: var(--g4); padding: 2rem; text-align: center;">No matching general submissions.</p>';
+        } else {
+            html += generateTableHtml(generalCfps, 'general');
+        }
+
+        // Render Special Issues section
+        html += '<h4 class="pub-type-header" style="margin-top: 2rem;">Special Issues</h4>';
+        if (specialCfps.length === 0) {
+            html += '<p style="color: var(--g4); padding: 2rem; text-align: center;">No matching special issues.</p>';
+        } else {
+            html += generateTableHtml(specialCfps, 'special');
+        }
+
+        cfpList.innerHTML = html;
         setupTableHeaderClicks();
         if (window._journalRanksApply) window._journalRanksApply();
     }
