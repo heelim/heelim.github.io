@@ -2362,11 +2362,11 @@
             "finish_date": "2027-11-19",
             "url": "https://supercomputing.org/",
             "location": "Denver, CO, USA",
-            "Estimated": {
-                "abstract_deadline": "2027-04-01",
-                "deadline": "2027-04-08",
+            "none": {
+                "abstract_deadline": "2027-03-25",
+                "deadline": "2027-04-01",
                 "notification": "2027-07-01",
-                "is_verified": false
+                "is_verified": true
             }
         }
     },
@@ -5529,7 +5529,7 @@
             "none": {
                 "abstract_deadline": "2026-12-01",
                 "deadline": "2026-12-03",
-                "notification": "2027-01-15",
+                "notification": "2027-01-20",
                 "is_verified": true
             }
         }
