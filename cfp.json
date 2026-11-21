@@ -1487,6 +1487,7 @@
             "none": {
                 "abstract_deadline": "2026-12-01",
                 "deadline": "2026-12-07",
+                "early_notification": "2027-02-11",
                 "notification": "2027-03-12",
                 "is_verified": true
             }
@@ -1923,12 +1924,14 @@
             "Winter": {
                 "abstract_deadline": "2026-11-27",
                 "deadline": "2026-12-04",
+                "early_notification": "2027-02-02",
                 "notification": "2027-03-29",
                 "is_verified": true
             },
             "Summer": {
                 "abstract_deadline": "2027-05-28",
                 "deadline": "2027-06-04",
+                "early_notification": "2027-07-13",
                 "notification": "2027-09-13",
                 "is_verified": true
             }
@@ -3167,6 +3170,7 @@
             "Cycle 2": {
                 "abstract_deadline": "2027-01-19",
                 "deadline": "2027-01-26",
+                "early_notification": "2027-03-09",
                 "notification": "2027-05-06",
                 "is_verified": true
             }
@@ -4058,6 +4062,7 @@
             "Cycle-2": {
                 "abstract_deadline": "2026-11-10",
                 "deadline": "2026-11-17",
+                "early_notification": "2027-01-18",
                 "notification": "2027-03-05",
                 "is_verified": true
             }
@@ -5461,8 +5466,8 @@
             "location": "El Paso, Texas, USA",
             "none": {
                 "deadline": "2027-03-10",
-                "early_notification": "2027-05-12",
-                "notification": "2027-06-08",
+                "early_notification": "2027-05-19",
+                "notification": "2027-06-10",
                 "is_verified": true
             }
         }
@@ -5678,11 +5683,11 @@
             }
         },
         "2027": {
-            "date": "October 4-9, 2027",
-            "start_date": "2027-10-04",
-            "finish_date": "2027-10-09",
+            "date": "October 10-15, 2027",
+            "start_date": "2027-10-10",
+            "finish_date": "2027-10-15",
             "url": "https://esweek.org/emsoft/",
-            "location": "",
+            "location": "Long Beach, CA, USA",
             "Estimated": {
                 "abstract_deadline": "2027-03-23",
                 "deadline": "2027-03-30",
