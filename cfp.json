@@ -5774,6 +5774,7 @@
             "none": {
                 "abstract_deadline": "2027-01-14",
                 "deadline": "2027-01-22",
+                "early_notification": "2027-02-23",
                 "notification": "2027-05-03",
                 "is_verified": true
             }
