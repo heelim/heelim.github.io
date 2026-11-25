@@ -3164,6 +3164,7 @@
             "Cycle 1": {
                 "abstract_deadline": "2026-08-18",
                 "deadline": "2026-08-25",
+                "early_notification": "2026-10-06",
                 "notification": "2026-12-03",
                 "is_verified": true
             },
@@ -4187,6 +4188,7 @@
             "none": {
                 "abstract_deadline": "2026-10-01",
                 "deadline": "2026-10-08",
+                "early_notification": "2026-11-30",
                 "notification": "2026-12-18",
                 "is_verified": true,
                 "final_notification": "2027-02-02"
@@ -5465,6 +5467,7 @@
             "url": "https://conf.researchr.org/home/ase-2027",
             "location": "El Paso, Texas, USA",
             "none": {
+                "abstract_deadline": "2027-03-04",
                 "deadline": "2027-03-10",
                 "early_notification": "2027-05-19",
                 "notification": "2027-06-10",
@@ -5774,6 +5777,7 @@
             "none": {
                 "abstract_deadline": "2027-01-14",
                 "deadline": "2027-01-22",
+                "early_notification": "2027-02-23",
                 "notification": "2027-05-03",
                 "is_verified": true
             }
@@ -6216,6 +6220,7 @@
             "none": {
                 "abstract_deadline": "2026-07-21",
                 "deadline": "2026-07-28",
+                "early_notification": "2026-09-24",
                 "notification": "2026-11-30",
                 "camera_ready": "2026-12-14",
                 "is_verified": true
