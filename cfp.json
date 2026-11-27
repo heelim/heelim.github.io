@@ -4188,6 +4188,7 @@
             "none": {
                 "abstract_deadline": "2026-10-01",
                 "deadline": "2026-10-08",
+                "early_notification": "2026-11-30",
                 "notification": "2026-12-18",
                 "is_verified": true,
                 "final_notification": "2027-02-02"
