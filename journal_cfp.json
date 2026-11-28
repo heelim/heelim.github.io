@@ -132,6 +132,18 @@
         "url": "https://www.computer.org/digital-library/journals/ec/technical-tracks",
         "General Submissions": {
             "is_verified": true
+        },
+        "Special Section on Software Aging and Rejuvenation in Emerging Computing Systems": {
+            "deadline": "2027-01-15",
+            "notification": "2027-04-15",
+            "url": "https://www.computer.org/digital-library/journals/ec/cfp-aging-rejuvenation-emerging",
+            "is_verified": true
+        },
+        "Special Section on Toward Dependable Emerging Computing: Advances in Defect and Fault Tolerance": {
+            "deadline": "2027-02-15",
+            "notification": "2027-05-15",
+            "url": "https://www.computer.org/digital-library/journals/ec/cfp-advances-defect-fault-tolerance",
+            "is_verified": true
         }
     },
     "IEEE/ACM ToN": {

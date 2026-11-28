@@ -6020,15 +6020,15 @@
     },
     "RTSS": {
         "2026": {
-            "date": "December 9-11, 2026",
-            "start_date": "2026-12-09",
+            "date": "December 8-11, 2026",
+            "start_date": "2026-12-08",
             "finish_date": "2026-12-11",
             "url": "https://2026.rtss.org/",
             "location": "Yokohama, Japan",
             "none": {
                 "abstract_deadline": "2026-05-21",
                 "deadline": "2026-05-26",
-                "notification": "July 2026",
+                "notification": "2026-07-25",
                 "is_verified": true
             }
         },
